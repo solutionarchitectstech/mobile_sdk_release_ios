@@ -1,11 +1,73 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.6 (swiftlang-5.6.0.323.62 clang-1316.0.20.8)
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target arm64-apple-ios14.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SAAdvertisingSDK
 import Alamofire
+import Foundation
 @_exported import SAAdvertisingSDK
 import Swift
+import UIKit
+import WebKit
 import _Concurrency
 @_hasMissingDesignatedInitializers public class ReplaceMe {
   public static func test()
   @objc deinit
 }
+public struct Size : Swift.CustomDebugStringConvertible {
+  public let width: Swift.Int, height: Swift.Int
+  public init(width: Swift.Int, height: Swift.Int)
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var onClose: (() -> Swift.Void)?
+  @_Concurrency.MainActor(unsafe) public func loadData(model: SAAdvertisingSDK.BannerModel)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+  @objc deinit
+}
+extension SAAdvertisingSDK.BannerView : WebKit.WKNavigationDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+}
+extension SAAdvertisingSDK.BannerView : WebKit.WKUIDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+}
+public enum CloseButtonType {
+  case COUNTDOWN
+  case APPEARING
+  case VISIBLE
+  case NONE
+  public static func == (a: SAAdvertisingSDK.CloseButtonType, b: SAAdvertisingSDK.CloseButtonType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum RequestType {
+  case GET
+  case POST
+  public static func == (a: SAAdvertisingSDK.RequestType, b: SAAdvertisingSDK.RequestType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_hasMissingDesignatedInitializers public class TechAdvertising {
+  public static func initialize(storeUrl: Swift.String, apiKey: Swift.String, apiSecret: Swift.String, partnerId: Swift.String, tagId: Swift.String? = nil, uid: Swift.String, hashType: SAAdvertisingSDK.HashType = HashType.SHA_1, requestType: SAAdvertisingSDK.RequestType = RequestType.POST, enableExternalExceptionHandler: Swift.Bool = false, enableCompression: Swift.Bool = false, baseUrl: Swift.String? = nil, postUrl: Swift.String? = nil, getUrl: Swift.String? = nil, trackingSdkBaseUrl: Swift.String? = nil, enableLogsHandler: Swift.Bool = false)
+  @objc deinit
+}
+public struct HashType {
+  public static let SHA_1: SAAdvertisingSDK.HashType
+  public static let MD5: SAAdvertisingSDK.HashType
+}
+public struct BannerModel {
+  public let refresh: Swift.Int
+  public let timeout: Swift.Int
+  public let placementId: Swift.Int
+  public let closeButtonType: SAAdvertisingSDK.CloseButtonType
+  public let sizes: [SAAdvertisingSDK.Size]
+  public init(refresh: Swift.Int, timeout: Swift.Int, placementId: Swift.Int, closeButtonType: SAAdvertisingSDK.CloseButtonType, sizes: [SAAdvertisingSDK.Size])
+}
+extension SAAdvertisingSDK.CloseButtonType : Swift.Equatable {}
+extension SAAdvertisingSDK.CloseButtonType : Swift.Hashable {}
+extension SAAdvertisingSDK.RequestType : Swift.Equatable {}
+extension SAAdvertisingSDK.RequestType : Swift.Hashable {}
