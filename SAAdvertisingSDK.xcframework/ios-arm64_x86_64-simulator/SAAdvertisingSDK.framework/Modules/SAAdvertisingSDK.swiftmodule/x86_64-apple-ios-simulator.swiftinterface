@@ -44,10 +44,6 @@ public struct HashType {
   public static let SHA_1: SAAdvertisingSDK.HashType
   public static let MD5: SAAdvertisingSDK.HashType
 }
-@_hasMissingDesignatedInitializers public class ReplaceMe {
-  public static func test()
-  @objc deinit
-}
 public enum RequestType {
   case GET
   case POST
