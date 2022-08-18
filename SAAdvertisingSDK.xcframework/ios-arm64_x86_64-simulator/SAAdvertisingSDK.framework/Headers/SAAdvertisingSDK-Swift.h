@@ -239,6 +239,7 @@ SWIFT_CLASS("_TtC16SAAdvertisingSDK10BannerView")
 
 @interface BannerView (SWIFT_EXTENSION(SAAdvertisingSDK)) <WKNavigationDelegate>
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
 
 
@@ -489,6 +490,7 @@ SWIFT_CLASS("_TtC16SAAdvertisingSDK10BannerView")
 
 @interface BannerView (SWIFT_EXTENSION(SAAdvertisingSDK)) <WKNavigationDelegate>
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
+- (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
 
 

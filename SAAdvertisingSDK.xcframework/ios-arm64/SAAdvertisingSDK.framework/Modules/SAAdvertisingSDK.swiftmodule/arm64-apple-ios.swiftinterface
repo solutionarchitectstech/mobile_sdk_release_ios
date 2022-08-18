@@ -22,19 +22,20 @@ public typealias ECScroll = EcontentaLib.ECScroll
 public struct BannerModel {
   public let refresh: Swift.Int
   public let timeout: Swift.Int
-  public let placementId: Swift.Int
+  public let placementId: Swift.String
   public let closeButtonType: SAAdvertisingSDK.CloseButtonType
   public let sizes: [SAAdvertisingSDK.Size]
-  public init(refresh: Swift.Int, timeout: Swift.Int, placementId: Swift.Int, closeButtonType: SAAdvertisingSDK.CloseButtonType, sizes: [SAAdvertisingSDK.Size])
+  public init(refresh: Swift.Int, timeout: Swift.Int, placementId: Swift.String, closeButtonType: SAAdvertisingSDK.CloseButtonType, sizes: [SAAdvertisingSDK.Size])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var onClose: (() -> Swift.Void)?
-  @_Concurrency.MainActor(unsafe) public func loadData(model: SAAdvertisingSDK.BannerModel)
+  @_Concurrency.MainActor(unsafe) public var delegate: SAAdvertisingSDK.BannerViewDelegate?
+  @_Concurrency.MainActor(unsafe) public func loadData(bannerModel: SAAdvertisingSDK.BannerModel)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
   @objc deinit
 }
 extension SAAdvertisingSDK.BannerView : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
 }
 extension SAAdvertisingSDK.BannerView : WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
@@ -74,6 +75,20 @@ public struct Size : Swift.CustomDebugStringConvertible {
   public static let tracker: EcontentaLib.ECTracker
   public static func initialize(storeUrl: Swift.String, apiKey: Swift.String, apiSecret: Swift.String, partnerId: Swift.String, tagId: Swift.String? = nil, uid: Swift.String, hashType: SAAdvertisingSDK.HashType = HashType.SHA_1, requestType: SAAdvertisingSDK.RequestType = RequestType.POST, enableExternalExceptionHandler: Swift.Bool = false, enableCompression: Swift.Bool = false, baseUrl: Swift.String? = nil, postUrl: Swift.String? = nil, getUrl: Swift.String? = nil, trackingSdkBaseUrl: Swift.String? = nil, enableLogsHandler: Swift.Bool = false)
   @objc deinit
+}
+public protocol BannerViewDelegate {
+  func onLoadDataSuccess(placementId: Swift.String)
+  func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
+  func onLoadWebContentSuccess(placementId: Swift.String)
+  func onLoadWebContentFail(placementId: Swift.String, reason: Swift.String)
+  func onCloseClick(placementId: Swift.String)
+}
+extension SAAdvertisingSDK.BannerViewDelegate {
+  public func onLoadDataSuccess(placementId: Swift.String)
+  public func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
+  public func onLoadWebContentSuccess(placementId: Swift.String)
+  public func onLoadWebContentFail(placementId: Swift.String, reason: Swift.String)
+  public func onCloseClick(placementId: Swift.String)
 }
 extension SAAdvertisingSDK.CloseButtonType : Swift.Equatable {}
 extension SAAdvertisingSDK.CloseButtonType : Swift.Hashable {}
