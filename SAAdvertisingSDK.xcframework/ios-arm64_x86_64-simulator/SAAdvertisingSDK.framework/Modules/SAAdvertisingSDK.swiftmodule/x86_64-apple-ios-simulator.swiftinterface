@@ -2,23 +2,23 @@
 // swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
 // swift-module-flags: -target x86_64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SAAdvertisingSDK
 import Alamofire
-import EcontentaLib
 import Foundation
 @_exported import SAAdvertisingSDK
+import SATrackingSDK
 import Swift
 import UIKit
 import WebKit
 import _Concurrency
-public typealias ECClick = EcontentaLib.ECClick
-public typealias ECAddToCart = EcontentaLib.ECAddToCart
-public typealias ECPurchase = EcontentaLib.ECPurchase
-public typealias ECStartView = EcontentaLib.ECStartView
-public typealias ECStopView = EcontentaLib.ECStopView
-public typealias ECViewing = EcontentaLib.ECViewing
-public typealias ECSearch = EcontentaLib.ECSearch
-public typealias ECAdImp = EcontentaLib.ECAdImp
-public typealias ECAdClick = EcontentaLib.ECAdClick
-public typealias ECScroll = EcontentaLib.ECScroll
+public typealias Click = SATrackingSDK.Click
+public typealias AddToCart = SATrackingSDK.AddToCart
+public typealias Purchase = SATrackingSDK.Purchase
+public typealias StartView = SATrackingSDK.StartView
+public typealias StopView = SATrackingSDK.StopView
+public typealias Viewing = SATrackingSDK.Viewing
+public typealias Search = SATrackingSDK.Search
+public typealias AdImp = SATrackingSDK.AdImp
+public typealias AdClick = SATrackingSDK.AdClick
+public typealias Scroll = SATrackingSDK.Scroll
 public struct BannerModel {
   public let refresh: Swift.Int
   public let timeout: Swift.Int
@@ -27,7 +27,7 @@ public struct BannerModel {
   public let sizes: [SAAdvertisingSDK.Size]
   public init(refresh: Swift.Int, timeout: Swift.Int, placementId: Swift.String, closeButtonType: SAAdvertisingSDK.CloseButtonType, sizes: [SAAdvertisingSDK.Size])
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc(SAAdvertisingBannerView) @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var delegate: SAAdvertisingSDK.BannerViewDelegate?
   @_Concurrency.MainActor(unsafe) public func loadData(bannerModel: SAAdvertisingSDK.BannerModel)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
@@ -39,6 +39,20 @@ extension SAAdvertisingSDK.BannerView : WebKit.WKNavigationDelegate {
 }
 extension SAAdvertisingSDK.BannerView : WebKit.WKUIDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+}
+public protocol BannerViewDelegate {
+  func onLoadDataSuccess(placementId: Swift.String)
+  func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
+  func onLoadWebContentSuccess(placementId: Swift.String)
+  func onLoadWebContentFail(placementId: Swift.String, reason: Swift.String)
+  func onCloseClick(placementId: Swift.String)
+}
+extension SAAdvertisingSDK.BannerViewDelegate {
+  public func onLoadDataSuccess(placementId: Swift.String)
+  public func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
+  public func onLoadWebContentSuccess(placementId: Swift.String)
+  public func onLoadWebContentFail(placementId: Swift.String, reason: Swift.String)
+  public func onCloseClick(placementId: Swift.String)
 }
 public enum CloseButtonType {
   case COUNTDOWN
@@ -72,23 +86,9 @@ public struct Size : Swift.CustomDebugStringConvertible {
   }
 }
 @_hasMissingDesignatedInitializers public class TechAdvertising {
-  public static let tracker: EcontentaLib.ECTracker
-  public static func initialize(storeUrl: Swift.String, apiKey: Swift.String, apiSecret: Swift.String, partnerId: Swift.String, tagId: Swift.String? = nil, uid: Swift.String, hashType: SAAdvertisingSDK.HashType = HashType.SHA_1, requestType: SAAdvertisingSDK.RequestType = RequestType.POST, enableExternalExceptionHandler: Swift.Bool = false, enableCompression: Swift.Bool = false, baseUrl: Swift.String? = nil, postUrl: Swift.String? = nil, getUrl: Swift.String? = nil, trackingSdkBaseUrl: Swift.String? = nil, enableLogsHandler: Swift.Bool = false)
+  public static let tracker: SATrackingSDK.TechTracker
+  public static func initialize(storeUrl: Swift.String, apiKey: Swift.String, apiSecret: Swift.String, partnerId: Swift.String, uid: Swift.String, baseUrl: Swift.String, trackingSdkBaseUrl: Swift.String, tagId: Swift.String? = nil, debugMode: Swift.Bool = false)
   @objc deinit
-}
-public protocol BannerViewDelegate {
-  func onLoadDataSuccess(placementId: Swift.String)
-  func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
-  func onLoadWebContentSuccess(placementId: Swift.String)
-  func onLoadWebContentFail(placementId: Swift.String, reason: Swift.String)
-  func onCloseClick(placementId: Swift.String)
-}
-extension SAAdvertisingSDK.BannerViewDelegate {
-  public func onLoadDataSuccess(placementId: Swift.String)
-  public func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
-  public func onLoadWebContentSuccess(placementId: Swift.String)
-  public func onLoadWebContentFail(placementId: Swift.String, reason: Swift.String)
-  public func onCloseClick(placementId: Swift.String)
 }
 extension SAAdvertisingSDK.CloseButtonType : Swift.Equatable {}
 extension SAAdvertisingSDK.CloseButtonType : Swift.Hashable {}

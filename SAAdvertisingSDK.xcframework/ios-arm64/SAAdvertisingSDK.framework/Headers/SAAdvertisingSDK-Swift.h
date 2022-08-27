@@ -217,8 +217,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 @class NSCoder;
 
-SWIFT_CLASS("_TtC16SAAdvertisingSDK10BannerView")
-@interface BannerView : UIView
+SWIFT_CLASS_NAMED("BannerView")
+@interface SAAdvertisingBannerView : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
 - (void)removeFromSuperview;
@@ -229,13 +229,13 @@ SWIFT_CLASS("_TtC16SAAdvertisingSDK10BannerView")
 @class WKNavigationAction;
 @class WKWindowFeatures;
 
-@interface BannerView (SWIFT_EXTENSION(SAAdvertisingSDK)) <WKUIDelegate>
+@interface SAAdvertisingBannerView (SWIFT_EXTENSION(SAAdvertisingSDK)) <WKUIDelegate>
 - (WKWebView * _Nullable)webView:(WKWebView * _Nonnull)webView createWebViewWithConfiguration:(WKWebViewConfiguration * _Nonnull)configuration forNavigationAction:(WKNavigationAction * _Nonnull)navigationAction windowFeatures:(WKWindowFeatures * _Nonnull)windowFeatures SWIFT_WARN_UNUSED_RESULT;
 @end
 
 @class WKNavigation;
 
-@interface BannerView (SWIFT_EXTENSION(SAAdvertisingSDK)) <WKNavigationDelegate>
+@interface SAAdvertisingBannerView (SWIFT_EXTENSION(SAAdvertisingSDK)) <WKNavigationDelegate>
 - (void)webView:(WKWebView * _Nonnull)webView didFinishNavigation:(WKNavigation * _Null_unspecified)navigation;
 - (void)webView:(WKWebView * _Nonnull)webView didFailNavigation:(WKNavigation * _Null_unspecified)navigation withError:(NSError * _Nonnull)error;
 @end
