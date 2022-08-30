@@ -87,7 +87,7 @@ public struct Size : Swift.CustomDebugStringConvertible {
 }
 @_hasMissingDesignatedInitializers public class TechAdvertising {
   public static let tracker: SATrackingSDK.TechTracker
-  public static func initialize(storeUrl: Swift.String, apiKey: Swift.String, apiSecret: Swift.String, partnerId: Swift.String, uid: Swift.String, baseUrl: Swift.String, trackingSdkBaseUrl: Swift.String, tagId: Swift.String? = nil, debugMode: Swift.Bool = false)
+  public static func initialize(storeUrl: Swift.String, apiKey: Swift.String, apiSecret: Swift.String, partnerId: Swift.String, uid: Swift.String, baseUrl: Swift.String, trackingSdkBaseUrl: Swift.String, debugMode: Swift.Bool = false)
   @objc deinit
 }
 extension SAAdvertisingSDK.CloseButtonType : Swift.Equatable {}
