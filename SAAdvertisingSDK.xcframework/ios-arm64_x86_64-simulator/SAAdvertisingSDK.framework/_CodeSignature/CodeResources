@@ -26,7 +26,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		I+JZMWYytV9ebEwvTgGuGYeJS/k=
+		o7bvwZcDj756Q1OnKAQa5avG3v4=
 		</data>
 		<key>Modules/SAAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Modules/SAAdvertisingSDK.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		GGqzOTzjAZC4uwT0On433meMc2U=
+		shjvADe44+UG5JxSPAE5MHSmVqE=
 		</data>
 		<key>Modules/SAAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/SAAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		zNzLOtK+zQ+EA7vygs1wFN3HaIs=
+		t7ewkSkpODl6l1Croe/shxxJY7w=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -112,7 +112,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nMkQnUMd5btSF45YoERUrFW1qNYHfJAb025Ih5bLzJQ=
+			dXkfKuLCilMDBysKb4AqL5V1vk4r6H+/Ecdkh6E+hlg=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -133,7 +133,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cAGX9ftVKQsfoTnYw63JOj/nn9cDDO5AWyzaMVaPs+4=
+			OT/zv9wtGgyJqlYeHeQowZLtSdEVE6GIBaQH8mmmeto=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
