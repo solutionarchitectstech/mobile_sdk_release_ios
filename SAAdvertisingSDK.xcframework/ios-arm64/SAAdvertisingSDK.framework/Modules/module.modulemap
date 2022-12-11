@@ -1,11 +1,11 @@
 framework module SAAdvertisingSDK {
-  umbrella header "SAAdvertisingSDK-umbrella.h"
+    umbrella header "SAAdvertisingSDK.h"
 
-  export *
-  module * { export * }
+    export *
+    module * { export * }
 }
 
 module SAAdvertisingSDK.Swift {
-    header "SAAdvertisingSDK-Swift.h"
-    requires objc
+  header "SAAdvertisingSDK-Swift.h"
+  requires objc
 }
