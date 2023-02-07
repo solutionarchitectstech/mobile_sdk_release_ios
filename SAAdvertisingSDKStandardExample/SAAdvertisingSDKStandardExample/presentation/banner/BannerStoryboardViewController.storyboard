@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Banner Storyboard View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="BannerStoryboardViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnH-ab-BF4" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                                <rect key="frame" x="0.0" y="48" width="276" height="135.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzM-Mi-at3" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                                <rect key="frame" x="310.5" y="48" width="103.5" height="203.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hV6-er-sGp" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                                <rect key="frame" x="0.0" y="658.5" width="103.5" height="203.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-Jq-ohQ" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                                <rect key="frame" x="138" y="726.5" width="276" height="135.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZTs-wV-pxW" userLabel="GoBack Button">
+                                <rect key="frame" x="158.5" y="437.5" width="97" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="IlH-iD-JHv"/>
+                                    <constraint firstAttribute="width" constant="97" id="qJT-by-Ys0"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="GO BACK"/>
+                                <connections>
+                                    <action selector="onGoBackClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bOR-Qh-Ig2"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="MnH-ab-BF4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="B68-qX-Mmw"/>
+                            <constraint firstItem="VRy-Jq-ohQ" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="1:6" id="HBY-TP-IPB"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="VRy-Jq-ohQ" secondAttribute="trailing" id="IrA-Xd-Qya"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZzM-Mi-at3" secondAttribute="trailing" id="Juh-Pe-cJp"/>
+                            <constraint firstItem="ZzM-Mi-at3" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="1:4" id="KpO-k5-T3A"/>
+                            <constraint firstItem="hV6-er-sGp" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="NfC-jc-ssw"/>
+                            <constraint firstItem="hV6-er-sGp" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="1:4" id="SoZ-FR-iLQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="VRy-Jq-ohQ" secondAttribute="bottom" id="YQX-PC-HAq"/>
+                            <constraint firstItem="MnH-ab-BF4" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="1:6" id="Z4X-pR-FgH"/>
+                            <constraint firstItem="hV6-er-sGp" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="1:4" id="ZHg-Sy-stv"/>
+                            <constraint firstItem="VRy-Jq-ohQ" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="2:3" id="cqE-ip-9o5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="hV6-er-sGp" secondAttribute="bottom" id="gDt-0g-nCo"/>
+                            <constraint firstItem="ZzM-Mi-at3" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ieV-Mo-xL8"/>
+                            <constraint firstItem="MnH-ab-BF4" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="j6t-KF-WlK"/>
+                            <constraint firstItem="MnH-ab-BF4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="jB2-Hv-Cyi"/>
+                            <constraint firstItem="ZTs-wV-pxW" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="sEf-9B-nbf"/>
+                            <constraint firstItem="MnH-ab-BF4" firstAttribute="width" secondItem="vDu-zF-Fre" secondAttribute="width" multiplier="2:3" id="vUV-GR-px4"/>
+                            <constraint firstItem="ZzM-Mi-at3" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="1:4" id="wbj-w0-8Se"/>
+                            <constraint firstItem="ZTs-wV-pxW" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="yFD-XG-dnw"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="bannerView1" destination="MnH-ab-BF4" id="n3P-xS-f4x"/>
+                        <outlet property="bannerView2" destination="ZzM-Mi-at3" id="iyO-4V-01T"/>
+                        <outlet property="bannerView3" destination="hV6-er-sGp" id="xvo-qF-h8u"/>
+                        <outlet property="bannerView4" destination="VRy-Jq-ohQ" id="kxI-Uu-h10"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.188405797101453" y="120.53571428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

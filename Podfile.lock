@@ -1,0 +1,16 @@
+PODS:
+  - SAAdvertisingSDKStandard (0.2.0)
+
+DEPENDENCIES:
+  - SAAdvertisingSDKStandard (from `./`)
+
+EXTERNAL SOURCES:
+  SAAdvertisingSDKStandard:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  SAAdvertisingSDKStandard: 3f57d6882c3b644b780a53ce8b034fcc3d081d26
+
+PODFILE CHECKSUM: 1b9a972a7a7046a407fceb7ce86946e421ba14d7
+
+COCOAPODS: 1.11.3
