@@ -20,7 +20,7 @@ import UIKit
 import SAAdvertisingSDKStandard
 import Toaster
 
-class BannerProgrammaticallyViewController: UIViewController {
+class NativeBannerProgrammaticallyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -37,7 +37,7 @@ class BannerProgrammaticallyViewController: UIViewController {
         let pxBanner1Width = Int(bannerView1.frame.size.width * mainScreenScale)
         let pxBanner1Height = Int(bannerView1.frame.size.height * mainScreenScale)
         bannerView1.loadData(query: SSPAdvertisementQuery(
-            placementId: "Banner-1 \(pxBanner1Width)x\(pxBanner1Height) (custom params) 1.99 USD",
+            placementId: "NativeBanner-1 \(pxBanner1Width)x\(pxBanner1Height) (custom params) 1.99 USD",
             refresh: 0,
             timeout: 0,
             closeButtonType: CloseButtonType.VISIBLE,
@@ -45,8 +45,8 @@ class BannerProgrammaticallyViewController: UIViewController {
             floorPrice: 1.99,
             currency: "USD",
             customParams: [
-                "custom_param_01": "Banner-1 (value01)",
-                "custom_param_02": "Banner-1 (value02)"
+                "custom_param_01": "NativeBanner-1 (value01)",
+                "custom_param_02": "NativeBanner-1 (value02)"
             ]
         ))
 
@@ -60,7 +60,7 @@ class BannerProgrammaticallyViewController: UIViewController {
         let pxBanner2Width = Int(bannerView2.frame.size.width * mainScreenScale)
         let pxBanner2Height = Int(bannerView2.frame.size.height * mainScreenScale)
         bannerView2.loadData(query: SSPAdvertisementQuery(
-            placementId: "Banner-2 \(pxBanner2Width)x\(pxBanner2Height) 2.84 RUB",
+            placementId: "NativeBanner-2 \(pxBanner2Width)x\(pxBanner2Height) 2.84 RUB",
             refresh: 0,
             timeout: 0,
             closeButtonType: CloseButtonType.VISIBLE,
@@ -76,12 +76,10 @@ class BannerProgrammaticallyViewController: UIViewController {
         )
         bannerView3.backgroundColor = .white
         bannerView3.delegate = self
-        bannerView3.isScrollEnabled = true
-        bannerView3.scaleToFit = false
         let pxBanner3Width = 1200
         let pxBanner3Height = 470
         bannerView3.loadData(query: SSPAdvertisementQuery(
-            placementId: "Banner-3 \(pxBanner3Width)x\(pxBanner3Height) (scrollable)",
+            placementId: "NativeBanner-3 \(pxBanner3Width)x\(pxBanner3Height)",
             refresh: 0,
             timeout: 0,
             closeButtonType: CloseButtonType.VISIBLE,
@@ -95,12 +93,10 @@ class BannerProgrammaticallyViewController: UIViewController {
         )
         bannerView4.backgroundColor = .white
         bannerView4.delegate = self
-        bannerView4.isScrollEnabled = true
-        bannerView4.scaleToFit = false
         let pxBanner4Width = 1200
         let pxBanner4Height = 470
         bannerView4.loadData(query: SSPAdvertisementQuery(
-            placementId: "Banner-4 \(pxBanner4Width)x\(pxBanner4Height) (scrollable)",
+            placementId: "NativeBanner-4 \(pxBanner4Width)x\(pxBanner4Height)",
             refresh: 0,
             timeout: 0,
             closeButtonType: CloseButtonType.VISIBLE,
@@ -112,11 +108,11 @@ class BannerProgrammaticallyViewController: UIViewController {
         to superview: UIView,
         position: (h: NSLayoutConstraint.Attribute, v: NSLayoutConstraint.Attribute),
         aspectRatio: (w: CGFloat, h: CGFloat)
-    ) -> BannerView {
-        // You can also use BannerView(frame: CGRect) constructor to instantiate the view
+    ) -> NativeBannerView {
+        // You can also use NativeBannerView(frame: CGRect) constructor to instantiate the view
         // with initial size/position.
-        // let bannerView = BannerView(frame: CGRect(x: 0, y: 0, width: 640, height: 480))
-        let bannerView = BannerView()
+        // let bannerView = NativeBannerView(frame: CGRect(x: 0, y: 0, width: 640, height: 480))
+        let bannerView = NativeBannerView()
 
         superview.addSubview(bannerView)
 
@@ -168,26 +164,26 @@ class BannerProgrammaticallyViewController: UIViewController {
 
 // MARK: - BannerViewDelegate
 
-extension BannerProgrammaticallyViewController: BannerViewDelegate {
+extension NativeBannerProgrammaticallyViewController: BannerViewDelegate {
 
     public func onLoadDataSuccess(placementId: String) {
-        print("Banner.onLoadDataSuccess[\(placementId)]")
+        print("NativeBanner.onLoadDataSuccess[\(placementId)]")
     }
 
     public func onLoadDataFail(placementId: String, reason: String) {
-        print("Banner.onLoadDataFail[\(placementId)]: \(reason)")
+        print("NativeBanner.onLoadDataFail[\(placementId)]: \(reason)")
     }
 
     public func onLoadContentSuccess(placementId: String) {
-        print("Banner.onLoadContentSuccess[\(placementId)]")
+        print("NativeBanner.onLoadContentSuccess[\(placementId)]")
     }
 
     public func onLoadContentFail(placementId: String, reason: String) {
-        print("Banner.onLoadContentFail[\(placementId)]: \(reason)")
+        print("NativeBanner.onLoadContentFail[\(placementId)]: \(reason)")
     }
 
     public func onClose(placementId: String) {
-        print("Banner.onClose[\(placementId)]")
+        print("NativeBanner.onClose[\(placementId)]")
     }
 
     public func onDebugSentLoadStatistic(placementId: String) {

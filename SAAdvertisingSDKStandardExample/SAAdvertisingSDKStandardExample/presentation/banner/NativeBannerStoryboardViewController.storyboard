@@ -9,27 +9,27 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Banner (storyboard)-->
+        <!--NativeBanner (storyboard)-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="BannerStoryboardViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="NativeBannerStoryboardViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnH-ab-BF4" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MnH-ab-BF4" customClass="NativeBannerView" customModule="SAAdvertisingSDKStandard">
                                 <rect key="frame" x="0.0" y="48" width="276" height="135.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzM-Mi-at3" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZzM-Mi-at3" customClass="NativeBannerView" customModule="SAAdvertisingSDKStandard">
                                 <rect key="frame" x="310.5" y="48" width="103.5" height="203.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hV6-er-sGp" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hV6-er-sGp" customClass="NativeBannerView" customModule="SAAdvertisingSDKStandard">
                                 <rect key="frame" x="0.0" y="658.5" width="103.5" height="203.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-Jq-ohQ" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VRy-Jq-ohQ" customClass="NativeBannerView" customModule="SAAdvertisingSDKStandard">
                                 <rect key="frame" x="138" y="726.5" width="276" height="135.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -56,12 +56,12 @@
                             <constraint firstItem="ZzM-Mi-at3" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="1:4" id="wbj-w0-8Se"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Banner (storyboard)" id="5PV-4S-mpM"/>
+                    <navigationItem key="navigationItem" title="NativeBanner (storyboard)" id="5PV-4S-mpM"/>
                     <connections>
-                        <outlet property="bannerView1" destination="MnH-ab-BF4" id="n3P-xS-f4x"/>
-                        <outlet property="bannerView2" destination="ZzM-Mi-at3" id="iyO-4V-01T"/>
-                        <outlet property="bannerView3" destination="hV6-er-sGp" id="xvo-qF-h8u"/>
-                        <outlet property="bannerView4" destination="VRy-Jq-ohQ" id="kxI-Uu-h10"/>
+                        <outlet property="bannerView1" destination="MnH-ab-BF4" id="BzZ-t5-Cj1"/>
+                        <outlet property="bannerView2" destination="ZzM-Mi-at3" id="AHX-kp-U7W"/>
+                        <outlet property="bannerView3" destination="hV6-er-sGp" id="knN-OY-IVB"/>
+                        <outlet property="bannerView4" destination="VRy-Jq-ohQ" id="TuQ-eg-4RE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

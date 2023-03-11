@@ -1,72 +1,174 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rhN-JL-5ah">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
+        <!--Navigation Controller-->
+        <scene sceneID="1RI-Qv-3cu">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                <navigationController id="rhN-JL-5ah" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ouh-cr-diX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Jfp-fH-Mdb" kind="relationship" relationship="rootViewController" id="uPm-Ke-Rto"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEJ-Jn-vdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-618" y="659"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="oCm-NB-u5i">
+            <objects>
+                <viewController id="Jfp-fH-Mdb" customClass="ViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zUA-L0-yxj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="UlM-pZ-Oai">
-                                <rect key="frame" x="74.5" y="252.5" width="226.5" height="162"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obp-op-XTe">
+                                <rect key="frame" x="0.0" y="44" width="375" height="311.5"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckx-xe-aTz">
-                                        <rect key="frame" x="0.0" y="0.0" width="226.5" height="34.5"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="k4B-uA-qfx">
+                                        <rect key="frame" x="0.0" y="0.0" width="187.5" height="206.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTML Banners" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-or-n8S">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72d-hY-jkd">
+                                                <rect key="frame" x="0.0" y="32.5" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Storyboard"/>
+                                                <connections>
+                                                    <action selector="onBannerStoryboardClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="WAP-sT-tBg"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTG-Pn-uzb">
+                                                <rect key="frame" x="0.0" y="79" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Programmatically"/>
+                                                <connections>
+                                                    <action selector="onBannerProgrammaticallyClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="72h-18-fBU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7A-EZ-3VM">
+                                                <rect key="frame" x="0.0" y="125.5" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Fullscreen"/>
+                                                <connections>
+                                                    <action selector="onFullScreenClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="NSF-f7-IBq"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxI-tc-Q9u">
+                                                <rect key="frame" x="0.0" y="172" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Scrollable list"/>
+                                                <connections>
+                                                    <action selector="onBannerScrollableListClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="Vca-fp-deB"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="seX-wU-ON3">
+                                        <rect key="frame" x="187.5" y="0.0" width="187.5" height="206.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Native Banners" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jo6-eq-zy6">
+                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-GU-n3W">
+                                                <rect key="frame" x="0.0" y="32.5" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Storyboard"/>
+                                                <connections>
+                                                    <action selector="onNativeBannerStoryboardClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="37E-vR-6sC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lt-FA-Lit">
+                                                <rect key="frame" x="0.0" y="79" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Programmatically"/>
+                                                <connections>
+                                                    <action selector="onNativeBannerProgrammaticallyClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="dpQ-LL-LQs"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="391-MO-47H">
+                                                <rect key="frame" x="0.0" y="125.5" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Fullscreen"/>
+                                                <connections>
+                                                    <action selector="onNativeFullScreenClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="7tU-Ch-qnt"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZW-Vj-6Du">
+                                                <rect key="frame" x="0.0" y="172" width="187.5" height="34.5"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Scrollable list"/>
+                                                <connections>
+                                                    <action selector="onNativeBannerScrollableListClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="kv3-Ra-ZEK"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="k4B-uA-qfx" firstAttribute="width" secondItem="Obp-op-XTe" secondAttribute="width" multiplier="1:2" id="2nN-tc-bMj"/>
+                                    <constraint firstItem="k4B-uA-qfx" firstAttribute="top" secondItem="Obp-op-XTe" secondAttribute="top" id="K2H-3t-DK8"/>
+                                    <constraint firstItem="seX-wU-ON3" firstAttribute="top" secondItem="Obp-op-XTe" secondAttribute="top" id="cFM-07-lwL"/>
+                                    <constraint firstItem="k4B-uA-qfx" firstAttribute="leading" secondItem="Obp-op-XTe" secondAttribute="leading" id="h4i-Bm-V1g"/>
+                                    <constraint firstAttribute="trailing" secondItem="seX-wU-ON3" secondAttribute="trailing" id="hAk-NJ-xKh"/>
+                                    <constraint firstItem="seX-wU-ON3" firstAttribute="width" secondItem="Obp-op-XTe" secondAttribute="width" multiplier="1:2" id="hQr-vc-nkz"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="pCh-N0-HPa">
+                                <rect key="frame" x="0.0" y="355.5" width="375" height="34.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbF-pJ-cJx">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="34.5"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Banner (storyboard)"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Video Player"/>
                                         <connections>
-                                            <action selector="onBannerStoryboardClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="exH-Ct-TNf"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3X-7e-dVe">
-                                        <rect key="frame" x="0.0" y="42.5" width="226.5" height="34.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Banner (programmatically)"/>
-                                        <connections>
-                                            <action selector="onBannerProgrammaticallyClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="GWc-rz-SMx"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AUH-HW-pBm">
-                                        <rect key="frame" x="0.0" y="85" width="226.5" height="34.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="FullScreen"/>
-                                        <connections>
-                                            <action selector="onFullScreenClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="etT-kh-gJ7"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEz-b4-1U3">
-                                        <rect key="frame" x="0.0" y="127.5" width="226.5" height="34.5"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="VideoPlayer"/>
-                                        <connections>
-                                            <action selector="onVideoPlayerClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Xsj-9Y-oh6"/>
+                                            <action selector="onVideoPlayerClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="NhS-lr-yXz"/>
                                         </connections>
                                     </button>
                                 </subviews>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="Rov-pU-9Rn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="UlM-pZ-Oai" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="O5x-Lf-gku"/>
-                            <constraint firstItem="UlM-pZ-Oai" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="YiP-UJ-CNA"/>
+                            <constraint firstItem="Obp-op-XTe" firstAttribute="top" secondItem="Rov-pU-9Rn" secondAttribute="top" id="0j2-Dh-xex"/>
+                            <constraint firstItem="pCh-N0-HPa" firstAttribute="top" secondItem="Obp-op-XTe" secondAttribute="bottom" id="B0M-nU-SxF"/>
+                            <constraint firstItem="Rov-pU-9Rn" firstAttribute="trailing" secondItem="Obp-op-XTe" secondAttribute="trailing" id="F1C-gJ-gbV"/>
+                            <constraint firstItem="Obp-op-XTe" firstAttribute="height" secondItem="Rov-pU-9Rn" secondAttribute="height" multiplier="1:2" id="Hdg-Nn-71H"/>
+                            <constraint firstItem="pCh-N0-HPa" firstAttribute="leading" secondItem="Rov-pU-9Rn" secondAttribute="leading" id="gGB-e6-kUH"/>
+                            <constraint firstItem="Obp-op-XTe" firstAttribute="leading" secondItem="Rov-pU-9Rn" secondAttribute="leading" id="oOz-QP-K8K"/>
+                            <constraint firstItem="Rov-pU-9Rn" firstAttribute="trailing" secondItem="pCh-N0-HPa" secondAttribute="trailing" id="wVN-xp-emD"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Home" id="dNd-lb-xOZ"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LAs-G4-YTq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="22" y="132"/>
+            <point key="canvasLocation" x="214" y="659"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

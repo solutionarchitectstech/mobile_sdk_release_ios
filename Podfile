@@ -9,6 +9,9 @@ workspace 'SAAdvertisingSDKStandardExample'
 target 'SAAdvertisingSDKStandardExample' do
   project 'SAAdvertisingSDKStandardExample/SAAdvertisingSDKStandardExample.xcodeproj'
   pod 'SAAdvertisingSDKStandard', :path => './'
+
+  # https://github.com/devxoul/Toaster - used to show toast message.
+  pod 'Toaster'
 end
 
 # fix that error https://github.com/CocoaPods/CocoaPods/issues/10185#issuecomment-722332929

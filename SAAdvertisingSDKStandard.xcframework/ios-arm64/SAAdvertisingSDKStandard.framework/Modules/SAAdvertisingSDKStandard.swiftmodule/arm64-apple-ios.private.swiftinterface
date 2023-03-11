@@ -40,12 +40,12 @@ public class VastClient {
 public struct RTBAdvertisementEntity : Swift.Identifiable {
   public let id: Swift.String
   public let placementId: Swift.String
-  public var cur: Swift.String
+  public var currency: Swift.String
   public var seatbid: [SAAdvertisingSDKStandard.RTBSeatbidEntity]
   public var vast: Swift.String? {
     get
   }
-  public init(id: Swift.String, placementId: Swift.String, cur: Swift.String, seatbid: [SAAdvertisingSDKStandard.RTBSeatbidEntity] = [])
+  public init(id: Swift.String, placementId: Swift.String, currency: Swift.String, seatbid: [SAAdvertisingSDKStandard.RTBSeatbidEntity] = [])
   public typealias ID = Swift.String
 }
 public struct RTBSeatbidEntity {
@@ -55,18 +55,18 @@ public struct RTBSeatbidEntity {
 }
 public struct RTBBidEntity : Swift.Identifiable {
   public let id: Swift.String
-  public var impid: Swift.String
+  public var impId: Swift.String
   public var price: Swift.Double
   public var adid: Swift.String
-  public var nurl: Swift.String
-  public var lurl: Swift.String
+  public var nUrl: Swift.String
+  public var lUrl: Swift.String
   public var adm: Swift.String
-  public var adomain: [Swift.String]
+  public var aDomain: [Swift.String]
   public var cat: [Swift.String]
   public var bidProtocol: Swift.Int
-  public var dealid: Swift.String
+  public var dealId: Swift.String
   public var exp: Swift.Int
-  public init(id: Swift.String, impid: Swift.String, price: Swift.Double = 0.0, adid: Swift.String, nurl: Swift.String = "", lurl: Swift.String = "", adm: Swift.String, adomain: [Swift.String] = [], cat: [Swift.String] = [], bidProtocol: Swift.Int, dealid: Swift.String, exp: Swift.Int)
+  public init(id: Swift.String, impId: Swift.String, price: Swift.Double = 0.0, adId: Swift.String, nUrl: Swift.String = "", lUrl: Swift.String = "", adm: Swift.String, aDomain: [Swift.String] = [], cat: [Swift.String] = [], bidProtocol: Swift.Int, dealId: Swift.String, exp: Swift.Int)
   public typealias ID = Swift.String
 }
 public struct VastMediaFiles : Swift.Codable {
@@ -80,14 +80,14 @@ extension SAAdvertisingSDKStandard.VastMediaFiles : Swift.Equatable {
 }
 public struct RTBAdvertisementQuery {
   public var placementId: Swift.String
-  public var minduration: Swift.Int
-  public var maxduration: Swift.Int
-  public var startdelay: SAAdvertisingSDKStandard.RTBStartDelay
-  public var maxextended: Swift.Int
-  public var maxseq: Swift.Int
+  public var minDuration: Swift.Int
+  public var maxDuration: Swift.Int
+  public var startDelay: SAAdvertisingSDKStandard.RTBStartDelay
+  public var maxExtended: Swift.Int
+  public var maxSeq: Swift.Int
   public var pmp: SAAdvertisingSDKStandard.RTBPmpEntity
-  public var bidfloor: Swift.Double
-  public var bidfloorcur: Swift.String
+  public var bidFloor: Swift.Double
+  public var bidFloorCurrency: Swift.String
   public var app: SAAdvertisingSDKStandard.RTBAppEntity
   public var user: SAAdvertisingSDKStandard.RTBUserEntity
   public var cur: [Swift.String]
@@ -96,7 +96,7 @@ public struct RTBAdvertisementQuery {
   public var regsExt: SAAdvertisingSDKStandard.RTBRegsExtEntity
   public var schain: SAAdvertisingSDKStandard.RTBSchainEntity
   public var customParams: [Swift.String : Swift.String]
-  public init(placementId: Swift.String, minduration: Swift.Int = 10, maxduration: Swift.Int = 32, startdelay: SAAdvertisingSDKStandard.RTBStartDelay = RTBStartDelay.MID_ROLL, maxextended: Swift.Int = 5, maxseq: Swift.Int = 1, pmp: SAAdvertisingSDKStandard.RTBPmpEntity, bidfloor: Swift.Double = 0, bidfloorcur: Swift.String = "USD", app: SAAdvertisingSDKStandard.RTBAppEntity, user: SAAdvertisingSDKStandard.RTBUserEntity, cur: [Swift.String], bcat: [Swift.String], badv: [Swift.String], regsExt: SAAdvertisingSDKStandard.RTBRegsExtEntity, schain: SAAdvertisingSDKStandard.RTBSchainEntity, customParams: [Swift.String : Swift.String] = [:])
+  public init(placementId: Swift.String, minDuration: Swift.Int = 10, maxDuration: Swift.Int = 32, startDelay: SAAdvertisingSDKStandard.RTBStartDelay = RTBStartDelay.MID_ROLL, maxExtended: Swift.Int = 5, maxSeq: Swift.Int = 1, pmp: SAAdvertisingSDKStandard.RTBPmpEntity, bidFloor: Swift.Double = 0, bidFloorCurrency: Swift.String = "USD", app: SAAdvertisingSDKStandard.RTBAppEntity, user: SAAdvertisingSDKStandard.RTBUserEntity, currencies: [Swift.String], bcat: [Swift.String], badv: [Swift.String], regsExt: SAAdvertisingSDKStandard.RTBRegsExtEntity, schain: SAAdvertisingSDKStandard.RTBSchainEntity, customParams: [Swift.String : Swift.String] = [:])
 }
 public struct RTBAppEntity : Swift.Identifiable {
   public let id: Swift.String
@@ -106,8 +106,8 @@ public struct RTBAppEntity : Swift.Identifiable {
   public var publisher: SAAdvertisingSDKStandard.RTBPublisherEntity
   public var content: SAAdvertisingSDKStandard.RTBContentEntity
   public var bundle: Swift.String
-  public var storeurl: Swift.String
-  public init(id: Swift.String, name: Swift.String, domain: Swift.String, cat: [Swift.Int] = [], publisher: SAAdvertisingSDKStandard.RTBPublisherEntity, content: SAAdvertisingSDKStandard.RTBContentEntity, bundle: Swift.String, storeurl: Swift.String = "")
+  public var storeUrl: Swift.String
+  public init(id: Swift.String, name: Swift.String, domain: Swift.String, cat: [Swift.Int] = [], publisher: SAAdvertisingSDKStandard.RTBPublisherEntity, content: SAAdvertisingSDKStandard.RTBContentEntity, bundle: Swift.String, storeUrl: Swift.String = "")
   public typealias ID = Swift.String
 }
 public struct RTBContentEntity {
@@ -129,10 +129,10 @@ public struct RTBPmpEntity {
 }
 public struct RTBDealEntity : Swift.Identifiable {
   public let id: Swift.String
-  public var bidfloor: Swift.Double
-  public var bidfloorcur: Swift.String
+  public var bidFloor: Swift.Double
+  public var bidFloorCurrency: Swift.String
   public var at: Swift.Int
-  public init(id: Swift.String, bidfloor: Swift.Double = 0.0, bidfloorcur: Swift.String = "USD", at: Swift.Int = 1)
+  public init(id: Swift.String, bidFloor: Swift.Double = 0.0, bidFloorCurrency: Swift.String = "USD", at: Swift.Int = 1)
   public typealias ID = Swift.String
 }
 public struct RTBRegsExtEntity {
@@ -168,9 +168,12 @@ public struct RTBUserExtEntity {
 @objc public protocol BannerViewDelegate {
   @objc optional func onLoadDataSuccess(placementId: Swift.String)
   @objc optional func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
-  @objc optional func onLoadWebContentSuccess(placementId: Swift.String)
-  @objc optional func onLoadWebContentFail(placementId: Swift.String, reason: Swift.String)
+  @objc optional func onLoadContentSuccess(placementId: Swift.String)
+  @objc optional func onLoadContentFail(placementId: Swift.String, reason: Swift.String)
   @objc optional func onClose(placementId: Swift.String)
+  @objc optional func onDebugSentLoadStatistic(placementId: Swift.String)
+  @objc optional func onDebugSentViewStatistic(placementId: Swift.String)
+  @objc optional func onDebugSentClickStatistic(placementId: Swift.String)
 }
 extension Swift.String {
   public var toSeconds: Swift.Double? {
@@ -432,6 +435,14 @@ extension SAAdvertisingSDKStandard.VastAd {
 extension SAAdvertisingSDKStandard.VastAd : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAd, b: SAAdvertisingSDKStandard.VastAd) -> Swift.Bool
 }
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseBannerView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) weak public var delegate: SAAdvertisingSDKStandard.BannerViewDelegate?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ layer: QuartzCore.CALayer, in ctx: CoreGraphics.CGContext)
+  @objc deinit
+}
 public struct VastStaticResource : Swift.Codable {
   public let creativeType: Swift.String
   public var url: Foundation.URL?
@@ -509,10 +520,12 @@ public struct TechAdvertisingOptions {
   public let partnerId: Swift.String
   public let uid: Swift.String
   public let storeUrl: Swift.String
-  public let endpointUrl: Swift.String
+  public let bannerUrl: Swift.String?
+  public let nativeBannerUrl: Swift.String?
+  public let videoUrl: Swift.String?
   public let debugMode: Swift.Bool
   public let httpHeaders: [Swift.String : Swift.String]
-  public init(partnerId: Swift.String, uid: Swift.String, storeUrl: Swift.String, endpointUrl: Swift.String, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
+  public init(partnerId: Swift.String, uid: Swift.String, storeUrl: Swift.String, bannerUrl: Swift.String? = nil, nativeBannerUrl: Swift.String? = nil, videoUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
 }
 @_hasMissingDesignatedInitializers public class TechAdvertising {
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
@@ -695,8 +708,7 @@ public struct VMAPAdSource : Swift.Codable {
 extension SAAdvertisingSDKStandard.VMAPAdSource {
   public init(attrDict: [Swift.String : Swift.String])
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: SAAdvertisingSDKStandard.BannerViewDelegate?
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BannerView : SAAdvertisingSDKStandard.BaseBannerView {
   @_Concurrency.MainActor(unsafe) public var isScrollEnabled: Swift.Bool {
     get
     set
@@ -805,6 +817,12 @@ public enum VMAPError : Swift.Error {
   public var hashValue: Swift.Int {
     get
   }
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NativeBannerView : SAAdvertisingSDKStandard.BaseBannerView {
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) public func loadData(endpoint: Swift.String = "", query: SAAdvertisingSDKStandard.SSPAdvertisementQuery)
+  @objc deinit
 }
 public struct VastCreative : Swift.Codable {
   public let id: Swift.String?

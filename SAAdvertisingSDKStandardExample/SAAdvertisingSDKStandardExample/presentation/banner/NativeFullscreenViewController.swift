@@ -20,9 +20,9 @@ import UIKit
 import SAAdvertisingSDKStandard
 import Toaster
 
-class FullscreenViewController: UIViewController {
+class NativeFullscreenViewController: UIViewController {
 
-    @IBOutlet weak var bannerView: BannerView!
+    @IBOutlet weak var bannerView: NativeBannerView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,33 +35,33 @@ class FullscreenViewController: UIViewController {
             timeout: 0,
             closeButtonType: CloseButtonType.VISIBLE,
             sizes: [SSPSizeEntity(width: 1200, height: 470)],
-            customParams: ["example": "Fullscreen Banner"]
+            customParams: ["example": "Fullscreen NativeBanner"]
         ))
     }
 }
 
 // MARK: - BannerViewDelegate
 
-extension FullscreenViewController: BannerViewDelegate {
+extension NativeFullscreenViewController: BannerViewDelegate {
 
     public func onLoadDataSuccess(placementId: String) {
-        print("Banner.onLoadDataSuccess[\(placementId)]")
+        print("NativeBanner.onLoadDataSuccess[\(placementId)]")
     }
 
     public func onLoadDataFail(placementId: String, reason: String) {
-        print("Banner.onLoadDataFail[\(placementId)]: \(reason)")
+        print("NativeBanner.onLoadDataFail[\(placementId)]: \(reason)")
     }
 
     public func onLoadContentSuccess(placementId: String) {
-        print("Banner.onLoadContentSuccess[\(placementId)]")
+        print("NativeBanner.onLoadContentSuccess[\(placementId)]")
     }
 
     public func onLoadContentFail(placementId: String, reason: String) {
-        print("Banner.onLoadContentFail[\(placementId)]: \(reason)")
+        print("NativeBanner.onLoadContentFail[\(placementId)]: \(reason)")
     }
 
     public func onClose(placementId: String) {
-        print("Banner.onClose[\(placementId)]")
+        print("NativeBanner.onClose[\(placementId)]")
     }
 
     public func onDebugSentLoadStatistic(placementId: String) {
