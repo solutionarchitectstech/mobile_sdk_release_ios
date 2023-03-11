@@ -18,6 +18,7 @@
 
 import UIKit
 import SAAdvertisingSDKStandard
+import Toaster
 
 
 class BannerStoryboardViewController: UIViewController {
@@ -91,13 +92,12 @@ class BannerStoryboardViewController: UIViewController {
             sizes: [SSPSizeEntity(width: pxBanner4Width, height: pxBanner4Height)]
         ))
     }
-
-    @IBAction func onGoBackClick(_ sender: UIButton) {
-        dismiss(animated: true)
-    }
 }
 
+// MARK: - BannerViewDelegate
+
 extension BannerStoryboardViewController: BannerViewDelegate {
+
     public func onLoadDataSuccess(placementId: String) {
         print("Banner.onLoadDataSuccess[\(placementId)]")
     }
@@ -106,15 +106,27 @@ extension BannerStoryboardViewController: BannerViewDelegate {
         print("Banner.onLoadDataFail[\(placementId)]: \(reason)")
     }
 
-    public func onLoadWebContentSuccess(placementId: String) {
-        print("Banner.onLoadWebContentSuccess[\(placementId)]")
+    public func onLoadContentSuccess(placementId: String) {
+        print("Banner.onLoadContentSuccess[\(placementId)]")
     }
 
-    public func onLoadWebContentFail(placementId: String, reason: String) {
-        print("Banner.onLoadWebContentFail[\(placementId)]: \(reason)")
+    public func onLoadContentFail(placementId: String, reason: String) {
+        print("Banner.onLoadContentFail[\(placementId)]: \(reason)")
     }
 
     public func onClose(placementId: String) {
         print("Banner.onClose[\(placementId)]")
+    }
+
+    public func onDebugSentLoadStatistic(placementId: String) {
+        Toast(text: "LOAD statistic: \(placementId)", duration: Delay.short).show()
+    }
+
+    public func onDebugSentViewStatistic(placementId: String) {
+        Toast(text: "VIEW statistic: \(placementId)", duration: Delay.short).show()
+    }
+
+    public func onDebugSentClickStatistic(placementId: String) {
+        Toast(text: "CLICK statistic: \(placementId)", duration: Delay.short).show()
     }
 }

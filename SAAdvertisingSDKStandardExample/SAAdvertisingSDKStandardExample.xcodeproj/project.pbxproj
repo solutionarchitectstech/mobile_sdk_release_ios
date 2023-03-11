@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */; };
 		105B7C16298B74BA0006805F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C15298B74BA0006805F /* AppDelegate.swift */; };
 		105B7C1A298B74BA0006805F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C19298B74BA0006805F /* ViewController.swift */; };
 		105B7C1D298B74BA0006805F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C1B298B74BA0006805F /* Main.storyboard */; };
@@ -20,7 +21,16 @@
 		105B7C3E298B760E0006805F /* BannerProgrammaticallyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C34298B760E0006805F /* BannerProgrammaticallyViewController.storyboard */; };
 		105B7C3F298B760E0006805F /* BannerStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C35298B760E0006805F /* BannerStoryboardViewController.storyboard */; };
 		105B7C40298B760E0006805F /* FullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C36298B760E0006805F /* FullscreenViewController.swift */; };
-		75A790A3BFC3697AE94C7AA1 /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11FC326DE4FFC589AAEA4BD4 /* Pods_SAAdvertisingSDKStandardExample.framework */; };
+		10F60567299CC63500DCE803 /* BannerScrollableListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F60566299CC63500DCE803 /* BannerScrollableListViewController.storyboard */; };
+		10F60569299CC64900DCE803 /* BannerScrollableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60568299CC64900DCE803 /* BannerScrollableListViewController.swift */; };
+		10FBD3F129BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3F029BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift */; };
+		10FBD3F529BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3F429BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard */; };
+		10FBD3F729BA5746005686F3 /* NativeFullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3F629BA5746005686F3 /* NativeFullscreenViewController.swift */; };
+		10FBD3F929BA57D6005686F3 /* NativeFullscreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3F829BA57D6005686F3 /* NativeFullscreenViewController.storyboard */; };
+		10FBD3FB29BA608F005686F3 /* NativeBannerScrollableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FA29BA608F005686F3 /* NativeBannerScrollableListViewController.swift */; };
+		10FBD3FD29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3FC29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard */; };
+		10FBD3FF29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */; };
+		10FBD40129BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,9 +52,19 @@
 		105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		11FC326DE4FFC589AAEA4BD4 /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D2DC7F4B8CA3851F3AB3D98A /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; sourceTree = "<group>"; };
-		E2B55CBC59232326F725DA02 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; sourceTree = "<group>"; };
+		10F60566299CC63500DCE803 /* BannerScrollableListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BannerScrollableListViewController.storyboard; sourceTree = "<group>"; };
+		10F60568299CC64900DCE803 /* BannerScrollableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerScrollableListViewController.swift; sourceTree = "<group>"; };
+		10FBD3F029BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerProgrammaticallyViewController.swift; sourceTree = "<group>"; };
+		10FBD3F429BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeBannerProgrammaticallyViewController.storyboard; sourceTree = "<group>"; };
+		10FBD3F629BA5746005686F3 /* NativeFullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeFullscreenViewController.swift; sourceTree = "<group>"; };
+		10FBD3F829BA57D6005686F3 /* NativeFullscreenViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeFullscreenViewController.storyboard; sourceTree = "<group>"; };
+		10FBD3FA29BA608F005686F3 /* NativeBannerScrollableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerScrollableListViewController.swift; sourceTree = "<group>"; };
+		10FBD3FC29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeBannerScrollableListViewController.storyboard; sourceTree = "<group>"; };
+		10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerStoryboardViewController.swift; sourceTree = "<group>"; };
+		10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeBannerStoryboardViewController.storyboard; sourceTree = "<group>"; };
+		46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E7BE17D2AB7A1726D03EAB79 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; sourceTree = "<group>"; };
+		FFF2567D08316F9203899A91 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75A790A3BFC3697AE94C7AA1 /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
+				07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +85,7 @@
 				105B7C14298B74BA0006805F /* SAAdvertisingSDKStandardExample */,
 				105B7C13298B74BA0006805F /* Products */,
 				105B7C41298BB7BC0006805F /* Frameworks */,
-				C142FC81732691F146D7BD13 /* Pods */,
+				F7EC4D6643F65D1D0B9F909C /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +129,16 @@
 				105B7C33298B760E0006805F /* BannerStoryboardViewController.swift */,
 				105B7C32298B760E0006805F /* FullscreenViewController.storyboard */,
 				105B7C36298B760E0006805F /* FullscreenViewController.swift */,
+				10F60566299CC63500DCE803 /* BannerScrollableListViewController.storyboard */,
+				10F60568299CC64900DCE803 /* BannerScrollableListViewController.swift */,
+				10FBD3F429BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard */,
+				10FBD3F029BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift */,
+				10FBD3F829BA57D6005686F3 /* NativeFullscreenViewController.storyboard */,
+				10FBD3F629BA5746005686F3 /* NativeFullscreenViewController.swift */,
+				10FBD3FC29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard */,
+				10FBD3FA29BA608F005686F3 /* NativeBannerScrollableListViewController.swift */,
+				10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */,
+				10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */,
 			);
 			path = banner;
 			sourceTree = "<group>";
@@ -119,7 +149,7 @@
 				10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */,
 				10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */,
 				105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */,
-				11FC326DE4FFC589AAEA4BD4 /* Pods_SAAdvertisingSDKStandardExample.framework */,
+				46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -133,11 +163,11 @@
 			path = presentation;
 			sourceTree = "<group>";
 		};
-		C142FC81732691F146D7BD13 /* Pods */ = {
+		F7EC4D6643F65D1D0B9F909C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D2DC7F4B8CA3851F3AB3D98A /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */,
-				E2B55CBC59232326F725DA02 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */,
+				FFF2567D08316F9203899A91 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */,
+				E7BE17D2AB7A1726D03EAB79 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */,
 			);
 			name = Pods;
 			path = ../Pods;
@@ -150,11 +180,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 105B7C26298B74BB0006805F /* Build configuration list for PBXNativeTarget "SAAdvertisingSDKStandardExample" */;
 			buildPhases = (
-				0BCDAE37B909E7A7626BBC2B /* [CP] Check Pods Manifest.lock */,
+				FD630E6CF629744792ED8860 /* [CP] Check Pods Manifest.lock */,
 				105B7C0E298B74BA0006805F /* Sources */,
 				105B7C0F298B74BA0006805F /* Frameworks */,
 				105B7C10298B74BA0006805F /* Resources */,
-				80E364D494853624D4C2CCE1 /* [CP] Embed Pods Frameworks */,
+				4066D57C336DDF92D559BAEC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,20 +233,42 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10F60567299CC63500DCE803 /* BannerScrollableListViewController.storyboard in Resources */,
 				105B7C22298B74BB0006805F /* LaunchScreen.storyboard in Resources */,
 				105B7C1F298B74BB0006805F /* Assets.xcassets in Resources */,
+				10FBD40129BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard in Resources */,
+				10FBD3FD29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard in Resources */,
 				105B7C3C298B760E0006805F /* FullscreenViewController.storyboard in Resources */,
 				105B7C37298B760E0006805F /* VideoPlayerViewController.storyboard in Resources */,
 				105B7C1D298B74BA0006805F /* Main.storyboard in Resources */,
 				105B7C3F298B760E0006805F /* BannerStoryboardViewController.storyboard in Resources */,
+				10FBD3F929BA57D6005686F3 /* NativeFullscreenViewController.storyboard in Resources */,
 				105B7C3E298B760E0006805F /* BannerProgrammaticallyViewController.storyboard in Resources */,
+				10FBD3F529BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0BCDAE37B909E7A7626BBC2B /* [CP] Check Pods Manifest.lock */ = {
+		4066D57C336DDF92D559BAEC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD630E6CF629744792ED8860 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -238,23 +290,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		80E364D494853624D4C2CCE1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -264,10 +299,15 @@
 			files = (
 				105B7C3D298B760E0006805F /* BannerStoryboardViewController.swift in Sources */,
 				105B7C3B298B760E0006805F /* BannerProgrammaticallyViewController.swift in Sources */,
+				10FBD3F729BA5746005686F3 /* NativeFullscreenViewController.swift in Sources */,
+				10F60569299CC64900DCE803 /* BannerScrollableListViewController.swift in Sources */,
+				10FBD3FB29BA608F005686F3 /* NativeBannerScrollableListViewController.swift in Sources */,
 				105B7C38298B760E0006805F /* VideoPlayerViewController.swift in Sources */,
+				10FBD3FF29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift in Sources */,
 				105B7C1A298B74BA0006805F /* ViewController.swift in Sources */,
 				105B7C40298B760E0006805F /* FullscreenViewController.swift in Sources */,
 				105B7C16298B74BA0006805F /* AppDelegate.swift in Sources */,
+				10FBD3F129BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,13 +449,13 @@
 		};
 		105B7C27298B74BB0006805F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D2DC7F4B8CA3851F3AB3D98A /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */;
+			baseConfigurationReference = FFF2567D08316F9203899A91 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.1;
-				DEVELOPMENT_TEAM = 3HXPZFA9AN;
+				DEVELOPMENT_TEAM = 99496FTLM8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -439,13 +479,13 @@
 		};
 		105B7C28298B74BB0006805F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E2B55CBC59232326F725DA02 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */;
+			baseConfigurationReference = E7BE17D2AB7A1726D03EAB79 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.1;
-				DEVELOPMENT_TEAM = 3HXPZFA9AN;
+				DEVELOPMENT_TEAM = 99496FTLM8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

@@ -32,7 +32,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             partnerId: "1",
             uid: "uid@google.com",
             storeUrl: "",
-            endpointUrl: "https://YOUR_ENDPOINT",
+            bannerUrl: "https://YOUR_BANNER_ENDPOINT",
+            nativeBannerUrl: "https://YOUR_NATIVE_BANNER_ENDPOINT",
+            videoUrl: "https://YOUR_MEDIA_ENDPOINT",
             debugMode: true,
             httpHeaders: [
                 "Authorization": "Bearer YOUR_TOKEN"

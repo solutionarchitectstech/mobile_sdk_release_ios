@@ -31,8 +31,7 @@ class ViewController: UIViewController {
         guard let vc = vc else {
             return
         }
-        vc.modalPresentationStyle = .fullScreen
-        present(vc, animated: true)
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 
     @IBAction func onBannerStoryboardClick(_ sender: Any) {
@@ -45,6 +44,26 @@ class ViewController: UIViewController {
 
     @IBAction func onFullScreenClick(_ sender: Any) {
         presentViewControllerBy(name: "FullscreenViewController")
+    }
+
+    @IBAction func onBannerScrollableListClick(_ sender: Any) {
+        presentViewControllerBy(name: "BannerScrollableListViewController")
+    }
+
+    @IBAction func onNativeBannerStoryboardClick(_ sender: Any) {
+        presentViewControllerBy(name: "NativeBannerStoryboardViewController")
+    }
+
+    @IBAction func onNativeBannerProgrammaticallyClick(_ sender: Any) {
+        presentViewControllerBy(name: "NativeBannerProgrammaticallyViewController")
+    }
+
+    @IBAction func onNativeFullScreenClick(_ sender: Any) {
+        presentViewControllerBy(name: "NativeFullscreenViewController")
+    }
+
+    @IBAction func onNativeBannerScrollableListClick(_ sender: Any) {
+        presentViewControllerBy(name: "NativeBannerScrollableListViewController")
     }
 
     @IBAction func onVideoPlayerClick(_ sender: Any) {

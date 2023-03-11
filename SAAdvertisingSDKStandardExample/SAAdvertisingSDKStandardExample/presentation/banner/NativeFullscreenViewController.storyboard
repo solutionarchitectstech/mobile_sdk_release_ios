@@ -9,15 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Banner (fullscreen)-->
+        <!--NativeBanner (fullscreen)-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="FullscreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="FullscreenViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FullscreenViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="NativeFullscreenViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhx-od-3U1" customClass="BannerView" customModule="SAAdvertisingSDKStandard">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lhx-od-3U1" customClass="NativeBannerView" customModule="SAAdvertisingSDKStandard">
                                 <rect key="frame" x="0.0" y="48" width="414" height="814"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
@@ -31,7 +31,7 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Lhx-od-3U1" secondAttribute="bottom" id="sq0-p0-RIX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Banner (fullscreen)" id="YTp-Iv-7Op"/>
+                    <navigationItem key="navigationItem" title="NativeBanner (fullscreen)" id="YTp-Iv-7Op"/>
                     <connections>
                         <outlet property="bannerView" destination="Lhx-od-3U1" id="fYc-yp-m6s"/>
                     </connections>

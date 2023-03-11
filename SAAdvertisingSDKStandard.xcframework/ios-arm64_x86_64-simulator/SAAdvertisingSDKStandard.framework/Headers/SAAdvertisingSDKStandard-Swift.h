@@ -231,6 +231,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreGraphics;
 @import Foundation;
 @import UIKit;
 @import WebKit;
@@ -255,9 +256,19 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class NSCoder;
+@class CALayer;
+
+SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard14BaseBannerView")
+@interface BaseBannerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+- (void)drawLayer:(CALayer * _Nonnull)layer inContext:(CGContextRef _Nonnull)ctx;
+@end
+
 
 SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard10BannerView")
-@interface BannerView : UIView
+@interface BannerView : BaseBannerView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -285,11 +296,23 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18BannerViewDelegate_")
 @optional
 - (void)onLoadDataSuccessWithPlacementId:(NSString * _Nonnull)placementId;
 - (void)onLoadDataFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
-- (void)onLoadWebContentSuccessWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onLoadWebContentFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
+- (void)onLoadContentSuccessWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
 - (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onDebugSentLoadStatisticWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onDebugSentViewStatisticWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onDebugSentClickStatisticWithPlacementId:(NSString * _Nonnull)placementId;
 @end
 
+
+
+
+
+SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard16NativeBannerView")
+@interface NativeBannerView : BaseBannerView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
@@ -301,7 +324,6 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
 - (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId error:(NSError * _Nonnull)error;
 - (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
 @end
-
 
 
 @class UITouch;
@@ -555,6 +577,7 @@ using UInt = size_t;
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
 @import CoreFoundation;
+@import CoreGraphics;
 @import Foundation;
 @import UIKit;
 @import WebKit;
@@ -579,9 +602,19 @@ using UInt = size_t;
 
 #if defined(__OBJC__)
 @class NSCoder;
+@class CALayer;
+
+SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard14BaseBannerView")
+@interface BaseBannerView : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+- (void)drawRect:(CGRect)rect;
+- (void)drawLayer:(CALayer * _Nonnull)layer inContext:(CGContextRef _Nonnull)ctx;
+@end
+
 
 SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard10BannerView")
-@interface BannerView : UIView
+@interface BannerView : BaseBannerView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -609,11 +642,23 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18BannerViewDelegate_")
 @optional
 - (void)onLoadDataSuccessWithPlacementId:(NSString * _Nonnull)placementId;
 - (void)onLoadDataFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
-- (void)onLoadWebContentSuccessWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onLoadWebContentFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
+- (void)onLoadContentSuccessWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
 - (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onDebugSentLoadStatisticWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onDebugSentViewStatisticWithPlacementId:(NSString * _Nonnull)placementId;
+- (void)onDebugSentClickStatisticWithPlacementId:(NSString * _Nonnull)placementId;
 @end
 
+
+
+
+
+SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard16NativeBannerView")
+@interface NativeBannerView : BaseBannerView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
 
 
 SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
@@ -625,7 +670,6 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
 - (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId error:(NSError * _Nonnull)error;
 - (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
 @end
-
 
 
 @class UITouch;

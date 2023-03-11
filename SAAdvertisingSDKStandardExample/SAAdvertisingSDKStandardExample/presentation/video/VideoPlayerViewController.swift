@@ -28,7 +28,7 @@ class VideoPlayerViewController: UIViewController {
         super.viewDidLoad()
 
         videoPlayerView.delegate = self
-        videoPlayerView.loadData(endpoint: "/vast_2creo", placementId: "TestVideo")
+        videoPlayerView.loadData(placementId: "TestVideo")
     }
 }
 
@@ -51,7 +51,6 @@ extension VideoPlayerViewController: PlayerViewDelegate {
     
     func onClose(placementId: String) {
         print("VideoPlayer.onClose[\(placementId)]")
-        dismiss(animated: true)
     }
 }
 
