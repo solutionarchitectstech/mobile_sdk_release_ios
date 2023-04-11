@@ -113,7 +113,7 @@ extension BannerScrollableListViewController {
         let bannerView = BannerView()
         bannerView.delegate = self
         if let query = banner.query {
-            bannerView.loadData(query: query)
+            bannerView.loadData(refresh: 10.0, query: query)
         }
         bannerViews[banner.id] = bannerView
 
@@ -251,8 +251,6 @@ extension BannerScrollableListViewController {
                 if i == num / 2 {
                     query = SSPAdvertisementQuery(
                         placementId: id,
-                        refresh: 0,
-                        timeout: 0,
                         closeButtonType: CloseButtonType.VISIBLE,
                         sizes: [SSPSizeEntity(width: 1200, height: 470)]
                     )
