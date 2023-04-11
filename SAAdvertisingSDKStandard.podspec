@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SAAdvertisingSDKStandard"
-  s.version          = "0.3.0"
+  s.version          = "0.3.1"
   s.summary          = "#{s.name} (iOS) #{s.version}"
 
   s.homepage         = "https://github.com/solutionarchitectstech/mobile_sdk_release_ios"
@@ -21,4 +21,6 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '12.0'
   s.swift_version = '5.0'
+
+  s.frameworks = 'WebKit'
 end

@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
+// swift-compiler-version: Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)
 // swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SAAdvertisingSDKStandard
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
@@ -15,8 +15,8 @@ import _StringProcessing
 public struct VastAdCategory : Swift.Codable {
   public let authority: Foundation.URL?
   public var category: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastAdCategory : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAdCategory, b: SAAdvertisingSDKStandard.VastAdCategory) -> Swift.Bool
@@ -31,10 +31,10 @@ public struct VastClientOptions {
 public class VastClient {
   public static var trackingLogOutput: ((Swift.String, [Foundation.URL]) -> ())?
   public init(options: SAAdvertisingSDKStandard.VastClientOptions = VastClientOptions())
-  public func parseVast(withContentsOf data: Swift.String, completion: @escaping (SAAdvertisingSDKStandard.VastModel?, Swift.Error?) -> ())
-  public func parseVast(withContentsOf url: Foundation.URL, completion: @escaping (SAAdvertisingSDKStandard.VastModel?, Swift.Error?) -> ())
+  public func parseVast(withContentsOf data: Swift.String, completion: @escaping (SAAdvertisingSDKStandard.VastModel?, (any Swift.Error)?) -> ())
+  public func parseVast(withContentsOf url: Foundation.URL, completion: @escaping (SAAdvertisingSDKStandard.VastModel?, (any Swift.Error)?) -> ())
   public func parseVMAP(withContentsOf url: Foundation.URL) throws -> SAAdvertisingSDKStandard.VMAPModel
-  public func parseVast(withContentsOf url: Foundation.URL, testBundle: Foundation.Bundle, completion: @escaping (SAAdvertisingSDKStandard.VastModel?, Swift.Error?) -> ())
+  public func parseVast(withContentsOf url: Foundation.URL, testBundle: Foundation.Bundle, completion: @escaping (SAAdvertisingSDKStandard.VastModel?, (any Swift.Error)?) -> ())
   @objc deinit
 }
 public struct RTBAdvertisementEntity : Swift.Identifiable {
@@ -72,8 +72,8 @@ public struct RTBBidEntity : Swift.Identifiable {
 public struct VastMediaFiles : Swift.Codable {
   public var mediaFiles: [SAAdvertisingSDKStandard.VastMediaFile]
   public var interactiveCreativeFiles: [SAAdvertisingSDKStandard.VastInteractiveCreativeFile]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastMediaFiles : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastMediaFiles, b: SAAdvertisingSDKStandard.VastMediaFiles) -> Swift.Bool
@@ -165,6 +165,13 @@ public struct RTBUserExtEntity {
   public let consent: Swift.String
   public init(consent: Swift.String)
 }
+public struct InitConfigCoreEntity {
+  public let bannerUrl: Swift.String?
+  public let nativeBannerUrl: Swift.String?
+  public let audioUrl: Swift.String?
+  public let videoUrl: Swift.String?
+  public init(bannerUrl: Swift.String? = nil, nativeBannerUrl: Swift.String? = nil, audioUrl: Swift.String? = nil, videoUrl: Swift.String? = nil)
+}
 @objc public protocol BannerViewDelegate {
   @objc optional func onLoadDataSuccess(placementId: Swift.String)
   @objc optional func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
@@ -183,8 +190,8 @@ extension Swift.String {
 public struct VastImpression : Swift.Codable {
   public let id: Swift.String?
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastImpression {
   public init(attrDict: [Swift.String : Swift.String])
@@ -206,8 +213,8 @@ public struct VastModel : Swift.Codable {
   public let version: Swift.String
   public var ads: [SAAdvertisingSDKStandard.VastAd]
   public var errors: [Foundation.URL]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastModel {
   public init(attrDict: [Swift.String : Swift.String])
@@ -231,8 +238,8 @@ public struct VastWrapper : Swift.Codable {
   public let allowMultipleAds: Swift.Bool?
   public let fallbackOnNoAd: Swift.Bool?
   public var adTagUri: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastWrapper : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastWrapper, b: SAAdvertisingSDKStandard.VastWrapper) -> Swift.Bool
@@ -251,8 +258,8 @@ public struct VastMediaFile : Swift.Codable {
   public let maintainAspectRatio: Swift.Bool?
   public let apiFramework: Swift.String?
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastMediaFile {
   public init(attrDict: [Swift.String : Swift.String])
@@ -262,14 +269,12 @@ extension SAAdvertisingSDKStandard.VastMediaFile : Swift.Equatable {
 }
 public struct SSPAdvertisementQuery {
   public var placementId: Swift.String
-  public var refresh: Swift.Int
-  public var timeout: Swift.Int
   public var closeButtonType: SAAdvertisingSDKStandard.CloseButtonType
   public var sizes: [SAAdvertisingSDKStandard.SSPSizeEntity]
   public var floorPrice: Swift.Double?
   public var currency: Swift.String?
   public var customParams: [Swift.String : Swift.String]
-  public init(placementId: Swift.String, refresh: Swift.Int, timeout: Swift.Int, closeButtonType: SAAdvertisingSDKStandard.CloseButtonType, sizes: [SAAdvertisingSDKStandard.SSPSizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
+  public init(placementId: Swift.String, closeButtonType: SAAdvertisingSDKStandard.CloseButtonType, sizes: [SAAdvertisingSDKStandard.SSPSizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
 }
 public struct SSPSizeEntity : Swift.CustomDebugStringConvertible {
   public let width: Swift.Int
@@ -292,8 +297,8 @@ public enum RTBGender : Swift.String, Swift.Encodable {
 public struct VastExtension : Swift.Codable {
   public let type: Swift.String
   public var creativeParameters: [SAAdvertisingSDKStandard.VastCreativeParameter]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastExtension {
   public init(attrDict: [Swift.String : Swift.String])
@@ -305,24 +310,24 @@ public struct VastInteractiveCreativeFile : Swift.Codable {
   public let type: Swift.String?
   public let apiFramework: Swift.String?
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastInteractiveCreativeFile : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastInteractiveCreativeFile, b: SAAdvertisingSDKStandard.VastInteractiveCreativeFile) -> Swift.Bool
 }
 @objc public protocol PlayerViewDelegate {
   @objc optional func onLoadDataSuccess(placementId: Swift.String)
-  @objc optional func onLoadDataFail(placementId: Swift.String, error: Swift.Error)
+  @objc optional func onLoadDataFail(placementId: Swift.String, error: any Swift.Error)
   @objc optional func onLoadContentSuccess(placementId: Swift.String)
-  @objc optional func onLoadContentFail(placementId: Swift.String, error: Swift.Error)
+  @objc optional func onLoadContentFail(placementId: Swift.String, error: any Swift.Error)
   @objc optional func onClose(placementId: Swift.String)
 }
 public struct VastResource : Swift.Codable {
   public let apiFramework: Swift.String?
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastResource : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastResource, b: SAAdvertisingSDKStandard.VastResource) -> Swift.Bool
@@ -347,8 +352,8 @@ public struct VastCreativeParameter : Swift.Codable {
   public var name: Swift.String
   public var type: Swift.String
   public var content: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastCreativeParameter {
   public init(attrDict: [Swift.String : Swift.String])
@@ -382,8 +387,8 @@ public enum TrackingError : Swift.Error {
 public struct VMAPModel : Swift.Codable {
   public let version: Swift.String
   public var adBreaks: [SAAdvertisingSDKStandard.VMAPAdBreak]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VMAPModel {
   public init(attrDict: [Swift.String : Swift.String])
@@ -426,8 +431,8 @@ public struct VastAd : Swift.Codable {
   public var advertiser: Swift.String?
   public var surveys: [SAAdvertisingSDKStandard.VastSurvey]
   public var wrapper: SAAdvertisingSDKStandard.VastWrapper?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastAd {
   public init(attrDict: [Swift.String : Swift.String])
@@ -436,18 +441,19 @@ extension SAAdvertisingSDKStandard.VastAd : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAd, b: SAAdvertisingSDKStandard.VastAd) -> Swift.Bool
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseBannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: SAAdvertisingSDKStandard.BannerViewDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any SAAdvertisingSDKStandard.BannerViewDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ layer: QuartzCore.CALayer, in ctx: CoreGraphics.CGContext)
+  @_Concurrency.MainActor(unsafe) public func loadData(endpoint: Swift.String = "", refresh: Foundation.TimeInterval = 0.0, query: SAAdvertisingSDKStandard.SSPAdvertisementQuery)
   @objc deinit
 }
 public struct VastStaticResource : Swift.Codable {
   public let creativeType: Swift.String
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastStaticResource, b: SAAdvertisingSDKStandard.VastStaticResource) -> Swift.Bool
@@ -455,8 +461,8 @@ extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
 public struct VastAdParameters : Swift.Codable {
   public let xmlEncoded: Swift.String?
   public var content: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastAdParameters : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAdParameters, b: SAAdvertisingSDKStandard.VastAdParameters) -> Swift.Bool
@@ -476,8 +482,8 @@ public struct VastPricing : Swift.Codable {
   public let model: SAAdvertisingSDKStandard.PricingModel
   public let currency: Swift.String
   public var pricing: Swift.Double?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastPricing : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastPricing, b: SAAdvertisingSDKStandard.VastPricing) -> Swift.Bool
@@ -496,8 +502,8 @@ public struct VastVideoClick : Swift.Codable {
   public let id: Swift.String?
   public let type: SAAdvertisingSDKStandard.ClickType
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastVideoClick {
   public init(type: SAAdvertisingSDKStandard.ClickType, attrDict: [Swift.String : Swift.String])
@@ -520,12 +526,13 @@ public struct TechAdvertisingOptions {
   public let partnerId: Swift.String
   public let uid: Swift.String
   public let storeUrl: Swift.String
-  public let bannerUrl: Swift.String?
-  public let nativeBannerUrl: Swift.String?
-  public let videoUrl: Swift.String?
+  public var initConfig: SAAdvertisingSDKStandard.InitConfig? {
+    get
+  }
+  public let remoteConfigUrl: Swift.String?
   public let debugMode: Swift.Bool
   public let httpHeaders: [Swift.String : Swift.String]
-  public init(partnerId: Swift.String, uid: Swift.String, storeUrl: Swift.String, bannerUrl: Swift.String? = nil, nativeBannerUrl: Swift.String? = nil, videoUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
+  public init(partnerId: Swift.String, uid: Swift.String, storeUrl: Swift.String, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
 }
 @_hasMissingDesignatedInitializers public class TechAdvertising {
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
@@ -555,8 +562,8 @@ public struct VastCompanionCreative : Swift.Codable {
   public var companionClickTracking: [Foundation.URL]
   public var trackingEvents: [SAAdvertisingSDKStandard.VastTrackingEvent]
   public var adParameters: SAAdvertisingSDKStandard.VastAdParameters?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastCompanionCreative {
   public init(attrDict: [Swift.String : Swift.String])
@@ -567,8 +574,8 @@ extension SAAdvertisingSDKStandard.VastCompanionCreative : Swift.Equatable {
 public struct VastSurvey : Swift.Codable {
   public let type: Swift.String?
   public var survey: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastSurvey : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastSurvey, b: SAAdvertisingSDKStandard.VastSurvey) -> Swift.Bool
@@ -576,8 +583,8 @@ extension SAAdvertisingSDKStandard.VastSurvey : Swift.Equatable {
 public struct VastNonLinearAdsCreative : Swift.Codable {
   public var trackingEvents: [SAAdvertisingSDKStandard.VastTrackingEvent]
   public var nonLinear: [SAAdvertisingSDKStandard.VastNonLinear]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastNonLinearAdsCreative : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastNonLinearAdsCreative, b: SAAdvertisingSDKStandard.VastNonLinearAdsCreative) -> Swift.Bool
@@ -588,8 +595,8 @@ public struct VastNonLinear : Swift.Codable {
   public var width: Swift.String
   public var staticResource: SAAdvertisingSDKStandard.VastStaticResource?
   public var nonLinearClickTracking: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastNonLinear {
   public init(attrDict: [Swift.String : Swift.String])
@@ -652,7 +659,7 @@ public enum RTBProtocol : Swift.Int, Swift.Encodable {
   }
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class VideoPlayerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: SAAdvertisingSDKStandard.PlayerViewDelegate?
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any SAAdvertisingSDKStandard.PlayerViewDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
@@ -672,8 +679,8 @@ public enum CompanionsRequirement : Swift.String, Swift.Codable {
 public struct VastCompanionAds : Swift.Codable {
   public let required: SAAdvertisingSDKStandard.CompanionsRequirement
   public var companions: [SAAdvertisingSDKStandard.VastCompanionCreative]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastCompanionAds {
   public init(attrDict: [Swift.String : Swift.String])
@@ -702,8 +709,8 @@ public struct VMAPAdSource : Swift.Codable {
   public var adTagURI: Foundation.URL?
   public var customAdData: Swift.String?
   public var templateType: SAAdvertisingSDKStandard.VMAPAdSourceTemplate?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VMAPAdSource {
   public init(attrDict: [Swift.String : Swift.String])
@@ -716,15 +723,12 @@ extension SAAdvertisingSDKStandard.VMAPAdSource {
   @_Concurrency.MainActor(unsafe) public var scaleToFit: Swift.Bool
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) public func loadData(endpoint: Swift.String = "", query: SAAdvertisingSDKStandard.SSPAdvertisementQuery)
   @objc deinit
 }
 extension SAAdvertisingSDKStandard.BannerView : WebKit.WKNavigationDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: Swift.Error)
-}
-extension SAAdvertisingSDKStandard.BannerView : WebKit.WKUIDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, createWebViewWith configuration: WebKit.WKWebViewConfiguration, for navigationAction: WebKit.WKNavigationAction, windowFeatures: WebKit.WKWindowFeatures) -> WebKit.WKWebView?
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 public enum TrackingEventType : Swift.String, Swift.Codable {
   case firstQuartile
@@ -762,8 +766,8 @@ public struct VastTrackingEvent : Swift.Codable {
   public let offset: Swift.Double?
   public var url: Foundation.URL?
   public var tracked: Swift.Bool
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastTrackingEvent {
   public init(attrDict: [Swift.String : Swift.String])
@@ -779,11 +783,11 @@ public protocol VastTrackerDelegate : AnyObject {
 public struct TrackerModel {
 }
 public class VastTracker {
-  weak public var delegate: SAAdvertisingSDKStandard.VastTrackerDelegate?
+  weak public var delegate: (any SAAdvertisingSDKStandard.VastTrackerDelegate)?
   final public let vastModel: SAAdvertisingSDKStandard.VastModel
   final public let totalAds: Swift.Int
   final public let startTime: Swift.Double
-  public init(vastModel: SAAdvertisingSDKStandard.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: SAAdvertisingSDKStandard.VastTrackerDelegate? = nil, trackProgressCumulatively: Swift.Bool = true)
+  public init(vastModel: SAAdvertisingSDKStandard.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: (any SAAdvertisingSDKStandard.VastTrackerDelegate)? = nil, trackProgressCumulatively: Swift.Bool = true)
   @objc deinit
 }
 extension SAAdvertisingSDKStandard.VastTracker {
@@ -821,7 +825,6 @@ public enum VMAPError : Swift.Error {
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NativeBannerView : SAAdvertisingSDKStandard.BaseBannerView {
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) public func loadData(endpoint: Swift.String = "", query: SAAdvertisingSDKStandard.SSPAdvertisementQuery)
   @objc deinit
 }
 public struct VastCreative : Swift.Codable {
@@ -834,8 +837,8 @@ public struct VastCreative : Swift.Codable {
   public var linear: SAAdvertisingSDKStandard.VastLinearCreative?
   public var nonLinearAds: SAAdvertisingSDKStandard.VastNonLinearAdsCreative?
   public var companionAds: SAAdvertisingSDKStandard.VastCompanionAds?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastCreative {
   public init(attrDict: [Swift.String : Swift.String])
@@ -848,16 +851,16 @@ public protocol VastTrackerNonLinearDelegate : AnyObject {
   func adBreakComplete(vastTracker: SAAdvertisingSDKStandard.VastTrackerNonLinear)
 }
 public class VastTrackerNonLinear {
-  weak public var delegate: SAAdvertisingSDKStandard.VastTrackerNonLinearDelegate?
+  weak public var delegate: (any SAAdvertisingSDKStandard.VastTrackerNonLinearDelegate)?
   final public let id: Swift.String
   final public let vastModel: SAAdvertisingSDKStandard.VastModel
   final public let totalAds: Swift.Int
   final public let startTime: Swift.Double
   @available(*, message: "do not use VastTracker for storing this model, it is not being used")
   public var vmapModel: SAAdvertisingSDKStandard.VMAPModel?
-  public init(id: Swift.String, vastModel: SAAdvertisingSDKStandard.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: SAAdvertisingSDKStandard.VastTrackerNonLinearDelegate? = nil, trackProgressCumulatively: Swift.Bool = true)
+  public init(id: Swift.String, vastModel: SAAdvertisingSDKStandard.VastModel, startTime: Swift.Double = 0.0, supportAdBuffets: Swift.Bool = false, delegate: (any SAAdvertisingSDKStandard.VastTrackerNonLinearDelegate)? = nil, trackProgressCumulatively: Swift.Bool = true)
   @available(*, message: "Use init(id:,vastModel:) instead")
-  convenience public init(id: Swift.String, vmapModel: SAAdvertisingSDKStandard.VMAPModel, breakId: Swift.String, startTime: Swift.Double, supportAdBuffets: Swift.Bool = false, delegate: SAAdvertisingSDKStandard.VastTrackerNonLinearDelegate? = nil) throws
+  convenience public init(id: Swift.String, vmapModel: SAAdvertisingSDKStandard.VMAPModel, breakId: Swift.String, startTime: Swift.Double, supportAdBuffets: Swift.Bool = false, delegate: (any SAAdvertisingSDKStandard.VastTrackerNonLinearDelegate)? = nil) throws
   public func updateProgress(time: Swift.Double) throws
   public func adBreakCompleted() throws
   @objc deinit
@@ -879,8 +882,8 @@ public enum RTBDeviceType : Swift.Int, Swift.Encodable {
 public struct VastCreativeExtension : Swift.Codable {
   public let mimeType: Swift.String?
   public var content: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastCreativeExtension {
   public init?(attrDict: [Swift.String : Swift.String])
@@ -891,22 +894,17 @@ extension SAAdvertisingSDKStandard.VastCreativeExtension : Swift.Equatable {
 public struct VastAdSystem : Swift.Codable {
   public let version: Swift.String?
   public var system: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastAdSystem : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAdSystem, b: SAAdvertisingSDKStandard.VastAdSystem) -> Swift.Bool
 }
 public enum CloseButtonType {
-  case COUNTDOWN
-  case APPEARING
+  case COUNTDOWN(timeout: Foundation.TimeInterval = 0)
+  case APPEARING(timeout: Foundation.TimeInterval = 0)
   case VISIBLE
   case NONE
-  public static func == (a: SAAdvertisingSDKStandard.CloseButtonType, b: SAAdvertisingSDKStandard.CloseButtonType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
 }
 public struct VastIcon : Swift.Codable {
   public let program: Swift.String
@@ -921,8 +919,8 @@ public struct VastIcon : Swift.Codable {
   public var iconViewTracking: [Foundation.URL]
   public var iconClicks: SAAdvertisingSDKStandard.IconClicks?
   public var staticResource: [SAAdvertisingSDKStandard.VastStaticResource]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastIcon {
   public init(attrDict: [Swift.String : Swift.String])
@@ -944,8 +942,8 @@ public enum VMAPTrackingEventType : Swift.String, Swift.Codable {
 public struct VMAPTrackingEvent : Swift.Codable {
   public let event: SAAdvertisingSDKStandard.VMAPTrackingEventType
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VMAPTrackingEvent {
   public init(attrDict: [Swift.String : Swift.String])
@@ -1002,8 +1000,8 @@ public enum VMAPErrorCodes : Swift.Int {
 public struct VastIconClickTracking : Swift.Codable {
   public let id: Swift.String?
   public var url: Foundation.URL?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastIconClickTracking : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastIconClickTracking, b: SAAdvertisingSDKStandard.VastIconClickTracking) -> Swift.Bool
@@ -1016,8 +1014,8 @@ public struct VastLinearCreative : Swift.Codable {
   public var trackingEvents: [SAAdvertisingSDKStandard.VastTrackingEvent]
   public var files: SAAdvertisingSDKStandard.VastMediaFiles
   public var icons: [SAAdvertisingSDKStandard.VastIcon]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastLinearCreative {
   public init(attrDict: [Swift.String : Swift.String])
@@ -1041,8 +1039,8 @@ public struct VastViewableImpression : Swift.Codable {
   public var viewable: [Foundation.URL]
   public var notViewable: [Foundation.URL]
   public var viewUndetermined: [Foundation.URL]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastViewableImpression : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastViewableImpression, b: SAAdvertisingSDKStandard.VastViewableImpression) -> Swift.Bool
@@ -1051,8 +1049,8 @@ public struct VastUniversalAdId : Swift.Codable {
   public let idRegistry: Swift.String
   public let idValue: Swift.String
   public var uniqueCreativeId: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastUniversalAdId {
   public init?(attrDict: [Swift.String : Swift.String])
@@ -1066,16 +1064,16 @@ public struct VastVerification : Swift.Codable {
   public var javaScriptResource: [SAAdvertisingSDKStandard.VastResource]
   public var flashResources: [SAAdvertisingSDKStandard.VastResource]
   public var verificationParameters: SAAdvertisingSDKStandard.VastAdVerificationParameters?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastVerification : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastVerification, b: SAAdvertisingSDKStandard.VastVerification) -> Swift.Bool
 }
 public struct VastAdVerificationParameters : Swift.Codable {
   public var data: Swift.String?
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VastAdVerificationParameters : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAdVerificationParameters, b: SAAdvertisingSDKStandard.VastAdVerificationParameters) -> Swift.Bool
@@ -1098,8 +1096,8 @@ public struct VMAPAdBreak : Swift.Codable {
   public let timeOffset: Swift.String
   public var adSource: SAAdvertisingSDKStandard.VMAPAdSource?
   public var trackingEvents: [SAAdvertisingSDKStandard.VMAPTrackingEvent]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.VMAPAdBreak {
   public init(attrDict: [Swift.String : Swift.String])
@@ -1116,11 +1114,15 @@ public enum RTBStartDelay : Swift.Int, Swift.Encodable {
     get
   }
 }
+public struct InitConfig {
+  public let core: SAAdvertisingSDKStandard.InitConfigCoreEntity?
+  public init(core: SAAdvertisingSDKStandard.InitConfigCoreEntity? = nil)
+}
 public struct IconClicks : Swift.Codable {
   public var iconClickThrough: Foundation.URL?
   public var iconClickTracking: [SAAdvertisingSDKStandard.VastIconClickTracking]
-  public func encode(to encoder: Swift.Encoder) throws
-  public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 extension SAAdvertisingSDKStandard.IconClicks : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.IconClicks, b: SAAdvertisingSDKStandard.IconClicks) -> Swift.Bool
@@ -1174,8 +1176,6 @@ extension SAAdvertisingSDKStandard.VMAPError : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.RTBDeviceType : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.RTBDeviceType : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.RTBDeviceType : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.CloseButtonType : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.CloseButtonType : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.VMAPTrackingEventType : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.VMAPTrackingEventType : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.VMAPTrackingEventType : Swift.RawRepresentable {}

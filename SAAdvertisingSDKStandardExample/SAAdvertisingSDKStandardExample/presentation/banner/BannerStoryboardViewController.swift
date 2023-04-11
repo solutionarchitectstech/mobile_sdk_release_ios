@@ -41,9 +41,7 @@ class BannerStoryboardViewController: UIViewController {
         let pxBanner1Height = Int(bannerView1.frame.size.height * mainScreenScale)
         bannerView1.loadData(query: SSPAdvertisementQuery(
             placementId: "Banner-1 \(pxBanner1Width)x\(pxBanner1Height) (custom params) 1.99 USD",
-            refresh: 0,
-            timeout: 0,
-            closeButtonType: CloseButtonType.VISIBLE,
+            closeButtonType: .NONE,
             sizes: [SSPSizeEntity(width: pxBanner1Width, height: pxBanner1Height)],
             floorPrice: 1.99,
             currency: "USD",
@@ -58,9 +56,7 @@ class BannerStoryboardViewController: UIViewController {
         let pxBanner2Height = Int(bannerView2.frame.size.height * mainScreenScale)
         bannerView2.loadData(query: SSPAdvertisementQuery(
             placementId: "Banner-2 \(pxBanner2Width)x\(pxBanner2Height) 2.84 RUB",
-            refresh: 0,
-            timeout: 0,
-            closeButtonType: CloseButtonType.VISIBLE,
+            closeButtonType: .VISIBLE,
             sizes: [SSPSizeEntity(width: pxBanner2Width, height: pxBanner2Height)],
             floorPrice: 2.84,
             currency: "RUB"
@@ -73,9 +69,7 @@ class BannerStoryboardViewController: UIViewController {
         let pxBanner3Height = 470
         bannerView3.loadData(query: SSPAdvertisementQuery(
             placementId: "Banner-3 \(pxBanner3Width)x\(pxBanner3Height) (scrollable)",
-            refresh: 0,
-            timeout: 0,
-            closeButtonType: CloseButtonType.VISIBLE,
+            closeButtonType: .APPEARING(timeout: 5.0),
             sizes: [SSPSizeEntity(width: pxBanner3Width, height: pxBanner3Height)]
         ))
 
@@ -86,9 +80,7 @@ class BannerStoryboardViewController: UIViewController {
         let pxBanner4Height = 470
         bannerView4.loadData(query: SSPAdvertisementQuery(
             placementId: "Banner-4 \(pxBanner4Width)x\(pxBanner4Height) (scrollable)",
-            refresh: 0,
-            timeout: 0,
-            closeButtonType: CloseButtonType.VISIBLE,
+            closeButtonType: .COUNTDOWN(timeout: 5.0),
             sizes: [SSPSizeEntity(width: pxBanner4Width, height: pxBanner4Height)]
         ))
     }

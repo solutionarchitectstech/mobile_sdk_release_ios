@@ -29,11 +29,9 @@ class NativeFullscreenViewController: UIViewController {
 
         bannerView.delegate = self
 
-        bannerView.loadData(query: SSPAdvertisementQuery(
+        bannerView.loadData(refresh: 7.0, query: SSPAdvertisementQuery(
             placementId: "1",
-            refresh: 0,
-            timeout: 0,
-            closeButtonType: CloseButtonType.VISIBLE,
+            closeButtonType: .COUNTDOWN(timeout: 30.0),
             sizes: [SSPSizeEntity(width: 1200, height: 470)],
             customParams: ["example": "Fullscreen NativeBanner"]
         ))
