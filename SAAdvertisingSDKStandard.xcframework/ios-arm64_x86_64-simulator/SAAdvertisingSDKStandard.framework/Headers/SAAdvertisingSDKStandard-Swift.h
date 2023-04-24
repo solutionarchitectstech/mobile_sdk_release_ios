@@ -262,7 +262,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreFoundation;
 @import CoreGraphics;
+@import CoreLocation;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -351,6 +353,20 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
 - (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId error:(NSError * _Nonnull)error;
 - (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
 @end
+
+
+SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard15TechAdvertising")
+@interface TechAdvertising : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class CLLocationManager;
+
+@interface TechAdvertising (SWIFT_EXTENSION(SAAdvertisingSDKStandard)) <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+@end
+
 
 
 @class UITouch;
@@ -635,7 +651,9 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreFoundation;
 @import CoreGraphics;
+@import CoreLocation;
 @import Foundation;
+@import ObjectiveC;
 @import UIKit;
 @import WebKit;
 #endif
@@ -724,6 +742,20 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
 - (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId error:(NSError * _Nonnull)error;
 - (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
 @end
+
+
+SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard15TechAdvertising")
+@interface TechAdvertising : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class CLLocationManager;
+
+@interface TechAdvertising (SWIFT_EXTENSION(SAAdvertisingSDKStandard)) <CLLocationManagerDelegate>
+- (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
+@end
+
 
 
 @class UITouch;

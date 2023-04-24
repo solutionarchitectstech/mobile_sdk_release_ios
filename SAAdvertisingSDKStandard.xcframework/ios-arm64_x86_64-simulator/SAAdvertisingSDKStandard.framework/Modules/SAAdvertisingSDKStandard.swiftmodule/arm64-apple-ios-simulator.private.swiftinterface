@@ -4,6 +4,7 @@
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import AVKit
 import CommonCrypto
+import CoreLocation
 import CryptoKit
 import Foundation
 @_exported import SAAdvertisingSDKStandard
@@ -534,9 +535,12 @@ public struct TechAdvertisingOptions {
   public let httpHeaders: [Swift.String : Swift.String]
   public init(partnerId: Swift.String, uid: Swift.String, storeUrl: Swift.String, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
 }
-@_hasMissingDesignatedInitializers public class TechAdvertising {
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TechAdvertising : ObjectiveC.NSObject {
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
   @objc deinit
+}
+extension SAAdvertisingSDKStandard.TechAdvertising : CoreLocation.CLLocationManagerDelegate {
+  @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
 }
 public func track(url: Foundation.URL, eventName: Swift.String? = nil)
 public func track(urls: [Foundation.URL], eventName: Swift.String? = nil)

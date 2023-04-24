@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */; };
 		105B7C16298B74BA0006805F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C15298B74BA0006805F /* AppDelegate.swift */; };
 		105B7C1A298B74BA0006805F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C19298B74BA0006805F /* ViewController.swift */; };
 		105B7C1D298B74BA0006805F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C1B298B74BA0006805F /* Main.storyboard */; };
@@ -30,7 +31,6 @@
 		10FBD3FD29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3FC29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard */; };
 		10FBD3FF29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */; };
 		10FBD40129BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */; };
-		FF941DD26644871B4930CCDF /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF941DD26644871B4930CCDF /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
+				07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,9 +455,14 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.1;
-				DEVELOPMENT_TEAM = 3HXPZFA9AN;
+				DEVELOPMENT_TEAM = 99496FTLM8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to accurate banner targeting";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -485,9 +490,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0.1;
-				DEVELOPMENT_TEAM = 3HXPZFA9AN;
+				DEVELOPMENT_TEAM = 99496FTLM8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationTemporaryUsageDescriptionDictionary = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationUsageDescription = "Used to accurate banner targeting";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "Used to accurate banner targeting";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
