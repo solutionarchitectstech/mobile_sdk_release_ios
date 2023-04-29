@@ -29,7 +29,7 @@ class FullscreenViewController: UIViewController {
 
         bannerView.delegate = self
 
-        bannerView.loadData(refresh: 7.0, query: SSPAdvertisementQuery(
+        bannerView.loadData(refresh: 0, query: SSPAdvertisementQuery(
             placementId: "1",
             closeButtonType: .COUNTDOWN(timeout: 30.0),
             sizes: [SSPSizeEntity(width: 1200, height: 470)],

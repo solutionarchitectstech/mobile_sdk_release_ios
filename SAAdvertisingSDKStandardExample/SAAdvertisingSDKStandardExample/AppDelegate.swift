@@ -36,7 +36,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 core: .init(
                     bannerUrl: "https://YOUR_BANNER_ENDPOINT",
                     nativeBannerUrl: "https://YOUR_NATIVE_BANNER_ENDPOINT",
-                    videoUrl: "https://YOUR_MEDIA_ENDPOINT"
+                    audioUrl: "https://YOUR_AUDIO_ENDPOINT",
+                    videoUrl: "https://YOUR_VIDEO_ENDPOINT"
                 )
             ),
             debugMode: true,

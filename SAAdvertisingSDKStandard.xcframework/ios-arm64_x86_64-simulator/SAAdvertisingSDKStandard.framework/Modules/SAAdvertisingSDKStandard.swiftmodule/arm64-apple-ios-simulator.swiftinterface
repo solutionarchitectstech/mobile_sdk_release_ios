@@ -7,6 +7,7 @@ import CommonCrypto
 import CoreLocation
 import CryptoKit
 import Foundation
+import Network
 @_exported import SAAdvertisingSDKStandard
 import Swift
 import UIKit
@@ -883,6 +884,10 @@ public enum RTBDeviceType : Swift.Int, Swift.Encodable {
     get
   }
 }
+extension Network.NWInterface.InterfaceType : Swift.CaseIterable {
+  public static var allCases: [Network.NWInterface.InterfaceType]
+  public typealias AllCases = [Network.NWInterface.InterfaceType]
+}
 public struct VastCreativeExtension : Swift.Codable {
   public let mimeType: Swift.String?
   public var content: Swift.String?
@@ -958,7 +963,9 @@ extension Swift.String : Foundation.LocalizedError {
   }
 }
 public enum ApiError : Swift.Error, Swift.CustomStringConvertible, Foundation.LocalizedError {
+  case networkFailed(error: any Swift.Error)
   case invocationFailed(reason: (message: Swift.String, statusCode: Swift.Int))
+  case failed(error: any Swift.Error)
   public var description: Swift.String {
     get
   }
