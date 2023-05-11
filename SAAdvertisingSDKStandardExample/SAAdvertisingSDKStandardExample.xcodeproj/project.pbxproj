@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */; };
 		105B7C16298B74BA0006805F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C15298B74BA0006805F /* AppDelegate.swift */; };
 		105B7C1A298B74BA0006805F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C19298B74BA0006805F /* ViewController.swift */; };
 		105B7C1D298B74BA0006805F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C1B298B74BA0006805F /* Main.storyboard */; };
@@ -31,7 +30,23 @@
 		10FBD3FD29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3FC29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard */; };
 		10FBD3FF29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */; };
 		10FBD40129BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */; };
+		83582BFD2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */; };
+		83582BFE2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		83582BFF2A0D119B007BBE1D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				83582BFE2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		105B7C12298B74BA0006805F /* SAAdvertisingSDKStandardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAdvertisingSDKStandardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +78,9 @@
 		10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerStoryboardViewController.swift; sourceTree = "<group>"; };
 		10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeBannerStoryboardViewController.storyboard; sourceTree = "<group>"; };
 		46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83582BF72A0D110D007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		83582BF92A0D118E007BBE1D /* SAAdvertisingSDKStandard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAAdvertisingSDKStandard.xcframework; path = ../SAAdvertisingSDKStandard.xcframework; sourceTree = "<group>"; };
+		83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7BE17D2AB7A1726D03EAB79 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; sourceTree = "<group>"; };
 		FFF2567D08316F9203899A91 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
+				83582BFD2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +164,9 @@
 		105B7C41298BB7BC0006805F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */,
+				83582BF92A0D118E007BBE1D /* SAAdvertisingSDKStandard.xcframework */,
+				83582BF72A0D110D007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */,
 				10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */,
 				10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */,
 				105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */,
@@ -185,6 +206,7 @@
 				105B7C0F298B74BA0006805F /* Frameworks */,
 				105B7C10298B74BA0006805F /* Resources */,
 				FEFCF1E6FFB462FC54452433 /* [CP] Embed Pods Frameworks */,
+				83582BFF2A0D119B007BBE1D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
