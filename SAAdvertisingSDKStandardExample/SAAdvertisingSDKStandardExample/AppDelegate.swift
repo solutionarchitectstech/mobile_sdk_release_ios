@@ -29,9 +29,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
         TechAdvertising.initialize(options: TechAdvertisingOptions(
-            partnerId: "1",
-            uid: "uid@google.com",
-            storeUrl: "",
+            partnerId: "YOUR_PARTNER_ID",
+            sessionId: "YOUR_SESSION_ID",
+            storeUrl: "https://apps.apple.com/us/app/myapp/id12345678",
             initConfig: .init(
                 core: .init(
                     bannerUrl: "https://YOUR_BANNER_ENDPOINT",

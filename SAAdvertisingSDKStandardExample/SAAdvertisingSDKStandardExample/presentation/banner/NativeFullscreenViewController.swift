@@ -29,11 +29,18 @@ class NativeFullscreenViewController: UIViewController {
 
         bannerView.delegate = self
 
+        TechAdvertising.shared.uid = "MY_AUTHORIZED_USER_ID"
+
         bannerView.loadData(refresh: 7.0, query: SSPAdvertisementQuery(
             placementId: "1",
             closeButtonType: .COUNTDOWN(timeout: 30.0),
             sizes: [SSPSizeEntity(width: 1200, height: 470)],
-            customParams: ["example": "Fullscreen NativeBanner"]
+            customParams: [
+                "skuId": "LG00001",
+                "skuName": "Leggo bricks (speed boat)",
+                "category": "Kids",
+                "subСategory": "Lego"
+            ]
         ))
     }
 }

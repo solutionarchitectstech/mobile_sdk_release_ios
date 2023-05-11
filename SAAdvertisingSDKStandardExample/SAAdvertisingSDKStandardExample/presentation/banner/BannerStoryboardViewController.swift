@@ -46,8 +46,10 @@ class BannerStoryboardViewController: UIViewController {
             floorPrice: 1.99,
             currency: "USD",
             customParams: [
-                "custom_param_01": "Banner-1 (value01)",
-                "custom_param_02": "Banner-1 (value02)"
+                "skuId": "LG00001",
+                "skuName": "Leggo bricks (speed boat)",
+                "category": "Kids",
+                "subСategory": "Lego"
             ]
         ))
 

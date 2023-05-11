@@ -526,7 +526,7 @@ public struct VMAPExtension {
 }
 public struct TechAdvertisingOptions {
   public let partnerId: Swift.String
-  public let uid: Swift.String
+  public let sessionId: Swift.String
   public let storeUrl: Swift.String
   public var initConfig: SAAdvertisingSDKStandard.InitConfig? {
     get
@@ -534,9 +534,11 @@ public struct TechAdvertisingOptions {
   public let remoteConfigUrl: Swift.String?
   public let debugMode: Swift.Bool
   public let httpHeaders: [Swift.String : Swift.String]
-  public init(partnerId: Swift.String, uid: Swift.String, storeUrl: Swift.String, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
+  public init(partnerId: Swift.String, sessionId: Swift.String, storeUrl: Swift.String, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TechAdvertising : ObjectiveC.NSObject {
+  public static let shared: SAAdvertisingSDKStandard.TechAdvertising
+  public var uid: Swift.String?
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
   @objc deinit
 }
