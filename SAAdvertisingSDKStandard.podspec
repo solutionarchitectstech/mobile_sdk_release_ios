@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SAAdvertisingSDKStandard"
-  s.version          = "0.4.1"
+  s.version          = "0.5.1"
   s.summary          = "#{s.name} (iOS) #{s.version}"
 
   s.homepage         = "https://github.com/solutionarchitectstech/mobile_sdk_release_ios"

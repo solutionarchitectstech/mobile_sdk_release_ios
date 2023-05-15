@@ -39,7 +39,7 @@ public class VastClient {
   public func parseVast(withContentsOf url: Foundation.URL, testBundle: Foundation.Bundle, completion: @escaping (SAAdvertisingSDKStandard.VastModel?, (any Swift.Error)?) -> ())
   @objc deinit
 }
-public struct RTBAdvertisementEntity : Swift.Identifiable {
+public struct RTBMediaCreativeEntity : Swift.Identifiable {
   public let id: Swift.String
   public let placementId: Swift.String
   public var currency: Swift.String
@@ -80,7 +80,7 @@ public struct VastMediaFiles : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastMediaFiles : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastMediaFiles, b: SAAdvertisingSDKStandard.VastMediaFiles) -> Swift.Bool
 }
-public struct RTBAdvertisementQuery {
+public struct RTBMediaCreativeQuery {
   public var placementId: Swift.String
   public var minDuration: Swift.Int
   public var maxDuration: Swift.Int
@@ -170,9 +170,10 @@ public struct RTBUserExtEntity {
 public struct InitConfigCoreEntity {
   public let bannerUrl: Swift.String?
   public let nativeBannerUrl: Swift.String?
+  public let productCreativeUrl: Swift.String?
   public let audioUrl: Swift.String?
   public let videoUrl: Swift.String?
-  public init(bannerUrl: Swift.String? = nil, nativeBannerUrl: Swift.String? = nil, audioUrl: Swift.String? = nil, videoUrl: Swift.String? = nil)
+  public init(bannerUrl: Swift.String? = nil, nativeBannerUrl: Swift.String? = nil, productCreativeUrl: Swift.String? = nil, audioUrl: Swift.String? = nil, videoUrl: Swift.String? = nil)
 }
 @objc public protocol BannerViewDelegate {
   @objc optional func onLoadDataSuccess(placementId: Swift.String)
@@ -460,6 +461,17 @@ public struct VastStaticResource : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastStaticResource, b: SAAdvertisingSDKStandard.VastStaticResource) -> Swift.Bool
 }
+public struct ProductCreativeEntity {
+  public let placementId: Swift.String
+  public var sku: Swift.String
+  public var disclaimer: Swift.String
+  public var clickUrl: Swift.String?
+  public var tracking: SAAdvertisingSDKStandard.ProductCreativeTrackingEntity
+}
+public struct ProductCreativeTrackingEntity {
+  public var impression: [Swift.String]
+  public var click: [Swift.String]
+}
 public struct VastAdParameters : Swift.Codable {
   public let xmlEncoded: Swift.String?
   public var content: Swift.String?
@@ -513,6 +525,10 @@ extension SAAdvertisingSDKStandard.VastVideoClick {
 extension SAAdvertisingSDKStandard.VastVideoClick : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastVideoClick, b: SAAdvertisingSDKStandard.VastVideoClick) -> Swift.Bool
 }
+@_hasMissingDesignatedInitializers public class ProductCreativeService {
+  public func fetch(path: Swift.String = "", query: SAAdvertisingSDKStandard.ProductCreativeQuery, block: @escaping (SAAdvertisingSDKStandard.ProductCreativeEntity?, (any Swift.Error)?) -> Swift.Void)
+  @objc deinit
+}
 public enum RTBFlag : Swift.Int, Swift.Encodable {
   case FALSE
   case TRUE
@@ -525,7 +541,6 @@ public enum RTBFlag : Swift.Int, Swift.Encodable {
 public struct VMAPExtension {
 }
 public struct TechAdvertisingOptions {
-  public let partnerId: Swift.String
   public let sessionId: Swift.String
   public let storeUrl: Swift.String
   public var initConfig: SAAdvertisingSDKStandard.InitConfig? {
@@ -534,10 +549,14 @@ public struct TechAdvertisingOptions {
   public let remoteConfigUrl: Swift.String?
   public let debugMode: Swift.Bool
   public let httpHeaders: [Swift.String : Swift.String]
-  public init(partnerId: Swift.String, sessionId: Swift.String, storeUrl: Swift.String, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
+  public init(sessionId: Swift.String, storeUrl: Swift.String, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TechAdvertising : ObjectiveC.NSObject {
   public static let shared: SAAdvertisingSDKStandard.TechAdvertising
+  public var productCreativeService: SAAdvertisingSDKStandard.ProductCreativeService {
+    get
+    set
+  }
   public var uid: Swift.String?
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
   @objc deinit
@@ -885,6 +904,11 @@ public enum RTBDeviceType : Swift.Int, Swift.Encodable {
   public var rawValue: Swift.Int {
     get
   }
+}
+public struct ProductCreativeQuery {
+  public var placementId: Swift.String
+  public var customParams: [Swift.String : Swift.String]
+  public init(placementId: Swift.String, customParams: [Swift.String : Swift.String] = [:])
 }
 extension Network.NWInterface.InterfaceType : Swift.CaseIterable {
   public static var allCases: [Network.NWInterface.InterfaceType]
