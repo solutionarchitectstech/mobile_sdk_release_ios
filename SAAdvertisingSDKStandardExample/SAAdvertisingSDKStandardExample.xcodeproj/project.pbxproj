@@ -22,6 +22,8 @@
 		105B7C40298B760E0006805F /* FullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C36298B760E0006805F /* FullscreenViewController.swift */; };
 		10F60567299CC63500DCE803 /* BannerScrollableListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F60566299CC63500DCE803 /* BannerScrollableListViewController.storyboard */; };
 		10F60569299CC64900DCE803 /* BannerScrollableListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60568299CC64900DCE803 /* BannerScrollableListViewController.swift */; };
+		10F7581C2A0E2593004494EC /* ProductCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7581B2A0E2593004494EC /* ProductCreativeViewController.swift */; };
+		10F7581E2A0E25F1004494EC /* ProductCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F7581D2A0E25F1004494EC /* ProductCreativeViewController.storyboard */; };
 		10FBD3F129BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3F029BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift */; };
 		10FBD3F529BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3F429BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard */; };
 		10FBD3F729BA5746005686F3 /* NativeFullscreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3F629BA5746005686F3 /* NativeFullscreenViewController.swift */; };
@@ -30,23 +32,8 @@
 		10FBD3FD29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3FC29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard */; };
 		10FBD3FF29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */; };
 		10FBD40129BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */; };
-		83582BFD2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */; };
-		83582BFE2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		837B7A072A1251A2002993B9 /* SAAdvertisingSDKStandard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837B7A042A125169002993B9 /* SAAdvertisingSDKStandard.xcframework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		83582BFF2A0D119B007BBE1D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				83582BFE2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		105B7C12298B74BA0006805F /* SAAdvertisingSDKStandardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAdvertisingSDKStandardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -69,6 +56,8 @@
 		10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F60566299CC63500DCE803 /* BannerScrollableListViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BannerScrollableListViewController.storyboard; sourceTree = "<group>"; };
 		10F60568299CC64900DCE803 /* BannerScrollableListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerScrollableListViewController.swift; sourceTree = "<group>"; };
+		10F7581B2A0E2593004494EC /* ProductCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCreativeViewController.swift; sourceTree = "<group>"; };
+		10F7581D2A0E25F1004494EC /* ProductCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ProductCreativeViewController.storyboard; sourceTree = "<group>"; };
 		10FBD3F029BA411D005686F3 /* NativeBannerProgrammaticallyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerProgrammaticallyViewController.swift; sourceTree = "<group>"; };
 		10FBD3F429BA43EF005686F3 /* NativeBannerProgrammaticallyViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NativeBannerProgrammaticallyViewController.storyboard; sourceTree = "<group>"; };
 		10FBD3F629BA5746005686F3 /* NativeFullscreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeFullscreenViewController.swift; sourceTree = "<group>"; };
@@ -78,9 +67,7 @@
 		10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerStoryboardViewController.swift; sourceTree = "<group>"; };
 		10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeBannerStoryboardViewController.storyboard; sourceTree = "<group>"; };
 		46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83582BF72A0D110D007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		83582BF92A0D118E007BBE1D /* SAAdvertisingSDKStandard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAAdvertisingSDKStandard.xcframework; path = ../SAAdvertisingSDKStandard.xcframework; sourceTree = "<group>"; };
-		83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		837B7A042A125169002993B9 /* SAAdvertisingSDKStandard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAAdvertisingSDKStandard.xcframework; path = ../SAAdvertisingSDKStandard.xcframework; sourceTree = "<group>"; };
 		E7BE17D2AB7A1726D03EAB79 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; sourceTree = "<group>"; };
 		FFF2567D08316F9203899A91 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83582BFD2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
+				837B7A072A1251A2002993B9 /* SAAdvertisingSDKStandard.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -164,9 +151,7 @@
 		105B7C41298BB7BC0006805F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				83582BFC2A0D119B007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */,
-				83582BF92A0D118E007BBE1D /* SAAdvertisingSDKStandard.xcframework */,
-				83582BF72A0D110D007BBE1D /* Pods_SAAdvertisingSDKStandardExample.framework */,
+				837B7A042A125169002993B9 /* SAAdvertisingSDKStandard.xcframework */,
 				10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */,
 				10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */,
 				105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */,
@@ -178,10 +163,20 @@
 		10F60557298D47F300DCE803 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
-				105B7C2A298B760E0006805F /* video */,
 				105B7C30298B760E0006805F /* banner */,
+				10F7581A2A0E2516004494EC /* product */,
+				105B7C2A298B760E0006805F /* video */,
 			);
 			path = presentation;
+			sourceTree = "<group>";
+		};
+		10F7581A2A0E2516004494EC /* product */ = {
+			isa = PBXGroup;
+			children = (
+				10F7581D2A0E25F1004494EC /* ProductCreativeViewController.storyboard */,
+				10F7581B2A0E2593004494EC /* ProductCreativeViewController.swift */,
+			);
+			path = product;
 			sourceTree = "<group>";
 		};
 		F7EC4D6643F65D1D0B9F909C /* Pods */ = {
@@ -206,7 +201,6 @@
 				105B7C0F298B74BA0006805F /* Frameworks */,
 				105B7C10298B74BA0006805F /* Resources */,
 				FEFCF1E6FFB462FC54452433 /* [CP] Embed Pods Frameworks */,
-				83582BFF2A0D119B007BBE1D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -258,6 +252,7 @@
 				10F60567299CC63500DCE803 /* BannerScrollableListViewController.storyboard in Resources */,
 				105B7C22298B74BB0006805F /* LaunchScreen.storyboard in Resources */,
 				105B7C1F298B74BB0006805F /* Assets.xcassets in Resources */,
+				10F7581E2A0E25F1004494EC /* ProductCreativeViewController.storyboard in Resources */,
 				10FBD40129BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard in Resources */,
 				10FBD3FD29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard in Resources */,
 				105B7C3C298B760E0006805F /* FullscreenViewController.storyboard in Resources */,
@@ -324,6 +319,7 @@
 				10FBD3F729BA5746005686F3 /* NativeFullscreenViewController.swift in Sources */,
 				10F60569299CC64900DCE803 /* BannerScrollableListViewController.swift in Sources */,
 				10FBD3FB29BA608F005686F3 /* NativeBannerScrollableListViewController.swift in Sources */,
+				10F7581C2A0E2593004494EC /* ProductCreativeViewController.swift in Sources */,
 				105B7C38298B760E0006805F /* VideoPlayerViewController.swift in Sources */,
 				10FBD3FF29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift in Sources */,
 				105B7C1A298B74BA0006805F /* ViewController.swift in Sources */,

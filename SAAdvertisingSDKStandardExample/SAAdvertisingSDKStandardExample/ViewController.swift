@@ -69,4 +69,8 @@ class ViewController: UIViewController {
     @IBAction func onVideoPlayerClick(_ sender: Any) {
         presentViewControllerBy(name: "VideoPlayerViewController")
     }
+
+    @IBAction func onProductCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "ProductCreativeViewController")
+    }
 }
