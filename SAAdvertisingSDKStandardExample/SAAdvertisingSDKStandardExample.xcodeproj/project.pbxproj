@@ -32,8 +32,21 @@
 		10FBD3FD29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3FC29BA61F0005686F3 /* NativeBannerScrollableListViewController.storyboard */; };
 		10FBD3FF29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */; };
 		10FBD40129BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */; };
-		837B7A072A1251A2002993B9 /* SAAdvertisingSDKStandard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837B7A042A125169002993B9 /* SAAdvertisingSDKStandard.xcframework */; };
+		83F95ABE2A1B6C0B00FFAE65 /* SAAdvertisingSDKStandard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F95ABD2A1B6C0B00FFAE65 /* SAAdvertisingSDKStandard.xcframework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		10F6048D298BC0A800DCE803 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		105B7C12298B74BA0006805F /* SAAdvertisingSDKStandardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAdvertisingSDKStandardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,7 +80,7 @@
 		10FBD3FE29BA68C0005686F3 /* NativeBannerStoryboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NativeBannerStoryboardViewController.swift; sourceTree = "<group>"; };
 		10FBD40029BA69A5005686F3 /* NativeBannerStoryboardViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = NativeBannerStoryboardViewController.storyboard; sourceTree = "<group>"; };
 		46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		837B7A042A125169002993B9 /* SAAdvertisingSDKStandard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAAdvertisingSDKStandard.xcframework; path = ../SAAdvertisingSDKStandard.xcframework; sourceTree = "<group>"; };
+		83F95ABD2A1B6C0B00FFAE65 /* SAAdvertisingSDKStandard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAAdvertisingSDKStandard.xcframework; path = ../SAAdvertisingSDKStandard.xcframework; sourceTree = "<group>"; };
 		E7BE17D2AB7A1726D03EAB79 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; sourceTree = "<group>"; };
 		FFF2567D08316F9203899A91 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837B7A072A1251A2002993B9 /* SAAdvertisingSDKStandard.xcframework in Frameworks */,
+				83F95ABE2A1B6C0B00FFAE65 /* SAAdvertisingSDKStandard.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,7 +164,7 @@
 		105B7C41298BB7BC0006805F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				837B7A042A125169002993B9 /* SAAdvertisingSDKStandard.xcframework */,
+				83F95ABD2A1B6C0B00FFAE65 /* SAAdvertisingSDKStandard.xcframework */,
 				10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */,
 				10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */,
 				105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */,
@@ -200,6 +213,7 @@
 				105B7C0E298B74BA0006805F /* Sources */,
 				105B7C0F298B74BA0006805F /* Frameworks */,
 				105B7C10298B74BA0006805F /* Resources */,
+				10F6048D298BC0A800DCE803 /* Embed Frameworks */,
 				FEFCF1E6FFB462FC54452433 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
