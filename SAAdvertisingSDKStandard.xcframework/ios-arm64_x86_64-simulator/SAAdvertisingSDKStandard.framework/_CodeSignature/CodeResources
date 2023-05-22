@@ -26,11 +26,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		uACMt5N9Sxf8g6y2fTBP4sPzSgY=
+		rwW+FfU/YV7GVgzzafB3tFwj6hU=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		4u/mf9yX9sF+cPhxqbi1pohMWm4=
+		LGMiWBDcvkH1EqVZLt7NtmLrHW4=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		7KSjmFdGguMxgyZjZw1NCgALRns=
+		K3DoLX0CjkFkT9VlcuukhoUTHZA=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		4u/mf9yX9sF+cPhxqbi1pohMWm4=
+		LGMiWBDcvkH1EqVZLt7NtmLrHW4=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -66,7 +66,7 @@
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		U+2CtLZADra9hjdtDUVPG4kNcv4=
+		KyZLwAj6czEZst6Phta4dzgg7D8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -122,7 +122,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SRF81YFuwVDxlj5p63lAcRCDuLd/SRe5cZo2xuDq/YA=
+			2dN4cZ9zipLafIunrBTtjPScNNigtE3SrMROXtCoOHc=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -150,14 +150,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nVpBweokix3DSIdpQoe/m/Dp9AQ39eInz2qUBE/DBCo=
+			VSaPy7J9IP/3R5EjS3hr++Ft4Q1leGFbu7XEiwcYjhE=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SRF81YFuwVDxlj5p63lAcRCDuLd/SRe5cZo2xuDq/YA=
+			2dN4cZ9zipLafIunrBTtjPScNNigtE3SrMROXtCoOHc=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -185,7 +185,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			slzCepkWFEWgASUTwNbO4e+Eg5Dx2jVf+fbGJb/kpbo=
+			eS2D3oM4rvZL8disk9BezifvKDHFX7TWmXoV+8oCV7Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
