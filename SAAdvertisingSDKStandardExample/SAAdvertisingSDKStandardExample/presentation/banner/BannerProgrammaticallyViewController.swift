@@ -60,9 +60,12 @@ class BannerProgrammaticallyViewController: UIViewController {
         let pxBanner2Width = Int(bannerView2.frame.size.width * mainScreenScale)
         let pxBanner2Height = Int(bannerView2.frame.size.height * mainScreenScale)
         bannerView2.loadData(query: SSPAdvertisementQuery(
-            placementId: "Banner-2 \(pxBanner2Width)x\(pxBanner2Height) 2.84 RUB",
+            placementId: "33d1ca62-c186-4c93-8206-5e26d996f353",
             closeButtonType: .VISIBLE,
-            sizes: [SSPSizeEntity(width: pxBanner2Width, height: pxBanner2Height)],
+            sizes: [
+                SSPSizeEntity(width: 260, height: 106),
+                SSPSizeEntity(width: pxBanner2Width, height: pxBanner2Height)
+            ],
             floorPrice: 2.84,
             currency: "RUB"
         ))
@@ -76,12 +79,12 @@ class BannerProgrammaticallyViewController: UIViewController {
         bannerView3.delegate = self
         bannerView3.isScrollEnabled = true
         bannerView3.scaleToFit = false
-        let pxBanner3Width = 1200
-        let pxBanner3Height = 470
         bannerView3.loadData(query: SSPAdvertisementQuery(
-            placementId: "Banner-3 \(pxBanner3Width)x\(pxBanner3Height) (scrollable)",
+            placementId: "33d1ca62-c186-4c93-8206-5e26d996f353",
             closeButtonType: .APPEARING(timeout: 5.0),
-            sizes: [SSPSizeEntity(width: pxBanner3Width, height: pxBanner3Height)]
+            sizes: [
+                SSPSizeEntity(width: 260, height: 106)
+            ]
         ))
 
         let bannerView4 = addBannerView(
@@ -93,12 +96,12 @@ class BannerProgrammaticallyViewController: UIViewController {
         bannerView4.delegate = self
         bannerView4.isScrollEnabled = true
         bannerView4.scaleToFit = false
-        let pxBanner4Width = 1200
-        let pxBanner4Height = 470
         bannerView4.loadData(query: SSPAdvertisementQuery(
-            placementId: "Banner-4 \(pxBanner4Width)x\(pxBanner4Height) (scrollable)",
+            placementId: "33d1ca62-c186-4c93-8206-5e26d996f353",
             closeButtonType: .COUNTDOWN(timeout: 5.0),
-            sizes: [SSPSizeEntity(width: pxBanner4Width, height: pxBanner4Height)]
+            sizes: [
+                SSPSizeEntity(width: 260, height: 106)
+            ]
         ))
     }
 
