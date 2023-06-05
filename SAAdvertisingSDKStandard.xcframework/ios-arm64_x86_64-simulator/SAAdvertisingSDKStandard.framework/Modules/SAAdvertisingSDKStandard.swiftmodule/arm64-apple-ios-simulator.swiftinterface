@@ -462,11 +462,12 @@ extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastStaticResource, b: SAAdvertisingSDKStandard.VastStaticResource) -> Swift.Bool
 }
 public struct ProductCreativeEntity {
+  public let id: Swift.String
   public let placementId: Swift.String
   public var sku: Swift.String
-  public var disclaimer: Swift.String
+  public var disclaimer: Swift.String?
   public var clickUrl: Swift.String?
-  public var tracking: SAAdvertisingSDKStandard.ProductCreativeTrackingEntity
+  public var tracking: SAAdvertisingSDKStandard.ProductCreativeTrackingEntity?
 }
 public struct ProductCreativeTrackingEntity {
   public var impression: [Swift.String]
@@ -525,8 +526,14 @@ extension SAAdvertisingSDKStandard.VastVideoClick {
 extension SAAdvertisingSDKStandard.VastVideoClick : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastVideoClick, b: SAAdvertisingSDKStandard.VastVideoClick) -> Swift.Bool
 }
-@_hasMissingDesignatedInitializers public class ProductCreativeService {
-  public func fetch(path: Swift.String = "", query: SAAdvertisingSDKStandard.ProductCreativeQuery, block: @escaping (SAAdvertisingSDKStandard.ProductCreativeEntity?, (any Swift.Error)?) -> Swift.Void)
+public protocol ProductCreativeDelegate : AnyObject {
+  func onLoadDataSuccess(entity: SAAdvertisingSDKStandard.ProductCreativeEntity?)
+  func onLoadDataFail(query: SAAdvertisingSDKStandard.ProductCreativeQuery, error: any Swift.Error)
+}
+public class ProductCreative {
+  weak public var delegate: (any SAAdvertisingSDKStandard.ProductCreativeDelegate)?
+  public init(query: SAAdvertisingSDKStandard.ProductCreativeQuery)
+  public func load(path: Swift.String = "")
   @objc deinit
 }
 public enum RTBFlag : Swift.Int, Swift.Encodable {
@@ -553,10 +560,6 @@ public struct TechAdvertisingOptions {
 }
 @objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TechAdvertising : ObjectiveC.NSObject {
   public static let shared: SAAdvertisingSDKStandard.TechAdvertising
-  public var productCreativeService: SAAdvertisingSDKStandard.ProductCreativeService {
-    get
-    set
-  }
   public var uid: Swift.String?
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
   @objc deinit

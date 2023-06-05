@@ -25,7 +25,19 @@ class ProductCreativeViewController: UIViewController {
 
     @IBOutlet weak var spinner: UIActivityIndicatorView!
 
+    private var productCreative: ProductCreative!
+
     override func viewDidLoad() {
+        self.productCreative = ProductCreative(query: ProductCreativeQuery(
+            placementId: "YOUR_PLACEMENT_ID",
+            customParams: [
+                "skuId": "LG00001",
+                "skuName": "Leggo bricks (speed boat)",
+                "category": "Kids",
+                "subСategory": "Lego"
+            ]
+        ))
+        self.productCreative.delegate = self
     }
 
     @IBAction func onRequestButtonClick(_ sender: Any) {
@@ -33,32 +45,25 @@ class ProductCreativeViewController: UIViewController {
         self.outputLabel.isHidden = true
         self.outputLabel.textColor = .black
         self.spinner.isHidden = false
-        
-        DispatchQueue.global(qos: .utility).async {
-            TechAdvertising.shared.productCreativeService.fetch(query: ProductCreativeQuery(
-                placementId: "YOUR_PLACEMENT_ID",
-                customParams: [
-                    "skuId": "LG00001",
-                    "skuName": "Leggo bricks (speed boat)",
-                    "category": "Kids",
-                    "subСategory": "Lego"
-                ]
-            )) { entity, error in
-                DispatchQueue.main.async { [weak self] in
-                    guard let self = self else { return }
-                    
-                    self.spinner.isHidden = true
-                    self.outputLabel.isHidden = false
-                    
-                    if let error = error {
-                        self.outputLabel.textColor = .red
-                        self.outputLabel.text = "ERROR: \(error.localizedDescription)"
-                        return
-                    }
-                    
-                    self.outputLabel.text = "\(entity)"
-                }
-            }
-        }
+
+        self.productCreative.load()
+    }
+}
+
+extension ProductCreativeViewController: ProductCreativeDelegate {
+
+    func onLoadDataSuccess(entity: ProductCreativeEntity?) {
+        self.spinner.isHidden = true
+        self.outputLabel.isHidden = false
+
+        self.outputLabel.text = "\(String(describing: entity))"
+    }
+
+    func onLoadDataFail(query: ProductCreativeQuery, error: Error) {
+        self.spinner.isHidden = true
+        self.outputLabel.isHidden = false
+
+        self.outputLabel.textColor = .red
+        self.outputLabel.text = "ERROR: \(error.localizedDescription)"
     }
 }
