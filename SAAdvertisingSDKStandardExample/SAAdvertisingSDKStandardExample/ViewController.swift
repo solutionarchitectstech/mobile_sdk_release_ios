@@ -34,43 +34,53 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
 
-    @IBAction func onBannerStoryboardClick(_ sender: Any) {
-        presentViewControllerBy(name: "BannerStoryboardViewController")
+    // MARK: - SINGLE IMPRESSION
+
+    @IBAction func onSingleInlayoutWebBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleInlayoutWebBannerViewController")
     }
 
-    @IBAction func onBannerProgrammaticallyClick(_ sender: Any) {
-        presentViewControllerBy(name: "BannerProgrammaticallyViewController")
+    @IBAction func onSingleInlayoutNativeBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleInlayoutNativeBannerViewController")
     }
 
-    @IBAction func onFullScreenClick(_ sender: Any) {
-        presentViewControllerBy(name: "FullscreenViewController")
+    @IBAction func onSingleProgrammaticallyWebBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleProgrammaticallyWebBannerViewController")
     }
 
-    @IBAction func onBannerScrollableListClick(_ sender: Any) {
-        presentViewControllerBy(name: "BannerScrollableListViewController")
+    @IBAction func onSingleProgrammaticallyNativeBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleProgrammaticallyNativeBannerViewController")
     }
 
-    @IBAction func onNativeBannerStoryboardClick(_ sender: Any) {
-        presentViewControllerBy(name: "NativeBannerStoryboardViewController")
+    @IBAction func onSingleCollectionWebBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleCollectionWebBannerViewController")
     }
 
-    @IBAction func onNativeBannerProgrammaticallyClick(_ sender: Any) {
-        presentViewControllerBy(name: "NativeBannerProgrammaticallyViewController")
+    @IBAction func onSingleCollectionNativeBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleCollectionNativeBannerViewController")
     }
 
-    @IBAction func onNativeFullScreenClick(_ sender: Any) {
-        presentViewControllerBy(name: "NativeFullscreenViewController")
+    @IBAction func onSingleProductCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleProductCreativeViewController")
     }
 
-    @IBAction func onNativeBannerScrollableListClick(_ sender: Any) {
-        presentViewControllerBy(name: "NativeBannerScrollableListViewController")
+    // MARK: - MULTIPLE IMPRESSIONS
+
+    @IBAction func onMultiWebBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "MultiWebBannerViewController")
     }
+
+    @IBAction func onMultiNativeBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "MultiNativeBannerViewController")
+    }
+
+    @IBAction func onMultiProductCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "MultiProductCreativeViewController")
+    }
+
+    // MARK: - MEDIA
 
     @IBAction func onVideoPlayerClick(_ sender: Any) {
         presentViewControllerBy(name: "VideoPlayerViewController")
-    }
-
-    @IBAction func onProductCreativeClick(_ sender: Any) {
-        presentViewControllerBy(name: "ProductCreativeViewController")
     }
 }

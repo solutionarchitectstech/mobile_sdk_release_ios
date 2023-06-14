@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oEt-9B-KAu">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--COLLECTION-VIEW (web banner)-->
+        <scene sceneID="OLh-Dc-vui">
+            <objects>
+                <collectionViewController id="oEt-9B-KAu" customClass="SingleCollectionWebBannerViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="aTz-rd-aHj">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="s7E-Ik-2Be">
+                            <size key="itemSize" width="128" height="128"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BannerCell" id="D3R-qB-cxQ" customClass="BannerCell" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="ygQ-gz-lkS">
+                                    <rect key="frame" x="0.0" y="0.0" width="127.99999999999997" height="128"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zu6-xZ-HbU" userLabel="BannerContainer View">
+                                            <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                                        </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Banner Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z93-mT-80g">
+                                            <rect key="frame" x="12.999999999999993" y="53.666666666666657" width="102.33333333333331" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="z93-mT-80g" firstAttribute="centerX" secondItem="ygQ-gz-lkS" secondAttribute="centerX" id="Ko5-dr-vdz"/>
+                                        <constraint firstItem="zu6-xZ-HbU" firstAttribute="top" secondItem="ygQ-gz-lkS" secondAttribute="top" id="VgF-dr-wCR"/>
+                                        <constraint firstAttribute="trailing" secondItem="zu6-xZ-HbU" secondAttribute="trailing" id="npd-aQ-AGi"/>
+                                        <constraint firstAttribute="bottom" secondItem="zu6-xZ-HbU" secondAttribute="bottom" id="pPK-ec-8e2"/>
+                                        <constraint firstItem="z93-mT-80g" firstAttribute="centerY" secondItem="ygQ-gz-lkS" secondAttribute="centerY" id="w4f-Vn-OG5"/>
+                                        <constraint firstItem="zu6-xZ-HbU" firstAttribute="leading" secondItem="ygQ-gz-lkS" secondAttribute="leading" id="ziD-cw-mOq"/>
+                                    </constraints>
+                                </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="bannerContainerView" destination="zu6-xZ-HbU" id="XvX-lH-x9D"/>
+                                    <outlet property="bannerLabel" destination="z93-mT-80g" id="qgq-xg-dFe"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="oEt-9B-KAu" id="muX-KD-6K4"/>
+                            <outlet property="delegate" destination="oEt-9B-KAu" id="4Bm-DF-udO"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="COLLECTION-VIEW (web banner)" id="6fD-Hg-OgD"/>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0jN-Uz-1F7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1648" y="-79"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

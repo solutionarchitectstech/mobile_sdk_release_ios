@@ -287,6 +287,21 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class BaseBannerView;
+
+SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard22BannerCreativeDelegate_")
+@protocol BannerCreativeDelegate
+@optional
+- (void)onLoadDataSuccess;
+- (void)onLoadDataFailWithError:(NSError * _Nonnull)error;
+- (void)onLoadContentSuccessWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onLoadContentFailWithBannerView:(BaseBannerView * _Nonnull)bannerView error:(NSError * _Nonnull)error;
+- (void)onCloseWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onDebugSentLoadStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onDebugSentViewStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onDebugSentClickStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+@end
+
 @class NSCoder;
 @class CALayer;
 
@@ -315,22 +330,6 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard10BannerView")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 @end
 
-@class NSString;
-
-SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18BannerViewDelegate_")
-@protocol BannerViewDelegate
-@optional
-- (void)onLoadDataSuccessWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onLoadDataFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
-- (void)onLoadContentSuccessWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
-- (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onDebugSentLoadStatisticWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onDebugSentViewStatisticWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onDebugSentClickStatisticWithPlacementId:(NSString * _Nonnull)placementId;
-@end
-
-
 
 
 
@@ -343,6 +342,7 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard16NativeBannerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
 
 SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
 @protocol PlayerViewDelegate
@@ -366,6 +366,7 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard15TechAdvertising")
 @interface TechAdvertising (SWIFT_EXTENSION(SAAdvertisingSDKStandard)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 @end
+
 
 
 
@@ -676,6 +677,21 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
+@class BaseBannerView;
+
+SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard22BannerCreativeDelegate_")
+@protocol BannerCreativeDelegate
+@optional
+- (void)onLoadDataSuccess;
+- (void)onLoadDataFailWithError:(NSError * _Nonnull)error;
+- (void)onLoadContentSuccessWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onLoadContentFailWithBannerView:(BaseBannerView * _Nonnull)bannerView error:(NSError * _Nonnull)error;
+- (void)onCloseWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onDebugSentLoadStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onDebugSentViewStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+- (void)onDebugSentClickStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
+@end
+
 @class NSCoder;
 @class CALayer;
 
@@ -704,22 +720,6 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard10BannerView")
 - (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 @end
 
-@class NSString;
-
-SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18BannerViewDelegate_")
-@protocol BannerViewDelegate
-@optional
-- (void)onLoadDataSuccessWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onLoadDataFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
-- (void)onLoadContentSuccessWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onLoadContentFailWithPlacementId:(NSString * _Nonnull)placementId reason:(NSString * _Nonnull)reason;
-- (void)onCloseWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onDebugSentLoadStatisticWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onDebugSentViewStatisticWithPlacementId:(NSString * _Nonnull)placementId;
-- (void)onDebugSentClickStatisticWithPlacementId:(NSString * _Nonnull)placementId;
-@end
-
-
 
 
 
@@ -732,6 +732,7 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard16NativeBannerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSString;
 
 SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard18PlayerViewDelegate_")
 @protocol PlayerViewDelegate
@@ -755,6 +756,7 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard15TechAdvertising")
 @interface TechAdvertising (SWIFT_EXTENSION(SAAdvertisingSDKStandard)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
 @end
+
 
 
 
