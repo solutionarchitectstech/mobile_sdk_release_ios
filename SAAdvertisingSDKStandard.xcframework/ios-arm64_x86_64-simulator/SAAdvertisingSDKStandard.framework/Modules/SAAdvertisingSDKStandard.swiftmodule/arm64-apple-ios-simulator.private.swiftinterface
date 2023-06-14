@@ -175,16 +175,6 @@ public struct InitConfigCoreEntity {
   public let videoUrl: Swift.String?
   public init(bannerUrl: Swift.String? = nil, nativeBannerUrl: Swift.String? = nil, productCreativeUrl: Swift.String? = nil, audioUrl: Swift.String? = nil, videoUrl: Swift.String? = nil)
 }
-@objc public protocol BannerViewDelegate {
-  @objc optional func onLoadDataSuccess(placementId: Swift.String)
-  @objc optional func onLoadDataFail(placementId: Swift.String, reason: Swift.String)
-  @objc optional func onLoadContentSuccess(placementId: Swift.String)
-  @objc optional func onLoadContentFail(placementId: Swift.String, reason: Swift.String)
-  @objc optional func onClose(placementId: Swift.String)
-  @objc optional func onDebugSentLoadStatistic(placementId: Swift.String)
-  @objc optional func onDebugSentViewStatistic(placementId: Swift.String)
-  @objc optional func onDebugSentClickStatistic(placementId: Swift.String)
-}
 extension Swift.String {
   public var toSeconds: Swift.Double? {
     get
@@ -247,6 +237,14 @@ public struct VastWrapper : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastWrapper : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastWrapper, b: SAAdvertisingSDKStandard.VastWrapper) -> Swift.Bool
 }
+public struct SizeEntity : Swift.CustomDebugStringConvertible {
+  public let width: Swift.Int
+  public let height: Swift.Int
+  public init(width: Swift.Int, height: Swift.Int)
+  public var debugDescription: Swift.String {
+    get
+  }
+}
 public struct VastMediaFile : Swift.Codable {
   public let delivery: Swift.String
   public let type: Swift.String
@@ -270,22 +268,14 @@ extension SAAdvertisingSDKStandard.VastMediaFile {
 extension SAAdvertisingSDKStandard.VastMediaFile : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastMediaFile, b: SAAdvertisingSDKStandard.VastMediaFile) -> Swift.Bool
 }
-public struct SSPAdvertisementQuery {
+public struct BannerCreativeQuery {
   public var placementId: Swift.String
   public var closeButtonType: SAAdvertisingSDKStandard.CloseButtonType
-  public var sizes: [SAAdvertisingSDKStandard.SSPSizeEntity]
+  public var sizes: [SAAdvertisingSDKStandard.SizeEntity]
   public var floorPrice: Swift.Double?
   public var currency: Swift.String?
   public var customParams: [Swift.String : Swift.String]
-  public init(placementId: Swift.String, closeButtonType: SAAdvertisingSDKStandard.CloseButtonType, sizes: [SAAdvertisingSDKStandard.SSPSizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
-}
-public struct SSPSizeEntity : Swift.CustomDebugStringConvertible {
-  public let width: Swift.Int
-  public let height: Swift.Int
-  public init(width: Swift.Int, height: Swift.Int)
-  public var debugDescription: Swift.String {
-    get
-  }
+  public init(placementId: Swift.String, closeButtonType: SAAdvertisingSDKStandard.CloseButtonType, sizes: [SAAdvertisingSDKStandard.SizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
 }
 public enum RTBGender : Swift.String, Swift.Encodable {
   case MALE
@@ -443,13 +433,20 @@ extension SAAdvertisingSDKStandard.VastAd {
 extension SAAdvertisingSDKStandard.VastAd : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAd, b: SAAdvertisingSDKStandard.VastAd) -> Swift.Bool
 }
+public struct ProductCreativeTrackingEntity {
+  public var impression: [Swift.String]
+  public var click: [Swift.String]
+}
+@_hasMissingDesignatedInitializers public class NativeBannerCreativeHolder : SAAdvertisingSDKStandard.BaseBannerCreativeHolder<SAAdvertisingSDKStandard.NativeBannerView> {
+  public init(query: SAAdvertisingSDKStandard.BannerCreativeQuery, refresh: Foundation.TimeInterval = 0.0)
+  @objc deinit
+}
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseBannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any SAAdvertisingSDKStandard.BannerViewDelegate)?
+  @_Concurrency.MainActor(unsafe) public var query: SAAdvertisingSDKStandard.BannerCreativeQuery?
   @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ layer: QuartzCore.CALayer, in ctx: CoreGraphics.CGContext)
-  @_Concurrency.MainActor(unsafe) public func loadData(endpoint: Swift.String = "", refresh: Foundation.TimeInterval = 0.0, query: SAAdvertisingSDKStandard.SSPAdvertisementQuery)
   @objc deinit
 }
 public struct VastStaticResource : Swift.Codable {
@@ -461,17 +458,30 @@ public struct VastStaticResource : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastStaticResource, b: SAAdvertisingSDKStandard.VastStaticResource) -> Swift.Bool
 }
+@objc public protocol BannerCreativeDelegate {
+  @objc optional func onLoadDataSuccess()
+  @objc optional func onLoadDataFail(error: any Swift.Error)
+  @objc optional func onLoadContentSuccess(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
+  @objc optional func onLoadContentFail(bannerView: SAAdvertisingSDKStandard.BaseBannerView, error: any Swift.Error)
+  @objc optional func onClose(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
+  @objc optional func onDebugSentLoadStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
+  @objc optional func onDebugSentViewStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
+  @objc optional func onDebugSentClickStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
+}
+public class BannerCreative<BANNER_VIEW> where BANNER_VIEW : SAAdvertisingSDKStandard.BaseBannerView {
+  weak public var delegate: (any SAAdvertisingSDKStandard.BannerCreativeDelegate)?
+  convenience public init(bannerView: BANNER_VIEW, refresh refreshInterval: Foundation.TimeInterval = 0.0)
+  public init(bannerViews: [BANNER_VIEW], refresh refreshInterval: Foundation.TimeInterval = 0.0)
+  public func load(path: Swift.String = "")
+  @objc deinit
+}
 public struct ProductCreativeEntity {
-  public let id: Swift.String
+  public let requestId: Swift.String
   public let placementId: Swift.String
   public var sku: Swift.String
   public var disclaimer: Swift.String?
-  public var clickUrl: Swift.String?
+  public var clickUrl: Swift.String
   public var tracking: SAAdvertisingSDKStandard.ProductCreativeTrackingEntity?
-}
-public struct ProductCreativeTrackingEntity {
-  public var impression: [Swift.String]
-  public var click: [Swift.String]
 }
 public struct VastAdParameters : Swift.Codable {
   public let xmlEncoded: Swift.String?
@@ -527,14 +537,20 @@ extension SAAdvertisingSDKStandard.VastVideoClick : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastVideoClick, b: SAAdvertisingSDKStandard.VastVideoClick) -> Swift.Bool
 }
 public protocol ProductCreativeDelegate : AnyObject {
-  func onLoadDataSuccess(entity: SAAdvertisingSDKStandard.ProductCreativeEntity?)
-  func onLoadDataFail(query: SAAdvertisingSDKStandard.ProductCreativeQuery, error: any Swift.Error)
+  func onLoadDataSuccess()
+  func onLoadDataFail(error: any Swift.Error)
+  func onLoadContentSuccess(entity: SAAdvertisingSDKStandard.ProductCreativeEntity)
+  func onLoadContentFail(query: SAAdvertisingSDKStandard.ProductCreativeQuery, error: any Swift.Error)
 }
 public class ProductCreative {
   weak public var delegate: (any SAAdvertisingSDKStandard.ProductCreativeDelegate)?
-  public init(query: SAAdvertisingSDKStandard.ProductCreativeQuery)
+  convenience public init(query: SAAdvertisingSDKStandard.ProductCreativeQuery)
+  public init(queries: [SAAdvertisingSDKStandard.ProductCreativeQuery])
   public func load(path: Swift.String = "")
   @objc deinit
+}
+extension UIKit.UIGestureRecognizer {
+  @_Concurrency.MainActor(unsafe) convenience public init(block: @escaping ((UIKit.UIGestureRecognizer) -> ()))
 }
 public enum RTBFlag : Swift.Int, Swift.Encodable {
   case FALSE
@@ -743,6 +759,10 @@ public struct VMAPAdSource : Swift.Codable {
 }
 extension SAAdvertisingSDKStandard.VMAPAdSource {
   public init(attrDict: [Swift.String : Swift.String])
+}
+@_hasMissingDesignatedInitializers public class BannerCreativeHolder : SAAdvertisingSDKStandard.BaseBannerCreativeHolder<SAAdvertisingSDKStandard.BannerView> {
+  public init(query: SAAdvertisingSDKStandard.BannerCreativeQuery, refresh: Foundation.TimeInterval = 0.0)
+  @objc deinit
 }
 @objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BannerView : SAAdvertisingSDKStandard.BaseBannerView {
   @_Concurrency.MainActor(unsafe) public var isScrollEnabled: Swift.Bool {
@@ -1084,6 +1104,20 @@ public struct VastViewableImpression : Swift.Codable {
 }
 extension SAAdvertisingSDKStandard.VastViewableImpression : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastViewableImpression, b: SAAdvertisingSDKStandard.VastViewableImpression) -> Swift.Bool
+}
+@_hasMissingDesignatedInitializers public class BaseBannerCreativeHolder<BANNER_VIEW> : Swift.Identifiable where BANNER_VIEW : SAAdvertisingSDKStandard.BaseBannerView {
+  public var query: SAAdvertisingSDKStandard.BannerCreativeQuery? {
+    get
+  }
+  final public let bannerView: BANNER_VIEW
+  weak public var delegate: (any SAAdvertisingSDKStandard.BannerCreativeDelegate)? {
+    get
+    set
+  }
+  public func loadIfNeeded(path: Swift.String = "")
+  public func load(path: Swift.String = "")
+  public typealias ID = Swift.ObjectIdentifier
+  @objc deinit
 }
 public struct VastUniversalAdId : Swift.Codable {
   public let idRegistry: Swift.String

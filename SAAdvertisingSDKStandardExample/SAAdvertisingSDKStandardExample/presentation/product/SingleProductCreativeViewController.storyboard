@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--PRODUCT CREATIVE (single impression)-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="SingleProductCreativeViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="md9-sD-Etc" userLabel="Request Button">
+                                <rect key="frame" x="0.0" y="59" width="393" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9MK-as-EAa"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Tap me to get ProductCreative"/>
+                                <connections>
+                                    <action selector="onRequestButtonClick:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="gwp-lZ-mdv"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lDV-Gx-fOk" userLabel="Output Label">
+                                <rect key="frame" x="10" y="99" width="373" height="709"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="YWd-gl-ITq" userLabel="Spinner">
+                                <rect key="frame" x="176.66666666666666" y="418.66666666666669" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="eJc-uj-RCp"/>
+                                    <constraint firstAttribute="width" constant="40" id="om3-Qh-MsE"/>
+                                </constraints>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lDV-Gx-fOk" secondAttribute="trailing" constant="10" id="B1s-iS-9qP"/>
+                            <constraint firstItem="YWd-gl-ITq" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="GFK-1z-hUJ"/>
+                            <constraint firstItem="YWd-gl-ITq" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="Ned-dw-3ol"/>
+                            <constraint firstItem="lDV-Gx-fOk" firstAttribute="top" secondItem="md9-sD-Etc" secondAttribute="bottom" constant="10" id="U7t-HK-L5l"/>
+                            <constraint firstItem="md9-sD-Etc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="UOG-tH-3Tv"/>
+                            <constraint firstItem="md9-sD-Etc" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="ab6-fe-iTe"/>
+                            <constraint firstItem="lDV-Gx-fOk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="cCM-UX-2dY"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="lDV-Gx-fOk" secondAttribute="bottom" constant="10" id="jZt-Co-rfW"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="md9-sD-Etc" secondAttribute="trailing" id="rzL-LT-ubU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="PRODUCT CREATIVE (single impression)" id="SSM-OH-3cA"/>
+                    <connections>
+                        <outlet property="outputLabel" destination="lDV-Gx-fOk" id="Eid-u0-S0o"/>
+                        <outlet property="spinner" destination="YWd-gl-ITq" id="TnO-nB-RzZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-131" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
