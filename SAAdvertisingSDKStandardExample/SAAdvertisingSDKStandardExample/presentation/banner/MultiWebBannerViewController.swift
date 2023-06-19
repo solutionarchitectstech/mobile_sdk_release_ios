@@ -113,6 +113,10 @@ class MultiWebBannerViewController: UIViewController {
 
 extension MultiWebBannerViewController: BannerCreativeDelegate {
 
+    public func onNoAdContent() {
+        print("Banner.onNoAdContent")
+    }
+
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
     }

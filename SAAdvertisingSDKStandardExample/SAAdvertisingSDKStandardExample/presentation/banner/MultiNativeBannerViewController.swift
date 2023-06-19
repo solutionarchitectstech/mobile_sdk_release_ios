@@ -109,6 +109,10 @@ class MultiNativeBannerViewController: UIViewController {
 
 extension MultiNativeBannerViewController: BannerCreativeDelegate {
 
+    public func onNoAdContent() {
+        print("Banner.onNoAdContent")
+    }
+
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
     }

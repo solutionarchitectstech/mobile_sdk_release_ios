@@ -63,6 +63,10 @@ class SingleInlayoutNativeBannerViewController: UIViewController {
 
 extension SingleInlayoutNativeBannerViewController: BannerCreativeDelegate {
 
+    public func onNoAdContent() {
+        print("Banner.onNoAdContent")
+    }
+
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
     }
