@@ -72,6 +72,16 @@ class MultiProductCreativeViewController: UIViewController {
 
 extension MultiProductCreativeViewController: ProductCreativeDelegate {
 
+    public func onNoAdContent() {
+        self.spinner.isHidden = true
+        self.outputLabel1.isHidden = false
+        self.outputLabel2.isHidden = false
+
+        self.outputLabel1.textColor = .brown
+        self.outputLabel1.text = "WARNING: NoAdContent"
+        self.outputLabel2.text = nil
+    }
+
     func onLoadDataSuccess() {
         self.spinner.isHidden = true
     }

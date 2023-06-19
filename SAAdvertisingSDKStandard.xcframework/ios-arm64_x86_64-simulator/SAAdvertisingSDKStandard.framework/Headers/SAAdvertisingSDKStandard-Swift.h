@@ -296,6 +296,7 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard22BannerCreativeDelegate_")
 - (void)onLoadDataFailWithError:(NSError * _Nonnull)error;
 - (void)onLoadContentSuccessWithBannerView:(BaseBannerView * _Nonnull)bannerView;
 - (void)onLoadContentFailWithBannerView:(BaseBannerView * _Nonnull)bannerView error:(NSError * _Nonnull)error;
+- (void)onNoAdContent;
 - (void)onCloseWithBannerView:(BaseBannerView * _Nonnull)bannerView;
 - (void)onDebugSentLoadStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
 - (void)onDebugSentViewStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
@@ -686,6 +687,7 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard22BannerCreativeDelegate_")
 - (void)onLoadDataFailWithError:(NSError * _Nonnull)error;
 - (void)onLoadContentSuccessWithBannerView:(BaseBannerView * _Nonnull)bannerView;
 - (void)onLoadContentFailWithBannerView:(BaseBannerView * _Nonnull)bannerView error:(NSError * _Nonnull)error;
+- (void)onNoAdContent;
 - (void)onCloseWithBannerView:(BaseBannerView * _Nonnull)bannerView;
 - (void)onDebugSentLoadStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;
 - (void)onDebugSentViewStatisticWithBannerView:(BaseBannerView * _Nonnull)bannerView;

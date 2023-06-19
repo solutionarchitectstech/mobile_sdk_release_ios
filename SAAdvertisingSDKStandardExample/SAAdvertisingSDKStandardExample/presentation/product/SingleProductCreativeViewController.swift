@@ -52,6 +52,14 @@ class SingleProductCreativeViewController: UIViewController {
 
 extension SingleProductCreativeViewController: ProductCreativeDelegate {
 
+    public func onNoAdContent() {
+        self.spinner.isHidden = true
+        self.outputLabel.isHidden = false
+
+        self.outputLabel.textColor = .brown
+        self.outputLabel.text = "WARNING: NoAdContent"
+    }
+
     func onLoadDataSuccess() {
         self.spinner.isHidden = true
         self.outputLabel.isHidden = false

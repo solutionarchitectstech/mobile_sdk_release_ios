@@ -19692,6 +19692,31 @@
           },
           {
             "kind": "Function",
+            "name": "onNoAdContent",
+            "printedName": "onNoAdContent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@SAAdvertisingSDKStandard@objc(pl)BannerCreativeDelegate(im)onNoAdContent",
+            "mangledName": "$s24SAAdvertisingSDKStandard22BannerCreativeDelegateP13onNoAdContentyyF",
+            "moduleName": "SAAdvertisingSDKStandard",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.BannerCreativeDelegate>",
+            "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.BannerCreativeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "onClose",
             "printedName": "onClose(bannerView:)",
             "children": [
@@ -22310,6 +22335,27 @@
             "declKind": "Func",
             "usr": "s:24SAAdvertisingSDKStandard23ProductCreativeDelegateP17onLoadContentFail5query5erroryAA0cD5QueryV_s5Error_ptF",
             "mangledName": "$s24SAAdvertisingSDKStandard23ProductCreativeDelegateP17onLoadContentFail5query5erroryAA0cD5QueryV_s5Error_ptF",
+            "moduleName": "SAAdvertisingSDKStandard",
+            "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.ProductCreativeDelegate>",
+            "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.ProductCreativeDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "onNoAdContent",
+            "printedName": "onNoAdContent()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:24SAAdvertisingSDKStandard23ProductCreativeDelegateP13onNoAdContentyyF",
+            "mangledName": "$s24SAAdvertisingSDKStandard23ProductCreativeDelegateP13onNoAdContentyyF",
             "moduleName": "SAAdvertisingSDKStandard",
             "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.ProductCreativeDelegate>",
             "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.ProductCreativeDelegate>",
@@ -39088,6 +39134,43 @@
           },
           {
             "kind": "Var",
+            "name": "noContent",
+            "printedName": "noContent",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(SAAdvertisingSDKStandard.ApiError.Type) -> SAAdvertisingSDKStandard.ApiError",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ApiError",
+                    "printedName": "SAAdvertisingSDKStandard.ApiError",
+                    "usr": "s:24SAAdvertisingSDKStandard8ApiErrorO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "SAAdvertisingSDKStandard.ApiError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ApiError",
+                        "printedName": "SAAdvertisingSDKStandard.ApiError",
+                        "usr": "s:24SAAdvertisingSDKStandard8ApiErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:24SAAdvertisingSDKStandard8ApiErrorO9noContentyA2CmF",
+            "mangledName": "$s24SAAdvertisingSDKStandard8ApiErrorO9noContentyA2CmF",
+            "moduleName": "SAAdvertisingSDKStandard"
+          },
+          {
+            "kind": "Var",
             "name": "description",
             "printedName": "description",
             "children": [
@@ -47092,7 +47175,7 @@
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
       "offset": 8274,
-      "length": 2255,
+      "length": 2375,
       "value": "\"\""
     },
     {
@@ -47118,204 +47201,211 @@
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9974,
+      "length": 3,
+      "value": "204"
+    },
+    {
+      "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10378,
+      "offset": 10498,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10543,
+      "offset": 10663,
       "length": 220,
       "value": "\">>> API call REQUEST: \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10608,
+      "offset": 10728,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10611,
+      "offset": 10731,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10648,
+      "offset": 10768,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10651,
+      "offset": 10771,
       "length": 7,
       "value": "\"\n    HEADERS: \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "Dictionary",
-      "offset": 10713,
+      "offset": 10833,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10717,
+      "offset": 10837,
       "length": 4,
       "value": "\"\n    BODY: \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 10747,
+      "offset": 10867,
       "length": 1214,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11033,
+      "offset": 11153,
       "length": 48,
       "value": "\"API call failed: \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11080,
+      "offset": 11200,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11219,
+      "offset": 11339,
       "length": 41,
       "value": "\"API call failed: Invalid HTTP response.\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11287,
+      "offset": 11407,
       "length": 24,
       "value": "\"Invalid HTTP response.\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "BooleanLiteral",
-      "offset": 11449,
+      "offset": 11569,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11520,
+      "offset": 11640,
       "length": 14,
       "value": "\"Content-Type\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11604,
+      "offset": 11724,
       "length": 6,
       "value": "\"json\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11656,
+      "offset": 11776,
       "length": 5,
       "value": "\"xml\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11707,
+      "offset": 11827,
       "length": 6,
       "value": "\"text\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11759,
+      "offset": 11879,
       "length": 6,
       "value": "\"html\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11804,
+      "offset": 11924,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 11971,
+      "offset": 12091,
       "length": 222,
       "value": "\"<<< API call RESPONSE: \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 12023,
+      "offset": 12143,
       "length": 1,
       "value": "\" - \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 12087,
+      "offset": 12207,
       "length": 7,
       "value": "\"\n    HEADERS: \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 12147,
+      "offset": 12267,
       "length": 4,
       "value": "\"\n    BODY: \""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "StringLiteral",
-      "offset": 12177,
+      "offset": 12297,
       "length": 1356,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 12265,
+      "offset": 12385,
       "length": 3,
       "value": "200"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 12285,
+      "offset": 12405,
       "length": 3,
       "value": "300"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 12431,
+      "offset": 12551,
       "length": 3,
       "value": "404"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiRepository.swift",
       "kind": "IntegerLiteral",
-      "offset": 13208,
+      "offset": 13328,
       "length": 1,
       "value": "0"
     },
@@ -49100,7 +49190,7 @@
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/presentation\/banner\/BaseBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7844,
+      "offset": 7701,
       "length": 4,
       "value": "true"
     },
@@ -49485,238 +49575,238 @@
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 2825,
+      "offset": 2866,
       "length": 44,
       "value": "\"Banner.lifecycleQueue.\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 2868,
+      "offset": 2909,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "FloatLiteral",
-      "offset": 3032,
+      "offset": 3073,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "FloatLiteral",
-      "offset": 3201,
+      "offset": 3242,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 3491,
+      "offset": 3532,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "IntegerLiteral",
-      "offset": 3571,
+      "offset": 3612,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 3891,
+      "offset": 3932,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 4465,
+      "offset": 4506,
       "length": 37,
       "value": "\"No bannerViews to load banners for.\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 7322,
+      "offset": 8007,
       "length": 27,
       "value": "\"Banner content not found.\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "FloatLiteral",
-      "offset": 10384,
+      "offset": 11069,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 10573,
+      "offset": 11258,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 10595,
+      "offset": 11280,
       "length": 2,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 10616,
+      "offset": 11301,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 10694,
+      "offset": 11379,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 10788,
+      "offset": 11473,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 11191,
+      "offset": 11876,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "FloatLiteral",
-      "offset": 11721,
+      "offset": 12406,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 11869,
+      "offset": 12554,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 11891,
+      "offset": 12576,
       "length": 2,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 11912,
+      "offset": 12597,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 12130,
+      "offset": 12815,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "FloatLiteral",
-      "offset": 12234,
+      "offset": 12919,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 12429,
+      "offset": 13114,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 12524,
+      "offset": 13209,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 12928,
+      "offset": 13613,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "FloatLiteral",
-      "offset": 13453,
+      "offset": 14138,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 13644,
+      "offset": 14329,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 13666,
+      "offset": 14351,
       "length": 2,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 13687,
+      "offset": 14372,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13765,
+      "offset": 14450,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13861,
+      "offset": 14546,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "BooleanLiteral",
-      "offset": 14266,
+      "offset": 14951,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 14830,
+      "offset": 15515,
       "length": 65,
       "value": "\"Unable to send banner statistic due inavlid URL: '\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/BannerCreative.swift",
       "kind": "StringLiteral",
-      "offset": 14893,
+      "offset": 15578,
       "length": 3,
       "value": "\"'\""
     },
@@ -49940,14 +50030,14 @@
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/ProductCreative.swift",
       "kind": "StringLiteral",
-      "offset": 1864,
+      "offset": 1889,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/ProductCreative.swift",
       "kind": "StringLiteral",
-      "offset": 4081,
+      "offset": 4501,
       "length": 28,
       "value": "\"Product content not found.\""
     },
@@ -54283,6 +54373,13 @@
       "offset": 2877,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/ApiError.swift",
+      "kind": "StringLiteral",
+      "offset": 1804,
+      "length": 11,
+      "value": "\"NoContent\""
     },
     {
       "filePath": "\/Users\/stanislav.radchenko\/Desktop\/Work\/SolutionArchtects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/domain\/model\/RTBPrivateAuction.swift",

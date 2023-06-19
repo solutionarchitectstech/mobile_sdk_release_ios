@@ -132,6 +132,10 @@ class SingleProgrammaticallyWebBannerViewController: UIViewController {
 
 extension SingleProgrammaticallyWebBannerViewController: BannerCreativeDelegate {
 
+    public func onNoAdContent() {
+        print("Banner.onNoAdContent")
+    }
+
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
     }

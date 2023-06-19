@@ -463,6 +463,7 @@ extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
   @objc optional func onLoadDataFail(error: any Swift.Error)
   @objc optional func onLoadContentSuccess(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
   @objc optional func onLoadContentFail(bannerView: SAAdvertisingSDKStandard.BaseBannerView, error: any Swift.Error)
+  @objc optional func onNoAdContent()
   @objc optional func onClose(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
   @objc optional func onDebugSentLoadStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
   @objc optional func onDebugSentViewStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
@@ -541,6 +542,7 @@ public protocol ProductCreativeDelegate : AnyObject {
   func onLoadDataFail(error: any Swift.Error)
   func onLoadContentSuccess(entity: SAAdvertisingSDKStandard.ProductCreativeEntity)
   func onLoadContentFail(query: SAAdvertisingSDKStandard.ProductCreativeQuery, error: any Swift.Error)
+  func onNoAdContent()
 }
 public class ProductCreative {
   weak public var delegate: (any SAAdvertisingSDKStandard.ProductCreativeDelegate)?
@@ -1015,6 +1017,7 @@ public enum ApiError : Swift.Error, Swift.CustomStringConvertible, Foundation.Lo
   case networkFailed(error: any Swift.Error)
   case invocationFailed(reason: (message: Swift.String, statusCode: Swift.Int))
   case failed(error: any Swift.Error)
+  case noContent
   public var description: Swift.String {
     get
   }
