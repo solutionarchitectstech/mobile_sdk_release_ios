@@ -1118,7 +1118,6 @@ extension SAAdvertisingSDKStandard.VastViewableImpression : Swift.Equatable {
     set
   }
   public func loadIfNeeded(path: Swift.String = "")
-  public func load(path: Swift.String = "")
   public typealias ID = Swift.ObjectIdentifier
   @objc deinit
 }

@@ -55,14 +55,14 @@ class SingleCollectionWebBannerViewController: UICollectionViewController {
         for i in 0..<num {
             var holder: BannerCreativeHolder?
             let id = "Banner-\(i + 1)"
-            if i == num / 2 {
+            if i % 2 == 0 {
                 holder = BannerCreativeHolder(
                     query: BannerCreativeQuery(
                         placementId: "YOUR_PLACEMENT_ID",
                         closeButtonType: CloseButtonType.VISIBLE,
                         sizes: [SizeEntity(width: 260, height: 106)]
                     ),
-                    refresh: 10.0
+                    refresh: Double.random(in: 5.0...10.0) // 10.0
                 )
                 holder!.delegate = self
             }
