@@ -52,14 +52,6 @@ class SingleProductCreativeViewController: UIViewController {
 
 extension SingleProductCreativeViewController: ProductCreativeDelegate {
 
-    public func onNoAdContent() {
-        self.spinner.isHidden = true
-        self.outputLabel.isHidden = false
-
-        self.outputLabel.textColor = .brown
-        self.outputLabel.text = "WARNING: NoAdContent"
-    }
-
     func onLoadDataSuccess() {
         self.spinner.isHidden = true
         self.outputLabel.isHidden = false
@@ -78,5 +70,13 @@ extension SingleProductCreativeViewController: ProductCreativeDelegate {
     func onLoadContentFail(query: ProductCreativeQuery, error: Error) {
         self.outputLabel.textColor = .red
         self.outputLabel.text = "ERROR: Unable to load product creative content by '\(query.placementId)' placementId due error: \(error.localizedDescription)"
+    }
+
+    public func onNoAdContent(query: ProductCreativeQuery) {
+        self.spinner.isHidden = true
+        self.outputLabel.isHidden = false
+
+        self.outputLabel.textColor = .brown
+        self.outputLabel.text = "WARNING: NoAdContent placementId: \(query.placementId)"
     }
 }

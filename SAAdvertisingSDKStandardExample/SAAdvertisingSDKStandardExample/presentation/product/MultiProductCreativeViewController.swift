@@ -72,16 +72,6 @@ class MultiProductCreativeViewController: UIViewController {
 
 extension MultiProductCreativeViewController: ProductCreativeDelegate {
 
-    public func onNoAdContent() {
-        self.spinner.isHidden = true
-        self.outputLabel1.isHidden = false
-        self.outputLabel2.isHidden = false
-
-        self.outputLabel1.textColor = .brown
-        self.outputLabel1.text = "WARNING: NoAdContent"
-        self.outputLabel2.text = nil
-    }
-
     func onLoadDataSuccess() {
         self.spinner.isHidden = true
     }
@@ -114,5 +104,15 @@ extension MultiProductCreativeViewController: ProductCreativeDelegate {
             self.outputLabel2.textColor = .red
             self.outputLabel2.text = value
         }
+    }
+
+    public func onNoAdContent(query: ProductCreativeQuery) {
+        self.spinner.isHidden = true
+        self.outputLabel1.isHidden = false
+        self.outputLabel2.isHidden = false
+
+        self.outputLabel1.textColor = .brown
+        self.outputLabel1.text = "WARNING: NoAdContent placementId: \(query.placementId)"
+        self.outputLabel2.text = nil
     }
 }

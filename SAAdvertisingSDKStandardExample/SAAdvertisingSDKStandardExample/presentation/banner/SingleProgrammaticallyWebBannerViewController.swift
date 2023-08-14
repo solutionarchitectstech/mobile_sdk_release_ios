@@ -35,9 +35,6 @@ class SingleProgrammaticallyWebBannerViewController: UIViewController {
             position: (h: .leading, v: .top),
             aspectRatio: (w: 1 / 1, h: 1 / 1) // (w: 2 / 3, h: 1 / 6)
         )
-        bannerView.backgroundColor = .white
-        bannerView.isScrollEnabled = true
-        bannerView.scaleToFit = false
 
         let mainScreenScale = UIScreen.main.scale
         let pxBannerWidth = Int(bannerView.frame.size.width * mainScreenScale)
@@ -132,10 +129,6 @@ class SingleProgrammaticallyWebBannerViewController: UIViewController {
 
 extension SingleProgrammaticallyWebBannerViewController: BannerCreativeDelegate {
 
-    public func onNoAdContent() {
-        print("Banner.onNoAdContent")
-    }
-
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
     }
@@ -152,6 +145,11 @@ extension SingleProgrammaticallyWebBannerViewController: BannerCreativeDelegate 
     public func onLoadContentFail(bannerView: BaseBannerView, error: Error) {
         let placementId = bannerView.query?.placementId
         print("Banner.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+    }
+
+    public func onNoAdContent(bannerView: BaseBannerView) {
+        let placementId = bannerView.query?.placementId
+        print("Banner.onNoAdContent[\(String(describing: placementId))]")
     }
 
     public func onClose(bannerView: BaseBannerView) {
