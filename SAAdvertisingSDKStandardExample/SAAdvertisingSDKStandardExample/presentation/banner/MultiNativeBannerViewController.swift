@@ -73,6 +73,7 @@ class MultiNativeBannerViewController: UIViewController {
             currency: "RUB"
         )
 
+        bannerView3.scaleToFit = false
         bannerView3.query = BannerCreativeQuery(
             placementId: "YOUR_PLACEMENT_ID",
             closeButtonType: .APPEARING(timeout: 5.0),
@@ -81,6 +82,7 @@ class MultiNativeBannerViewController: UIViewController {
             ]
         )
 
+        bannerView4.scaleToFit = false
         bannerView4.query = BannerCreativeQuery(
             placementId: "YOUR_PLACEMENT_ID",
             closeButtonType: .COUNTDOWN(timeout: 5.0),
@@ -109,10 +111,6 @@ class MultiNativeBannerViewController: UIViewController {
 
 extension MultiNativeBannerViewController: BannerCreativeDelegate {
 
-    public func onNoAdContent() {
-        print("Banner.onNoAdContent")
-    }
-
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
     }
@@ -129,6 +127,11 @@ extension MultiNativeBannerViewController: BannerCreativeDelegate {
     public func onLoadContentFail(bannerView: BaseBannerView, error: Error) {
         let placementId = bannerView.query?.placementId
         print("Banner.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+    }
+
+    public func onNoAdContent(bannerView: BaseBannerView) {
+        let placementId = bannerView.query?.placementId
+        print("Banner.onNoAdContent[\(String(describing: placementId))]")
     }
 
     public func onClose(bannerView: BaseBannerView) {

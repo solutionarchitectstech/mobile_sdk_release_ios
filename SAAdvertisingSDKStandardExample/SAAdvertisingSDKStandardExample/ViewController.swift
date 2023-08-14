@@ -60,6 +60,14 @@ class ViewController: UIViewController {
         presentViewControllerBy(name: "SingleCollectionNativeBannerViewController")
     }
 
+    @IBAction func onSingleFullscreenWebBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleFullscreenWebBannerViewController")
+    }
+
+    @IBAction func onSingleFullscreenNativeBannerClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleFullscreenNativeBannerViewController")
+    }
+
     @IBAction func onSingleProductCreativeClick(_ sender: Any) {
         presentViewControllerBy(name: "SingleProductCreativeViewController")
     }

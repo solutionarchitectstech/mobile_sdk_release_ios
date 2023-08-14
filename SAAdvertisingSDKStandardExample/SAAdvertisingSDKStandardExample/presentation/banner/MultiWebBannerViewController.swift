@@ -113,10 +113,6 @@ class MultiWebBannerViewController: UIViewController {
 
 extension MultiWebBannerViewController: BannerCreativeDelegate {
 
-    public func onNoAdContent() {
-        print("Banner.onNoAdContent")
-    }
-
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
     }
@@ -133,6 +129,11 @@ extension MultiWebBannerViewController: BannerCreativeDelegate {
     public func onLoadContentFail(bannerView: BaseBannerView, error: Error) {
         let placementId = bannerView.query?.placementId
         print("Banner.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+    }
+
+    public func onNoAdContent(bannerView: BaseBannerView) {
+        let placementId = bannerView.query?.placementId
+        print("Banner.onNoAdContent[\(String(describing: placementId))]")
     }
 
     public func onClose(bannerView: BaseBannerView) {

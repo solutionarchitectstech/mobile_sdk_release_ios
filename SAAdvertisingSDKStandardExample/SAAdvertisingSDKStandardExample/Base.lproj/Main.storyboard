@@ -3,7 +3,7 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,28 +37,28 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kbn-Nl-3sx">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="600"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="700"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Obp-op-XTe" userLabel="Single Container View">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="270"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="385"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SINGLE IMPRESSION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqi-lT-Jsq">
-                                                        <rect key="frame" x="0.0" y="20" width="375" height="24"/>
+                                                        <rect key="frame" x="0.0" y="20" width="373" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="k4B-uA-qfx">
-                                                        <rect key="frame" x="0.0" y="60" width="187.5" height="162.5"/>
+                                                        <rect key="frame" x="0.0" y="60" width="186.5" height="205.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HTML Banners" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOC-or-n8S">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="33.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="33.5"/>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7A-EZ-3VM">
-                                                                <rect key="frame" x="0.0" y="45.5" width="187.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="45.5" width="186.5" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="INLAYOUT">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -68,7 +68,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uTG-Pn-uzb">
-                                                                <rect key="frame" x="0.0" y="88.5" width="187.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="88.5" width="186.5" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="PROGRAMMATICALLY">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -78,7 +78,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mxI-tc-Q9u">
-                                                                <rect key="frame" x="0.0" y="131.5" width="187.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="131.5" width="186.5" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="COLLECTION-VIEW">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -87,13 +87,23 @@
                                                                     <action selector="onSingleCollectionWebBannerClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="Vca-fp-deB"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZCz-Ve-fGa">
+                                                                <rect key="frame" x="0.0" y="174.5" width="186.5" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="FULLSCREEN">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="onSingleFullscreenWebBannerClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="oLJ-fe-hjo"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="seX-wU-ON3">
-                                                        <rect key="frame" x="187.5" y="60" width="187.5" height="162.5"/>
+                                                        <rect key="frame" x="186.5" y="60" width="186.5" height="205.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jo6-eq-zy6">
-                                                                <rect key="frame" x="0.0" y="0.0" width="187.5" height="33.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="186.5" height="33.5"/>
                                                                 <string key="text">Native Banners
 (experimental)</string>
                                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -101,7 +111,7 @@
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="391-MO-47H">
-                                                                <rect key="frame" x="0.0" y="45.5" width="187.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="45.5" width="186.5" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="INLAYOUT">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -111,7 +121,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6lt-FA-Lit">
-                                                                <rect key="frame" x="0.0" y="88.5" width="187.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="88.5" width="186.5" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="PROGRAMMATICALLY">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -121,7 +131,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZW-Vj-6Du">
-                                                                <rect key="frame" x="0.0" y="131.5" width="187.5" height="31"/>
+                                                                <rect key="frame" x="0.0" y="131.5" width="186.5" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="COLLECTION-VIEW">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -130,10 +140,20 @@
                                                                     <action selector="onSingleCollectionNativeBannerClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="kv3-Ra-ZEK"/>
                                                                 </connections>
                                                             </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsD-pE-wTN">
+                                                                <rect key="frame" x="0.0" y="174.5" width="186.5" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" title="FULLSCREEN">
+                                                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                                                </buttonConfiguration>
+                                                                <connections>
+                                                                    <action selector="onSingleFullscreenNativeBannerClick:" destination="Jfp-fH-Mdb" eventType="touchUpInside" id="2nT-V2-tNm"/>
+                                                                </connections>
+                                                            </button>
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AMY-Bc-FRb">
-                                                        <rect key="frame" x="0.0" y="230.5" width="375" height="31"/>
+                                                        <rect key="frame" x="0.0" y="273.5" width="373" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="PRODUCT CREATIVE">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -162,19 +182,19 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Q35-pC-C5I" userLabel="Multi Container View">
-                                                <rect key="frame" x="0.0" y="278" width="375" height="210"/>
+                                                <rect key="frame" x="0.0" y="393" width="373" height="210"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MUTIPLE IMPRESSIONS (EXPERIMENTAL)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tj-yC-VJy">
-                                                        <rect key="frame" x="0.0" y="20" width="375" height="24"/>
+                                                        <rect key="frame" x="0.0" y="20" width="373" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="pCh-N0-HPa">
-                                                        <rect key="frame" x="0.0" y="52" width="375" height="117"/>
+                                                        <rect key="frame" x="0.0" y="52" width="373" height="117"/>
                                                         <subviews>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="72d-hY-jkd">
-                                                                <rect key="frame" x="0.0" y="0.0" width="375" height="31"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="373" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="HTML BANNERS">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -184,7 +204,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-GU-n3W">
-                                                                <rect key="frame" x="0.0" y="43" width="375" height="31"/>
+                                                                <rect key="frame" x="0.0" y="43" width="373" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="NATIVE BANNERS">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -194,7 +214,7 @@
                                                                 </connections>
                                                             </button>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OEF-2Q-owI">
-                                                                <rect key="frame" x="0.0" y="86" width="375" height="31"/>
+                                                                <rect key="frame" x="0.0" y="86" width="373" height="31"/>
                                                                 <state key="normal" title="Button"/>
                                                                 <buttonConfiguration key="configuration" style="plain" title="PRODUCT CREATIVE">
                                                                     <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -217,16 +237,16 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdY-gg-bjl" userLabel="Media Container View">
-                                                <rect key="frame" x="0.0" y="480" width="375" height="120"/>
+                                                <rect key="frame" x="0.0" y="595" width="373" height="105"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MEDIA (EXPERIMENTAL)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o82-Yi-52Y">
-                                                        <rect key="frame" x="0.0" y="20" width="375" height="24"/>
+                                                        <rect key="frame" x="0.0" y="20" width="373" height="24"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                         <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GbF-pJ-cJx">
-                                                        <rect key="frame" x="0.0" y="52" width="375" height="31"/>
+                                                        <rect key="frame" x="0.0" y="52" width="373" height="31"/>
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="VIDEO PLAYER">
                                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
@@ -252,26 +272,28 @@
                                             <constraint firstItem="Obp-op-XTe" firstAttribute="leading" secondItem="Kbn-Nl-3sx" secondAttribute="leading" id="2B1-Uv-m9H"/>
                                             <constraint firstAttribute="trailing" secondItem="Obp-op-XTe" secondAttribute="trailing" id="7df-Pb-Tk2"/>
                                             <constraint firstItem="Q35-pC-C5I" firstAttribute="top" secondItem="Obp-op-XTe" secondAttribute="bottom" constant="8" symbolic="YES" id="9cj-7W-D4C"/>
+                                            <constraint firstAttribute="height" constant="700" id="Cef-64-Bsx"/>
                                             <constraint firstAttribute="trailing" secondItem="Q35-pC-C5I" secondAttribute="trailing" id="EAk-Zz-UfY"/>
-                                            <constraint firstItem="Obp-op-XTe" firstAttribute="height" secondItem="Kbn-Nl-3sx" secondAttribute="height" multiplier="0.45" id="F90-Jp-iO0"/>
+                                            <constraint firstItem="Obp-op-XTe" firstAttribute="height" secondItem="Kbn-Nl-3sx" secondAttribute="height" multiplier="0.55" id="F90-Jp-iO0"/>
                                             <constraint firstAttribute="trailing" secondItem="gdY-gg-bjl" secondAttribute="trailing" id="Hwo-uv-8WJ"/>
                                             <constraint firstItem="gdY-gg-bjl" firstAttribute="leading" secondItem="Kbn-Nl-3sx" secondAttribute="leading" id="LpP-rd-85e"/>
-                                            <constraint firstItem="Q35-pC-C5I" firstAttribute="height" secondItem="Kbn-Nl-3sx" secondAttribute="height" multiplier="0.35" id="Mpr-wS-r8m"/>
+                                            <constraint firstItem="Q35-pC-C5I" firstAttribute="height" secondItem="Kbn-Nl-3sx" secondAttribute="height" multiplier="0.3" id="Mpr-wS-r8m"/>
                                             <constraint firstItem="Q35-pC-C5I" firstAttribute="bottom" secondItem="gdY-gg-bjl" secondAttribute="top" constant="8" symbolic="YES" id="UBh-de-6ZW"/>
-                                            <constraint firstItem="gdY-gg-bjl" firstAttribute="height" secondItem="Kbn-Nl-3sx" secondAttribute="height" multiplier="0.2" id="cMa-6o-zXb"/>
-                                            <constraint firstAttribute="height" constant="600" id="fe7-Gr-uzJ"/>
+                                            <constraint firstItem="gdY-gg-bjl" firstAttribute="height" secondItem="Kbn-Nl-3sx" secondAttribute="height" multiplier="0.15" id="cMa-6o-zXb"/>
                                             <constraint firstItem="Q35-pC-C5I" firstAttribute="leading" secondItem="Kbn-Nl-3sx" secondAttribute="leading" id="vag-FY-QYw"/>
                                             <constraint firstItem="Obp-op-XTe" firstAttribute="top" secondItem="Kbn-Nl-3sx" secondAttribute="top" id="vgH-fZ-e1r"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="Kbn-Nl-3sx" secondAttribute="bottom" id="8G2-35-M5Q"/>
-                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="width" secondItem="pQ7-VB-217" secondAttribute="width" id="P4E-jh-Kou"/>
-                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="top" secondItem="pQ7-VB-217" secondAttribute="top" id="do8-BX-4u6"/>
-                                    <constraint firstAttribute="trailing" secondItem="Kbn-Nl-3sx" secondAttribute="trailing" id="v4O-9m-ey0"/>
-                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="leading" secondItem="pQ7-VB-217" secondAttribute="leading" id="z1U-b3-8Kt"/>
+                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="width" secondItem="1PB-mb-av7" secondAttribute="width" multiplier="0.994667" id="88D-z6-gwJ"/>
+                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="trailing" secondItem="0wA-6T-pcs" secondAttribute="trailing" id="YeK-y7-tjc"/>
+                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="top" secondItem="0wA-6T-pcs" secondAttribute="top" id="epH-dT-1zu"/>
+                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="bottom" secondItem="0wA-6T-pcs" secondAttribute="bottom" id="rV3-j5-NQF"/>
+                                    <constraint firstItem="Kbn-Nl-3sx" firstAttribute="leading" secondItem="0wA-6T-pcs" secondAttribute="leading" id="uc0-BM-d6C"/>
                                 </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="0wA-6T-pcs"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="1PB-mb-av7"/>
                             </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Rov-pU-9Rn"/>

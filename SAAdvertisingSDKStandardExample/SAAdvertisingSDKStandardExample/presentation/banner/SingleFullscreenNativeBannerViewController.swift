@@ -18,21 +18,14 @@
 
 import UIKit
 import SAAdvertisingSDKStandard
-import Toaster
 
-class SingleInlayoutNativeBannerViewController: UIViewController {
+class SingleFullscreenNativeBannerViewController: UIViewController {
 
-    @IBOutlet weak var bannerView: NativeBannerView!
-
-    private var bannerCreative: BannerCreative<NativeBannerView>!
+    private var fullscreenVC: FullscreenNativeBannerViewController!
 
     override func viewDidLoad() {
-        super.viewDidLoad()
-
-        TechAdvertising.shared.uid = "MY_AUTHORIZED_USER_ID"
-
-        // Let's init banner views
-        bannerView.query = BannerCreativeQuery(
+        let vc = FullscreenNativeBannerViewController()
+        vc.query = BannerCreativeQuery(
             placementId: "YOUR_PLACEMENT_ID",
             closeButtonType: .COUNTDOWN(timeout: 5.0),
             sizes: [SizeEntity(width: 260, height: 106)],
@@ -46,22 +39,19 @@ class SingleInlayoutNativeBannerViewController: UIViewController {
                 "coppa": "1"
             ]
         )
+        vc.delegate = self
+        vc.refresh = 10.0
+        self.fullscreenVC = vc
+    }
 
-        // Let's init BannerCreative
-        self.bannerCreative = .init(
-            bannerViews: [bannerView],
-            refresh: 10.0
-        )
-        self.bannerCreative.delegate = self
-
-        // Finally, let's load banner creatives
-        self.bannerCreative.load()
+    @IBAction func onRequestButtonClick(_ sender: Any) {
+        self.present(fullscreenVC, animated: true)
     }
 }
 
 // MARK: - BannerCreativeDelegate
 
-extension SingleInlayoutNativeBannerViewController: BannerCreativeDelegate {
+extension SingleFullscreenNativeBannerViewController: BannerCreativeDelegate {
 
     public func onLoadDataSuccess() {
         print("Banner.onLoadDataSuccess")
@@ -69,6 +59,8 @@ extension SingleInlayoutNativeBannerViewController: BannerCreativeDelegate {
 
     public func onLoadDataFail(error: Error) {
         print("Banner.onLoadDataFail: \(error.localizedDescription)")
+
+        fullscreenVC.dismiss(animated: true)
     }
 
     public func onLoadContentSuccess(bannerView: BaseBannerView) {
@@ -79,30 +71,30 @@ extension SingleInlayoutNativeBannerViewController: BannerCreativeDelegate {
     public func onLoadContentFail(bannerView: BaseBannerView, error: Error) {
         let placementId = bannerView.query?.placementId
         print("Banner.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+
+        fullscreenVC.dismiss(animated: true)
     }
 
     public func onNoAdContent(bannerView: BaseBannerView) {
         let placementId = bannerView.query?.placementId
         print("Banner.onNoAdContent[\(String(describing: placementId))]")
+
+        fullscreenVC.dismiss(animated: true)
     }
 
     public func onClose(bannerView: BaseBannerView) {
         let placementId = bannerView.query?.placementId
         print("Banner.onClose[\(String(describing: placementId))]")
+
+        fullscreenVC.dismiss(animated: true)
     }
 
-    public func onDebugSentLoadStatistic(bannerView: BaseBannerView) {
+    public func onTap(bannerView: BaseBannerView, redirectUrl: URL?) {
         let placementId = bannerView.query?.placementId
-        Toast(text: "LOAD statistic[\(String(describing: placementId))]", duration: Delay.short).show()
-    }
+        print("Banner.onTap[\(String(describing: placementId))]: \(String(describing: redirectUrl))")
 
-    public func onDebugSentViewStatistic(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        Toast(text: "VIEW statistic[\(String(describing: placementId))]", duration: Delay.short).show()
-    }
-
-    public func onDebugSentClickStatistic(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        Toast(text: "CLICK statistic[\(String(describing: placementId))]", duration: Delay.short).show()
+        fullscreenVC.dismiss(animated: true)
+        // You can also use another variant to close banner, like:
+        // bannerView.closeBanner(notify: true)
     }
 }
