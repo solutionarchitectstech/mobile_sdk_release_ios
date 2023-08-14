@@ -27,8 +27,6 @@
 		105B7C40298B760E0006805F /* SingleInlayoutWebBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C36298B760E0006805F /* SingleInlayoutWebBannerViewController.swift */; };
 		10CE5C222A35C8DA009C0C75 /* MultiProductCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CE5C212A35C8DA009C0C75 /* MultiProductCreativeViewController.swift */; };
 		10CE5C242A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CE5C232A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard */; };
-		10F6048B298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */; };
-		10F6048C298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		10F60567299CC63500DCE803 /* SingleCollectionWebBannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F60566299CC63500DCE803 /* SingleCollectionWebBannerViewController.storyboard */; };
 		10F60569299CC64900DCE803 /* SingleCollectionWebBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60568299CC64900DCE803 /* SingleCollectionWebBannerViewController.swift */; };
 		10F7581C2A0E2593004494EC /* SingleProductCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7581B2A0E2593004494EC /* SingleProductCreativeViewController.swift */; };
@@ -42,20 +40,6 @@
 		10FBD3FF29BA68C0005686F3 /* MultiNativeBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FE29BA68C0005686F3 /* MultiNativeBannerViewController.swift */; };
 		10FBD40129BA69A5005686F3 /* MultiNativeBannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD40029BA69A5005686F3 /* MultiNativeBannerViewController.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		10F6048D298BC0A800DCE803 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				10F6048C298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		104D498B2A6D78F300F56BC0 /* SingleFullscreenNativeBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFullscreenNativeBannerViewController.swift; sourceTree = "<group>"; };
@@ -104,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10F6048B298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Frameworks */,
 				07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -233,7 +216,6 @@
 				105B7C0E298B74BA0006805F /* Sources */,
 				105B7C0F298B74BA0006805F /* Frameworks */,
 				105B7C10298B74BA0006805F /* Resources */,
-				10F6048D298BC0A800DCE803 /* Embed Frameworks */,
 				FEFCF1E6FFB462FC54452433 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
