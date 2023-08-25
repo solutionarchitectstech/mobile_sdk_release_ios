@@ -170,12 +170,10 @@ public struct RTBUserExtEntity {
   public init(consent: Swift.String)
 }
 public struct InitConfigCoreEntity {
-  public let bannerUrl: Swift.String?
-  public let nativeBannerUrl: Swift.String?
+  public let bannerCreativeUrl: Swift.String?
   public let productCreativeUrl: Swift.String?
-  public let audioUrl: Swift.String?
-  public let videoUrl: Swift.String?
-  public init(bannerUrl: Swift.String? = nil, nativeBannerUrl: Swift.String? = nil, productCreativeUrl: Swift.String? = nil, audioUrl: Swift.String? = nil, videoUrl: Swift.String? = nil)
+  public let mediaCreativeUrl: Swift.String?
+  public init(bannerCreativeUrl: Swift.String? = nil, productCreativeUrl: Swift.String? = nil, mediaCreativeUrl: Swift.String? = nil)
 }
 extension Swift.String {
   public var toSeconds: Swift.Double? {
@@ -438,6 +436,7 @@ extension SAAdvertisingSDKStandard.VastAd : Swift.Equatable {
 public struct ProductCreativeTrackingEntity {
   public var impression: [Swift.String]
   public var click: [Swift.String]
+  public var view: [Swift.String]
 }
 @_hasMissingDesignatedInitializers public class NativeBannerCreativeHolder : SAAdvertisingSDKStandard.BaseBannerCreativeHolder<SAAdvertisingSDKStandard.NativeBannerView> {
   public init(query: SAAdvertisingSDKStandard.BannerCreativeQuery, refresh: Foundation.TimeInterval = 0.0)
@@ -486,7 +485,7 @@ public struct ProductCreativeEntity {
   public let placementId: Swift.String
   public var sku: Swift.String
   public var disclaimer: Swift.String?
-  public var clickUrl: Swift.String
+  public var externalId: Swift.String
   public var tracking: SAAdvertisingSDKStandard.ProductCreativeTrackingEntity?
 }
 public struct VastAdParameters : Swift.Codable {
