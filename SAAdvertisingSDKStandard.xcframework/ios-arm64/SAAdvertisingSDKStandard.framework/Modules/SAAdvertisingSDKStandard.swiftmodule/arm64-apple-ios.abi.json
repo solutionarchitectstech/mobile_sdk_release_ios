@@ -8466,8 +8466,8 @@
         "children": [
           {
             "kind": "Var",
-            "name": "bannerUrl",
-            "printedName": "bannerUrl",
+            "name": "bannerCreativeUrl",
+            "printedName": "bannerCreativeUrl",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8485,8 +8485,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV9bannerUrlSSSgvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV9bannerUrlSSSgvp",
+            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV17bannerCreativeUrlSSSgvp",
+            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV17bannerCreativeUrlSSSgvp",
             "moduleName": "SAAdvertisingSDKStandard",
             "declAttributes": [
               "HasStorage",
@@ -8516,68 +8516,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV9bannerUrlSSSgvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV9bannerUrlSSSgvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "nativeBannerUrl",
-            "printedName": "nativeBannerUrl",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV15nativeBannerUrlSSSgvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV15nativeBannerUrlSSSgvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV15nativeBannerUrlSSSgvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV15nativeBannerUrlSSSgvg",
+                "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV17bannerCreativeUrlSSSgvg",
+                "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV17bannerCreativeUrlSSSgvg",
                 "moduleName": "SAAdvertisingSDKStandard",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8646,8 +8586,8 @@
           },
           {
             "kind": "Var",
-            "name": "audioUrl",
-            "printedName": "audioUrl",
+            "name": "mediaCreativeUrl",
+            "printedName": "mediaCreativeUrl",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8665,8 +8605,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV8audioUrlSSSgvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV8audioUrlSSSgvp",
+            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV16mediaCreativeUrlSSSgvp",
+            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV16mediaCreativeUrlSSSgvp",
             "moduleName": "SAAdvertisingSDKStandard",
             "declAttributes": [
               "HasStorage",
@@ -8696,68 +8636,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV8audioUrlSSSgvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV8audioUrlSSSgvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "videoUrl",
-            "printedName": "videoUrl",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV8videoUrlSSSgvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV8videoUrlSSSgvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV8videoUrlSSSgvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV8videoUrlSSSgvg",
+                "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV16mediaCreativeUrlSSSgvg",
+                "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV16mediaCreativeUrlSSSgvg",
                 "moduleName": "SAAdvertisingSDKStandard",
                 "implicit": true,
                 "accessorKind": "get"
@@ -8767,7 +8647,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(bannerUrl:nativeBannerUrl:productCreativeUrl:audioUrl:videoUrl:)",
+            "printedName": "init(bannerCreativeUrl:productCreativeUrl:mediaCreativeUrl:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -8819,41 +8699,11 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV9bannerUrl012nativeBannerH0015productCreativeH005audioH005videoH0ACSSSg_A4Itcfc",
-            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV9bannerUrl012nativeBannerH0015productCreativeH005audioH005videoH0ACSSSg_A4Itcfc",
+            "usr": "s:24SAAdvertisingSDKStandard20InitConfigCoreEntityV17bannerCreativeUrl07producthI005mediahI0ACSSSg_A2Gtcfc",
+            "mangledName": "$s24SAAdvertisingSDKStandard20InitConfigCoreEntityV17bannerCreativeUrl07producthI005mediahI0ACSSSg_A2Gtcfc",
             "moduleName": "SAAdvertisingSDKStandard",
             "declAttributes": [
               "AccessControl"
@@ -18824,6 +18674,116 @@
                 "accessorKind": "_modify"
               }
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "view",
+            "printedName": "view",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvp",
+            "mangledName": "$s24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvp",
+            "moduleName": "SAAdvertisingSDKStandard",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvg",
+                "mangledName": "$s24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvg",
+                "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.String]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvs",
+                "mangledName": "$s24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvs",
+                "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvM",
+                "mangledName": "$s24SAAdvertisingSDKStandard29ProductCreativeTrackingEntityV4viewSaySSGvM",
+                "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
           }
         ],
         "declKind": "Struct",
@@ -20637,8 +20597,8 @@
           },
           {
             "kind": "Var",
-            "name": "clickUrl",
-            "printedName": "clickUrl",
+            "name": "externalId",
+            "printedName": "externalId",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -20648,8 +20608,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvp",
+            "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvp",
+            "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvp",
             "moduleName": "SAAdvertisingSDKStandard",
             "declAttributes": [
               "HasStorage",
@@ -20670,8 +20630,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvg",
+                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvg",
+                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvg",
                 "moduleName": "SAAdvertisingSDKStandard",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20694,8 +20654,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvs",
-                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvs",
+                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvs",
+                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvs",
                 "moduleName": "SAAdvertisingSDKStandard",
                 "implicit": true,
                 "accessorKind": "set"
@@ -20712,8 +20672,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvM",
-                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV8clickUrlSSvM",
+                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvM",
+                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV10externalIdSSvM",
                 "moduleName": "SAAdvertisingSDKStandard",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -31001,6 +30961,16 @@
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SAAdvertisingSDKStandard",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -49607,14 +49577,14 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 7200,
+      "offset": 7204,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7373,
+      "offset": 7315,
       "length": 2,
       "value": "[]"
     },
@@ -49622,6 +49592,34 @@
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
       "offset": 7432,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
+      "kind": "Array",
+      "offset": 7509,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
+      "kind": "Array",
+      "offset": 7611,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
+      "kind": "Array",
+      "offset": 7686,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
+      "kind": "Array",
+      "offset": 7785,
       "length": 2,
       "value": "[]"
     },
@@ -51425,6 +51423,13 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/domain\/model\/ProductCreativeTrackingEntity.swift",
+      "kind": "Array",
+      "offset": 1349,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/NativeBannerCreativeHolder.swift",
       "kind": "FloatLiteral",
       "offset": 1349,
@@ -52253,14 +52258,14 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/dto\/SSPProductCreativeBidDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1483,
+      "offset": 1485,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/dto\/SSPProductCreativeBidDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1483,
+      "offset": 1485,
       "length": 4,
       "value": "\"id\""
     },
@@ -52715,365 +52720,435 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "Dictionary",
-      "offset": 2570,
+      "offset": 2610,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 2704,
+      "offset": 2786,
       "length": 65,
       "value": "\"AdvertisingSDK not initialized yet. Please initialize it first.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 2859,
+      "offset": 2941,
       "length": 30,
       "value": "\"https:\/\/mb.rktch.com\/license\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "Dictionary",
-      "offset": 2942,
+      "offset": 3064,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 3052,
+      "offset": 3216,
       "length": 30,
       "value": "\"AdvertisingSDKStandard (iOS)\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 3298,
+      "offset": 3462,
       "length": 17,
       "value": "\"failed_requests\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 3624,
+      "offset": 3788,
       "length": 65,
       "value": "\"AdvertisingSDK not initialized yet. Please initialize it first.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "Dictionary",
-      "offset": 3794,
+      "offset": 3998,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "Dictionary",
-      "offset": 4130,
+      "offset": 4416,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 4174,
+      "offset": 4502,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 4219,
+      "offset": 4547,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 4977,
-      "length": 65,
-      "value": "\"AdvertisingSDK not initialized yet. Please initialize it first.\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 5244,
-      "length": 62,
-      "value": "\"Error while sendSDKUsageAlert: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
       "offset": 5305,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "Dictionary",
-      "offset": 5618,
-      "length": 3,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 5855,
       "length": 65,
       "value": "\"AdvertisingSDK not initialized yet. Please initialize it first.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 6122,
+      "offset": 5572,
       "length": 62,
       "value": "\"Error while sendSDKUsageAlert: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 6183,
+      "offset": 5633,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "Dictionary",
-      "offset": 6499,
+      "offset": 5986,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 6543,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 6588,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 7348,
+      "offset": 6265,
       "length": 65,
       "value": "\"AdvertisingSDK not initialized yet. Please initialize it first.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 7615,
+      "offset": 6532,
       "length": 62,
       "value": "\"Error while sendSDKUsageAlert: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 7676,
+      "offset": 6593,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "Dictionary",
+      "offset": 6949,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 7035,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8441,
+      "offset": 7080,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 7840,
+      "length": 65,
+      "value": "\"AdvertisingSDK not initialized yet. Please initialize it first.\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 8107,
+      "length": 62,
+      "value": "\"Error while sendSDKUsageAlert: \""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 8168,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 8933,
       "length": 66,
       "value": "\"Please setup 'initConfig' or 'remoteConfig' in the init options.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8843,
+      "offset": 9335,
       "length": 62,
       "value": "\"Fetching remote config failed: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8904,
+      "offset": 9396,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 9019,
+      "offset": 9511,
       "length": 31,
       "value": "\"Fetched remote config is nil.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 9486,
+      "offset": 9978,
       "length": 75,
       "value": "\"AdvertisingSDK v\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 9525,
+      "offset": 10017,
       "length": 3,
       "value": "\" has been initialized successfully.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 9618,
+      "offset": 10110,
       "length": 78,
       "value": "\"Unable to initialize AdvertisingSDK due error: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 9695,
+      "offset": 10187,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 11273,
+      "offset": 11765,
       "length": 54,
       "value": "\"LocationManager error: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 11326,
+      "offset": 11818,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 11523,
-      "length": 28,
-      "value": "\"CFBundleShortVersionString\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 11567,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 11658,
-      "length": 17,
-      "value": "\"CFBundleVersion\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 11691,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
-      "kind": "StringLiteral",
-      "offset": 11808,
+      "offset": 12012,
       "length": 14,
       "value": "\"CFBundleName\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 11838,
+      "offset": 12042,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 11922,
+      "offset": 12126,
       "length": 28,
       "value": "\"CFBundleShortVersionString\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 11966,
+      "offset": 12170,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 12057,
+      "offset": 12261,
       "length": 17,
       "value": "\"CFBundleVersion\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 12090,
+      "offset": 12294,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 12411,
+      "length": 14,
+      "value": "\"CFBundleName\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 12441,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 12525,
+      "length": 28,
+      "value": "\"CFBundleShortVersionString\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 12569,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 12660,
+      "length": 17,
+      "value": "\"CFBundleVersion\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 12693,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "IntegerLiteral",
-      "offset": 12357,
+      "offset": 12960,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "IntegerLiteral",
-      "offset": 12397,
+      "offset": 13000,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "IntegerLiteral",
-      "offset": 12436,
+      "offset": 13039,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "IntegerLiteral",
-      "offset": 12480,
+      "offset": 13083,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "IntegerLiteral",
-      "offset": 12520,
+      "offset": 13123,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 12634,
+      "offset": 13237,
       "length": 7,
       "value": "\"apple\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "FloatLiteral",
-      "offset": 12985,
+      "offset": 13588,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 13309,
+      "offset": 13912,
       "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 13969,
+      "length": 121,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 13980,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 13998,
+      "length": 1,
+      "value": "\" (\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 14015,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 14034,
+      "length": 1,
+      "value": "\") \""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 14068,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 14071,
+      "length": 1,
+      "value": "\"\/\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
+      "kind": "StringLiteral",
+      "offset": 14089,
+      "length": 1,
       "value": "\"\""
     },
     {
@@ -54834,6 +54909,48 @@
       "value": "\"SAAdvertisingSDKStandard.BaseBannerViewController\""
     },
     {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/HeadersUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1602,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/HeadersUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1655,
+      "length": 34,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/HeadersUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1671,
+      "length": 1,
+      "value": "\" \""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/HeadersUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1688,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/HeadersUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1717,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/HeadersUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 1796,
+      "length": 12,
+      "value": "\"User-Agent\""
+    },
+    {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/vast\/models\/VMAP\/VMAPAdSource.swift",
       "kind": "StringLiteral",
       "offset": 227,
@@ -55179,30 +55296,30 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPMediaCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1908,
+      "offset": 1916,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPMediaCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 1942,
-      "length": 38,
-      "value": "\"WS API call failed due bad videoUrl.\""
+      "offset": 1950,
+      "length": 46,
+      "value": "\"WS API call failed due bad mediaCreativeUrl.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPMediaCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2407,
+      "offset": 2431,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPMediaCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2441,
-      "length": 38,
-      "value": "\"WS API call failed due bad audioUrl.\""
+      "offset": 2465,
+      "length": 46,
+      "value": "\"WS API call failed due bad mediaCreativeUrl.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPMediaCreativeRepositoryImpl.swift",
@@ -56299,182 +56416,182 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3205,
+      "offset": 3213,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 3234,
+      "offset": 3242,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3238,
+      "offset": 3246,
       "length": 39,
       "value": "\"WS API call failed due bad bannerUrl.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3941,
+      "offset": 3951,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 3970,
+      "offset": 3980,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 3974,
+      "offset": 3984,
       "length": 45,
       "value": "\"WS API call failed due bad nativeBannerUrl.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 4998,
+      "offset": 5008,
       "length": 26,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5010,
+      "offset": 5020,
       "length": 1,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5023,
+      "offset": 5033,
       "length": 4,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5291,
+      "offset": 5301,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5500,
+      "offset": 5510,
       "length": 46,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5522,
+      "offset": 5532,
       "length": 1,
       "value": "\"x\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5545,
+      "offset": 5555,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5935,
+      "offset": 5945,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5956,
+      "offset": 5966,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5977,
+      "offset": 5987,
       "length": 1,
       "value": "\")\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6621,
+      "offset": 6631,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6801,
+      "offset": 6811,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6886,
+      "offset": 6896,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6890,
+      "offset": 6900,
       "length": 40,
       "value": "\"WS API call failed due bad urlRequest.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7081,
+      "offset": 7091,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7268,
+      "offset": 7278,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7377,
+      "offset": 7387,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 8131,
+      "offset": 8141,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 8180,
+      "offset": 8190,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/data\/repository\/SSPBannerCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 8231,
+      "offset": 8241,
       "length": 2,
       "value": "[]"
     },

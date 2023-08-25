@@ -33,16 +33,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             storeUrl: "https://apps.apple.com/us/app/myapp/id12345678",
             initConfig: .init(
                 core: .init(
-                    bannerUrl: "https://YOUR_BANNER_ENDPOINT",
-                    nativeBannerUrl: "https://YOUR_NATIVE_BANNER_ENDPOINT",
-                    productCreativeUrl: "https://YOUR_PRODUCT_CREATIVE_ENDPOINT",
-                    audioUrl: "https://YOUR_AUDIO_ENDPOINT",
-                    videoUrl: "https://YOUR_VIDEO_ENDPOINT"
+                    bannerCreativeUrl: "https://YOUR_BANNER_CREATIVE_ENDPOINT",
+                    mediaCreativeUrl: "https://YOUR_MEDIA_CREATIVE_ENDPOINT",
+                    productCreativeUrl: "https://YOUR_PRODUCT_CREATIVE_ENDPOINT"
                 )
             ),
             debugMode: true,
             httpHeaders: [
-                "Authorization": "Bearer YOUR_TOKEN"
+                "Authorization": "Bearer CUSTOM_AUTH_TOKEN",
+                "User-Agent": "YOUR_CUSTOM_USER_AGENT"
             ]
         ))
 
