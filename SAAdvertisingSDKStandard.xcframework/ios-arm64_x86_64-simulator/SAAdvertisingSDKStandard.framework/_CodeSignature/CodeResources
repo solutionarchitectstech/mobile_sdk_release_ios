@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		sHx0ExBlWr/hYFJccGtAFUCA7Fc=
+		2mJt0Af95A0vwW+qjQ0hLVZx0Cw=
 		</data>
 		<key>BannerView.nib</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Headers/SAAdvertisingSDKStandard-Swift.h</key>
 		<data>
-		Cr5mjluIbXSabdRC/WQR+Nh8CMo=
+		TYAw4IB7/AMetfV85QPy+c5flmQ=
 		</data>
 		<key>Headers/SAAdvertisingSDKStandard.h</key>
 		<data>
@@ -26,47 +26,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		C7p2rtTFn2eTcvPuTlIvrK3+qP4=
+		niAll8ygClGeJlwjTL4aKXcHVuc=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		gU/E6C9byIE8xmsiCxSyl93tTfw=
+		MC+gRl08tSqBqtouOtcjvo29VE4=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		mummrFvFdevCVP5sUfPpiqIUFPQ=
+		EBlyY3RX9yzSu2PNglfeZXVzgM0=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		wy0swT787SOrotiq1QNGo6vOxVc=
+		lVsSBYYqsrXsz6uzM/rNdU59Hck=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mummrFvFdevCVP5sUfPpiqIUFPQ=
+		EBlyY3RX9yzSu2PNglfeZXVzgM0=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3Xl6dpVU6z3XzCQ5CqyuHDSRjXo=
+		37uT2ZaHntNNEWe1C57ED9mKy4s=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		v7HkpmXiZz/paZmdxuxSq/gtGc0=
+		eStKKd/L7G6tFP3r5prVhiF6T80=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		J2/h4h8F7xJesybyNzSFI+WcHSQ=
+		RAubfBN17SF1BncuT4pjGTMeNVQ=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		4qWEM24wob4vUHuUz9Xa05b6CJI=
+		Skl4oUnS2REknUZA9PqLknJUdmo=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		J2/h4h8F7xJesybyNzSFI+WcHSQ=
+		RAubfBN17SF1BncuT4pjGTMeNVQ=
 		</data>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		IBFTEr0/F5MHKuGb0t3XPVjDS70=
+		PPmu54X9eC52AgWym5otv52v6Lw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -87,7 +87,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i80UnaKwMGX7JDCfqQ5KaoZ3KVUsJfskBzWTX+VvZuU=
+			5ruDNU9rNKRLLZ0LtQDNLaHpf/6IFC4UFcFq4Zj6NA8=
 			</data>
 		</dict>
 		<key>BannerView.nib</key>
@@ -108,7 +108,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3lNX+Ie+T5d+zou/GrLN6Ph/OkGdr5Gi0m7mZu+genI=
+			O1Y6mdABTugmQndoWwC1bkuo6OZXElT0ubPFXS4yAFM=
 			</data>
 		</dict>
 		<key>Headers/SAAdvertisingSDKStandard.h</key>
@@ -122,70 +122,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			L9Q8f2KkMj+mEn2VYo5WMZSBfIKI1CUAvrvbneMTOD0=
+			xEikagL84km+A06T14COwqiGVbLCif1yiPa3bbCUi/c=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EH6o6sUmgFwJ9Q5Nr+6kwZpRKhxfHNNrDJ7tnXihw0c=
+			tl2ImQSTMGPkryYKHzuu9ivHlx1HwJeRfXTkm2CBdVw=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			SV1f0wlW3RLO0EaY2QzlPnvxRkfTq3E9F1mpCUleJ2g=
+			S5HDsNWuc00Oe8CA/rtw8cxSuc0nF0ANkQcPBBdpW3w=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EH6o6sUmgFwJ9Q5Nr+6kwZpRKhxfHNNrDJ7tnXihw0c=
+			tl2ImQSTMGPkryYKHzuu9ivHlx1HwJeRfXTkm2CBdVw=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			14YkUuSHl/FgvZPXoLbNya8N2tfUWgBM759d2VjMkIA=
+			90aJKct1ctYz/zpCZO8rSpu9mfQ9EfJw1O1Ur+iJtvM=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			2gKNcb/H+V+Ds236i/7EHUzECb2bkjVkmPo1AiT9iT0=
+			Zi5YTIcHTAlzZjFrIe15/nyrFmsC7CJRBOZx9GQHZBg=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			egCBs0fMHqFdFlRy3HUns1l8FDZDodaK4oWjlTt3R10=
+			o/jVpS+/wHETYb5qSdoBoj4uVrLMOckZZmXIFt1R+9c=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qlU30PdENDto6ypNqTYdVxti6KZm5h0AV5tDddrO6Do=
+			hMG29I+ZLiRMqgp9pAwMDNdRxDoUZiG5qYPi5mPxx74=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			egCBs0fMHqFdFlRy3HUns1l8FDZDodaK4oWjlTt3R10=
+			o/jVpS+/wHETYb5qSdoBoj4uVrLMOckZZmXIFt1R+9c=
 			</data>
 		</dict>
 		<key>Modules/SAAdvertisingSDKStandard.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J2uq96w7B0/mSD4TyJQpL+6k4QeIuW3LsBA4nauj2Ug=
+			ceaIS5cQIBZ6ihIYOpASaXljqH7kL24KLR0C2Y3lapI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
