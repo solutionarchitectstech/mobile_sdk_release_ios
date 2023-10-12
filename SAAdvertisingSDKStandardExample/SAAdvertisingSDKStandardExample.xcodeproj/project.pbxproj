@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */; };
 		104D498C2A6D78F300F56BC0 /* SingleFullscreenNativeBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104D498B2A6D78F300F56BC0 /* SingleFullscreenNativeBannerViewController.swift */; };
 		104D498E2A6D814900F56BC0 /* SingleFullscreenNativeBannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 104D498D2A6D814900F56BC0 /* SingleFullscreenNativeBannerViewController.storyboard */; };
 		105B10C52A71408C00F00A3C /* SingleFullscreenWebBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B10C42A71408C00F00A3C /* SingleFullscreenWebBannerViewController.swift */; };
@@ -16,8 +17,8 @@
 		105B7C1D298B74BA0006805F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C1B298B74BA0006805F /* Main.storyboard */; };
 		105B7C1F298B74BB0006805F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C1E298B74BB0006805F /* Assets.xcassets */; };
 		105B7C22298B74BB0006805F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C20298B74BB0006805F /* LaunchScreen.storyboard */; };
-		105B7C37298B760E0006805F /* VideoPlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C2B298B760E0006805F /* VideoPlayerViewController.storyboard */; };
-		105B7C38298B760E0006805F /* VideoPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C2C298B760E0006805F /* VideoPlayerViewController.swift */; };
+		105B7C37298B760E0006805F /* MediaPlayerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C2B298B760E0006805F /* MediaPlayerViewController.storyboard */; };
+		105B7C38298B760E0006805F /* MediaPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C2C298B760E0006805F /* MediaPlayerViewController.swift */; };
 		105B7C3B298B760E0006805F /* SingleProgrammaticallyWebBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C31298B760E0006805F /* SingleProgrammaticallyWebBannerViewController.swift */; };
 		105B7C3C298B760E0006805F /* SingleInlayoutWebBannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C32298B760E0006805F /* SingleInlayoutWebBannerViewController.storyboard */; };
 		105B7C3D298B760E0006805F /* MultiWebBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C33298B760E0006805F /* MultiWebBannerViewController.swift */; };
@@ -38,21 +39,7 @@
 		10FBD3FD29BA61F0005686F3 /* SingleCollectionNativeBannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD3FC29BA61F0005686F3 /* SingleCollectionNativeBannerViewController.storyboard */; };
 		10FBD3FF29BA68C0005686F3 /* MultiNativeBannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10FBD3FE29BA68C0005686F3 /* MultiNativeBannerViewController.swift */; };
 		10FBD40129BA69A5005686F3 /* MultiNativeBannerViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10FBD40029BA69A5005686F3 /* MultiNativeBannerViewController.storyboard */; };
-		837190F82AC58926002E6481 /* SAAdvertisingSDKStandard.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 837190F42AC5888F002E6481 /* SAAdvertisingSDKStandard.xcframework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		837190F72AC5888F002E6481 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		104D498B2A6D78F300F56BC0 /* SingleFullscreenNativeBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFullscreenNativeBannerViewController.swift; sourceTree = "<group>"; };
@@ -66,8 +53,8 @@
 		105B7C1E298B74BB0006805F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		105B7C21298B74BB0006805F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		105B7C23298B74BB0006805F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		105B7C2B298B760E0006805F /* VideoPlayerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = VideoPlayerViewController.storyboard; sourceTree = "<group>"; };
-		105B7C2C298B760E0006805F /* VideoPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoPlayerViewController.swift; sourceTree = "<group>"; };
+		105B7C2B298B760E0006805F /* MediaPlayerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MediaPlayerViewController.storyboard; sourceTree = "<group>"; };
+		105B7C2C298B760E0006805F /* MediaPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MediaPlayerViewController.swift; sourceTree = "<group>"; };
 		105B7C31298B760E0006805F /* SingleProgrammaticallyWebBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleProgrammaticallyWebBannerViewController.swift; sourceTree = "<group>"; };
 		105B7C32298B760E0006805F /* SingleInlayoutWebBannerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleInlayoutWebBannerViewController.storyboard; sourceTree = "<group>"; };
 		105B7C33298B760E0006805F /* MultiWebBannerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiWebBannerViewController.swift; sourceTree = "<group>"; };
@@ -92,7 +79,6 @@
 		10FBD3FE29BA68C0005686F3 /* MultiNativeBannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiNativeBannerViewController.swift; sourceTree = "<group>"; };
 		10FBD40029BA69A5005686F3 /* MultiNativeBannerViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultiNativeBannerViewController.storyboard; sourceTree = "<group>"; };
 		46C01F183A5619ED8C879915 /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		837190F42AC5888F002E6481 /* SAAdvertisingSDKStandard.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = SAAdvertisingSDKStandard.xcframework; path = ../SAAdvertisingSDKStandard.xcframework; sourceTree = "<group>"; };
 		E7BE17D2AB7A1726D03EAB79 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; sourceTree = "<group>"; };
 		FFF2567D08316F9203899A91 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,7 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837190F82AC58926002E6481 /* SAAdvertisingSDKStandard.xcframework in Frameworks */,
+				07F00A050570068430F6E18D /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,13 +127,13 @@
 			path = SAAdvertisingSDKStandardExample;
 			sourceTree = "<group>";
 		};
-		105B7C2A298B760E0006805F /* video */ = {
+		105B7C2A298B760E0006805F /* media */ = {
 			isa = PBXGroup;
 			children = (
-				105B7C2B298B760E0006805F /* VideoPlayerViewController.storyboard */,
-				105B7C2C298B760E0006805F /* VideoPlayerViewController.swift */,
+				105B7C2B298B760E0006805F /* MediaPlayerViewController.storyboard */,
+				105B7C2C298B760E0006805F /* MediaPlayerViewController.swift */,
 			);
-			path = video;
+			path = media;
 			sourceTree = "<group>";
 		};
 		105B7C30298B760E0006805F /* banner */ = {
@@ -180,7 +166,6 @@
 		105B7C41298BB7BC0006805F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				837190F42AC5888F002E6481 /* SAAdvertisingSDKStandard.xcframework */,
 				10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */,
 				10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */,
 				105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */,
@@ -193,8 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				105B7C30298B760E0006805F /* banner */,
+				105B7C2A298B760E0006805F /* media */,
 				10F7581A2A0E2516004494EC /* product */,
-				105B7C2A298B760E0006805F /* video */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -232,7 +217,6 @@
 				105B7C0F298B74BA0006805F /* Frameworks */,
 				105B7C10298B74BA0006805F /* Resources */,
 				FEFCF1E6FFB462FC54452433 /* [CP] Embed Pods Frameworks */,
-				837190F72AC5888F002E6481 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,7 +274,7 @@
 				10FBD3FD29BA61F0005686F3 /* SingleCollectionNativeBannerViewController.storyboard in Resources */,
 				104D498E2A6D814900F56BC0 /* SingleFullscreenNativeBannerViewController.storyboard in Resources */,
 				105B7C3C298B760E0006805F /* SingleInlayoutWebBannerViewController.storyboard in Resources */,
-				105B7C37298B760E0006805F /* VideoPlayerViewController.storyboard in Resources */,
+				105B7C37298B760E0006805F /* MediaPlayerViewController.storyboard in Resources */,
 				10CE5C242A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard in Resources */,
 				105B7C1D298B74BA0006805F /* Main.storyboard in Resources */,
 				105B7C3F298B760E0006805F /* MultiWebBannerViewController.storyboard in Resources */,
@@ -357,7 +341,7 @@
 				10FBD3FB29BA608F005686F3 /* SingleCollectionNativeBannerViewController.swift in Sources */,
 				10F7581C2A0E2593004494EC /* SingleProductCreativeViewController.swift in Sources */,
 				104D498C2A6D78F300F56BC0 /* SingleFullscreenNativeBannerViewController.swift in Sources */,
-				105B7C38298B760E0006805F /* VideoPlayerViewController.swift in Sources */,
+				105B7C38298B760E0006805F /* MediaPlayerViewController.swift in Sources */,
 				10FBD3FF29BA68C0005686F3 /* MultiNativeBannerViewController.swift in Sources */,
 				10CE5C222A35C8DA009C0C75 /* MultiProductCreativeViewController.swift in Sources */,
 				105B7C1A298B74BA0006805F /* ViewController.swift in Sources */,

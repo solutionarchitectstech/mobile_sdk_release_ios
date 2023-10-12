@@ -88,7 +88,7 @@ class ViewController: UIViewController {
 
     // MARK: - MEDIA
 
-    @IBAction func onVideoPlayerClick(_ sender: Any) {
-        presentViewControllerBy(name: "VideoPlayerViewController")
+    @IBAction func onMediaPlayerClick(_ sender: Any) {
+        presentViewControllerBy(name: "MediaPlayerViewController")
     }
 }

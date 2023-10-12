@@ -164,12 +164,14 @@ extension SingleCollectionWebBannerViewController {
 
 extension SingleCollectionWebBannerViewController: BannerCreativeDelegate {
 
-    public func onLoadDataSuccess() {
-        print("Banner.onLoadDataSuccess")
+    public func onLoadDataSuccess(bannerView: BaseBannerView) {
+        let placementId = bannerView.query?.placementId
+        print("Banner.onLoadDataSuccess[\(String(describing: placementId))]")
     }
 
-    public func onLoadDataFail(error: Error) {
-        print("Banner.onLoadDataFail: \(error.localizedDescription)")
+    public func onLoadDataFail(bannerView: BaseBannerView, error: Error) {
+        let placementId = bannerView.query?.placementId
+        print("Banner.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
     }
 
     public func onLoadContentSuccess(bannerView: BaseBannerView) {
