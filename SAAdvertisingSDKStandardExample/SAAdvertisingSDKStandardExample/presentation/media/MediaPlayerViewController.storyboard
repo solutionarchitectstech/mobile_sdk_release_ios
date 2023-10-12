@@ -9,26 +9,33 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--VIDEO PLAYER-->
+        <!--MEDIA PLAYER-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="VideoPlayerViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MediaPlayerViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="X7x-lk-sTs" customClass="VideoPlayerView" customModule="SAAdvertisingSDKStandard">
-                                <rect key="frame" x="75" y="200" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7x-lk-sTs" customClass="MediaPlayerView" customModule="SAAdvertisingSDKStandard">
+                                <rect key="frame" x="45" y="316" width="300" height="225"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="er1-NW-LVe"/>
+                                    <constraint firstAttribute="height" constant="225" id="gVg-pf-EUj"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X7x-lk-sTs" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="YwP-Gl-Oex"/>
+                            <constraint firstItem="X7x-lk-sTs" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="gBm-P4-xPT"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="VIDEO PLAYER" id="iOu-Lc-oNd"/>
+                    <navigationItem key="navigationItem" title="MEDIA PLAYER" id="iOu-Lc-oNd"/>
                     <connections>
-                        <outlet property="videoPlayerView" destination="X7x-lk-sTs" id="zST-fd-IfU"/>
+                        <outlet property="mediaPlayerView" destination="X7x-lk-sTs" id="zST-fd-IfU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
