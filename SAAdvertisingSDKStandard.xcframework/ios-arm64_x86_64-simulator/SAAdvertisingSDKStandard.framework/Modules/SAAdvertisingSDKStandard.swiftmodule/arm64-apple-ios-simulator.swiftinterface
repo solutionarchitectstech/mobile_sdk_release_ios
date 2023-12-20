@@ -1,8 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)
+// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target arm64-apple-ios12.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name SAAdvertisingSDKStandard
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-import AVFAudio
 import AVFoundation
 import AdSupport
 import AppTrackingTransparency
@@ -10,14 +9,17 @@ import CommonCrypto
 import CoreLocation
 import CoreTelephony
 import CryptoKit
+import DeveloperToolsSupport
 import Foundation
 import Network
 @_exported import SAAdvertisingSDKStandard
 import Swift
+import SwiftUI
 import UIKit
 import WebKit
 import _Concurrency
 import _StringProcessing
+import _SwiftConcurrencyShims
 public struct VastAdCategory : Swift.Codable {
   public let authority: Foundation.URL?
   public var category: Swift.String?
@@ -42,17 +44,6 @@ public class VastClient {
   public func parseVMAP(withContentsOf url: Foundation.URL) throws -> SAAdvertisingSDKStandard.VMAPModel
   @objc deinit
 }
-public struct RTBMediaCreativeEntity : SAAdvertisingSDKStandard.BaseMediaCreativeEntity {
-  public var requestId: Swift.String {
-    get
-  }
-  public var placementId: Swift.String {
-    get
-  }
-  public var vast: SAAdvertisingSDKStandard.VastModel {
-    get
-  }
-}
 public struct VastMediaFiles : Swift.Codable {
   public var mediaFiles: [SAAdvertisingSDKStandard.VastMediaFile]
   public var interactiveCreativeFiles: [SAAdvertisingSDKStandard.VastInteractiveCreativeFile]
@@ -62,218 +53,10 @@ public struct VastMediaFiles : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastMediaFiles : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastMediaFiles, b: SAAdvertisingSDKStandard.VastMediaFiles) -> Swift.Bool
 }
-public struct RTBMediaCreativeQuery : SAAdvertisingSDKStandard.BaseMediaCreativeQuery {
-  public var placementId: Swift.String
-  public var minDuration: Swift.Int
-  public var maxDuration: Swift.Int
-  public var startDelay: SAAdvertisingSDKStandard.RTBStartDelay
-  public var maxExtended: Swift.Int
-  public var maxSeq: Swift.Int
-  public var pmp: SAAdvertisingSDKStandard.RTBPmpEntity
-  public var bidFloor: Swift.Double
-  public var bidFloorCurrency: Swift.String
-  public var app: SAAdvertisingSDKStandard.RTBAppEntity
-  public var user: SAAdvertisingSDKStandard.RTBUserEntity
-  public var cur: [Swift.String]
-  public var bcat: [Swift.String]
-  public var badv: [Swift.String]
-  public var regsExt: SAAdvertisingSDKStandard.RTBRegsExtEntity
-  public var schain: SAAdvertisingSDKStandard.RTBSchainEntity
-  public var customParams: [Swift.String : Swift.String]
-  public init(placementId: Swift.String, minDuration: Swift.Int = 10, maxDuration: Swift.Int = 32, startDelay: SAAdvertisingSDKStandard.RTBStartDelay = RTBStartDelay.MID_ROLL, maxExtended: Swift.Int = 5, maxSeq: Swift.Int = 1, pmp: SAAdvertisingSDKStandard.RTBPmpEntity, bidFloor: Swift.Double = 0, bidFloorCurrency: Swift.String = "USD", app: SAAdvertisingSDKStandard.RTBAppEntity, user: SAAdvertisingSDKStandard.RTBUserEntity, currencies: [Swift.String], bcat: [Swift.String], badv: [Swift.String], regsExt: SAAdvertisingSDKStandard.RTBRegsExtEntity, schain: SAAdvertisingSDKStandard.RTBSchainEntity, customParams: [Swift.String : Swift.String] = [:])
-}
-public struct RTBAppEntity : Swift.Identifiable {
-  public let id: Swift.String
-  public var name: Swift.String
-  public var domain: Swift.String
-  public var cat: [Swift.Int]
-  public var publisher: SAAdvertisingSDKStandard.RTBPublisherEntity
-  public var content: SAAdvertisingSDKStandard.RTBContentEntity
-  public var bundle: Swift.String
-  public var storeUrl: Swift.String
-  public init(id: Swift.String, name: Swift.String, domain: Swift.String, cat: [Swift.Int] = [], publisher: SAAdvertisingSDKStandard.RTBPublisherEntity, content: SAAdvertisingSDKStandard.RTBContentEntity, bundle: Swift.String, storeUrl: Swift.String = "")
-  public typealias ID = Swift.String
-}
-public struct RTBContentEntity {
-  public var prodq: Swift.Int
-  public var context: SAAdvertisingSDKStandard.RTBContext
-  public var language: Swift.String
-  public init(prodq: Swift.Int = 1, context: SAAdvertisingSDKStandard.RTBContext, language: Swift.String = "")
-}
-public struct RTBPublisherEntity : Swift.Identifiable {
-  public let id: Swift.String
-  public var name: Swift.String
-  public init(id: Swift.String, name: Swift.String)
-  public typealias ID = Swift.String
-}
-public struct RTBPmpEntity {
-  public var privateAuction: SAAdvertisingSDKStandard.RTBPrivateAuction
-  public var deals: [SAAdvertisingSDKStandard.RTBDealEntity]
-  public init(privateAuction: SAAdvertisingSDKStandard.RTBPrivateAuction, deals: [SAAdvertisingSDKStandard.RTBDealEntity] = [])
-}
-public struct RTBDealEntity : Swift.Identifiable {
-  public let id: Swift.String
-  public var bidFloor: Swift.Double
-  public var bidFloorCurrency: Swift.String
-  public var at: Swift.Int
-  public init(id: Swift.String, bidFloor: Swift.Double = 0.0, bidFloorCurrency: Swift.String = "USD", at: Swift.Int = 1)
-  public typealias ID = Swift.String
-}
-public struct RTBRegsExtEntity {
-  public var gdpr: Swift.Int
-  public var coppa: Swift.Int
-  public init(gdpr: Swift.Int, coppa: Swift.Int)
-}
-public struct RTBSchainEntity {
-  public var ver: Swift.String
-  public var complete: SAAdvertisingSDKStandard.RTBFlag
-  public var nodes: [SAAdvertisingSDKStandard.RTBNodeEntity]
-  public init(ver: Swift.String, complete: SAAdvertisingSDKStandard.RTBFlag, nodes: [SAAdvertisingSDKStandard.RTBNodeEntity] = [])
-}
-public struct RTBNodeEntity {
-  public var asi: Swift.String
-  public var sid: Swift.String
-  public var rid: Swift.String
-  public var hp: Swift.Int
-  public init(asi: Swift.String, sid: Swift.String, rid: Swift.String, hp: Swift.Int)
-}
-public struct RTBUserEntity : Swift.Identifiable {
-  public let id: Swift.String
-  public var yob: Swift.Int
-  public var gender: SAAdvertisingSDKStandard.RTBGender
-  public var ext: SAAdvertisingSDKStandard.RTBUserExtEntity
-  public init(id: Swift.String, yob: Swift.Int, gender: SAAdvertisingSDKStandard.RTBGender, ext: SAAdvertisingSDKStandard.RTBUserExtEntity)
-  public typealias ID = Swift.String
-}
-public struct RTBUserExtEntity {
-  public let consent: Swift.String
-  public init(consent: Swift.String)
-}
-public enum RTBContext : Swift.Int, Swift.Encodable {
-  case VIDEO
-  case GAME
-  case MUSIC
-  case APPLICATION
-  case TEXT
-  case OTHER
-  case UNKNOWN
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBGender : Swift.String, Swift.Encodable {
-  case MALE
-  case FEMALE
-  case OTHER
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
-    get
-  }
-}
-public enum RTBStartDelay : Swift.Int, Swift.Encodable {
-  case PRE_ROLL
-  case MID_ROLL
-  case POST_ROLL
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBPrivateAuction : Swift.Int, Swift.Encodable {
-  case ALL_BIDS_ACCEPTED
-  case BIDS_RESTRICTED
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBTestFlag : Swift.Int, Swift.Encodable {
-  case LIVE_MODE
-  case TEST_MODE
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBProtocol : Swift.Int, Swift.Encodable {
-  case VAST_2_0
-  case VAST_3_0
-  case VAST_2_0_WRAPPERS
-  case VAST_3_0_WRAPPER
-  case VAST_4_0
-  case VAST_4_0_WRAPPER
-  case DAAST_1_0
-  case DAAST_1_0_WRAPPERS
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBAuctionType : Swift.Int, Swift.Encodable {
-  case FIRST_PRICE
-  case SECOND_PRICE_PLUS
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBDeviceType : Swift.Int, Swift.Encodable {
-  case MOBILE_OR_TABLET
-  case PC
-  case CONNECTED_TV
-  case PHONE
-  case TABLET
-  case CONNECTED_DEVICE
-  case SET_TOP_BOX
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBLocationSourceType : Swift.Int, Swift.Encodable {
-  case GPS
-  case IP_ADDRESS
-  case USER_PROVIDED
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBFlag : Swift.Int, Swift.Encodable {
-  case FALSE
-  case TRUE
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public enum RTBIpService : Swift.Int, Swift.Encodable {
-  case IP2LOCATION
-  case NEUSTAR
-  case MAXMIND
-  case NETAQUITY
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public struct InitConfigCoreEntity {
-  public let bannerCreativeUrl: Swift.String?
-  public let productCreativeUrl: Swift.String?
-  public let mediaCreativeUrl: Swift.String?
-  public init(bannerCreativeUrl: Swift.String? = nil, productCreativeUrl: Swift.String? = nil, mediaCreativeUrl: Swift.String? = nil)
+  public let bannerUrl: Swift.String?
+  public let productUrl: Swift.String?
+  public init(bannerUrl: Swift.String? = nil, productUrl: Swift.String? = nil)
 }
 extension Swift.String {
   public var toSeconds: Swift.Double? {
@@ -347,14 +130,13 @@ extension SAAdvertisingSDKStandard.VastMediaFile {
 extension SAAdvertisingSDKStandard.VastMediaFile : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastMediaFile, b: SAAdvertisingSDKStandard.VastMediaFile) -> Swift.Bool
 }
-public struct BannerCreativeQuery {
+public struct CreativeQuery {
   public var placementId: Swift.String
-  public var closeButtonType: SAAdvertisingSDKStandard.CloseButtonType
   public var sizes: [SAAdvertisingSDKStandard.SizeEntity]
   public var floorPrice: Swift.Double?
   public var currency: Swift.String?
   public var customParams: [Swift.String : Swift.String]
-  public init(placementId: Swift.String, closeButtonType: SAAdvertisingSDKStandard.CloseButtonType, sizes: [SAAdvertisingSDKStandard.SizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
+  public init(placementId: Swift.String, sizes: [SAAdvertisingSDKStandard.SizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
 }
 public struct VastExtension : Swift.Codable {
   public let type: Swift.String
@@ -415,10 +197,6 @@ extension SAAdvertisingSDKStandard.VastCreativeParameter {
 }
 extension SAAdvertisingSDKStandard.VastCreativeParameter : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastCreativeParameter, b: SAAdvertisingSDKStandard.VastCreativeParameter) -> Swift.Bool
-}
-public protocol BaseMediaCreativeQuery {
-  var placementId: Swift.String { get set }
-  var customParams: [Swift.String : Swift.String] { get set }
 }
 public enum TrackingError : Swift.Error {
   case MissingAdBreak
@@ -481,20 +259,6 @@ public struct ProductCreativeTrackingEntity {
   public var click: [Swift.String]
   public var view: [Swift.String]
 }
-@_hasMissingDesignatedInitializers public class NativeBannerCreativeHolder : SAAdvertisingSDKStandard.BaseBannerCreativeHolder<SAAdvertisingSDKStandard.NativeBannerView> {
-  public init(query: SAAdvertisingSDKStandard.BannerCreativeQuery, refresh: Foundation.TimeInterval = 0.0)
-  @objc deinit
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BaseBannerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) public var query: SAAdvertisingSDKStandard.BannerCreativeQuery?
-  @_Concurrency.MainActor(unsafe) public var closeAxis: UIKit.NSLayoutConstraint.Axis
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ layer: QuartzCore.CALayer, in ctx: CoreGraphics.CGContext)
-  @_Concurrency.MainActor(unsafe) public func open()
-  @objc deinit
-}
 public struct VastStaticResource : Swift.Codable {
   public let creativeType: Swift.String
   public var url: Foundation.URL?
@@ -504,23 +268,34 @@ public struct VastStaticResource : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastStaticResource, b: SAAdvertisingSDKStandard.VastStaticResource) -> Swift.Bool
 }
-@objc public protocol BannerCreativeDelegate {
-  @objc optional func onLoadDataSuccess(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @objc optional func onLoadDataFail(bannerView: SAAdvertisingSDKStandard.BaseBannerView, error: any Swift.Error)
-  @objc optional func onLoadContentSuccess(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @objc optional func onLoadContentFail(bannerView: SAAdvertisingSDKStandard.BaseBannerView, error: any Swift.Error)
-  @objc optional func onNoAdContent(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @objc optional func onTap(bannerView: SAAdvertisingSDKStandard.BaseBannerView, redirectUrl: Foundation.URL?)
-  @objc optional func onClose(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @objc optional func onDebugSentLoadStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @objc optional func onDebugSentViewStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @objc optional func onDebugSentClickStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
+@objc public protocol CreativeDelegate {
+  @objc optional func onLoadDataSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @objc optional func onLoadDataFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
+  @objc optional func onLoadContentSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @objc optional func onLoadContentFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
+  @objc optional func onNoAdContent(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @objc optional func onClose(creativeView: SAAdvertisingSDKStandard.CreativeView)
 }
-public class BannerCreative<BANNER_VIEW> where BANNER_VIEW : SAAdvertisingSDKStandard.BaseBannerView {
-  weak public var delegate: (any SAAdvertisingSDKStandard.BannerCreativeDelegate)?
-  convenience public init(bannerView: BANNER_VIEW, refresh refreshInterval: Foundation.TimeInterval = 0.0)
-  public init(bannerViews: [BANNER_VIEW], refresh refreshInterval: Foundation.TimeInterval = 0.0)
+public class Creative {
+  weak public var delegate: (any SAAdvertisingSDKStandard.CreativeDelegate)?
+  convenience public init(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  public init(creativeViews: [SAAdvertisingSDKStandard.CreativeView])
   public func load(path: Swift.String = "")
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CreativeView : UIKit.UIView {
+  @_Concurrency.MainActor(unsafe) public var query: SAAdvertisingSDKStandard.CreativeQuery?
+  @_Concurrency.MainActor(unsafe) public var closeAxis: UIKit.NSLayoutConstraint.Axis
+  @_Concurrency.MainActor(unsafe) public var scaleToFit: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) public var isScrollEnabled: Swift.Bool {
+    get
+    set
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ layer: QuartzCore.CALayer, in ctx: CoreGraphics.CGContext)
   @objc deinit
 }
 public struct ProductCreativeEntity {
@@ -618,10 +393,6 @@ public struct TechAdvertisingOptions : SAAdvertisingSDKStandard.BaseSdkOptions {
   public var uid: Swift.String?
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
   @objc deinit
-}
-public struct InitConfigRtbEntity {
-  public let mediaCreativeUrl: Swift.String?
-  public init(mediaCreativeUrl: Swift.String? = nil)
 }
 public struct VastCompanionClickTracking {
   public let id: Swift.String?
@@ -748,37 +519,6 @@ extension SAAdvertisingSDKStandard.VastCompanionAds {
 extension SAAdvertisingSDKStandard.VastCompanionAds : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastCompanionAds, b: SAAdvertisingSDKStandard.VastCompanionAds) -> Swift.Bool
 }
-@_Concurrency.MainActor(unsafe) public class BaseBannerViewController<BANNER_VIEW> : UIKit.UIViewController, SAAdvertisingSDKStandard.BannerCreativeDelegate where BANNER_VIEW : SAAdvertisingSDKStandard.BaseBannerView {
-  @_Concurrency.MainActor(unsafe) public var query: SAAdvertisingSDKStandard.BannerCreativeQuery?
-  @_Concurrency.MainActor(unsafe) public var refresh: Swift.Double
-  @_Concurrency.MainActor(unsafe) public var path: Swift.String
-  @_Concurrency.MainActor(unsafe) weak public var delegate: (any SAAdvertisingSDKStandard.BannerCreativeDelegate)?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open var view: UIKit.UIView! {
-    @objc get
-    @objc set
-  }
-  @_Concurrency.MainActor(unsafe) public var bannerView: BANNER_VIEW? {
-    get
-  }
-  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
-  @_Concurrency.MainActor(unsafe) @objc public func onNoAdContent(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @_Concurrency.MainActor(unsafe) @objc public func onLoadDataSuccess(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @_Concurrency.MainActor(unsafe) @objc public func onLoadDataFail(bannerView: SAAdvertisingSDKStandard.BaseBannerView, error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc public func onLoadContentSuccess(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @_Concurrency.MainActor(unsafe) @objc public func onLoadContentFail(bannerView: SAAdvertisingSDKStandard.BaseBannerView, error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc public func onTap(bannerView: SAAdvertisingSDKStandard.BaseBannerView, redirectUrl: Foundation.URL?)
-  @_Concurrency.MainActor(unsafe) @objc public func onClose(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @_Concurrency.MainActor(unsafe) @objc public func onDebugSentLoadStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @_Concurrency.MainActor(unsafe) @objc public func onDebugSentViewStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @_Concurrency.MainActor(unsafe) @objc public func onDebugSentClickStatistic(bannerView: SAAdvertisingSDKStandard.BaseBannerView)
-  @objc deinit
-}
 public enum VMAPAdSourceTemplate : Swift.String, Swift.Codable {
   case vast
   case vast1
@@ -806,35 +546,18 @@ public struct VMAPAdSource : Swift.Codable {
 extension SAAdvertisingSDKStandard.VMAPAdSource {
   public init(attrDict: [Swift.String : Swift.String])
 }
-@_hasMissingDesignatedInitializers public class BannerCreativeHolder : SAAdvertisingSDKStandard.BaseBannerCreativeHolder<SAAdvertisingSDKStandard.BannerView> {
-  public init(query: SAAdvertisingSDKStandard.BannerCreativeQuery, refresh: Foundation.TimeInterval = 0.0)
-  @objc deinit
-}
-public struct MediaCreativeEntity : SAAdvertisingSDKStandard.BaseMediaCreativeEntity {
-  public var requestId: Swift.String {
+public class CreativeHolder {
+  public var query: SAAdvertisingSDKStandard.CreativeQuery? {
     get
   }
-  public var placementId: Swift.String {
-    get
-  }
-  public var vast: SAAdvertisingSDKStandard.VastModel {
-    get
-  }
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class BannerView : SAAdvertisingSDKStandard.BaseBannerView {
-  @_Concurrency.MainActor(unsafe) public var isScrollEnabled: Swift.Bool {
+  final public let creativeView: SAAdvertisingSDKStandard.CreativeView
+  weak public var delegate: (any SAAdvertisingSDKStandard.CreativeDelegate)? {
     get
     set
   }
-  @_Concurrency.MainActor(unsafe) public var scaleToFit: Swift.Bool
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  public init(query: SAAdvertisingSDKStandard.CreativeQuery)
+  public func loadIfNeeded(path: Swift.String = "")
   @objc deinit
-}
-extension SAAdvertisingSDKStandard.BannerView : WebKit.WKNavigationDelegate {
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFinish navigation: WebKit.WKNavigation!)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, didFail navigation: WebKit.WKNavigation!, withError error: any Swift.Error)
-  @_Concurrency.MainActor(unsafe) @objc dynamic public func webView(_ webView: WebKit.WKWebView, decidePolicyFor navigationAction: WebKit.WKNavigationAction, decisionHandler: @escaping (WebKit.WKNavigationActionPolicy) -> Swift.Void)
 }
 public enum TrackingEventType : Swift.String, Swift.Codable {
   case firstQuartile
@@ -928,23 +651,6 @@ public enum VMAPError : Swift.Error {
     get
   }
 }
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class NativeBannerView : SAAdvertisingSDKStandard.BaseBannerView {
-  @_Concurrency.MainActor(unsafe) public var scaleToFit: Swift.Bool {
-    get
-    set
-  }
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
-}
-public struct MediaCreativeQuery : SAAdvertisingSDKStandard.BaseMediaCreativeQuery {
-  public var placementId: Swift.String
-  public var sizes: [SAAdvertisingSDKStandard.SizeEntity]
-  public var floorPrice: Swift.Double?
-  public var currency: Swift.String?
-  public var customParams: [Swift.String : Swift.String]
-  public init(placementId: Swift.String, sizes: [SAAdvertisingSDKStandard.SizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
-}
 public struct VastCreative : Swift.Codable {
   public let id: Swift.String?
   public let adId: Swift.String?
@@ -981,21 +687,6 @@ public class VastTrackerNonLinear {
   convenience public init(id: Swift.String, vmapModel: SAAdvertisingSDKStandard.VMAPModel, breakId: Swift.String, startTime: Swift.Double, supportAdBuffets: Swift.Bool = false, delegate: (any SAAdvertisingSDKStandard.VastTrackerNonLinearDelegate)? = nil) throws
   public func updateProgress(time: Swift.Double) throws
   public func adBreakCompleted() throws
-  @objc deinit
-}
-public protocol BaseMediaCreativeEntity {
-  var requestId: Swift.String { get }
-  var placementId: Swift.String { get }
-  var vast: SAAdvertisingSDKStandard.VastModel { get }
-}
-@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class MediaPlayerView : UIKit.UIView {
-  @_Concurrency.MainActor(unsafe) @objc override public static var layerClass: Swift.AnyClass {
-    @objc get
-  }
-  @_Concurrency.MainActor(unsafe) public var query: (any SAAdvertisingSDKStandard.BaseMediaCreativeQuery)?
-  @_Concurrency.MainActor(unsafe) public var closeAxis: UIKit.NSLayoutConstraint.Axis
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @objc deinit
 }
 public protocol BaseSdkOptions {
@@ -1035,12 +726,6 @@ public struct VastAdSystem : Swift.Codable {
 }
 extension SAAdvertisingSDKStandard.VastAdSystem : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAdSystem, b: SAAdvertisingSDKStandard.VastAdSystem) -> Swift.Bool
-}
-public enum CloseButtonType {
-  case COUNTDOWN(timeout: Foundation.TimeInterval = 0)
-  case APPEARING(timeout: Foundation.TimeInterval = 0)
-  case VISIBLE
-  case NONE
 }
 public struct VastIcon : Swift.Codable {
   public let program: Swift.String
@@ -1088,27 +773,6 @@ extension Swift.String : Foundation.LocalizedError {
   public var errorDescription: Swift.String? {
     get
   }
-}
-@objc public protocol MediaCreativeDelegate {
-  @objc optional func onLoadDataSuccess(mediaView: SAAdvertisingSDKStandard.MediaPlayerView)
-  @objc optional func onLoadDataFail(mediaView: SAAdvertisingSDKStandard.MediaPlayerView, error: any Swift.Error)
-  @objc optional func onLoadContentSuccess(mediaView: SAAdvertisingSDKStandard.MediaPlayerView)
-  @objc optional func onLoadContentFail(mediaView: SAAdvertisingSDKStandard.MediaPlayerView, error: any Swift.Error)
-  @objc optional func onNoAdContent(mediaView: SAAdvertisingSDKStandard.MediaPlayerView)
-  @objc optional func onTap(mediaView: SAAdvertisingSDKStandard.MediaPlayerView, redirectUrl: Foundation.URL?)
-  @objc optional func onClose(mediaView: SAAdvertisingSDKStandard.MediaPlayerView)
-}
-public class MediaCreative {
-  weak public var delegate: (any SAAdvertisingSDKStandard.MediaCreativeDelegate)?
-  convenience public init(mediaView: SAAdvertisingSDKStandard.MediaPlayerView, refresh: Swift.Bool = false)
-  public init(mediaViews: [SAAdvertisingSDKStandard.MediaPlayerView], refresh: Swift.Bool = false)
-  public func load(path: Swift.String = "")
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class FullscreenNativeBannerViewController : SAAdvertisingSDKStandard.BaseBannerViewController<SAAdvertisingSDKStandard.NativeBannerView> {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
-  @objc deinit
 }
 public enum ApiError : Swift.Error, Swift.CustomStringConvertible, Foundation.LocalizedError {
   case networkFailed(error: any Swift.Error)
@@ -1192,19 +856,6 @@ public struct VastViewableImpression : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastViewableImpression : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastViewableImpression, b: SAAdvertisingSDKStandard.VastViewableImpression) -> Swift.Bool
 }
-@_hasMissingDesignatedInitializers public class BaseBannerCreativeHolder<BANNER_VIEW> : Swift.Identifiable where BANNER_VIEW : SAAdvertisingSDKStandard.BaseBannerView {
-  public var query: SAAdvertisingSDKStandard.BannerCreativeQuery? {
-    get
-  }
-  final public let bannerView: BANNER_VIEW
-  weak public var delegate: (any SAAdvertisingSDKStandard.BannerCreativeDelegate)? {
-    get
-    set
-  }
-  public func loadIfNeeded(path: Swift.String = "")
-  public typealias ID = Swift.ObjectIdentifier
-  @objc deinit
-}
 public struct VastUniversalAdId : Swift.Codable {
   public let idRegistry: Swift.String
   public let idValue: Swift.String
@@ -1264,15 +915,38 @@ extension SAAdvertisingSDKStandard.VMAPAdBreak {
   public func trackEvent(withType type: SAAdvertisingSDKStandard.VMAPTrackingEventType)
   public func trackEvents(withUrls urls: [Foundation.URL])
 }
-@_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class FullscreenBannerViewController : SAAdvertisingSDKStandard.BaseBannerViewController<SAAdvertisingSDKStandard.BannerView> {
-  @_Concurrency.MainActor(unsafe) @objc override dynamic public init()
+@objc @_Concurrency.MainActor(unsafe) public class FullscreenCreativeViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) public var query: SAAdvertisingSDKStandard.CreativeQuery?
+  @_Concurrency.MainActor(unsafe) public var refresh: Swift.Double
+  @_Concurrency.MainActor(unsafe) public var path: Swift.String
+  @_Concurrency.MainActor(unsafe) weak public var delegate: (any SAAdvertisingSDKStandard.CreativeDelegate)?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var view: UIKit.UIView! {
+    @objc get
+    @objc set
+  }
+  @_Concurrency.MainActor(unsafe) public var creativeView: SAAdvertisingSDKStandard.CreativeView? {
+    get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public init()
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func loadView()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidAppear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func viewDidDisappear(_ animated: Swift.Bool)
   @objc deinit
+}
+extension SAAdvertisingSDKStandard.FullscreenCreativeViewController : SAAdvertisingSDKStandard.CreativeDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onNoAdContent(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onLoadDataSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onLoadDataFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onLoadContentSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onLoadContentFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func onClose(creativeView: SAAdvertisingSDKStandard.CreativeView)
 }
 public struct InitConfig {
   public let core: SAAdvertisingSDKStandard.InitConfigCoreEntity?
-  public let rtb: SAAdvertisingSDKStandard.InitConfigRtbEntity?
-  public init(core: SAAdvertisingSDKStandard.InitConfigCoreEntity? = nil, rtb: SAAdvertisingSDKStandard.InitConfigRtbEntity? = nil)
+  public init(core: SAAdvertisingSDKStandard.InitConfigCoreEntity? = nil)
 }
 public struct IconClicks : Swift.Codable {
   public var iconClickThrough: Foundation.URL?
@@ -1283,39 +957,6 @@ public struct IconClicks : Swift.Codable {
 extension SAAdvertisingSDKStandard.IconClicks : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.IconClicks, b: SAAdvertisingSDKStandard.IconClicks) -> Swift.Bool
 }
-extension SAAdvertisingSDKStandard.RTBContext : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBContext : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBContext : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBGender : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBGender : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBGender : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBStartDelay : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBStartDelay : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBStartDelay : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBPrivateAuction : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBPrivateAuction : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBPrivateAuction : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBTestFlag : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBTestFlag : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBTestFlag : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBProtocol : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBProtocol : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBProtocol : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBAuctionType : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBAuctionType : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBAuctionType : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBDeviceType : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBDeviceType : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBDeviceType : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBLocationSourceType : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBLocationSourceType : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBLocationSourceType : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBFlag : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBFlag : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBFlag : Swift.RawRepresentable {}
-extension SAAdvertisingSDKStandard.RTBIpService : Swift.Equatable {}
-extension SAAdvertisingSDKStandard.RTBIpService : Swift.Hashable {}
-extension SAAdvertisingSDKStandard.RTBIpService : Swift.RawRepresentable {}
 extension SAAdvertisingSDKStandard.VastError : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.VastError : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.AdType : Swift.Equatable {}

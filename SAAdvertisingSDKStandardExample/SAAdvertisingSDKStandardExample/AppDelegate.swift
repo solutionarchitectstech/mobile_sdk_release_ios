@@ -33,9 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             storeUrl: "https://apps.apple.com/us/app/myapp/id12345678",
             initConfig: .init(
                 core: .init(
-                    bannerCreativeUrl: "https://YOUR_BANNER_CREATIVE_ENDPOINT",
-                    mediaCreativeUrl: "https://YOUR_MEDIA_CREATIVE_ENDPOINT",
-                    productCreativeUrl: "https://YOUR_PRODUCT_CREATIVE_ENDPOINT"
+                    bannerUrl: "YOUR_BANNER_CREATIVE_ENDPOINT",
+                    productUrl: "YOUR_PRODUCT_CREATIVE_ENDPOINT"
                 )
             ),
             debugMode: true,
