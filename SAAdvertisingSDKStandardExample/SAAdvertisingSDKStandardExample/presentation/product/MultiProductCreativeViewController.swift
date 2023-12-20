@@ -37,7 +37,7 @@ class MultiProductCreativeViewController: UIViewController {
                     "skuId": "LG00001",
                     "skuName": "Leggo bricks (speed boat)",
                     "category": "Kids",
-                    "subСategory": "Lego"
+                    "subCategory": "Lego"
                 ]
             ),
             ProductCreativeQuery(
@@ -46,7 +46,7 @@ class MultiProductCreativeViewController: UIViewController {
                     "skuId": "SW00014",
                     "skuName": "Swing Mirage 2 RS",
                     "category": "Sport",
-                    "subСategory": "Speedwings"
+                    "subCategory": "Speedwings"
                 ]
             )
         ]

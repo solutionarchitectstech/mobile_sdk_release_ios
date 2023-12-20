@@ -1,5 +1,5 @@
 PODS:
-  - SAAdvertisingSDKStandard (0.7.3)
+  - SAAdvertisingSDKStandard (0.8.0)
   - Toaster (2.3.0)
 
 DEPENDENCIES:
@@ -15,9 +15,9 @@ EXTERNAL SOURCES:
     :path: "./"
 
 SPEC CHECKSUMS:
-  SAAdvertisingSDKStandard: 68f93cb458c7c45bd0d5292ffca92c149878e9c1
+  SAAdvertisingSDKStandard: 4aa91a2fde58add1f0ed9ccbd854130e631125e3
   Toaster: c3473963c78e8cabbf6ea6f11ad0fdaae6f54987
 
 PODFILE CHECKSUM: 25085f5f3a9d9c5516797760d0bcd53260399f7e
 
-COCOAPODS: 1.12.1
+COCOAPODS: 1.14.2

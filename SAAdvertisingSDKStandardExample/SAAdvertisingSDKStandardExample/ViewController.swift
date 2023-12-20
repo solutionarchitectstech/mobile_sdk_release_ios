@@ -36,36 +36,20 @@ class ViewController: UIViewController {
 
     // MARK: - SINGLE IMPRESSION
 
-    @IBAction func onSingleInlayoutWebBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleInlayoutWebBannerViewController")
+    @IBAction func onSingleInlayoutCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleInlayoutCreativeViewController")
     }
 
-    @IBAction func onSingleInlayoutNativeBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleInlayoutNativeBannerViewController")
+    @IBAction func onSingleProgrammaticallyCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleProgrammaticallyCreativeViewController")
     }
 
-    @IBAction func onSingleProgrammaticallyWebBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleProgrammaticallyWebBannerViewController")
+    @IBAction func onSingleCollectionCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleCollectionCreativeViewController")
     }
 
-    @IBAction func onSingleProgrammaticallyNativeBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleProgrammaticallyNativeBannerViewController")
-    }
-
-    @IBAction func onSingleCollectionWebBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleCollectionWebBannerViewController")
-    }
-
-    @IBAction func onSingleCollectionNativeBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleCollectionNativeBannerViewController")
-    }
-
-    @IBAction func onSingleFullscreenWebBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleFullscreenWebBannerViewController")
-    }
-
-    @IBAction func onSingleFullscreenNativeBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "SingleFullscreenNativeBannerViewController")
+    @IBAction func onSingleFullscreenCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleFullscreenCreativeViewController")
     }
 
     @IBAction func onSingleProductCreativeClick(_ sender: Any) {
@@ -74,12 +58,8 @@ class ViewController: UIViewController {
 
     // MARK: - MULTIPLE IMPRESSIONS
 
-    @IBAction func onMultiWebBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "MultiWebBannerViewController")
-    }
-
-    @IBAction func onMultiNativeBannerClick(_ sender: Any) {
-        presentViewControllerBy(name: "MultiNativeBannerViewController")
+    @IBAction func onMultiCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "MultiCreativeViewController")
     }
 
     @IBAction func onMultiProductCreativeClick(_ sender: Any) {
@@ -88,7 +68,7 @@ class ViewController: UIViewController {
 
     // MARK: - MEDIA
 
-    @IBAction func onMediaPlayerClick(_ sender: Any) {
-        presentViewControllerBy(name: "MediaPlayerViewController")
+    @IBAction func onMediaCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "MediaCreativeViewController")
     }
 }

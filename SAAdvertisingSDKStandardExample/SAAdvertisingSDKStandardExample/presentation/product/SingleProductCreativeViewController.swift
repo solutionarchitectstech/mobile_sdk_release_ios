@@ -34,7 +34,7 @@ class SingleProductCreativeViewController: UIViewController {
                 "skuId": "LG00001",
                 "skuName": "Leggo bricks (speed boat)",
                 "category": "Kids",
-                "subСategory": "Lego"
+                "subCategory": "Lego"
             ]
         ))
         self.productCreative.delegate = self

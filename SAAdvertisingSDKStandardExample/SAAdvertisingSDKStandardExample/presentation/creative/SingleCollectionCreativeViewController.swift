@@ -20,7 +20,7 @@ import UIKit
 import SAAdvertisingSDKStandard
 import Toaster
 
-class NativeBannerCell: UICollectionViewCell {
+class BannerCell: UICollectionViewCell {
 
     @IBOutlet weak var bannerContainerView: UIView!
 
@@ -28,9 +28,9 @@ class NativeBannerCell: UICollectionViewCell {
 
 }
 
-class SingleCollectionNativeBannerViewController: UICollectionViewController {
+class SingleCollectionCreativeViewController: UICollectionViewController {
 
-    private let reusableIdentifier = "NativeBannerCell"
+    private let reusableIdentifier = "MyCell"
 
     private let sectionInsets = UIEdgeInsets(
         top: 50.0,
@@ -41,7 +41,7 @@ class SingleCollectionNativeBannerViewController: UICollectionViewController {
 
     private let itemsPerRow: CGFloat = 1
 
-    private var banners = [NativeBanner]()
+    private var banners = [Banner]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,23 +50,21 @@ class SingleCollectionNativeBannerViewController: UICollectionViewController {
 
     private func reload() {
         // Here is generated STUB data with only one real banner inside. Other items are empty.
-        var result = [NativeBanner]()
+        var result = [Banner]()
         let num = 20
         for i in 0..<num {
-            var holder: NativeBannerCreativeHolder?
-            let id = "NativeBanner-\(i + 1)"
+            var holder: CreativeHolder?
+            let id = "Banner-\(i + 1)"
             if i % 2 == 0 {
-                holder = NativeBannerCreativeHolder(
-                    query: BannerCreativeQuery(
+                holder = CreativeHolder(
+                    query: CreativeQuery(
                         placementId: "YOUR_PLACEMENT_ID",
-                        closeButtonType: CloseButtonType.VISIBLE,
                         sizes: [SizeEntity(width: 260, height: 106)]
-                    ),
-                    refresh: Double.random(in: 5.0...10.0) // 10.0
+                    )
                 )
                 holder!.delegate = self
             }
-            result.append(NativeBanner(
+            result.append(Banner(
                 id: id,
                 holder: holder
             ))
@@ -78,7 +76,7 @@ class SingleCollectionNativeBannerViewController: UICollectionViewController {
 
 // MARK: - UICollectionViewDataSource
 
-extension SingleCollectionNativeBannerViewController {
+extension SingleCollectionCreativeViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 1
@@ -92,7 +90,7 @@ extension SingleCollectionNativeBannerViewController {
         let cell = collectionView.dequeueReusableCell(
             withReuseIdentifier: reusableIdentifier,
             for: indexPath
-        ) as! NativeBannerCell
+        ) as! BannerCell
 
         let banner = self.banners[(indexPath.section + 1) * indexPath.row]
         cell.bannerLabel.text = banner.id
@@ -100,7 +98,7 @@ extension SingleCollectionNativeBannerViewController {
         if let holder = banner.holder {
             cell.bannerLabel.textColor = .black
             cell.bannerContainerView.backgroundColor = .white
-            self.addBannerView(holder.bannerView, to: cell.bannerContainerView)
+            self.addCreativeView(holder.creativeView, to: cell.bannerContainerView)
             holder.loadIfNeeded()
         } else {
             cell.bannerLabel.textColor = .white
@@ -111,15 +109,15 @@ extension SingleCollectionNativeBannerViewController {
         return cell
     }
 
-    private func addBannerView(_ bannerView: NativeBannerView, to superview: UIView) {
+    private func addCreativeView(_ creativeView: CreativeView, to superview: UIView) {
         superview.subviews.forEach { $0.removeFromSuperview() }
 
-        superview.addSubview(bannerView)
+        superview.addSubview(creativeView)
 
-        bannerView.translatesAutoresizingMaskIntoConstraints = false
+        creativeView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint(
-            item: bannerView,
+            item: creativeView,
             attribute: .top,
             relatedBy: NSLayoutConstraint.Relation.equal,
             toItem: superview.safeAreaLayoutGuide,
@@ -129,7 +127,7 @@ extension SingleCollectionNativeBannerViewController {
         ).isActive = true
 
         NSLayoutConstraint(
-            item: bannerView,
+            item: creativeView,
             attribute: .bottom,
             relatedBy: NSLayoutConstraint.Relation.equal,
             toItem: superview.safeAreaLayoutGuide,
@@ -139,7 +137,7 @@ extension SingleCollectionNativeBannerViewController {
         ).isActive = true
 
         NSLayoutConstraint(
-            item: bannerView,
+            item: creativeView,
             attribute: .leading,
             relatedBy: NSLayoutConstraint.Relation.equal,
             toItem: superview.safeAreaLayoutGuide,
@@ -149,7 +147,7 @@ extension SingleCollectionNativeBannerViewController {
         ).isActive = true
 
         NSLayoutConstraint(
-            item: bannerView,
+            item: creativeView,
             attribute: .trailing,
             relatedBy: NSLayoutConstraint.Relation.equal,
             toItem: superview.safeAreaLayoutGuide,
@@ -160,59 +158,44 @@ extension SingleCollectionNativeBannerViewController {
     }
 }
 
-// MARK: - BannerCreativeDelegate
+// MARK: - CreativeDelegate
 
-extension SingleCollectionNativeBannerViewController: BannerCreativeDelegate {
+extension SingleCollectionCreativeViewController: CreativeDelegate {
 
-    public func onLoadDataSuccess(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        print("Banner.onLoadDataSuccess[\(String(describing: placementId))]")
+    public func onLoadDataSuccess(creativeView: CreativeView) {
+        let placementId = creativeView.query?.placementId
+        print("Creative.onLoadDataSuccess[\(String(describing: placementId))]")
     }
 
-    public func onLoadDataFail(bannerView: BaseBannerView, error: Error) {
-        let placementId = bannerView.query?.placementId
-        print("Banner.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+    public func onLoadDataFail(creativeView: CreativeView, error: Error) {
+        let placementId = creativeView.query?.placementId
+        print("Creative.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
     }
 
-    public func onLoadContentSuccess(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        print("Banner.onLoadContentSuccess[\(String(describing: placementId))]")
+    public func onLoadContentSuccess(creativeView: CreativeView) {
+        let placementId = creativeView.query?.placementId
+        print("Creative.onLoadContentSuccess[\(String(describing: placementId))]")
     }
 
-    public func onLoadContentFail(bannerView: BaseBannerView, error: Error) {
-        let placementId = bannerView.query?.placementId
-        print("Banner.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+    public func onLoadContentFail(creativeView: CreativeView, error: Error) {
+        let placementId = creativeView.query?.placementId
+        print("Creative.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
     }
 
-    public func onNoAdContent(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        print("Banner.onNoAdContent[\(String(describing: placementId))]")
+    public func onNoAdContent(creativeView: CreativeView) {
+        let placementId = creativeView.query?.placementId
+        print("Creative.onNoAdContent[\(String(describing: placementId))]")
     }
 
-    public func onClose(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        print("Banner.onClose[\(String(describing: placementId))]")
-    }
-
-    public func onDebugSentLoadStatistic(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        Toast(text: "LOAD statistic[\(String(describing: placementId))]", duration: Delay.short).show()
-    }
-
-    public func onDebugSentViewStatistic(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        Toast(text: "VIEW statistic[\(String(describing: placementId))]", duration: Delay.short).show()
-    }
-
-    public func onDebugSentClickStatistic(bannerView: BaseBannerView) {
-        let placementId = bannerView.query?.placementId
-        Toast(text: "CLICK statistic[\(String(describing: placementId))]", duration: Delay.short).show()
+    public func onClose(creativeView: CreativeView) {
+        let placementId = creativeView.query?.placementId
+        print("Creative.onClose[\(String(describing: placementId))]")
     }
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension SingleCollectionNativeBannerViewController: UICollectionViewDelegateFlowLayout {
+extension SingleCollectionCreativeViewController: UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
@@ -233,7 +216,7 @@ extension SingleCollectionNativeBannerViewController: UICollectionViewDelegateFl
 
 // MARK: - Data / Entities
 
-struct NativeBanner {
+struct Banner {
     var id: String
-    var holder: NativeBannerCreativeHolder?
+    var holder: CreativeHolder?
 }
