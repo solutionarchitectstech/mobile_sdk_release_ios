@@ -29,7 +29,7 @@ class SingleProductCreativeViewController: UIViewController {
 
     override func viewDidLoad() {
         self.productCreative = ProductCreative(query: ProductCreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+            placementId: "PRODUCT_01",
             customParams: [
                 "skuId": "LG00001",
                 "skuName": "Leggo bricks (speed boat)",

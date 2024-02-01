@@ -18,13 +18,14 @@
 
 import UIKit
 import SAAdvertisingSDKStandard
-import Toaster
 
 class SingleInlayoutCreativeViewController: UIViewController {
 
     @IBOutlet weak var creativeView: CreativeView!
 
     private var creative: Creative!
+
+    private let placementIds = ["HTML_BANNER", "IMAGE_BANNER"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,7 +34,7 @@ class SingleInlayoutCreativeViewController: UIViewController {
 
         // Let's init creative views
         creativeView.query = CreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+            placementId: placementIds.randomElement() ?? "",
             sizes: [SizeEntity(width: 260, height: 106)],
             customParams: [
                 "skuId": "LG00001",
@@ -61,31 +62,31 @@ extension SingleInlayoutCreativeViewController: CreativeDelegate {
 
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataSuccess[\(String(describing: placementId))]")
+        log("onLoadDataSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentSuccess[\(String(describing: placementId))]")
+        log("onLoadContentSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onNoAdContent[\(String(describing: placementId))]")
+        log("onNoAdContent[\(placementId ?? "")]")
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onClose[\(String(describing: placementId))]")
+        log("onClose[\(placementId ?? "")]")
     }
 }

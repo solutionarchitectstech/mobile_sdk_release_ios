@@ -10974,9 +10974,12 @@
             "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC10scaleToFitSbvp",
             "moduleName": "SAAdvertisingSDKStandard",
             "declAttributes": [
+              "HasInitialValue",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -10994,6 +10997,7 @@
                 "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC10scaleToFitSbvg",
                 "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC10scaleToFitSbvg",
                 "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
                 "accessorKind": "get"
               },
               {
@@ -11017,6 +11021,7 @@
                 "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC10scaleToFitSbvs",
                 "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC10scaleToFitSbvs",
                 "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
                 "accessorKind": "set"
               },
               {
@@ -11056,9 +11061,12 @@
             "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC15isScrollEnabledSbvp",
             "moduleName": "SAAdvertisingSDKStandard",
             "declAttributes": [
+              "HasInitialValue",
               "Custom",
+              "HasStorage",
               "AccessControl"
             ],
+            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -11076,6 +11084,7 @@
                 "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC15isScrollEnabledSbvg",
                 "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC15isScrollEnabledSbvg",
                 "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
                 "accessorKind": "get"
               },
               {
@@ -11099,6 +11108,7 @@
                 "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC15isScrollEnabledSbvs",
                 "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC15isScrollEnabledSbvs",
                 "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
                 "accessorKind": "set"
               },
               {
@@ -37886,106 +37896,99 @@
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
-      "kind": "Array",
-      "offset": 5715,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5896,
+      "offset": 5608,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 5981,
+      "offset": 5693,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 5985,
+      "offset": 5697,
       "length": 40,
       "value": "\"WS API call failed due bad urlRequest.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6176,
+      "offset": 5888,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6364,
+      "offset": 6076,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6473,
+      "offset": 6185,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6584,
+      "offset": 6296,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 7164,
+      "offset": 6876,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7275,
+      "offset": 6987,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7392,
+      "offset": 7104,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7469,
+      "offset": 7181,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7571,
+      "offset": 7283,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7646,
+      "offset": 7358,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/repository\/SSPProductCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 7745,
+      "offset": 7457,
       "length": 2,
       "value": "[]"
     },
@@ -38861,398 +38864,426 @@
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "StringLiteral",
       "offset": 2455,
-      "length": 77,
+      "length": 64,
       "value": "\"SAFullscreenConstraint_\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 2528,
-      "length": 3,
-      "value": "\"_01\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 2716,
-      "length": 77,
-      "value": "\"SAFullscreenConstraint_\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 2789,
-      "length": 3,
-      "value": "\"_02\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 2962,
-      "length": 77,
-      "value": "\"SAFullscreenConstraint_\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 3035,
-      "length": 3,
-      "value": "\"_03\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 3217,
-      "length": 77,
-      "value": "\"SAFullscreenConstraint_\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 3290,
-      "length": 3,
-      "value": "\"_04\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3697,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3738,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3757,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3798,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3817,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3887,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3927,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3946,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3987,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4006,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4071,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4111,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4129,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4169,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4187,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4252,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4292,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4310,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4350,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4369,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4435,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4475,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4494,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4535,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4553,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4623,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4707,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4727,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4750,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4770,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4850,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4870,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4951,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4971,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5129,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5289,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5494,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 5551,
-      "length": 78,
-      "value": "\"SAViewConstraint_\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 5590,
-      "length": 1,
-      "value": "\"_\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 5625,
+      "offset": 2511,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "StringLiteral",
-      "offset": 5628,
+      "offset": 2514,
+      "length": 1,
+      "value": "\")_01\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 2703,
+      "length": 64,
+      "value": "\"SAFullscreenConstraint_\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 2759,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 2762,
+      "length": 1,
+      "value": "\")_02\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 2936,
+      "length": 64,
+      "value": "\"SAFullscreenConstraint_\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 2992,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 2995,
+      "length": 1,
+      "value": "\")_03\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 3178,
+      "length": 64,
+      "value": "\"SAFullscreenConstraint_\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 3234,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 3237,
+      "length": 1,
+      "value": "\")_04\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3645,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3686,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3705,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3746,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3765,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3835,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3875,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3894,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3935,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3954,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4019,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4059,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4077,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4117,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4135,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4200,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4240,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4258,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4298,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4317,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4383,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4423,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4442,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4483,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4501,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4571,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4655,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4675,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4698,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4718,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4798,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4818,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4899,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 4919,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5077,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5237,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "BooleanLiteral",
+      "offset": 5442,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 5499,
+      "length": 78,
+      "value": "\"SAViewConstraint_\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 5538,
+      "length": 1,
+      "value": "\"_\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 5573,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
+      "kind": "StringLiteral",
+      "offset": 5576,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 6037,
+      "offset": 5985,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 6066,
+      "offset": 6014,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "FloatLiteral",
-      "offset": 6293,
+      "offset": 6241,
       "length": 3,
       "value": "0.2"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 6423,
+      "offset": 6371,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "FloatLiteral",
-      "offset": 6433,
+      "offset": 6381,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 6515,
+      "offset": 6463,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "IntegerLiteral",
-      "offset": 6642,
+      "offset": 6590,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "FloatLiteral",
-      "offset": 6652,
+      "offset": 6600,
       "length": 3,
       "value": "0.0"
     },
@@ -39651,28 +39682,28 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/BaseBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 1761,
+      "offset": 1758,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/BaseBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 1825,
+      "offset": 1822,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/BaseBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3004,
+      "offset": 3001,
       "length": 32,
       "value": "\"This method must be overridden\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/BaseBannerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3348,
+      "offset": 3345,
       "length": 4,
       "value": "true"
     },
@@ -39714,196 +39745,196 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 3897,
+      "offset": 3935,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 4501,
+      "offset": 4539,
       "length": 40,
       "value": "\"User accepted ad tracking permissions.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 4607,
+      "offset": 4645,
       "length": 40,
       "value": "\"User declined ad tracking permissions.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 4720,
+      "offset": 4758,
       "length": 52,
       "value": "\"Ad tracking permissions not determined on your OS.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 4842,
+      "offset": 4880,
       "length": 48,
       "value": "\"Ad tracking permissions restricted on your OS.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 8178,
+      "offset": 8555,
       "length": 29,
       "value": "\"Creative content not found.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9137,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "Array",
-      "offset": 11044,
+      "offset": 12114,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 11116,
+      "offset": 12186,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11564,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 13471,
+      "offset": 14009,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 13493,
+      "offset": 14031,
       "length": 2,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 13514,
+      "offset": 14052,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13592,
+      "offset": 14130,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13686,
+      "offset": 14224,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 14639,
+      "offset": 15177,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 14661,
+      "offset": 15199,
       "length": 2,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 14682,
+      "offset": 15220,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 14902,
+      "offset": 15440,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "FloatLiteral",
-      "offset": 15006,
+      "offset": 15544,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 15193,
+      "offset": 15731,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 15288,
+      "offset": 15826,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 16279,
+      "offset": 16817,
       "length": 44,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 16301,
+      "offset": 16839,
       "length": 2,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 16322,
+      "offset": 16860,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 16400,
+      "offset": 16938,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 16496,
+      "offset": 17034,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 17577,
+      "offset": 18115,
       "length": 67,
       "value": "\"Unable to send tracking statistic due inavlid URL: '\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 17642,
+      "offset": 18180,
       "length": 3,
       "value": "\"'\""
     },
@@ -40036,149 +40067,149 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3145,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 3691,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4063,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 4113,
+      "offset": 2829,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
-      "kind": "StringLiteral",
-      "offset": 4155,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3915,
+      "offset": 2941,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4781,
+      "offset": 3060,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 3740,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4866,
+      "offset": 3825,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4880,
+      "offset": 3839,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 4966,
+      "offset": 3925,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 4980,
+      "offset": 3939,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5056,
+      "offset": 4015,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5070,
+      "offset": 4029,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 5152,
+      "offset": 4111,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 5166,
+      "offset": 4125,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8508,
+      "offset": 7638,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "StringLiteral",
-      "offset": 8725,
+      "offset": 7855,
       "length": 54,
       "value": "\"CreativeView.statisticViewQueue.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "StringLiteral",
-      "offset": 8778,
+      "offset": 7908,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "FloatLiteral",
-      "offset": 8943,
+      "offset": 8073,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11481,
+      "offset": 10612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11547,
+      "offset": 10678,
       "length": 5,
       "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11515,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 11587,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
+      "kind": "StringLiteral",
+      "offset": 11646,
+      "length": 2,
+      "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/dto\/SSPProductCreativeBidDTO.swift",
@@ -42157,14 +42188,14 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/parsers\/VastParser.swift",
       "kind": "StringLiteral",
-      "offset": 6775,
+      "offset": 6995,
       "length": 46,
       "value": "\"Unable to unwrap wrapper due error: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/parsers\/VastParser.swift",
       "kind": "StringLiteral",
-      "offset": 6820,
+      "offset": 7040,
       "length": 2,
       "value": "\"\""
     },
@@ -42185,168 +42216,168 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 1461,
+      "offset": 1476,
       "length": 68,
       "value": "\".body {\n    margin: 0;\n    padding: 0;\n}\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2174,
+      "offset": 2216,
       "length": 123,
       "value": "\"Internal error: wrong content loading flow due `self.entity` is nil. Call `loadContent(from)` instead of `loadContent()`.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2707,
+      "offset": 2749,
       "length": 49,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2729,
+      "offset": 2771,
       "length": 2,
       "value": "\"__\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 2750,
+      "offset": 2792,
       "length": 1,
       "value": "\".html\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3093,
+      "offset": 3135,
       "length": 68,
       "value": "\"Unable cache '\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3118,
+      "offset": 3160,
       "length": 44,
       "value": "\"' due error: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3160,
+      "offset": 3202,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3630,
+      "offset": 3672,
       "length": 74,
       "value": "\"Unable to get cached file location of received HTML content: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 3702,
+      "offset": 3744,
       "length": 1,
       "value": "\".\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5200,
+      "offset": 5242,
       "length": 123,
       "value": "\"Unable to show banner[placementId: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5257,
+      "offset": 5299,
       "length": 1,
       "value": "\", requestId: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5289,
+      "offset": 5331,
       "length": 1,
       "value": "\"] due adSource is empty. Skipped.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 5344,
+      "offset": 5386,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6177,
+      "offset": 6219,
       "length": 1257,
       "value": "\"<html>\n    <head>\n        <meta id='mw-viewport' name='viewport' content='width=device-width, height=device-height, minimum-scale=1, maximum-scale=1, initial-scale=1.0'\/>\n        <style type=\"text\/css\" media=\"screen\">\n            \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6517,
+      "offset": 6559,
       "length": 1,
       "value": "\"\n            .snippet {\n                width: 100vw;\n                max-width: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 6707,
+      "offset": 6749,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6713,
+      "offset": 6755,
       "length": 2,
       "value": "\"vh;\n                height: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "FloatLiteral",
-      "offset": 6810,
+      "offset": 6852,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 6816,
+      "offset": 6858,
       "length": 2,
       "value": "\"vw;\n                max-height: 100vh;\n                margin: auto;\n                position: absolute;\n                top: 0; bottom: 0; \/* vertical center *\/\n                left: 0; right: 0; \/* horizontal center *\/\n            }\n        <\/style>\n    <\/head>\n    <body class='body'>\n        <div class='snippet'>\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 7344,
+      "offset": 7386,
       "length": 2,
       "value": "\"<\/div>\n    <\/body>\n<\/html>\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 7471,
+      "offset": 7513,
       "length": 247,
       "value": "\"<html>\n    <style type=\"text\/css\" media=\"screen\">\n        \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 7587,
+      "offset": 7629,
       "length": 2,
       "value": "\"\n    <\/style>\n    <body class='body'>\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Banner\/presentation\/HTMLBannerView.swift",
       "kind": "StringLiteral",
-      "offset": 7667,
+      "offset": 7709,
       "length": 2,
       "value": "\"<\/body>\n<\/html>\""
     },
@@ -43080,386 +43111,393 @@
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
-      "kind": "FloatLiteral",
-      "offset": 6933,
-      "length": 3,
-      "value": "5.0"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 6974,
+      "offset": 6877,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7213,
+      "offset": 7116,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7262,
+      "offset": 7165,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7344,
+      "offset": 7247,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7390,
+      "offset": 7293,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7427,
+      "offset": 7330,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7472,
+      "offset": 7375,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7628,
+      "offset": 7531,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 7674,
+      "offset": 7577,
       "length": 9,
       "value": "\"Skip Ad\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 7767,
+      "offset": 7670,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7844,
+      "offset": 7747,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7897,
+      "offset": 7800,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 7987,
+      "offset": 7890,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 8037,
+      "offset": 7940,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8641,
+      "offset": 8544,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8651,
+      "offset": 8554,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8660,
+      "offset": 8563,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 8670,
+      "offset": 8573,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 8714,
+      "offset": 8617,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 9132,
+      "offset": 9035,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9649,
+      "offset": 9552,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 9663,
+      "offset": 9566,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10522,
+      "offset": 10425,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10607,
+      "offset": 10510,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10621,
+      "offset": 10524,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10707,
+      "offset": 10610,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10721,
+      "offset": 10624,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10797,
+      "offset": 10700,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10811,
+      "offset": 10714,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 10893,
+      "offset": 10796,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10907,
+      "offset": 10810,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 10953,
+      "offset": 10856,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 11822,
+      "offset": 11725,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11952,
+      "offset": 11855,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11958,
+      "offset": 11861,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11968,
+      "offset": 11871,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 11980,
+      "offset": 11883,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12034,
+      "offset": 11937,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12044,
+      "offset": 11947,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12053,
+      "offset": 11956,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 12063,
+      "offset": 11966,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12110,
+      "offset": 12013,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12187,
+      "offset": 12090,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12197,
+      "offset": 12100,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12206,
+      "offset": 12109,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12216,
+      "offset": 12119,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 12252,
+      "offset": 12155,
       "length": 15,
       "value": "\"Roboto-Medium\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12275,
+      "offset": 12178,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 12299,
+      "offset": 12202,
       "length": 7,
       "value": "\"00:00\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12397,
+      "offset": 12300,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12456,
+      "offset": 12359,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12471,
+      "offset": 12374,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 12530,
+      "offset": 12433,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12545,
+      "offset": 12448,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 12532,
+      "length": 2,
+      "value": "52"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12547,
       "length": 4,
       "value": "true"
     },
@@ -43467,300 +43505,300 @@
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
       "offset": 12629,
-      "length": 2,
-      "value": "52"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 12644,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 12726,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 12742,
+      "offset": 12645,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13009,
+      "offset": 12912,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 13019,
+      "offset": 12922,
       "length": 12,
       "value": "0.7803921569"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13039,
+      "offset": 12942,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13049,
+      "offset": 12952,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13141,
+      "offset": 13044,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13201,
+      "offset": 13104,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13215,
+      "offset": 13118,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13299,
+      "offset": 13202,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13313,
+      "offset": 13216,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13399,
+      "offset": 13302,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13413,
+      "offset": 13316,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13495,
+      "offset": 13398,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13509,
+      "offset": 13412,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 13677,
+      "offset": 13580,
       "length": 13,
       "value": "\"media_pause\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13856,
+      "offset": 13759,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13916,
+      "offset": 13819,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 13931,
+      "offset": 13834,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 13990,
+      "offset": 13893,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14005,
+      "offset": 13908,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14089,
+      "offset": 13992,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14103,
+      "offset": 14006,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14185,
+      "offset": 14088,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14201,
+      "offset": 14104,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 14542,
+      "offset": 14445,
       "length": 15,
       "value": "\"media_nosound\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14723,
+      "offset": 14626,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14783,
+      "offset": 14686,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14798,
+      "offset": 14701,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 14857,
+      "offset": 14760,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 14872,
+      "offset": 14775,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15274,
+      "offset": 15177,
       "length": 2,
       "value": "-8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15289,
+      "offset": 15192,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15380,
+      "offset": 15283,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15396,
+      "offset": 15299,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 15743,
+      "offset": 15646,
       "length": 18,
       "value": "\"media_fullscreen\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 15927,
+      "offset": 15830,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 15987,
+      "offset": 15890,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16002,
+      "offset": 15905,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16061,
+      "offset": 15964,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16076,
+      "offset": 15979,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
+      "kind": "IntegerLiteral",
+      "offset": 16065,
+      "length": 2,
+      "value": "-8"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
+      "kind": "BooleanLiteral",
+      "offset": 16080,
       "length": 4,
       "value": "true"
     },
@@ -43768,678 +43806,664 @@
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
       "offset": 16162,
-      "length": 2,
-      "value": "-8"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
-      "kind": "BooleanLiteral",
-      "offset": 16177,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
-      "kind": "IntegerLiteral",
-      "offset": 16259,
       "length": 3,
       "value": "-16"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 16275,
+      "offset": 16178,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16620,
+      "offset": 16523,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16666,
+      "offset": 16569,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16676,
+      "offset": 16579,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16685,
+      "offset": 16588,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 16695,
+      "offset": 16598,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 16751,
+      "offset": 16654,
       "length": 12,
       "value": "\"media_skip\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16963,
+      "offset": 16866,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16973,
+      "offset": 16876,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16982,
+      "offset": 16885,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 16992,
+      "offset": 16895,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17044,
+      "offset": 16947,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17053,
+      "offset": 16956,
       "length": 2,
       "value": "77"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17065,
+      "offset": 16968,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17075,
+      "offset": 16978,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 17101,
+      "offset": 17004,
       "length": 9,
       "value": "\"Skip Ad\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17172,
+      "offset": 17075,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17182,
+      "offset": 17085,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17191,
+      "offset": 17094,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17201,
+      "offset": 17104,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 17323,
+      "offset": 17226,
       "length": 15,
       "value": "\"Roboto-Medium\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17346,
+      "offset": 17249,
       "length": 2,
       "value": "14"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17394,
+      "offset": 17297,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17404,
+      "offset": 17307,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17413,
+      "offset": 17316,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17423,
+      "offset": 17326,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 17468,
+      "offset": 17371,
       "length": 3,
       "value": "8.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17482,
+      "offset": 17385,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17578,
+      "offset": 17481,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17638,
+      "offset": 17541,
       "length": 2,
       "value": "97"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17653,
+      "offset": 17556,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17712,
+      "offset": 17615,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17727,
+      "offset": 17630,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17813,
+      "offset": 17716,
       "length": 2,
       "value": "-8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17828,
+      "offset": 17731,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 17904,
+      "offset": 17807,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 17918,
+      "offset": 17821,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18122,
+      "offset": 18025,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 18289,
+      "offset": 18192,
       "length": 13,
       "value": "\"media_close\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18468,
+      "offset": 18371,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18528,
+      "offset": 18431,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18543,
+      "offset": 18446,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18602,
+      "offset": 18505,
       "length": 2,
       "value": "40"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18617,
+      "offset": 18520,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18703,
+      "offset": 18606,
       "length": 2,
       "value": "-8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18718,
+      "offset": 18621,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 18794,
+      "offset": 18697,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 18808,
+      "offset": 18711,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 19013,
+      "offset": 18916,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19186,
+      "offset": 19089,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19232,
+      "offset": 19135,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19242,
+      "offset": 19145,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19251,
+      "offset": 19154,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 19261,
+      "offset": 19164,
       "length": 3,
       "value": "0.6"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19418,
+      "offset": 19321,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19428,
+      "offset": 19331,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19437,
+      "offset": 19340,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 19447,
+      "offset": 19350,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20070,
+      "offset": 19973,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20243,
+      "offset": 20146,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20409,
+      "offset": 20312,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20577,
+      "offset": 20480,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 20880,
+      "offset": 20783,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21043,
+      "offset": 20946,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21362,
+      "offset": 21265,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21482,
+      "offset": 21385,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21661,
+      "offset": 21564,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 21764,
+      "offset": 21667,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 21908,
+      "offset": 21811,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 21953,
+      "offset": 21856,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 22067,
+      "offset": 21970,
       "length": 3,
       "value": "0.4"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 22211,
+      "offset": 22114,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 22256,
+      "offset": 22159,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22834,
+      "offset": 22737,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22896,
+      "offset": 22799,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 22991,
+      "offset": 22894,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 23039,
+      "offset": 22942,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 23188,
+      "offset": 23091,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 23305,
+      "offset": 23208,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 23333,
+      "offset": 23236,
       "length": 23,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 23344,
+      "offset": 23247,
       "length": 1,
       "value": "\":\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 23355,
+      "offset": 23258,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 23645,
+      "offset": 23548,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 24101,
+      "offset": 24004,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 24211,
+      "offset": 24114,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 24314,
+      "offset": 24217,
       "length": 7,
       "value": "\"https\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "StringLiteral",
-      "offset": 25010,
+      "offset": 24913,
       "length": 28,
       "value": "\"No media creatives to play\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 25291,
+      "offset": 25194,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25355,
+      "offset": 25258,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "FloatLiteral",
-      "offset": 25490,
+      "offset": 25393,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25818,
+      "offset": 25721,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26000,
+      "offset": 25903,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 26162,
+      "offset": 26065,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "IntegerLiteral",
-      "offset": 26220,
+      "offset": 26123,
       "length": 1,
       "value": "1"
     },
@@ -44760,162 +44784,155 @@
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
-      "kind": "Array",
-      "offset": 5879,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6053,
+      "offset": 5772,
       "length": 6,
       "value": "\"POST\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6138,
+      "offset": 5857,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 6142,
+      "offset": 5861,
       "length": 40,
       "value": "\"WS API call failed due bad urlRequest.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6333,
+      "offset": 6052,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6514,
+      "offset": 6233,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 6623,
+      "offset": 6342,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 7033,
+      "offset": 6752,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "FloatLiteral",
-      "offset": 7093,
+      "offset": 6812,
       "length": 3,
       "value": "0.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 7742,
+      "offset": 6918,
       "length": 13,
       "value": "\"STATIC_HTML\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 8351,
+      "offset": 7527,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 8404,
+      "offset": 7580,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 8459,
+      "offset": 7635,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 8621,
+      "offset": 7797,
       "length": 7,
       "value": "\"IMAGE\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 9225,
+      "offset": 8401,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 9278,
+      "offset": 8454,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "Array",
-      "offset": 9333,
+      "offset": 8509,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9480,
+      "offset": 8656,
       "length": 7,
       "value": "\"VIDEO\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9489,
+      "offset": 8665,
       "length": 7,
       "value": "\"AUDIO\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 9498,
+      "offset": 8674,
       "length": 7,
       "value": "\"MEDIA\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10097,
+      "offset": 9273,
       "length": 63,
       "value": "\"Unable to parse VAST due error: \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10159,
+      "offset": 9335,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/repository\/SSPCreativeRepositoryImpl.swift",
       "kind": "StringLiteral",
-      "offset": 10320,
+      "offset": 9496,
       "length": 31,
       "value": "\"VAST model is empty. Skipped.\""
     },
@@ -45867,77 +45884,77 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 7721,
+      "offset": 7766,
       "length": 7,
       "value": "\"apple\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "FloatLiteral",
-      "offset": 8072,
+      "offset": 8117,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8396,
+      "offset": 8441,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8449,
+      "offset": 8494,
       "length": 121,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8460,
+      "offset": 8505,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8478,
+      "offset": 8523,
       "length": 1,
       "value": "\" (\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8495,
+      "offset": 8540,
       "length": 1,
       "value": "\" \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8514,
+      "offset": 8559,
       "length": 1,
       "value": "\") \""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8548,
+      "offset": 8593,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8551,
+      "offset": 8596,
       "length": 1,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 8569,
+      "offset": 8614,
       "length": 1,
       "value": "\"\""
     },

@@ -18,7 +18,6 @@
 
 import UIKit
 import SAAdvertisingSDKStandard
-import Toaster
 
 class BannerCell: UICollectionViewCell {
 
@@ -43,6 +42,23 @@ class SingleCollectionCreativeViewController: UICollectionViewController {
 
     private var banners = [Banner]()
 
+    private let placementIds = [
+        "HTML_BANNER",
+        "VAST_Inline_Simple",
+        "IMAGE_BANNER",
+        "VAST_Wrapper_Simple",
+        "HTML_BANNER",
+        "VAST_Wrapper_Compound",
+        "IMAGE_BANNER",
+        "VAST_Wrapper_Chain_Less_5",
+        "HTML_BANNER",
+        "VAST_Wrapper_Chain_Greater_5",
+        "IMAGE_BANNER",
+        "VAST_Wrapper_Chain_Loop",
+        "HTML_BANNER",
+        "IMAGE_BANNER"
+    ]
+
     override func viewDidLoad() {
         super.viewDidLoad()
         reload()
@@ -51,21 +67,17 @@ class SingleCollectionCreativeViewController: UICollectionViewController {
     private func reload() {
         // Here is generated STUB data with only one real banner inside. Other items are empty.
         var result = [Banner]()
-        let num = 20
-        for i in 0..<num {
-            var holder: CreativeHolder?
-            let id = "Banner-\(i + 1)"
-            if i % 2 == 0 {
-                holder = CreativeHolder(
-                    query: CreativeQuery(
-                        placementId: "YOUR_PLACEMENT_ID",
-                        sizes: [SizeEntity(width: 260, height: 106)]
-                    )
+        for i in 0..<placementIds.count {
+            let placementId = placementIds[i]
+            let holder = CreativeHolder(
+                query: CreativeQuery(
+                    placementId: placementId,
+                    sizes: [SizeEntity(width: 260, height: 106)]
                 )
-                holder!.delegate = self
-            }
+            )
+            holder.delegate = self
             result.append(Banner(
-                id: id,
+                id: "\(i + 1) - \(placementId)",
                 holder: holder
             ))
         }
@@ -164,32 +176,32 @@ extension SingleCollectionCreativeViewController: CreativeDelegate {
 
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataSuccess[\(String(describing: placementId))]")
+        log("onLoadDataSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentSuccess[\(String(describing: placementId))]")
+        log("onLoadContentSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onNoAdContent[\(String(describing: placementId))]")
+        log("onNoAdContent[\(placementId ?? "")]")
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onClose[\(String(describing: placementId))]")
+        log("onClose[\(placementId ?? "")]")
     }
 }
 
