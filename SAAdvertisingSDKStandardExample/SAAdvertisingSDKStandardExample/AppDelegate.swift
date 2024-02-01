@@ -18,6 +18,14 @@
 
 import UIKit
 import SAAdvertisingSDKStandard
+import Toaster
+
+func log(_ msg: String, display: Bool = true) {
+    print(msg)
+    if display {
+        Toast(text: msg).show()
+    }
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

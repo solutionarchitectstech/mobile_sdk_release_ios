@@ -32,7 +32,7 @@ class MultiProductCreativeViewController: UIViewController {
     override func viewDidLoad() {
         let queries = [
             ProductCreativeQuery(
-                placementId: "YOUR_PLACEMENT_ID",
+                placementId: "PRODUCT_01",
                 customParams: [
                     "skuId": "LG00001",
                     "skuName": "Leggo bricks (speed boat)",
@@ -41,7 +41,7 @@ class MultiProductCreativeViewController: UIViewController {
                 ]
             ),
             ProductCreativeQuery(
-                placementId: "YOUR_PLACEMENT_ID",
+                placementId: "PRODUCT_02",
                 customParams: [
                     "skuId": "SW00014",
                     "skuName": "Swing Mirage 2 RS",

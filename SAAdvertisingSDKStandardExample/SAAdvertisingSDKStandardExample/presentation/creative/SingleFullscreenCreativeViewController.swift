@@ -23,10 +23,12 @@ class SingleFullscreenCreativeViewController: UIViewController {
 
     private var fullscreenVC: FullscreenCreativeViewController!
 
+    private let placementIds = ["HTML_BANNER", "IMAGE_BANNER"]
+
     override func viewDidLoad() {
         let vc = FullscreenCreativeViewController()
         vc.query = CreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+            placementId: "",
             sizes: [SizeEntity(width: 260, height: 106)],
             customParams: [
                 "skuId": "LG00001",
@@ -44,6 +46,7 @@ class SingleFullscreenCreativeViewController: UIViewController {
     }
 
     @IBAction func onRequestButtonClick(_ sender: Any) {
+        self.fullscreenVC.query?.placementId = placementIds.randomElement() ?? ""
         self.present(fullscreenVC, animated: true)
     }
 }
@@ -54,36 +57,36 @@ extension SingleFullscreenCreativeViewController: CreativeDelegate {
 
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataSuccess[\(String(describing: placementId))]")
+        log("onLoadDataSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentSuccess[\(String(describing: placementId))]")
+        log("onLoadContentSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
 
         fullscreenVC.dismiss(animated: true)
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onNoAdContent[\(String(describing: placementId))]")
+        log("onNoAdContent[\(placementId ?? "")]")
 
         fullscreenVC.dismiss(animated: true)
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onClose[\(String(describing: placementId))]")
+        log("onClose[\(placementId ?? "")]")
 
         fullscreenVC.dismiss(animated: true)
     }

@@ -24,26 +24,66 @@ class MediaCreativeViewController: UIViewController {
     
     @IBOutlet weak var creativeView: CreativeView!
 
+    @IBOutlet weak var vastLabel: UILabel!
+
     private var creative: Creative!
+
+    private let placementIds = [
+        "VAST_Inline_Simple",
+        "VAST_Wrapper_Simple",
+        "VAST_Wrapper_Compound",
+        "VAST_Wrapper_Chain_Less_5",
+        "VAST_Wrapper_Chain_Greater_5"
+    ]
 
     public override func viewDidLoad() {
         super.viewDidLoad()
 
         TechAdvertising.shared.uid = "MY_AUTHORIZED_USER_ID"
 
-        creativeView.query = CreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+        // Let's init MediaCreative
+        self.creative = .init(creativeView: creativeView)
+        self.creative.delegate = self
+
+        // Finally, let's load media creatives
+        load(placementId: "VAST_Inline_Simple")
+    }
+
+    @IBAction func onVastInlineSimple(_ sender: Any) {
+        load(placementId: "VAST_Inline_Simple")
+    }
+
+    @IBAction func onVastWrapperSimple(_ sender: Any) {
+        load(placementId: "VAST_Wrapper_Simple")
+    }
+
+    @IBAction func onVastWrapperCompound(_ sender: Any) {
+        load(placementId: "VAST_Wrapper_Compound")
+    }
+    
+    @IBAction func onVastWrapperChainLess5(_ sender: Any) {
+        load(placementId: "VAST_Wrapper_Chain_Less_5")
+    }
+    
+    @IBAction func onVastWrapperChainGreater5(_ sender: Any) {
+        load(placementId: "VAST_Wrapper_Chain_Greater_5")
+    }
+
+    @IBAction func onVastWrapperChainLoop(_ sender: Any) {
+        load(placementId: "VAST_Wrapper_Chain_Loop")
+    }
+
+    private func load(placementId: String) {
+        self.vastLabel.text = placementId
+
+        self.creativeView.query = CreativeQuery(
+            placementId: placementId,
             sizes: [SizeEntity(width: 260, height: 106)],
             floorPrice: 1.99,
             currency: "USD",
             customParams: [:]
         )
 
-        // Let's init MediaCreative
-        self.creative = .init(creativeView: creativeView)
-        self.creative.delegate = self
-
-        // Finally, let's load media creatives
         self.creative.load()
     }
 }
@@ -54,31 +94,31 @@ extension MediaCreativeViewController: CreativeDelegate {
 
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataSuccess[\(String(describing: placementId))]")
+        log("onLoadDataSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentSuccess[\(String(describing: placementId))]")
+        log("onLoadContentSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onNoAdContent[\(String(describing: placementId))]")
+        log("onNoAdContent[\(placementId ?? "")]")
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onClose[\(String(describing: placementId))]")
+        log("onClose[\(placementId ?? "")]")
     }
 }

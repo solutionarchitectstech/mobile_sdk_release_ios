@@ -18,8 +18,6 @@
 
 import UIKit
 import SAAdvertisingSDKStandard
-import Toaster
-
 
 class MultiCreativeViewController: UIViewController {
 
@@ -44,7 +42,7 @@ class MultiCreativeViewController: UIViewController {
         let pxCreative1Width = Int(creativeView1.frame.size.width * mainScreenScale)
         let pxCreative1Height = Int(creativeView1.frame.size.height * mainScreenScale)
         creativeView1.query = CreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+            placementId: "VAST_Inline_Simple",
             sizes: [
                 SizeEntity(width: 260, height: 106),
                 SizeEntity(width: pxCreative1Width, height: pxCreative1Height)
@@ -62,7 +60,7 @@ class MultiCreativeViewController: UIViewController {
         let pxCreative2Width = Int(creativeView2.frame.size.width * mainScreenScale)
         let pxCreative2Height = Int(creativeView2.frame.size.height * mainScreenScale)
         creativeView2.query = CreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+            placementId: "VAST_Wrapper_Compound",
             sizes: [
                 SizeEntity(width: 260, height: 106),
                 SizeEntity(width: pxCreative2Width, height: pxCreative2Height)
@@ -74,7 +72,7 @@ class MultiCreativeViewController: UIViewController {
         creativeView3.isScrollEnabled = true
         creativeView3.scaleToFit = false
         creativeView3.query = CreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+            placementId: "IMAGE_BANNER",
             sizes: [
                 SizeEntity(width: 260, height: 106)
             ]
@@ -83,7 +81,7 @@ class MultiCreativeViewController: UIViewController {
         creativeView4.isScrollEnabled = true
         creativeView4.scaleToFit = false
         creativeView4.query = CreativeQuery(
-            placementId: "YOUR_PLACEMENT_ID",
+            placementId: "HTML_BANNER",
             sizes: [
                 SizeEntity(width: 260, height: 106)
             ]
@@ -111,31 +109,31 @@ extension MultiCreativeViewController: CreativeDelegate {
 
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataSuccess[\(String(describing: placementId))]")
+        log("onLoadDataSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadDataFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentSuccess[\(String(describing: placementId))]")
+        log("onLoadContentSuccess[\(placementId ?? "")]")
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onLoadContentFail[\(String(describing: placementId))]: \(error.localizedDescription)")
+        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onNoAdContent[\(String(describing: placementId))]")
+        log("onNoAdContent[\(placementId ?? "")]")
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        print("Creative.onClose[\(String(describing: placementId))]")
+        log("onClose[\(placementId ?? "")]")
     }
 }

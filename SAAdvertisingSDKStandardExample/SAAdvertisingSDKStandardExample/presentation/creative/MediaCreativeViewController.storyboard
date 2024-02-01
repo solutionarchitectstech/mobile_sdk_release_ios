@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--MEDIA PLAYER-->
+        <!--BANNER (media)-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="MediaCreativeViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,24 +18,98 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X7x-lk-sTs" customClass="CreativeView" customModule="SAAdvertisingSDKStandard">
-                                <rect key="frame" x="45" y="316" width="300" height="225"/>
+                                <rect key="frame" x="10" y="47" width="370" height="381.66666666666669"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="er1-NW-LVe"/>
-                                    <constraint firstAttribute="height" constant="225" id="gVg-pf-EUj"/>
-                                </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Afj-xW-M7i" userLabel="Vast Label">
+                                <rect key="frame" x="10" y="438.66666666666669" width="370" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RCI-vx-Gzc">
+                                <rect key="frame" x="10" y="620.66666666666663" width="370" height="189.33333333333337"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Hp-1X-4yK">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VAST_Inline_Simple">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onVastInlineSimple:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dQF-eH-K6t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm3-Oh-FBG">
+                                        <rect key="frame" x="0.0" y="31" width="370" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VAST_Wrapper_Simple">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onVastWrapperSimple:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N7b-RK-Clg"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bT-C9-aq7">
+                                        <rect key="frame" x="0.0" y="62" width="370" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VAST_Wrapper_Compound">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onVastWrapperCompound:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DCx-qx-JYq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-KY-AcM">
+                                        <rect key="frame" x="0.0" y="93" width="370" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VAST_Wrapper_Chain_Less_5">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onVastWrapperChainLess5:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7RF-xV-OF1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLa-mw-BbY">
+                                        <rect key="frame" x="0.0" y="124" width="370" height="31"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VAST_Wrapper_Chain_Greater_5">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="onVastWrapperChainGreater5:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yqH-mx-XMP"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGJ-nL-SSe">
+                                        <rect key="frame" x="0.0" y="155" width="370" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="VAST_Wrapper_Chain_Loop"/>
+                                        <connections>
+                                            <action selector="onVastWrapperChainLoop:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9yb-I7-e5i"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="X7x-lk-sTs" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="YwP-Gl-Oex"/>
-                            <constraint firstItem="X7x-lk-sTs" firstAttribute="centerY" secondItem="vDu-zF-Fre" secondAttribute="centerY" id="gBm-P4-xPT"/>
+                            <constraint firstItem="X7x-lk-sTs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="3CU-ml-VJ5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="RCI-vx-Gzc" secondAttribute="trailing" constant="10" id="8Ez-X8-aFh"/>
+                            <constraint firstItem="Afj-xW-M7i" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="HTU-lx-EiI"/>
+                            <constraint firstItem="X7x-lk-sTs" firstAttribute="height" secondItem="vDu-zF-Fre" secondAttribute="height" multiplier="1:2" id="O9I-xz-vPu"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Afj-xW-M7i" secondAttribute="trailing" constant="10" id="Rs1-C6-Fif"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="RCI-vx-Gzc" secondAttribute="bottom" id="bKn-IW-GzU"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="X7x-lk-sTs" secondAttribute="trailing" constant="10" id="hsr-x0-79f"/>
+                            <constraint firstItem="Afj-xW-M7i" firstAttribute="top" secondItem="X7x-lk-sTs" secondAttribute="bottom" constant="10" id="pTt-fO-jLD"/>
+                            <constraint firstItem="RCI-vx-Gzc" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="uTW-GJ-gjC"/>
+                            <constraint firstItem="X7x-lk-sTs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="w0b-TJ-LOq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="MEDIA PLAYER" id="iOu-Lc-oNd"/>
+                    <navigationItem key="navigationItem" title="BANNER (media)" id="iOu-Lc-oNd"/>
                     <connections>
                         <outlet property="creativeView" destination="X7x-lk-sTs" id="zST-fd-IfU"/>
+                        <outlet property="vastLabel" destination="Afj-xW-M7i" id="JYH-7W-mKs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
