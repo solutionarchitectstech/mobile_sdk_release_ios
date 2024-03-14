@@ -58,11 +58,11 @@ class MultiProductCreativeViewController: UIViewController {
     @IBAction func onRequestButtonClick(_ sender: Any) {
         self.outputLabel1.text = nil
         self.outputLabel1.isHidden = true
-        self.outputLabel1.textColor = .black
+        self.outputLabel1.textColor = .none
 
         self.outputLabel2.text = nil
         self.outputLabel2.isHidden = true
-        self.outputLabel2.textColor = .black
+        self.outputLabel2.textColor = .none
 
         self.spinner.isHidden = false
 
@@ -74,27 +74,41 @@ extension MultiProductCreativeViewController: ProductCreativeDelegate {
 
     func onLoadDataSuccess() {
         self.spinner.isHidden = true
+        self.outputLabel1.isHidden = false
+        self.outputLabel2.isHidden = false
     }
 
     func onLoadDataFail(error: Error) {
+        let value = "ERROR: Unable to load product creative data due error: \(error.localizedDescription)"
         self.spinner.isHidden = true
-    }
-
-    func onLoadContentSuccess(entity: ProductCreativeEntity) {
-        let value = "\(String(describing: entity))"
         if self.outputLabel1.text == nil {
             self.outputLabel1.isHidden = false
-            self.outputLabel1.textColor = .black
+            self.outputLabel1.textColor = .red
             self.outputLabel1.text = value
         } else {
             self.outputLabel2.isHidden = false
-            self.outputLabel2.textColor = .black
+            self.outputLabel2.textColor = .red
+            self.outputLabel2.text = value
+        }
+    }
+
+    func onLoadContentSuccess(entity: ProductCreativeEntity) {
+        self.spinner.isHidden = true
+        let value = "\(String(describing: entity))"
+        if self.outputLabel1.text == nil {
+            self.outputLabel1.isHidden = false
+            self.outputLabel1.textColor = .none
+            self.outputLabel1.text = value
+        } else {
+            self.outputLabel2.isHidden = false
+            self.outputLabel2.textColor = .none
             self.outputLabel2.text = value
         }
     }
 
     func onLoadContentFail(query: ProductCreativeQuery, error: Error) {
         let value = "ERROR: Unable to load product creative content by '\(query.placementId)' placementId due error: \(error.localizedDescription)"
+        self.spinner.isHidden = true
         if self.outputLabel1.text == nil {
             self.outputLabel1.isHidden = false
             self.outputLabel1.textColor = .red

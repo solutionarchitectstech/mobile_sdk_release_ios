@@ -28,14 +28,6 @@ class MediaCreativeViewController: UIViewController {
 
     private var creative: Creative!
 
-    private let placementIds = [
-        "VAST_Inline_Simple",
-        "VAST_Wrapper_Simple",
-        "VAST_Wrapper_Compound",
-        "VAST_Wrapper_Chain_Less_5",
-        "VAST_Wrapper_Chain_Greater_5"
-    ]
-
     public override func viewDidLoad() {
         super.viewDidLoad()
 
