@@ -43,7 +43,7 @@ class SingleProductCreativeViewController: UIViewController {
     @IBAction func onRequestButtonClick(_ sender: Any) {
         self.outputLabel.text = nil
         self.outputLabel.isHidden = true
-        self.outputLabel.textColor = .black
+        self.outputLabel.textColor = .none
         self.spinner.isHidden = false
 
         self.productCreative.load()
@@ -60,14 +60,23 @@ extension SingleProductCreativeViewController: ProductCreativeDelegate {
     func onLoadDataFail(error: Error) {
         self.spinner.isHidden = true
         self.outputLabel.isHidden = false
+
+        self.outputLabel.textColor = .red
+        self.outputLabel.text = "ERROR: Unable to load product creative data due error: \(error.localizedDescription)"
     }
 
     func onLoadContentSuccess(entity: ProductCreativeEntity) {
-        self.outputLabel.textColor = .black
+        self.spinner.isHidden = true
+        self.outputLabel.isHidden = false
+
+        self.outputLabel.textColor = .none
         self.outputLabel.text = "\(String(describing: entity))"
     }
 
     func onLoadContentFail(query: ProductCreativeQuery, error: Error) {
+        self.spinner.isHidden = true
+        self.outputLabel.isHidden = false
+
         self.outputLabel.textColor = .red
         self.outputLabel.text = "ERROR: Unable to load product creative content by '\(query.placementId)' placementId due error: \(error.localizedDescription)"
     }
