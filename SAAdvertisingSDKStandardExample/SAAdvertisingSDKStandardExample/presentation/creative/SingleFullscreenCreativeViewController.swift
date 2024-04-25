@@ -41,7 +41,6 @@ class SingleFullscreenCreativeViewController: UIViewController {
             ]
         )
         vc.delegate = self
-        vc.refresh = 10.0
         self.fullscreenVC = vc
     }
 

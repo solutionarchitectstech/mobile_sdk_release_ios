@@ -47,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             ),
             debugMode: true,
             httpHeaders: [
-                "Authorization": "Bearer CUSTOM_AUTH_TOKEN",
+                "Authorization": "Bearer YOUR_TOKEN",
                 "User-Agent": "YOUR_CUSTOM_USER_AGENT"
             ]
         ))
