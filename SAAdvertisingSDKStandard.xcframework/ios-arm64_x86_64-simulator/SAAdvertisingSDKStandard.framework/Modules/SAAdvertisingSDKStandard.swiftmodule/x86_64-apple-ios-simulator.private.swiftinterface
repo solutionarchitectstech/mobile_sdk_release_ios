@@ -916,7 +916,6 @@ extension SAAdvertisingSDKStandard.VMAPAdBreak {
 }
 @objc @_Concurrency.MainActor(unsafe) public class FullscreenCreativeViewController : UIKit.UIViewController {
   @_Concurrency.MainActor(unsafe) public var query: SAAdvertisingSDKStandard.CreativeQuery?
-  @_Concurrency.MainActor(unsafe) public var refresh: Swift.Double
   @_Concurrency.MainActor(unsafe) public var path: Swift.String
   @_Concurrency.MainActor(unsafe) weak public var delegate: (any SAAdvertisingSDKStandard.CreativeDelegate)?
   @_Concurrency.MainActor(unsafe) @objc override dynamic open var view: UIKit.UIView! {

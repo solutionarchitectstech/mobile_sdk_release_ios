@@ -34654,93 +34654,6 @@
           },
           {
             "kind": "Var",
-            "name": "refresh",
-            "printedName": "refresh",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Double",
-                "printedName": "Swift.Double",
-                "usr": "s:Sd"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "Custom",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Double",
-                    "printedName": "Swift.Double",
-                    "usr": "s:Sd"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvs",
-                "mangledName": "$s24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvs",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvM",
-                "mangledName": "$s24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC7refreshSdvM",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "path",
             "printedName": "path",
             "children": [
@@ -37926,7 +37839,7 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 3935,
+      "offset": 3948,
       "length": 2,
       "value": "\"\""
     },
@@ -40809,15 +40722,8 @@
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/FullscreenCreativeViewController.swift",
-      "kind": "FloatLiteral",
-      "offset": 1333,
-      "length": 3,
-      "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/FullscreenCreativeViewController.swift",
       "kind": "StringLiteral",
-      "offset": 1360,
+      "offset": 1316,
       "length": 2,
       "value": "\"\""
     },

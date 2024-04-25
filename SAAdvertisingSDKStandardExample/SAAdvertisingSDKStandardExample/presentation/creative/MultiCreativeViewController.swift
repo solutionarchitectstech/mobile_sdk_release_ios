@@ -66,7 +66,7 @@ class MultiCreativeViewController: UIViewController {
                 SizeEntity(width: pxCreative2Width, height: pxCreative2Height)
             ],
             floorPrice: 2.84,
-            currency: "RUB"
+            currency: "USD"
         )
 
         creativeView3.isScrollEnabled = true
