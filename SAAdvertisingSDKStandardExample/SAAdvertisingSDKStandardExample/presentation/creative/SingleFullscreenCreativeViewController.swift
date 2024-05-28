@@ -21,6 +21,8 @@ import SAAdvertisingSDKStandard
 
 class SingleFullscreenCreativeViewController: UIViewController {
 
+    private let errorLabel = UILabel()
+
     private var fullscreenVC: FullscreenCreativeViewController!
 
     private let placementIds = ["HTML_BANNER", "IMAGE_BANNER"]
@@ -57,35 +59,54 @@ extension SingleFullscreenCreativeViewController: CreativeDelegate {
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onLoadDataSuccess[\(placementId ?? "")]")
+
+        hideMessage(in: errorLabel)
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
+        let msg = "onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        log(msg)
+
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+            self?.fullscreenVC.dismiss(animated: true)
+        }
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onLoadContentSuccess[\(placementId ?? "")]")
+
+        hideMessage(in: errorLabel)
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
+        let msg = "onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        log(msg)
 
-        fullscreenVC.dismiss(animated: true)
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
+            self?.fullscreenVC.dismiss(animated: true)
+        }
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        log("onNoAdContent[\(placementId ?? "")]")
+        let msg = "onNoAdContent[\(placementId ?? "")]"
+        log(msg)
 
-        fullscreenVC.dismiss(animated: true)
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onClose[\(placementId ?? "")]")
+
+        hideMessage(in: errorLabel)
 
         fullscreenVC.dismiss(animated: true)
     }

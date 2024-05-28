@@ -23,6 +23,8 @@ class SingleInlayoutCreativeViewController: UIViewController {
 
     @IBOutlet weak var creativeView: CreativeView!
 
+    private let errorLabel = UILabel()
+
     private var creative: Creative!
 
     private let placementIds = ["HTML_BANNER", "IMAGE_BANNER"]
@@ -51,7 +53,7 @@ class SingleInlayoutCreativeViewController: UIViewController {
         self.creative = .init(creativeView: creativeView)
         self.creative.delegate = self
 
-        // Finally, let's load creative creatives
+        // Finally, let's load creatives
         self.creative.load()
     }
 }
@@ -63,30 +65,45 @@ extension SingleInlayoutCreativeViewController: CreativeDelegate {
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onLoadDataSuccess[\(placementId ?? "")]")
+
+        hideMessage(in: errorLabel)
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
+        let msg = "onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        log(msg)
+
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onLoadContentSuccess[\(placementId ?? "")]")
+
+        hideMessage(in: errorLabel)
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
+        let msg = "onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        log(msg)
+
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        log("onNoAdContent[\(placementId ?? "")]")
+        let msg = "onNoAdContent[\(placementId ?? "")]"
+        log(msg)
+
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onClose[\(placementId ?? "")]")
+
+        hideMessage(in: errorLabel)
     }
 }
