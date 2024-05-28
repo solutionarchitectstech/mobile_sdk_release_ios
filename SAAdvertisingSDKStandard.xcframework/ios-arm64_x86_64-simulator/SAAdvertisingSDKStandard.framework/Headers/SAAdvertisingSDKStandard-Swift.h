@@ -318,8 +318,8 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard16CreativeDelegate_")
 
 SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard12CreativeView")
 @interface CreativeView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)drawRect:(CGRect)rect;
 - (void)drawLayer:(CALayer * _Nonnull)layer inContext:(CGContextRef _Nonnull)ctx;
 @end
@@ -352,8 +352,6 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard32FullscreenCreativeViewController")
 - (void)onLoadContentFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
 - (void)onCloseWithCreativeView:(CreativeView * _Nonnull)creativeView;
 @end
-
-
 
 
 
@@ -692,8 +690,8 @@ SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard16CreativeDelegate_")
 
 SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard12CreativeView")
 @interface CreativeView : UIView
-- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
-- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 - (void)drawRect:(CGRect)rect;
 - (void)drawLayer:(CALayer * _Nonnull)layer inContext:(CGContextRef _Nonnull)ctx;
 @end
@@ -726,8 +724,6 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard32FullscreenCreativeViewController")
 - (void)onLoadContentFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
 - (void)onCloseWithCreativeView:(CreativeView * _Nonnull)creativeView;
 @end
-
-
 
 
 

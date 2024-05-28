@@ -6118,6 +6118,64 @@
             "moduleName": "SAAdvertisingSDKStandard",
             "implicit": true,
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24SAAdvertisingSDKStandard9VastErrorO16errorDescriptionSSSgvp",
+            "mangledName": "$s24SAAdvertisingSDKStandard9VastErrorO16errorDescriptionSSSgvp",
+            "moduleName": "SAAdvertisingSDKStandard",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24SAAdvertisingSDKStandard9VastErrorO16errorDescriptionSSSgvg",
+                "mangledName": "$s24SAAdvertisingSDKStandard9VastErrorO16errorDescriptionSSSgvg",
+                "moduleName": "SAAdvertisingSDKStandard",
+                "isFromExtension": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
@@ -6155,6 +6213,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
           }
         ]
       },
@@ -10872,93 +10937,6 @@
           },
           {
             "kind": "Var",
-            "name": "closeAxis",
-            "printedName": "closeAxis",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Axis",
-                "printedName": "UIKit.NSLayoutConstraint.Axis",
-                "usr": "c:@E@UILayoutConstraintAxis"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0Vvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0Vvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "Custom",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Axis",
-                    "printedName": "UIKit.NSLayoutConstraint.Axis",
-                    "usr": "c:@E@UILayoutConstraintAxis"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0Vvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0Vvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Axis",
-                    "printedName": "UIKit.NSLayoutConstraint.Axis",
-                    "usr": "c:@E@UILayoutConstraintAxis"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0Vvs",
-                "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0Vvs",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0VvM",
-                "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC9closeAxisSo018UILayoutConstraintF0VvM",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "scaleToFit",
             "printedName": "scaleToFit",
             "children": [
@@ -11132,6 +11110,81 @@
             ]
           },
           {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(frame:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "CreativeView",
+                "printedName": "SAAdvertisingSDKStandard.CreativeView",
+                "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CGRect",
+                "printedName": "CoreFoundation.CGRect",
+                "usr": "c:@S@CGRect"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView(im)initWithFrame:",
+            "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC5frameACSo6CGRectV_tcfc",
+            "moduleName": "SAAdvertisingSDKStandard",
+            "overriding": true,
+            "objc_name": "initWithFrame:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Override",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(coder:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "SAAdvertisingSDKStandard.CreativeView?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CreativeView",
+                    "printedName": "SAAdvertisingSDKStandard.CreativeView",
+                    "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSCoder",
+                "printedName": "Foundation.NSCoder",
+                "usr": "c:objc(cs)NSCoder"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView(im)initWithCoder:",
+            "mangledName": "$s24SAAdvertisingSDKStandard12CreativeViewC5coderACSgSo7NSCoderC_tcfc",
+            "moduleName": "SAAdvertisingSDKStandard",
+            "overriding": true,
+            "objc_name": "initWithCoder:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Custom",
+              "Required",
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
             "kind": "Function",
             "name": "draw",
             "printedName": "draw(_:)",
@@ -11214,7 +11267,6 @@
           "ObjC"
         ],
         "superclassUsr": "c:objc(cs)UIView",
-        "hasMissingDesignatedInitializers": true,
         "inheritsConvenienceInitializers": true,
         "superclassNames": [
           "UIKit.UIView",
@@ -13891,16 +13943,6 @@
         "moduleName": "SAAdvertisingSDKStandard",
         "declAttributes": [
           "AccessControl"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "SAAdvertisingSDKStandard",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -21034,286 +21076,6 @@
         "moduleName": "SAAdvertisingSDKStandard",
         "declAttributes": [
           "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "SAAdvertisingSDKStandard",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CreativeHolder",
-        "printedName": "CreativeHolder",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "query",
-            "printedName": "query",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "SAAdvertisingSDKStandard.CreativeQuery?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CreativeQuery",
-                    "printedName": "SAAdvertisingSDKStandard.CreativeQuery",
-                    "usr": "s:24SAAdvertisingSDKStandard13CreativeQueryV"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC5queryAA0C5QueryVSgvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC5queryAA0C5QueryVSgvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "SAAdvertisingSDKStandard.CreativeQuery?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CreativeQuery",
-                        "printedName": "SAAdvertisingSDKStandard.CreativeQuery",
-                        "usr": "s:24SAAdvertisingSDKStandard13CreativeQueryV"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC5queryAA0C5QueryVSgvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC5queryAA0C5QueryVSgvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "creativeView",
-            "printedName": "creativeView",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CreativeView",
-                "printedName": "SAAdvertisingSDKStandard.CreativeView",
-                "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC12creativeViewAA0cF0Cvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC12creativeViewAA0cF0Cvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CreativeView",
-                    "printedName": "SAAdvertisingSDKStandard.CreativeView",
-                    "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC12creativeViewAA0cF0Cvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC12creativeViewAA0cF0Cvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "delegate",
-            "printedName": "delegate",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "WeakStorage",
-                "printedName": "(any SAAdvertisingSDKStandard.CreativeDelegate)?"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "ReferenceOwnership",
-              "AccessControl"
-            ],
-            "ownership": 1,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any SAAdvertisingSDKStandard.CreativeDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CreativeDelegate",
-                        "printedName": "any SAAdvertisingSDKStandard.CreativeDelegate",
-                        "usr": "c:@M@SAAdvertisingSDKStandard@objc(pl)CreativeDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "(any SAAdvertisingSDKStandard.CreativeDelegate)?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CreativeDelegate",
-                        "printedName": "any SAAdvertisingSDKStandard.CreativeDelegate",
-                        "usr": "c:@M@SAAdvertisingSDKStandard@objc(pl)CreativeDelegate"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvs",
-                "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvs",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvM",
-                "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC8delegateAA0C8Delegate_pSgvM",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(query:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "CreativeHolder",
-                "printedName": "SAAdvertisingSDKStandard.CreativeHolder",
-                "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CreativeQuery",
-                "printedName": "SAAdvertisingSDKStandard.CreativeQuery",
-                "usr": "s:24SAAdvertisingSDKStandard13CreativeQueryV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC5queryAcA0C5QueryV_tcfc",
-            "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC5queryAcA0C5QueryV_tcfc",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "loadIfNeeded",
-            "printedName": "loadIfNeeded(path:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "hasDefaultArg": true,
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC12loadIfNeeded4pathySS_tF",
-            "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC12loadIfNeeded4pathySS_tF",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:24SAAdvertisingSDKStandard14CreativeHolderC",
-        "mangledName": "$s24SAAdvertisingSDKStandard14CreativeHolderC",
-        "moduleName": "SAAdvertisingSDKStandard",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
@@ -36766,125 +36528,6 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "UIGestureRecognizer",
-        "printedName": "UIGestureRecognizer",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(block:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "UIGestureRecognizer",
-                "printedName": "UIKit.UIGestureRecognizer",
-                "usr": "c:objc(cs)UIGestureRecognizer"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(UIKit.UIGestureRecognizer) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "UIGestureRecognizer",
-                    "printedName": "UIKit.UIGestureRecognizer",
-                    "usr": "c:objc(cs)UIGestureRecognizer"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:So19UIGestureRecognizerC24SAAdvertisingSDKStandardE5blockAByABc_tcfc",
-            "mangledName": "$sSo19UIGestureRecognizerC24SAAdvertisingSDKStandardE5blockAByABc_tcfc",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "Custom",
-              "AccessControl",
-              "Convenience"
-            ],
-            "isFromExtension": true,
-            "init_kind": "Convenience"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)UIGestureRecognizer",
-        "moduleName": "UIKit",
-        "isOpen": true,
-        "intro_iOS": "3.2",
-        "objc_name": "UIGestureRecognizer",
-        "declAttributes": [
-          "Available",
-          "ObjC",
-          "NonSendable",
-          "Custom",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
         "name": "InterfaceType",
         "printedName": "InterfaceType",
         "children": [
@@ -37187,22 +36830,8 @@
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/domain\/model\/CreativeQuery.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1526,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/domain\/model\/CreativeQuery.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1550,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/domain\/model\/CreativeQuery.swift",
       "kind": "Dictionary",
-      "offset": 1737,
+      "offset": 1690,
       "length": 3,
       "value": "[]"
     },
@@ -37475,37 +37104,23 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/dto\/SSPProductCreativePlaceDTO.swift",
       "kind": "Dictionary",
-      "offset": 1488,
+      "offset": 1462,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/dto\/SSPProductCreativePlaceDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1559,
+      "offset": 1533,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/dto\/SSPProductCreativePlaceDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1614,
-      "length": 5,
-      "value": "\"sid\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/dto\/SSPProductCreativePlaceDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 1559,
+      "offset": 1533,
       "length": 4,
       "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/dto\/SSPProductCreativePlaceDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 1614,
-      "length": 5,
-      "value": "\"sid\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/models\/VastCreativeParameter.swift",
@@ -37530,29 +37145,8 @@
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5077,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5237,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
-      "kind": "BooleanLiteral",
-      "offset": 5442,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIView+Extension.swift",
       "kind": "FloatLiteral",
-      "offset": 6241,
+      "offset": 3405,
       "length": 3,
       "value": "0.2"
     },
@@ -37838,10 +37432,24 @@
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
+      "kind": "FloatLiteral",
+      "offset": 3563,
+      "length": 3,
+      "value": "3.0"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 3948,
+      "offset": 4056,
       "length": 2,
       "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
+      "kind": "BooleanLiteral",
+      "offset": 12416,
+      "length": 5,
+      "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/TrackerEventRepositoryImpl.swift",
@@ -37881,35 +37489,35 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2829,
+      "offset": 2766,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 2941,
+      "offset": 2878,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "BooleanLiteral",
-      "offset": 3060,
+      "offset": 2997,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "StringLiteral",
-      "offset": 7855,
+      "offset": 7824,
       "length": 54,
       "value": "\"CreativeView.statisticViewQueue.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeView.swift",
       "kind": "StringLiteral",
-      "offset": 7908,
+      "offset": 7877,
       "length": 2,
       "value": "\"\""
     },
@@ -37982,13 +37590,6 @@
       "offset": 1947,
       "length": 2,
       "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/UIGestureRecognizer+Extension.swift",
-      "kind": "StringLiteral",
-      "offset": 1431,
-      "length": 11,
-      "value": "\"ActionKey\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/models\/TrackingCreative.swift",
@@ -39181,6 +38782,34 @@
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPDeviceDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2376,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPDeviceDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2419,
+      "length": 5,
+      "value": "\"osv\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPDeviceDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2376,
+      "length": 4,
+      "value": "\"os\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPDeviceDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 2419,
+      "length": 5,
+      "value": "\"osv\""
+    },
+    {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/models\/VMAP\/VMAPAdSource.swift",
       "kind": "StringLiteral",
       "offset": 227,
@@ -39314,23 +38943,16 @@
       "value": "\"unknown\""
     },
     {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/CreativeHolder.swift",
-      "kind": "StringLiteral",
-      "offset": 2847,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativeBidDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2542,
+      "offset": 2447,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativeBidDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2542,
+      "offset": 2447,
       "length": 4,
       "value": "\"id\""
     },
@@ -39347,6 +38969,20 @@
       "offset": 1376,
       "length": 3,
       "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPUserDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 1339,
+      "length": 5,
+      "value": "\"sid\""
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPUserDTO.swift",
+      "kind": "StringLiteral",
+      "offset": 1339,
+      "length": 5,
+      "value": "\"sid\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/constants\/VastMacros.swift",
@@ -39435,7 +39071,7 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/parsers\/VastParser.swift",
       "kind": "IntegerLiteral",
-      "offset": 3322,
+      "offset": 3326,
       "length": 1,
       "value": "0"
     },
@@ -39862,14 +39498,14 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25258,
+      "offset": 25316,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/presentation\/MediaPlayerView.swift",
       "kind": "BooleanLiteral",
-      "offset": 25721,
+      "offset": 25779,
       "length": 5,
       "value": "false"
     },
@@ -39911,37 +39547,23 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativePlaceDTO.swift",
       "kind": "Dictionary",
-      "offset": 1589,
+      "offset": 1533,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativePlaceDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1660,
+      "offset": 1604,
       "length": 4,
       "value": "\"id\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativePlaceDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1715,
-      "length": 5,
-      "value": "\"sid\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativePlaceDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 1660,
+      "offset": 1604,
       "length": 4,
       "value": "\"id\""
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativePlaceDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 1715,
-      "length": 5,
-      "value": "\"sid\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/NetworkMonitorImpl.swift",
@@ -40443,7 +40065,7 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/parsers\/VMAPParser.swift",
       "kind": "Dictionary",
-      "offset": 2702,
+      "offset": 2717,
       "length": 3,
       "value": "[]"
     },

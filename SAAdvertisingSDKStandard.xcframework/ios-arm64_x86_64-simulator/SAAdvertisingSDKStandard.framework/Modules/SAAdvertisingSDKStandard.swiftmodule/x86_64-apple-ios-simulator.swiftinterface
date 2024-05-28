@@ -183,6 +183,11 @@ public enum VastError : Swift.Error {
     get
   }
 }
+extension SAAdvertisingSDKStandard.VastError : Foundation.LocalizedError {
+  public var errorDescription: Swift.String? {
+    get
+  }
+}
 public struct VastCreativeParameter : Swift.Codable {
   public var creativeId: Swift.String
   public var name: Swift.String
@@ -282,9 +287,8 @@ public class Creative {
   public func load(path: Swift.String = "")
   @objc deinit
 }
-@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @_Concurrency.MainActor(unsafe) public class CreativeView : UIKit.UIView {
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) public class CreativeView : UIKit.UIView {
   @_Concurrency.MainActor(unsafe) public var query: SAAdvertisingSDKStandard.CreativeQuery?
-  @_Concurrency.MainActor(unsafe) public var closeAxis: UIKit.NSLayoutConstraint.Axis
   @_Concurrency.MainActor(unsafe) public var scaleToFit: Swift.Bool {
     get
     set
@@ -293,6 +297,8 @@ public class Creative {
     get
     set
   }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(frame: CoreFoundation.CGRect)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ rect: CoreFoundation.CGRect)
   @_Concurrency.MainActor(unsafe) @objc override dynamic public func draw(_ layer: QuartzCore.CALayer, in ctx: CoreGraphics.CGContext)
   @objc deinit
@@ -372,9 +378,6 @@ public class ProductCreative {
   public init(queries: [SAAdvertisingSDKStandard.ProductCreativeQuery])
   public func load(path: Swift.String = "")
   @objc deinit
-}
-extension UIKit.UIGestureRecognizer {
-  @_Concurrency.MainActor(unsafe) convenience public init(block: @escaping ((UIKit.UIGestureRecognizer) -> ()))
 }
 public struct VMAPExtension {
 }
@@ -544,19 +547,6 @@ public struct VMAPAdSource : Swift.Codable {
 }
 extension SAAdvertisingSDKStandard.VMAPAdSource {
   public init(attrDict: [Swift.String : Swift.String])
-}
-public class CreativeHolder {
-  public var query: SAAdvertisingSDKStandard.CreativeQuery? {
-    get
-  }
-  final public let creativeView: SAAdvertisingSDKStandard.CreativeView
-  weak public var delegate: (any SAAdvertisingSDKStandard.CreativeDelegate)? {
-    get
-    set
-  }
-  public init(query: SAAdvertisingSDKStandard.CreativeQuery)
-  public func loadIfNeeded(path: Swift.String = "")
-  @objc deinit
 }
 public enum TrackingEventType : Swift.String, Swift.Codable {
   case firstQuartile

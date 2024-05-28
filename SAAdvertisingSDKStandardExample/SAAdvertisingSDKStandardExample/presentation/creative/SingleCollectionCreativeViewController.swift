@@ -40,7 +40,7 @@ class SingleCollectionCreativeViewController: UICollectionViewController {
 
     private let itemsPerRow: CGFloat = 1
 
-    private var banners = [Banner]()
+    private var creativeHolders = [CreativeHolder]()
 
     private let placementIds = [
         "HTML_BANNER",
@@ -65,24 +65,18 @@ class SingleCollectionCreativeViewController: UICollectionViewController {
     }
 
     private func reload() {
-        // Here is generated STUB data with only one real banner inside. Other items are empty.
-        var result = [Banner]()
-        for i in 0..<placementIds.count {
-            let placementId = placementIds[i]
-            let holder = CreativeHolder(
+        self.creativeHolders = placementIds.map {
+            let creativeHolder = CreativeHolder(
+                id: UUID().uuidString,
                 query: CreativeQuery(
-                    placementId: placementId,
+                    placementId: $0,
                     sizes: [SizeEntity(width: 260, height: 106)]
                 )
             )
-            holder.delegate = self
-            result.append(Banner(
-                id: "\(i + 1) - \(placementId)",
-                holder: holder
-            ))
+            creativeHolder.delegate = self
+            return creativeHolder
         }
-        self.banners = result
-        self.collectionView.reloadData()
+        collectionView.reloadData()
     }
 }
 
@@ -95,7 +89,7 @@ extension SingleCollectionCreativeViewController {
     }
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return banners.count
+        return creativeHolders.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -104,69 +98,15 @@ extension SingleCollectionCreativeViewController {
             for: indexPath
         ) as! BannerCell
 
-        let banner = self.banners[(indexPath.section + 1) * indexPath.row]
-        cell.bannerLabel.text = banner.id
-
-        if let holder = banner.holder {
-            cell.bannerLabel.textColor = .black
-            cell.bannerContainerView.backgroundColor = .white
-            self.addCreativeView(holder.creativeView, to: cell.bannerContainerView)
-            holder.loadIfNeeded()
-        } else {
-            cell.bannerLabel.textColor = .white
-            cell.bannerContainerView.backgroundColor = .lightGray
-            cell.bannerContainerView.subviews.forEach { $0.removeFromSuperview() }
-        }
+        let index = (indexPath.section + 1) * indexPath.row
+        let creativeHolder = self.creativeHolders[index]
+        cell.bannerLabel.textColor = .white
+        cell.bannerLabel.text = creativeHolder.query.placementId
+        cell.bannerContainerView.backgroundColor = .lightGray
+        creativeHolder.load(to: cell.bannerContainerView)
+        cell.bannerContainerView.clipsToBounds = true
 
         return cell
-    }
-
-    private func addCreativeView(_ creativeView: CreativeView, to superview: UIView) {
-        superview.subviews.forEach { $0.removeFromSuperview() }
-
-        superview.addSubview(creativeView)
-
-        creativeView.translatesAutoresizingMaskIntoConstraints = false
-
-        NSLayoutConstraint(
-            item: creativeView,
-            attribute: .top,
-            relatedBy: NSLayoutConstraint.Relation.equal,
-            toItem: superview.safeAreaLayoutGuide,
-            attribute: .top,
-            multiplier: 1,
-            constant: 0
-        ).isActive = true
-
-        NSLayoutConstraint(
-            item: creativeView,
-            attribute: .bottom,
-            relatedBy: NSLayoutConstraint.Relation.equal,
-            toItem: superview.safeAreaLayoutGuide,
-            attribute: .bottom,
-            multiplier: 1,
-            constant: 0
-        ).isActive = true
-
-        NSLayoutConstraint(
-            item: creativeView,
-            attribute: .leading,
-            relatedBy: NSLayoutConstraint.Relation.equal,
-            toItem: superview.safeAreaLayoutGuide,
-            attribute: .leading,
-            multiplier: 1,
-            constant: 0
-        ).isActive = true
-
-        NSLayoutConstraint(
-            item: creativeView,
-            attribute: .trailing,
-            relatedBy: NSLayoutConstraint.Relation.equal,
-            toItem: superview.safeAreaLayoutGuide,
-            attribute: .trailing,
-            multiplier: 1,
-            constant: 0
-        ).isActive = true
     }
 }
 
@@ -213,8 +153,20 @@ extension SingleCollectionCreativeViewController: UICollectionViewDelegateFlowLa
         let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
         let availableWidth = view.frame.width - paddingSpace
         let widthPerItem = availableWidth / itemsPerRow
+        let size = CGSize(width: widthPerItem, height: widthPerItem * 6 / 9) // aspect ratio of cell size is 9:6
 
-        return CGSize(width: widthPerItem, height: widthPerItem * 6 / 9) // aspect ratio of cell size is 9:6
+        // Here is the trick how to re-calculate (re-assign) creative frame sizes,
+        // after device portrait orientation changed (portrait <-> landscape) while
+        // dynamic list on screen.
+        let index = (indexPath.section + 1) * indexPath.row
+        let creativeHolder = self.creativeHolders[index]
+        DispatchQueue.main.async {
+            if let bounds = creativeHolder.creativeView?.superview?.bounds {
+                creativeHolder.creativeView?.frame = bounds
+            }
+        }
+
+        return size
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -222,13 +174,98 @@ extension SingleCollectionCreativeViewController: UICollectionViewDelegateFlowLa
     }
 
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        return sectionInsets.left
+        return 20.0
     }
 }
 
 // MARK: - Data / Entities
 
-struct Banner {
-    var id: String
-    var holder: CreativeHolder?
+class CreativeHolder: Identifiable, CreativeDelegate {
+
+    let id: String
+
+    let query: CreativeQuery
+
+    private(set) var creativeView: CreativeView?
+
+    private let errorLabel = UILabel()
+
+    private var creative: Creative?
+
+    weak var delegate: CreativeDelegate?
+
+    private var isLoaded: Bool {
+        creative != nil
+    }
+
+    init(id: String, query: CreativeQuery) {
+        self.id = id
+        self.query = query
+    }
+
+    func load(path: String = "", to superview: UIView) {
+        if let creativeView = self.creativeView {
+            embedCreativeView(creativeView, to: superview)
+            return
+        }
+
+        creativeView = .init()
+        creativeView?.query = query
+        embedCreativeView(creativeView!, to: superview)
+
+        creative = .init(creativeView: creativeView!)
+        creative?.delegate = self
+
+        DispatchQueue.main.async { [weak self] in
+            self?.creative?.load(path: path)
+        }
+    }
+
+    private func embedCreativeView(_ creativeView: CreativeView, to superview: UIView) {
+        superview.subviews.forEach { $0.removeFromSuperview() }
+        superview.addSubview(creativeView)
+
+        DispatchQueue.main.async {
+            creativeView.frame = superview.bounds
+        }
+    }
+
+    public func onLoadDataSuccess(creativeView: CreativeView) {
+        delegate?.onLoadDataSuccess?(creativeView: creativeView)
+        hideMessage(in: errorLabel)
+    }
+
+    public func onLoadDataFail(creativeView: CreativeView, error: Error) {
+        delegate?.onLoadDataFail?(creativeView: creativeView, error: error)
+
+        let placementId = creativeView.query?.placementId
+        let msg = "onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
+    }
+
+    public func onLoadContentSuccess(creativeView: CreativeView) {
+        delegate?.onLoadContentSuccess?(creativeView: creativeView)
+        hideMessage(in: errorLabel)
+    }
+
+    public func onLoadContentFail(creativeView: CreativeView, error: Error) {
+        delegate?.onLoadDataFail?(creativeView: creativeView, error: error)
+
+        let placementId = creativeView.query?.placementId
+        let msg = "onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
+    }
+
+    public func onNoAdContent(creativeView: CreativeView) {
+        delegate?.onNoAdContent?(creativeView: creativeView)
+
+        let placementId = creativeView.query?.placementId
+        let msg = "onNoAdContent[\(placementId ?? "")]"
+        showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
+    }
+
+    public func onClose(creativeView: CreativeView) {
+        delegate?.onClose?(creativeView: creativeView)
+        hideMessage(in: errorLabel)
+    }
 }

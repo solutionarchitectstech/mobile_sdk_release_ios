@@ -27,6 +27,40 @@ func log(_ msg: String, display: Bool = true) {
     }
 }
 
+func showMessage(_ msg: String, in label: UILabel, for creativeView: CreativeView, withColor color: UIColor? = nil) {
+    hideMessage(in: label)
+
+    label.text = msg
+    label.textColor = color
+    label.textAlignment = .center
+    label.numberOfLines = 0
+
+    creativeView.addSubview(label)
+
+    label.translatesAutoresizingMaskIntoConstraints = false
+    label.leadingAnchor.constraint(equalTo: creativeView.leadingAnchor, constant: 0).isActive = true
+    label.trailingAnchor.constraint(equalTo: creativeView.trailingAnchor, constant: 0).isActive = true
+    label.topAnchor.constraint(equalTo: creativeView.topAnchor, constant: 0).isActive = true
+    label.bottomAnchor.constraint(equalTo: creativeView.bottomAnchor, constant: 0).isActive = true
+
+    // Here is the trick to store visibility state of creativeView
+    // We temporarily store it in the `textView.tag` to restore it later
+    // in the `hideMessage()` (see below).
+    label.tag = creativeView.isHidden ? 1 : 0
+    creativeView.isHidden = false
+}
+
+func hideMessage(in label: UILabel) {
+    label.text = nil
+    label.textColor = nil
+
+    let isHidden = label.tag > 0 ? true : false
+    label.superview?.isHidden = isHidden
+    label.tag = 0
+
+    label.removeFromSuperview()
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

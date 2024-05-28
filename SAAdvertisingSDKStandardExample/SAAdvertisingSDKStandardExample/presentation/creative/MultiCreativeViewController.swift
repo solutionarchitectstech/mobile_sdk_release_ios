@@ -29,6 +29,16 @@ class MultiCreativeViewController: UIViewController {
 
     @IBOutlet weak var creativeView4: CreativeView!
 
+    @IBOutlet weak var creativeView5: CreativeView!
+
+    private lazy var errorLabels: [CreativeView: UILabel] = [
+        creativeView1: UILabel(),
+        creativeView2: UILabel(),
+        creativeView3: UILabel(),
+        creativeView4: UILabel(),
+        creativeView5: UILabel(),
+    ]
+
     private var creative: Creative!
 
     override func viewDidLoad() {
@@ -87,13 +97,23 @@ class MultiCreativeViewController: UIViewController {
             ]
         )
 
+        let pxCreative5Width = Int(creativeView5.frame.size.width * mainScreenScale)
+        let pxCreative5Height = Int(creativeView5.frame.size.height * mainScreenScale)
+        creativeView5.query = CreativeQuery(
+            placementId: "MY_CREATIVE",
+            sizes: [
+                SizeEntity(width: pxCreative5Width, height: pxCreative5Height)
+            ]
+        )
+
         // Let's init Creative
         self.creative = .init(
             creativeViews: [
                 creativeView1,
                 creativeView2,
                 creativeView3,
-                creativeView4
+                creativeView4,
+                creativeView5
             ]
         )
         self.creative.delegate = self
@@ -110,30 +130,57 @@ extension MultiCreativeViewController: CreativeDelegate {
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onLoadDataSuccess[\(placementId ?? "")]")
+
+        if let label = errorLabels[creativeView] {
+            hideMessage(in: label)
+        }
     }
 
     public func onLoadDataFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        log("onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)")
+        let msg = "onLoadDataFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        log(msg)
+
+        if let label = errorLabels[creativeView] {
+            showMessage(msg, in: label, for: creativeView, withColor: .red)
+        }
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onLoadContentSuccess[\(placementId ?? "")]")
+
+        if let label = errorLabels[creativeView] {
+            hideMessage(in: label)
+        }
     }
 
     public func onLoadContentFail(creativeView: CreativeView, error: Error) {
         let placementId = creativeView.query?.placementId
-        log("onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)")
+        let msg = "onLoadContentFail[\(placementId ?? "")]: \(error.localizedDescription)"
+        log(msg)
+
+        if let label = errorLabels[creativeView] {
+            showMessage(msg, in: label, for: creativeView, withColor: .red)
+        }
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
-        log("onNoAdContent[\(placementId ?? "")]")
+        let msg = "onNoAdContent[\(placementId ?? "")]"
+        log(msg)
+
+        if let label = errorLabels[creativeView] {
+            showMessage(msg, in: label, for: creativeView, withColor: .red)
+        }
     }
 
     public func onClose(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
         log("onClose[\(placementId ?? "")]")
+
+        if let label = errorLabels[creativeView] {
+            hideMessage(in: label)
+        }
     }
 }
