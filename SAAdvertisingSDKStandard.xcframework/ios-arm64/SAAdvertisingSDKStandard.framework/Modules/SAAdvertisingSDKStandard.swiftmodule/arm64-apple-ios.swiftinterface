@@ -98,6 +98,14 @@ public struct VastWrapper : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastWrapper : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastWrapper, b: SAAdvertisingSDKStandard.VastWrapper) -> Swift.Bool
 }
+public enum MarkupType : Swift.Int, Swift.Decodable {
+  case BANNER, VIDEO, AUDIO, NATIVE
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public struct SizeEntity : Swift.CustomDebugStringConvertible {
   public let width: Swift.Int
   public let height: Swift.Int
@@ -132,10 +140,11 @@ extension SAAdvertisingSDKStandard.VastMediaFile : Swift.Equatable {
 public struct CreativeQuery {
   public var placementId: Swift.String
   public var sizes: [SAAdvertisingSDKStandard.SizeEntity]
+  public var markupType: SAAdvertisingSDKStandard.MarkupType?
   public var floorPrice: Swift.Double?
   public var currency: Swift.String?
   public var customParams: [Swift.String : Swift.String]
-  public init(placementId: Swift.String, sizes: [SAAdvertisingSDKStandard.SizeEntity], floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
+  public init(placementId: Swift.String = "", sizes: [SAAdvertisingSDKStandard.SizeEntity], markupType: SAAdvertisingSDKStandard.MarkupType? = nil, floorPrice: Swift.Double? = nil, currency: Swift.String? = nil, customParams: [Swift.String : Swift.String] = [:])
 }
 public struct VastExtension : Swift.Codable {
   public let type: Swift.String
@@ -219,6 +228,14 @@ public struct VMAPModel : Swift.Codable {
 }
 extension SAAdvertisingSDKStandard.VMAPModel {
   public init(attrDict: [Swift.String : Swift.String])
+}
+public enum RTBMediaRating : Swift.Int, Swift.Encodable, Swift.Decodable {
+  case ALL_AUDIENCES, EVERYONE_OVER_12, MATURE_AUDIENCES
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 public enum AdType : Swift.String, Swift.Codable {
   case inline
@@ -321,6 +338,10 @@ public struct VastAdParameters : Swift.Codable {
 extension SAAdvertisingSDKStandard.VastAdParameters : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastAdParameters, b: SAAdvertisingSDKStandard.VastAdParameters) -> Swift.Bool
 }
+public enum TransactionProtocol {
+  case CUSTOM
+  case OPEN_RTB(publisherId: Swift.String? = nil, appContentType: SAAdvertisingSDKStandard.RTBContext? = nil, appContentProductionQuality: SAAdvertisingSDKStandard.RTBProductionQuality? = nil, appContentMediaRating: SAAdvertisingSDKStandard.RTBMediaRating? = nil)
+}
 public enum PricingModel : Swift.String, Swift.Codable {
   case cpc
   case cpm
@@ -384,15 +405,15 @@ public struct VMAPExtension {
 public struct TechAdvertisingOptions : SAAdvertisingSDKStandard.BaseSdkOptions {
   public var sessionId: Swift.String
   public var storeUrl: Swift.String
+  public var transactionProtocol: SAAdvertisingSDKStandard.TransactionProtocol
   public var initConfig: SAAdvertisingSDKStandard.InitConfig?
   public var remoteConfigUrl: Swift.String?
   public var debugMode: Swift.Bool
   public var httpHeaders: [Swift.String : Swift.String]
-  public init(sessionId: Swift.String, storeUrl: Swift.String, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
+  public init(sessionId: Swift.String, storeUrl: Swift.String, transactionProtocol: SAAdvertisingSDKStandard.TransactionProtocol = .CUSTOM, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TechAdvertising : SAAdvertisingSDKStandard.BaseTechAdvertising<SAAdvertisingSDKStandard.TechAdvertisingOptions> {
   public static let shared: SAAdvertisingSDKStandard.TechAdvertising
-  public var uid: Swift.String?
   public static func initialize(options: SAAdvertisingSDKStandard.TechAdvertisingOptions)
   @objc deinit
 }
@@ -640,6 +661,14 @@ public enum VMAPError : Swift.Error {
     get
   }
 }
+public enum RTBProductionQuality : Swift.Int, Swift.Encodable {
+  case UNKNOWN, PROFESSIONALLY_PRODUCED, PROSUMER, USER_GENERATED
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public struct VastCreative : Swift.Codable {
   public let id: Swift.String?
   public let adId: Swift.String?
@@ -681,10 +710,22 @@ public class VastTrackerNonLinear {
 public protocol BaseSdkOptions {
   var sessionId: Swift.String { get set }
   var storeUrl: Swift.String { get set }
+  var transactionProtocol: SAAdvertisingSDKStandard.TransactionProtocol { get set }
   var initConfig: SAAdvertisingSDKStandard.InitConfig? { get set }
   var remoteConfigUrl: Swift.String? { get set }
   var debugMode: Swift.Bool { get set }
   var httpHeaders: [Swift.String : Swift.String] { get set }
+}
+public enum AdTrackingStatus : Swift.UInt {
+  case notDetermined
+  case restricted
+  case denied
+  case authorized
+  public init?(rawValue: Swift.UInt)
+  public typealias RawValue = Swift.UInt
+  public var rawValue: Swift.UInt {
+    get
+  }
 }
 public struct ProductCreativeQuery {
   public var placementId: Swift.String
@@ -792,6 +833,20 @@ public enum VMAPErrorCodes : Swift.Int {
     get
   }
 }
+public enum RTBContext : Swift.Int, Swift.Encodable {
+  case VIDEO
+  case GAME
+  case MUSIC
+  case APPLICATION
+  case TEXT
+  case OTHER
+  case UNKNOWN
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 public struct VastIconClickTracking : Swift.Codable {
   public let id: Swift.String?
   public var url: Foundation.URL?
@@ -819,6 +874,10 @@ extension SAAdvertisingSDKStandard.VastLinearCreative : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastLinearCreative, b: SAAdvertisingSDKStandard.VastLinearCreative) -> Swift.Bool
 }
 @_inheritsConvenienceInitializers public class BaseTechAdvertising<SDK_OPTIONS> : ObjectiveC.NSObject, CoreLocation.CLLocationManagerDelegate where SDK_OPTIONS : SAAdvertisingSDKStandard.BaseSdkOptions {
+  public var uid: Swift.String?
+  public var options: SDK_OPTIONS? {
+    get
+  }
   @objc public func locationManager(_ manager: CoreLocation.CLLocationManager, didFailWithError error: any Swift.Error)
   @objc override dynamic public init()
   @objc deinit
@@ -869,6 +928,8 @@ public struct VastVerification : Swift.Codable {
 }
 extension SAAdvertisingSDKStandard.VastVerification : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.VastVerification, b: SAAdvertisingSDKStandard.VastVerification) -> Swift.Bool
+}
+public protocol BaseCreativeQuery {
 }
 public struct VastAdVerificationParameters : Swift.Codable {
   public var data: Swift.String?
@@ -945,8 +1006,14 @@ public struct IconClicks : Swift.Codable {
 extension SAAdvertisingSDKStandard.IconClicks : Swift.Equatable {
   public static func == (a: SAAdvertisingSDKStandard.IconClicks, b: SAAdvertisingSDKStandard.IconClicks) -> Swift.Bool
 }
+extension SAAdvertisingSDKStandard.MarkupType : Swift.Equatable {}
+extension SAAdvertisingSDKStandard.MarkupType : Swift.Hashable {}
+extension SAAdvertisingSDKStandard.MarkupType : Swift.RawRepresentable {}
 extension SAAdvertisingSDKStandard.VastError : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.VastError : Swift.Hashable {}
+extension SAAdvertisingSDKStandard.RTBMediaRating : Swift.Equatable {}
+extension SAAdvertisingSDKStandard.RTBMediaRating : Swift.Hashable {}
+extension SAAdvertisingSDKStandard.RTBMediaRating : Swift.RawRepresentable {}
 extension SAAdvertisingSDKStandard.AdType : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.AdType : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.AdType : Swift.RawRepresentable {}
@@ -970,12 +1037,21 @@ extension SAAdvertisingSDKStandard.TrackingEventType : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.TrackingEventType : Swift.RawRepresentable {}
 extension SAAdvertisingSDKStandard.VMAPError : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.VMAPError : Swift.Hashable {}
+extension SAAdvertisingSDKStandard.RTBProductionQuality : Swift.Equatable {}
+extension SAAdvertisingSDKStandard.RTBProductionQuality : Swift.Hashable {}
+extension SAAdvertisingSDKStandard.RTBProductionQuality : Swift.RawRepresentable {}
+extension SAAdvertisingSDKStandard.AdTrackingStatus : Swift.Equatable {}
+extension SAAdvertisingSDKStandard.AdTrackingStatus : Swift.Hashable {}
+extension SAAdvertisingSDKStandard.AdTrackingStatus : Swift.RawRepresentable {}
 extension SAAdvertisingSDKStandard.VMAPTrackingEventType : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.VMAPTrackingEventType : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.VMAPTrackingEventType : Swift.RawRepresentable {}
 extension SAAdvertisingSDKStandard.VMAPErrorCodes : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.VMAPErrorCodes : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.VMAPErrorCodes : Swift.RawRepresentable {}
+extension SAAdvertisingSDKStandard.RTBContext : Swift.Equatable {}
+extension SAAdvertisingSDKStandard.RTBContext : Swift.Hashable {}
+extension SAAdvertisingSDKStandard.RTBContext : Swift.RawRepresentable {}
 extension SAAdvertisingSDKStandard.VastViewableImpressionType : Swift.Equatable {}
 extension SAAdvertisingSDKStandard.VastViewableImpressionType : Swift.Hashable {}
 extension SAAdvertisingSDKStandard.VastViewableImpressionType : Swift.RawRepresentable {}

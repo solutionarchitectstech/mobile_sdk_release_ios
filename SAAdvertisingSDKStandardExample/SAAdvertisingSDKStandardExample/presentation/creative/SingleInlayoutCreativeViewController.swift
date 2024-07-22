@@ -40,7 +40,7 @@ class SingleInlayoutCreativeViewController: UIViewController {
             sizes: [SizeEntity(width: 260, height: 106)],
             customParams: [
                 "skuId": "LG00001",
-                "skuName": "Leggo bricks (speed boat)",
+                "skuName": "Lego bricks (speed boat)",
                 "category": "Kids",
                 "subCategory": "Lego",
                 "gdprConsent": "CPsmEWIPsmEWIABAMBFRACBsABEAAAAgEIYgACJAAYiAAA.QRXwAgAAgivA",

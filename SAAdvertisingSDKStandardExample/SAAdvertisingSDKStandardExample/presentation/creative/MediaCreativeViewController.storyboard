@@ -2,7 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -11,7 +12,7 @@
         <!--BANNER (media)-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="MyCreativeViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="MediaCreativeViewController" customModule="SAAdvertisingSDKStandardExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -36,7 +37,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="onVastInlineSimple:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dQF-eH-K6t"/>
+                                            <action selector="onVastInlineSimple:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Ajq-jg-Gqr"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hm3-Oh-FBG">
@@ -46,7 +47,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="onVastWrapperSimple:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N7b-RK-Clg"/>
+                                            <action selector="onVastWrapperSimple:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="dPy-u7-64F"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bT-C9-aq7">
@@ -56,7 +57,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="onVastWrapperCompound:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DCx-qx-JYq"/>
+                                            <action selector="onVastWrapperCompound:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vCw-6W-DUV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vko-KY-AcM">
@@ -66,7 +67,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="onVastWrapperChainLess5:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7RF-xV-OF1"/>
+                                            <action selector="onVastWrapperChainLess5:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="uPg-fN-dt0"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLa-mw-BbY">
@@ -76,7 +77,7 @@
                                             <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
                                         </buttonConfiguration>
                                         <connections>
-                                            <action selector="onVastWrapperChainGreater5:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yqH-mx-XMP"/>
+                                            <action selector="onVastWrapperChainGreater5:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oSq-mp-J1J"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGJ-nL-SSe">
@@ -84,7 +85,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="VAST_Wrapper_Chain_Loop"/>
                                         <connections>
-                                            <action selector="onVastWrapperChainLoop:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9yb-I7-e5i"/>
+                                            <action selector="onVastWrapperChainLoop:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="5Vd-q7-CNU"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -107,8 +108,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="BANNER (media)" id="iOu-Lc-oNd"/>
                     <connections>
-                        <outlet property="creativeView" destination="X7x-lk-sTs" id="zST-fd-IfU"/>
-                        <outlet property="vastLabel" destination="Afj-xW-M7i" id="JYH-7W-mKs"/>
+                        <outlet property="creativeView" destination="X7x-lk-sTs" id="EyW-bR-TVO"/>
+                        <outlet property="vastLabel" destination="Afj-xW-M7i" id="Dao-7m-wYT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -7,10 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		100009B82C36BFBD001A8E28 /* RTBBannerCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100009B72C36BFBD001A8E28 /* RTBBannerCreativeViewController.swift */; };
+		100009BA2C36BFE5001A8E28 /* RTBBannerCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100009B92C36BFE5001A8E28 /* RTBBannerCreativeViewController.storyboard */; };
+		100009BC2C36C0B0001A8E28 /* RTBMediaCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100009BB2C36C0B0001A8E28 /* RTBMediaCreativeViewController.storyboard */; };
+		100009BE2C36C0BB001A8E28 /* RTBMediaCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100009BD2C36C0BB001A8E28 /* RTBMediaCreativeViewController.swift */; };
+		100009C02C36C0F1001A8E28 /* RTBCollectionCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100009BF2C36C0F1001A8E28 /* RTBCollectionCreativeViewController.swift */; };
+		100009C22C36C156001A8E28 /* RTBCollectionCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 100009C12C36C156001A8E28 /* RTBCollectionCreativeViewController.storyboard */; };
+		101B739F2C341B6000243A59 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101B739E2C341B6000243A59 /* SettingsViewController.swift */; };
+		101B73A12C34311800243A59 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 101B73A02C34311800243A59 /* SettingsViewController.storyboard */; };
 		105B10C52A71408C00F00A3C /* SingleFullscreenCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B10C42A71408C00F00A3C /* SingleFullscreenCreativeViewController.swift */; };
 		105B10C72A7141B900F00A3C /* SingleFullscreenCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B10C62A7141B900F00A3C /* SingleFullscreenCreativeViewController.storyboard */; };
 		105B7C16298B74BA0006805F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C15298B74BA0006805F /* AppDelegate.swift */; };
-		105B7C1A298B74BA0006805F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C19298B74BA0006805F /* ViewController.swift */; };
+		105B7C1A298B74BA0006805F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C19298B74BA0006805F /* MainViewController.swift */; };
 		105B7C1D298B74BA0006805F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C1B298B74BA0006805F /* Main.storyboard */; };
 		105B7C1F298B74BB0006805F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C1E298B74BB0006805F /* Assets.xcassets */; };
 		105B7C22298B74BB0006805F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C20298B74BB0006805F /* LaunchScreen.storyboard */; };
@@ -48,11 +56,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		100009B72C36BFBD001A8E28 /* RTBBannerCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTBBannerCreativeViewController.swift; sourceTree = "<group>"; };
+		100009B92C36BFE5001A8E28 /* RTBBannerCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RTBBannerCreativeViewController.storyboard; sourceTree = "<group>"; };
+		100009BB2C36C0B0001A8E28 /* RTBMediaCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RTBMediaCreativeViewController.storyboard; sourceTree = "<group>"; };
+		100009BD2C36C0BB001A8E28 /* RTBMediaCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTBMediaCreativeViewController.swift; sourceTree = "<group>"; };
+		100009BF2C36C0F1001A8E28 /* RTBCollectionCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RTBCollectionCreativeViewController.swift; sourceTree = "<group>"; };
+		100009C12C36C156001A8E28 /* RTBCollectionCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RTBCollectionCreativeViewController.storyboard; sourceTree = "<group>"; };
+		101B739E2C341B6000243A59 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		101B73A02C34311800243A59 /* SettingsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		105B10C42A71408C00F00A3C /* SingleFullscreenCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleFullscreenCreativeViewController.swift; sourceTree = "<group>"; };
 		105B10C62A7141B900F00A3C /* SingleFullscreenCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleFullscreenCreativeViewController.storyboard; sourceTree = "<group>"; };
 		105B7C12298B74BA0006805F /* SAAdvertisingSDKStandardExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAAdvertisingSDKStandardExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		105B7C15298B74BA0006805F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		105B7C19298B74BA0006805F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		105B7C19298B74BA0006805F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		105B7C1C298B74BA0006805F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		105B7C1E298B74BB0006805F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		105B7C21298B74BB0006805F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -117,8 +133,6 @@
 			children = (
 				10F60557298D47F300DCE803 /* presentation */,
 				105B7C15298B74BA0006805F /* AppDelegate.swift */,
-				105B7C19298B74BA0006805F /* ViewController.swift */,
-				105B7C1B298B74BA0006805F /* Main.storyboard */,
 				105B7C1E298B74BB0006805F /* Assets.xcassets */,
 				105B7C20298B74BB0006805F /* LaunchScreen.storyboard */,
 				105B7C23298B74BB0006805F /* Info.plist */,
@@ -141,6 +155,12 @@
 				105B7C2C298B760E0006805F /* MediaCreativeViewController.swift */,
 				105B7C35298B760E0006805F /* MultiCreativeViewController.storyboard */,
 				105B7C33298B760E0006805F /* MultiCreativeViewController.swift */,
+				100009B92C36BFE5001A8E28 /* RTBBannerCreativeViewController.storyboard */,
+				100009B72C36BFBD001A8E28 /* RTBBannerCreativeViewController.swift */,
+				100009BB2C36C0B0001A8E28 /* RTBMediaCreativeViewController.storyboard */,
+				100009BD2C36C0BB001A8E28 /* RTBMediaCreativeViewController.swift */,
+				100009C12C36C156001A8E28 /* RTBCollectionCreativeViewController.storyboard */,
+				100009BF2C36C0F1001A8E28 /* RTBCollectionCreativeViewController.swift */,
 			);
 			path = creative;
 			sourceTree = "<group>";
@@ -161,6 +181,10 @@
 			children = (
 				105B7C30298B760E0006805F /* creative */,
 				10F7581A2A0E2516004494EC /* product */,
+				105B7C1B298B74BA0006805F /* Main.storyboard */,
+				105B7C19298B74BA0006805F /* MainViewController.swift */,
+				101B73A02C34311800243A59 /* SettingsViewController.storyboard */,
+				101B739E2C341B6000243A59 /* SettingsViewController.swift */,
 			);
 			path = presentation;
 			sourceTree = "<group>";
@@ -250,7 +274,11 @@
 				10F60567299CC63500DCE803 /* SingleCollectionCreativeViewController.storyboard in Resources */,
 				105B10C72A7141B900F00A3C /* SingleFullscreenCreativeViewController.storyboard in Resources */,
 				105B7C22298B74BB0006805F /* LaunchScreen.storyboard in Resources */,
+				100009BA2C36BFE5001A8E28 /* RTBBannerCreativeViewController.storyboard in Resources */,
+				100009C22C36C156001A8E28 /* RTBCollectionCreativeViewController.storyboard in Resources */,
 				105B7C1F298B74BB0006805F /* Assets.xcassets in Resources */,
+				101B73A12C34311800243A59 /* SettingsViewController.storyboard in Resources */,
+				100009BC2C36C0B0001A8E28 /* RTBMediaCreativeViewController.storyboard in Resources */,
 				10F7581E2A0E25F1004494EC /* SingleProductCreativeViewController.storyboard in Resources */,
 				105B7C3C298B760E0006805F /* SingleInlayoutCreativeViewController.storyboard in Resources */,
 				105B7C37298B760E0006805F /* MediaCreativeViewController.storyboard in Resources */,
@@ -310,14 +338,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100009B82C36BFBD001A8E28 /* RTBBannerCreativeViewController.swift in Sources */,
 				105B10C52A71408C00F00A3C /* SingleFullscreenCreativeViewController.swift in Sources */,
 				105B7C3D298B760E0006805F /* MultiCreativeViewController.swift in Sources */,
+				101B739F2C341B6000243A59 /* SettingsViewController.swift in Sources */,
+				100009C02C36C0F1001A8E28 /* RTBCollectionCreativeViewController.swift in Sources */,
 				105B7C3B298B760E0006805F /* SingleProgrammaticallyCreativeViewController.swift in Sources */,
 				10F60569299CC64900DCE803 /* SingleCollectionCreativeViewController.swift in Sources */,
 				10F7581C2A0E2593004494EC /* SingleProductCreativeViewController.swift in Sources */,
 				105B7C38298B760E0006805F /* MediaCreativeViewController.swift in Sources */,
 				10CE5C222A35C8DA009C0C75 /* MultiProductCreativeViewController.swift in Sources */,
-				105B7C1A298B74BA0006805F /* ViewController.swift in Sources */,
+				105B7C1A298B74BA0006805F /* MainViewController.swift in Sources */,
+				100009BE2C36C0BB001A8E28 /* RTBMediaCreativeViewController.swift in Sources */,
 				105B7C40298B760E0006805F /* SingleInlayoutCreativeViewController.swift in Sources */,
 				105B7C16298B74BA0006805F /* AppDelegate.swift in Sources */,
 			);
@@ -467,7 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.9;
+				CURRENT_PROJECT_VERSION = 0.12;
 				DEVELOPMENT_TEAM = 99496FTLM8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
@@ -482,12 +514,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 0.12;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.solutionarchitects.SAAdvertisingSDKStandard.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -505,7 +537,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.9;
+				CURRENT_PROJECT_VERSION = 0.12;
 				DEVELOPMENT_TEAM = 99496FTLM8;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
@@ -520,12 +552,12 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 0.12;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.solutionarchitects.SAAdvertisingSDKStandard.example;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
