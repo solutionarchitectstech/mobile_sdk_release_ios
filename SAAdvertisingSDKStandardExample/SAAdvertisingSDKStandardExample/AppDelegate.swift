@@ -61,33 +61,72 @@ func hideMessage(in label: UILabel) {
     label.removeFromSuperview()
 }
 
+struct AppSettings {
+
+    var transactionProtocol: TransactionProtocol = .CUSTOM
+    
+    var initConfigCore: InitConfigCoreEntity {
+        switch initConfigSettings {
+        case .MOCK(let initConfigCore):
+            return initConfigCore
+        case .REAL(let initConfigCore):
+            return initConfigCore
+        }
+    }
+    
+    var initConfigSettings: InitConfigSettings = .MOCK()
+
+    enum InitConfigSettings {
+        case MOCK(
+            initConfigCore: InitConfigCoreEntity = .init(
+                bannerUrl: "https://YOUR_MOCK_BANNER_ENDPOINT",
+                productUrl: "https://YOUR_MOCK_PRODUCT_ENDPOINT"
+            )
+
+        )
+
+        case REAL(
+            initConfigCore: InitConfigCoreEntity = .init(
+                bannerUrl: "https://YOUR_REAL_BANNER_ENDPOINT", // ?debug=978617222
+                productUrl: "https://YOUR_REAL_PRODUCT_ENDPOINT"
+            )
+        )
+    }
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var appSettings = AppSettings() {
+        didSet {
+            initSdk()
+        }
+    }
+
     func application(
         _ application: UIApplication,
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?
     ) -> Bool {
+        initSdk()
+
+        // Override point for customization after application launch.
+        return true
+    }
+
+    func initSdk() {
         TechAdvertising.initialize(options: TechAdvertisingOptions(
             sessionId: "YOUR_SESSION_ID",
             storeUrl: "https://apps.apple.com/us/app/myapp/id12345678",
-            initConfig: .init(
-                core: .init(
-                    bannerUrl: "YOUR_BANNER_CREATIVE_ENDPOINT",
-                    productUrl: "YOUR_PRODUCT_CREATIVE_ENDPOINT"
-                )
-            ),
+            transactionProtocol: appSettings.transactionProtocol,
+            initConfig: .init(core: appSettings.initConfigCore),
             debugMode: true,
             httpHeaders: [
                 "Authorization": "Bearer YOUR_TOKEN",
                 "User-Agent": "YOUR_CUSTOM_USER_AGENT"
             ]
         ))
-
-        // Override point for customization after application launch.
-        return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

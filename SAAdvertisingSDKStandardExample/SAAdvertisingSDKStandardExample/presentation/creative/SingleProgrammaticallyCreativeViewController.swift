@@ -52,7 +52,7 @@ class SingleProgrammaticallyCreativeViewController: UIViewController {
             currency: "USD",
             customParams: [
                 "skuId": "LG00001",
-                "skuName": "Leggo bricks (speed boat)",
+                "skuName": "Lego bricks (speed boat)",
                 "category": "Kids",
                 "subCategory": "Lego"
             ]

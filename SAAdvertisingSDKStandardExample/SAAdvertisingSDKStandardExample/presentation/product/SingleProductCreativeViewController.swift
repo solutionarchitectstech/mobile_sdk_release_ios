@@ -32,7 +32,7 @@ class SingleProductCreativeViewController: UIViewController {
             placementId: "PRODUCT_01",
             customParams: [
                 "skuId": "LG00001",
-                "skuName": "Leggo bricks (speed boat)",
+                "skuName": "Lego bricks (speed boat)",
                 "category": "Kids",
                 "subCategory": "Lego"
             ]

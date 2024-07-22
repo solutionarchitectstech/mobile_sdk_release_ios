@@ -19,19 +19,28 @@
 import UIKit
 import SAAdvertisingSDKStandard
 
-class SingleFullscreenCreativeViewController: UIViewController {
+class RTBBannerCreativeViewController: UIViewController {
+
+    @IBOutlet weak var creativeView: CreativeView!
 
     private let errorLabel = UILabel()
 
-    private var fullscreenVC: FullscreenCreativeViewController!
+    private var creative: Creative!
 
-    private let placementIds = ["HTML_BANNER", "IMAGE_BANNER"]
+    private let sizes = [
+        SizeEntity(width: 240, height: 400),
+        SizeEntity(width: 288, height: 140)
+    ]
 
     override func viewDidLoad() {
-        let vc = FullscreenCreativeViewController()
-        vc.query = CreativeQuery(
-            placementId: "",
-            sizes: [SizeEntity(width: 260, height: 106)],
+        super.viewDidLoad()
+
+        TechAdvertising.shared.uid = "MY_AUTHORIZED_USER_ID"
+
+        // Let's init creative views
+        creativeView.query = CreativeQuery(
+            sizes: [sizes.randomElement()!],
+            markupType: .BANNER,
             customParams: [
                 "skuId": "LG00001",
                 "skuName": "Lego bricks (speed boat)",
@@ -42,19 +51,19 @@ class SingleFullscreenCreativeViewController: UIViewController {
                 "coppa": "1"
             ]
         )
-        vc.delegate = self
-        self.fullscreenVC = vc
-    }
 
-    @IBAction func onRequestButtonClick(_ sender: Any) {
-        self.fullscreenVC.query?.placementId = placementIds.randomElement() ?? ""
-        self.present(fullscreenVC, animated: true)
+        // Let's init Creative
+        self.creative = .init(creativeView: creativeView)
+        self.creative.delegate = self
+
+        // Finally, let's load creatives
+        self.creative.load()
     }
 }
 
 // MARK: - CreativeDelegate
 
-extension SingleFullscreenCreativeViewController: CreativeDelegate {
+extension RTBBannerCreativeViewController: CreativeDelegate {
 
     public func onLoadDataSuccess(creativeView: CreativeView) {
         let placementId = creativeView.query?.placementId
@@ -69,10 +78,6 @@ extension SingleFullscreenCreativeViewController: CreativeDelegate {
         log(msg)
 
         showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
-            self?.fullscreenVC.dismiss(animated: true)
-        }
     }
 
     public func onLoadContentSuccess(creativeView: CreativeView) {
@@ -88,10 +93,6 @@ extension SingleFullscreenCreativeViewController: CreativeDelegate {
         log(msg)
 
         showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
-
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) { [weak self] in
-            self?.fullscreenVC.dismiss(animated: true)
-        }
     }
 
     public func onNoAdContent(creativeView: CreativeView) {
@@ -107,7 +108,5 @@ extension SingleFullscreenCreativeViewController: CreativeDelegate {
         log("onClose[\(placementId ?? "")]")
 
         hideMessage(in: errorLabel)
-
-        fullscreenVC.dismiss(animated: true)
     }
 }

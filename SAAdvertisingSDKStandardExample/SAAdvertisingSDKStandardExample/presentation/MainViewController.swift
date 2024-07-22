@@ -19,13 +19,74 @@
 import UIKit
 import SAAdvertisingSDKStandard
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
 
+    @IBOutlet weak var customContainer: UIView!
+
+    @IBOutlet weak var rtbContainer: UIView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        initMenu()
     }
 
-    private func presentViewControllerBy(name: String){
+    override func viewWillAppear(_ animated: Bool) {
+        refreshTitle()
+        refreshContent()
+    }
+
+    private func initMenu() {
+        let actionSettings = UIAction(title: "Settings") { _ in
+            self.showSettings()
+        }
+        let menu = UIMenu(title: "", children: [actionSettings])
+        let menuButton = UIBarButtonItem(
+            title: nil,
+            image: UIImage(systemName: "ellipsis.circle"),
+            primaryAction: nil,
+            menu: menu
+        )
+        self.navigationItem.rightBarButtonItem = menuButton
+    }
+
+    private func refreshTitle() {
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        var isMock = false
+        if case .MOCK(_) = appDelegate.appSettings.initConfigSettings {
+            isMock = true
+        }
+
+        var description: String?
+        switch TechAdvertising.shared.options?.transactionProtocol {
+        case .CUSTOM:
+            description = "SA CUSTOM (\(isMock ? "mock" : "real"))"
+        case .OPEN_RTB(_, _, _, _):
+            description = "OpenRTB (\(isMock ? "mock" : "real"))"
+        case .none:
+            break
+        }
+
+        self.navigationItem.title = description
+    }
+
+    private func refreshContent() {
+        switch TechAdvertising.shared.options?.transactionProtocol {
+        case .CUSTOM:
+            customContainer.isHidden = false
+            rtbContainer.isHidden = true
+        case .OPEN_RTB(_, _, _, _):
+            customContainer.isHidden = true
+            rtbContainer.isHidden = false
+        case .none:
+            break
+        }
+    }
+
+    private func showSettings() {
+        presentViewControllerBy(name: "SettingsViewController")
+    }
+
+    private func presentViewControllerBy(name: String) {
         let storyBoard: UIStoryboard = UIStoryboard(name: name, bundle: nil)
         let vc = storyBoard.instantiateInitialViewController()
         guard let vc = vc else {
@@ -70,5 +131,19 @@ class ViewController: UIViewController {
 
     @IBAction func onMediaCreativeClick(_ sender: Any) {
         presentViewControllerBy(name: "MediaCreativeViewController")
+    }
+
+    // MARK: - OPEN RTB
+
+    @IBAction func onRTBBannerCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "RTBBannerCreativeViewController")
+    }
+
+    @IBAction func onRTBMediaCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "RTBMediaCreativeViewController")
+    }
+
+    @IBAction func onRTBCollectionCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "RTBCollectionCreativeViewController")
     }
 }
