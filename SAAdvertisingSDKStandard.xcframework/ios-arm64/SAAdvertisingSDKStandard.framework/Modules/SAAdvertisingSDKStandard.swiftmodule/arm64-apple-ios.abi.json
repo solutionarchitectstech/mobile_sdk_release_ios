@@ -41179,14 +41179,14 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 4152,
+      "offset": 4338,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13640,
+      "offset": 13888,
       "length": 5,
       "value": "false"
     },
