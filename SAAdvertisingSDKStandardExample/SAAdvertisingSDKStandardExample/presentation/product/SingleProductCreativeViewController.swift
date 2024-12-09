@@ -31,10 +31,30 @@ class SingleProductCreativeViewController: UIViewController {
         self.productCreative = ProductCreative(query: ProductCreativeQuery(
             placementId: "PRODUCT_01",
             customParams: [
-                "skuId": "LG00001",
-                "skuName": "Lego bricks (speed boat)",
-                "category": "Kids",
-                "subCategory": "Lego"
+                "object": [
+                    "id": "ID00001",
+                    "name": "MyObjectName"
+                ],
+                "string": "MyString",
+                "int": 199,
+                "float": 3.14,
+                "objectList": [
+                    [
+                        "property": "item",
+                        "value": "lego bricks"
+                    ],
+                    [
+                        "property": "amount",
+                        "value": 3001
+                    ],
+                    [
+                        "property": "price",
+                        "value": 12.99
+                    ]
+                ],
+                "integerList": [11, 12, -13, -14],
+                "nonTypicalList": ["some string", 3.14, 199],
+                "emptyList": []
             ]
         ))
         self.productCreative.delegate = self
