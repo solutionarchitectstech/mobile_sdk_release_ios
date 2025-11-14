@@ -6967,6 +6967,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "LocalizedError",
             "printedName": "LocalizedError",
             "usr": "s:10Foundation14LocalizedErrorP",
@@ -7954,6 +7961,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -12596,6 +12610,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -15736,91 +15757,6 @@
         "children": [
           {
             "kind": "Var",
-            "name": "sessionId",
-            "printedName": "sessionId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "declAttributes": [
-              "HasStorage",
-              "AccessControl"
-            ],
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvs",
-                "mangledName": "$s24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvs",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvM",
-                "mangledName": "$s24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionIdSSvM",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "implicit": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "storeUrl",
             "printedName": "storeUrl",
             "children": [
@@ -16424,19 +16360,13 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(sessionId:storeUrl:transactionProtocol:initConfig:remoteConfigUrl:debugMode:httpHeaders:)",
+            "printedName": "init(storeUrl:transactionProtocol:initConfig:remoteConfigUrl:debugMode:httpHeaders:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "TechAdvertisingOptions",
                 "printedName": "SAAdvertisingSDKStandard.TechAdvertisingOptions",
                 "usr": "s:24SAAdvertisingSDKStandard22TechAdvertisingOptionsV"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
               },
               {
                 "kind": "TypeNominal",
@@ -16511,8 +16441,8 @@
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionId8storeUrl19transactionProtocol10initConfig06remotemI09debugMode11httpHeadersACSS_SSAA011TransactionK0OAA04InitM0VSgSSSgSbSDyS2SGtcfc",
-            "mangledName": "$s24SAAdvertisingSDKStandard22TechAdvertisingOptionsV9sessionId8storeUrl19transactionProtocol10initConfig06remotemI09debugMode11httpHeadersACSS_SSAA011TransactionK0OAA04InitM0VSgSSSgSbSDyS2SGtcfc",
+            "usr": "s:24SAAdvertisingSDKStandard22TechAdvertisingOptionsV8storeUrl19transactionProtocol10initConfig06remotekG09debugMode11httpHeadersACSS_AA011TransactionI0OAA04InitK0VSgSSSgSbSDyS2SGtcfc",
+            "mangledName": "$s24SAAdvertisingSDKStandard22TechAdvertisingOptionsV8storeUrl19transactionProtocol10initConfig06remotekG09debugMode11httpHeadersACSS_AA011TransactionI0OAA04InitK0VSgSSSgSbSDyS2SGtcfc",
             "moduleName": "SAAdvertisingSDKStandard",
             "declAttributes": [
               "AccessControl"
@@ -25932,6 +25862,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -28061,100 +27998,6 @@
         "name": "BaseSdkOptions",
         "printedName": "BaseSdkOptions",
         "children": [
-          {
-            "kind": "Var",
-            "name": "sessionId",
-            "printedName": "sessionId",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvp",
-            "mangledName": "$s24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvp",
-            "moduleName": "SAAdvertisingSDKStandard",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvg",
-                "mangledName": "$s24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvg",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.BaseSdkOptions>",
-                "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.BaseSdkOptions>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "get"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Set",
-                "printedName": "Set()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvs",
-                "mangledName": "$s24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvs",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.BaseSdkOptions>",
-                "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.BaseSdkOptions>",
-                "protocolReq": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "set"
-              },
-              {
-                "kind": "Accessor",
-                "name": "Modify",
-                "printedName": "Modify()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvM",
-                "mangledName": "$s24SAAdvertisingSDKStandard14BaseSdkOptionsP9sessionIdSSvM",
-                "moduleName": "SAAdvertisingSDKStandard",
-                "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.BaseSdkOptions>",
-                "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.BaseSdkOptions>",
-                "protocolReq": true,
-                "implicit": true,
-                "reqNewWitnessTableEntry": true,
-                "accessorKind": "_modify"
-              }
-            ]
-          },
           {
             "kind": "Var",
             "name": "storeUrl",
@@ -32222,6 +32065,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -39215,6 +39065,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "CreativeDelegate",
             "printedName": "CreativeDelegate",
             "usr": "c:@M@SAAdvertisingSDKStandard@objc(pl)CreativeDelegate",
@@ -39999,6 +39856,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_ExpressibleByBuiltinUnicodeScalarLiteral",
             "printedName": "_ExpressibleByBuiltinUnicodeScalarLiteral",
             "usr": "s:s41_ExpressibleByBuiltinUnicodeScalarLiteralP",
@@ -40477,17 +40341,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "LocalizedError",
-            "printedName": "LocalizedError",
-            "usr": "s:10Foundation14LocalizedErrorP",
-            "mangledName": "$s10Foundation14LocalizedErrorP"
-          },
-          {
-            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
             "mangledName": "$ss5ErrorP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
           }
         ]
       },
@@ -40637,6 +40501,13 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -41699,7 +41570,7 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13888,
+      "offset": 13886,
       "length": 5,
       "value": "false"
     },
@@ -42126,14 +41997,14 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "BooleanLiteral",
-      "offset": 1794,
+      "offset": 1734,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SAAdvertisingSDKStandard\/TechAdvertising.swift",
       "kind": "Dictionary",
-      "offset": 1841,
+      "offset": 1781,
       "length": 3,
       "value": "[]"
     },
@@ -42815,13 +42686,6 @@
       "offset": 1376,
       "length": 3,
       "value": "0.0"
-    },
-    {
-      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPUserDTO.swift",
-      "kind": "StringLiteral",
-      "offset": 1339,
-      "length": 5,
-      "value": "\"sid\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Media\/vast\/constants\/VastMacros.swift",
@@ -43561,28 +43425,28 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/NetworkMonitorImpl.swift",
       "kind": "StringLiteral",
-      "offset": 2037,
+      "offset": 2050,
       "length": 28,
       "value": "\"NetworkConnectivityMonitor\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/NetworkMonitorImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2143,
+      "offset": 2156,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/NetworkMonitorImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2189,
+      "offset": 2202,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/repository\/NetworkMonitorImpl.swift",
       "kind": "BooleanLiteral",
-      "offset": 2409,
+      "offset": 2422,
       "length": 5,
       "value": "false"
     },
@@ -44016,14 +43880,14 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 1868,
+      "offset": 2275,
       "length": 31,
       "value": "\"AdvertisingSDK.LifeCycleQueue\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/BaseTechAdvertising.swift",
       "kind": "StringLiteral",
-      "offset": 3668,
+      "offset": 4075,
       "length": 17,
       "value": "\"failed_requests\""
     },
