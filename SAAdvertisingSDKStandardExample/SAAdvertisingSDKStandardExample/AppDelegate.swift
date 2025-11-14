@@ -117,7 +117,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func initSdk() {
         TechAdvertising.initialize(options: TechAdvertisingOptions(
-            sessionId: "YOUR_SESSION_ID",
             storeUrl: "https://apps.apple.com/us/app/myapp/id12345678",
             transactionProtocol: appSettings.transactionProtocol,
             initConfig: .init(core: appSettings.initConfigCore),
