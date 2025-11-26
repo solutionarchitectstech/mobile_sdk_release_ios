@@ -85,12 +85,19 @@ extension SingleProductCreativeViewController: ProductCreativeDelegate {
         self.outputLabel.text = "ERROR: Unable to load product creative data due error: \(error.localizedDescription)"
     }
 
-    func onLoadContentSuccess(entity: ProductCreativeEntity) {
+    func onLoadContentSuccess(entity: ProductCreativeEntity, ext: [String: Any]) {
         self.spinner.isHidden = true
         self.outputLabel.isHidden = false
 
+        let trackingId = ext["trackingId"] as? String
+        let creativeId = ext["creativeId"] as? String
         self.outputLabel.textColor = .none
-        self.outputLabel.text = "\(String(describing: entity))"
+        let value = """
+                    trackingId: \(String(describing: trackingId))
+                    creativeId: \(String(describing: creativeId))
+                    entity: \(String(describing: entity))
+                    """
+        self.outputLabel.text = value
     }
 
     func onLoadContentFail(query: ProductCreativeQuery, error: Error) {

@@ -94,9 +94,11 @@ extension SingleInlayoutCreativeViewController: CreativeDelegate {
         showMessage(msg, in: errorLabel, for: creativeView, withColor: .red)
     }
 
-    public func onLoadContentSuccess(creativeView: CreativeView) {
+    public func onLoadContentSuccess(creativeView: CreativeView, ext: [String: Any]) {
         let placementId = creativeView.query?.placementId
-        log("onLoadContentSuccess[\(placementId ?? "")]")
+        let trackingId = ext["trackingId"] as? String
+        let creativeId = ext["creativeId"] as? String
+        log("onLoadContentSuccess[placementId: \(String(describing: placementId)), creativeId: \(String(describing: creativeId)), trackingId: \(String(describing: trackingId))]")
 
         hideMessage(in: errorLabel)
     }

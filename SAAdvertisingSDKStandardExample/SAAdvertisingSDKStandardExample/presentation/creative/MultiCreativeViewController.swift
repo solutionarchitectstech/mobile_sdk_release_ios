@@ -146,9 +146,11 @@ extension MultiCreativeViewController: CreativeDelegate {
         }
     }
 
-    public func onLoadContentSuccess(creativeView: CreativeView) {
+    public func onLoadContentSuccess(creativeView: CreativeView, ext: [String: Any]) {
         let placementId = creativeView.query?.placementId
-        log("onLoadContentSuccess[\(placementId ?? "")]")
+        let trackingId = ext["trackingId"] as? String
+        let creativeId = ext["creativeId"] as? String
+        log("onLoadContentSuccess[placementId: \(String(describing: placementId)), creativeId: \(String(describing: creativeId)), trackingId: \(String(describing: trackingId))]")
 
         if let label = errorLabels[creativeView] {
             hideMessage(in: label)

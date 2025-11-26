@@ -92,9 +92,15 @@ extension MultiProductCreativeViewController: ProductCreativeDelegate {
         }
     }
 
-    func onLoadContentSuccess(entity: ProductCreativeEntity) {
+    func onLoadContentSuccess(entity: ProductCreativeEntity, ext: [String: Any]) {
         self.spinner.isHidden = true
-        let value = "\(String(describing: entity))"
+        let trackingId = ext["trackingId"] as? String
+        let creativeId = ext["creativeId"] as? String
+        let value = """
+                    trackingId: \(String(describing: trackingId))
+                    creativeId: \(String(describing: creativeId))
+                    entity: \(String(describing: entity))
+                    """
         if self.outputLabel1.text == nil {
             self.outputLabel1.isHidden = false
             self.outputLabel1.textColor = .none

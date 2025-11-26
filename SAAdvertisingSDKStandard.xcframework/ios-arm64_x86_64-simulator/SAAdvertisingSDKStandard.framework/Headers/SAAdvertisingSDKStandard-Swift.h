@@ -283,6 +283,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreFoundation;
 @import CoreGraphics;
+@import Foundation;
 @import UIKit;
 #endif
 
@@ -307,12 +308,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class CreativeView;
+@class NSString;
 SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard16CreativeDelegate_")
 @protocol CreativeDelegate
 @optional
 - (void)onLoadDataSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onLoadDataFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
-- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
+- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView ext:(NSDictionary<NSString *, id> * _Nonnull)ext;
 - (void)onLoadContentFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
 - (void)onNoAdContentWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onCloseWithCreativeView:(CreativeView * _Nonnull)creativeView;
@@ -328,7 +330,6 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard12CreativeView")
 - (void)drawLayer:(CALayer * _Nonnull)layer inContext:(CGContextRef _Nonnull)ctx;
 @end
 
-@class NSString;
 @class NSBundle;
 SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard32FullscreenCreativeViewController")
 @interface FullscreenCreativeViewController : UIViewController
@@ -347,7 +348,7 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard32FullscreenCreativeViewController")
 - (void)onNoAdContentWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onLoadDataSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onLoadDataFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
-- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
+- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView ext:(NSDictionary<NSString *, id> * _Nonnull)ext;
 - (void)onLoadContentFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
 - (void)onCloseWithCreativeView:(CreativeView * _Nonnull)creativeView;
 @end
@@ -645,6 +646,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreFoundation;
 @import CoreGraphics;
+@import Foundation;
 @import UIKit;
 #endif
 
@@ -669,12 +671,13 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class CreativeView;
+@class NSString;
 SWIFT_PROTOCOL("_TtP24SAAdvertisingSDKStandard16CreativeDelegate_")
 @protocol CreativeDelegate
 @optional
 - (void)onLoadDataSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onLoadDataFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
-- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
+- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView ext:(NSDictionary<NSString *, id> * _Nonnull)ext;
 - (void)onLoadContentFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
 - (void)onNoAdContentWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onCloseWithCreativeView:(CreativeView * _Nonnull)creativeView;
@@ -690,7 +693,6 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard12CreativeView")
 - (void)drawLayer:(CALayer * _Nonnull)layer inContext:(CGContextRef _Nonnull)ctx;
 @end
 
-@class NSString;
 @class NSBundle;
 SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard32FullscreenCreativeViewController")
 @interface FullscreenCreativeViewController : UIViewController
@@ -709,7 +711,7 @@ SWIFT_CLASS("_TtC24SAAdvertisingSDKStandard32FullscreenCreativeViewController")
 - (void)onNoAdContentWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onLoadDataSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
 - (void)onLoadDataFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
-- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView;
+- (void)onLoadContentSuccessWithCreativeView:(CreativeView * _Nonnull)creativeView ext:(NSDictionary<NSString *, id> * _Nonnull)ext;
 - (void)onLoadContentFailWithCreativeView:(CreativeView * _Nonnull)creativeView error:(NSError * _Nonnull)error;
 - (void)onCloseWithCreativeView:(CreativeView * _Nonnull)creativeView;
 @end

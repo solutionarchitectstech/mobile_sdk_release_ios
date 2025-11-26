@@ -313,7 +313,7 @@ extension SAAdvertisingSDKStandard.VastStaticResource : Swift.Equatable {
 @objc public protocol CreativeDelegate {
   @objc optional func onLoadDataSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
   @objc optional func onLoadDataFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
-  @objc optional func onLoadContentSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @objc optional func onLoadContentSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView, ext: [Swift.String : Any])
   @objc optional func onLoadContentFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
   @objc optional func onNoAdContent(creativeView: SAAdvertisingSDKStandard.CreativeView)
   @objc optional func onClose(creativeView: SAAdvertisingSDKStandard.CreativeView)
@@ -351,6 +351,7 @@ public struct ProductCreativeEntity {
   public var externalId: Swift.String
   public var tracking: SAAdvertisingSDKStandard.ProductCreativeTrackingEntity?
   public var advertiser: Swift.String?
+  public var ext: [Swift.String : Any]
 }
 public struct VastAdParameters : Swift.Codable {
   public let xmlEncoded: Swift.String?
@@ -416,7 +417,7 @@ extension SAAdvertisingSDKStandard.VastVideoClick : Swift.Equatable {
 public protocol ProductCreativeDelegate : AnyObject {
   func onLoadDataSuccess()
   func onLoadDataFail(error: any Swift.Error)
-  func onLoadContentSuccess(entity: SAAdvertisingSDKStandard.ProductCreativeEntity)
+  func onLoadContentSuccess(entity: SAAdvertisingSDKStandard.ProductCreativeEntity, ext: [Swift.String : Any])
   func onLoadContentFail(query: SAAdvertisingSDKStandard.ProductCreativeQuery, error: any Swift.Error)
   func onNoAdContent(query: SAAdvertisingSDKStandard.ProductCreativeQuery)
 }
@@ -1069,7 +1070,7 @@ extension SAAdvertisingSDKStandard.FullscreenCreativeViewController : SAAdvertis
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onNoAdContent(creativeView: SAAdvertisingSDKStandard.CreativeView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadDataSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadDataFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
-  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadContentSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView)
+  @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadContentSuccess(creativeView: SAAdvertisingSDKStandard.CreativeView, ext: [Swift.String : Any])
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onLoadContentFail(creativeView: SAAdvertisingSDKStandard.CreativeView, error: any Swift.Error)
   @_Concurrency.MainActor @preconcurrency @objc dynamic public func onClose(creativeView: SAAdvertisingSDKStandard.CreativeView)
 }
