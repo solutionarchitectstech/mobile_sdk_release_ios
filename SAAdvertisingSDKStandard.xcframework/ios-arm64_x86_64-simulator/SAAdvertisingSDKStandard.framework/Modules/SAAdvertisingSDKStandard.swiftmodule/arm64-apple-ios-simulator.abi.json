@@ -11641,7 +11641,7 @@
           {
             "kind": "Function",
             "name": "onLoadContentSuccess",
-            "printedName": "onLoadContentSuccess(creativeView:)",
+            "printedName": "onLoadContentSuccess(creativeView:ext:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -11653,16 +11653,35 @@
                 "name": "CreativeView",
                 "printedName": "SAAdvertisingSDKStandard.CreativeView",
                 "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@M@SAAdvertisingSDKStandard@objc(pl)CreativeDelegate(im)onLoadContentSuccessWithCreativeView:",
-            "mangledName": "$s24SAAdvertisingSDKStandard16CreativeDelegateP20onLoadContentSuccess12creativeViewyAA0cJ0C_tF",
+            "usr": "c:@M@SAAdvertisingSDKStandard@objc(pl)CreativeDelegate(im)onLoadContentSuccessWithCreativeView:ext:",
+            "mangledName": "$s24SAAdvertisingSDKStandard16CreativeDelegateP20onLoadContentSuccess12creativeView3extyAA0cJ0C_SDySSypGtF",
             "moduleName": "SAAdvertisingSDKStandard",
             "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.CreativeDelegate>",
             "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.CreativeDelegate>",
             "protocolReq": true,
-            "objc_name": "onLoadContentSuccessWithCreativeView:",
+            "objc_name": "onLoadContentSuccessWithCreativeView:ext:",
             "declAttributes": [
               "Optional",
               "ObjC"
@@ -13277,6 +13296,130 @@
                 "declKind": "Accessor",
                 "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV10advertiserSSSgvM",
                 "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV10advertiserSSSgvM",
+                "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "ext",
+            "printedName": "ext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvp",
+            "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvp",
+            "moduleName": "SAAdvertisingSDKStandard",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvg",
+                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvg",
+                "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvs",
+                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvs",
+                "moduleName": "SAAdvertisingSDKStandard",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvM",
+                "mangledName": "$s24SAAdvertisingSDKStandard21ProductCreativeEntityV3extSDySSypGvM",
                 "moduleName": "SAAdvertisingSDKStandard",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -15267,7 +15410,7 @@
           {
             "kind": "Function",
             "name": "onLoadContentSuccess",
-            "printedName": "onLoadContentSuccess(entity:)",
+            "printedName": "onLoadContentSuccess(entity:ext:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15279,11 +15422,30 @@
                 "name": "ProductCreativeEntity",
                 "printedName": "SAAdvertisingSDKStandard.ProductCreativeEntity",
                 "usr": "s:24SAAdvertisingSDKStandard21ProductCreativeEntityV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:24SAAdvertisingSDKStandard23ProductCreativeDelegateP20onLoadContentSuccess6entityyAA0cD6EntityV_tF",
-            "mangledName": "$s24SAAdvertisingSDKStandard23ProductCreativeDelegateP20onLoadContentSuccess6entityyAA0cD6EntityV_tF",
+            "usr": "s:24SAAdvertisingSDKStandard23ProductCreativeDelegateP20onLoadContentSuccess6entity3extyAA0cD6EntityV_SDySSypGtF",
+            "mangledName": "$s24SAAdvertisingSDKStandard23ProductCreativeDelegateP20onLoadContentSuccess6entity3extyAA0cD6EntityV_SDySSypGtF",
             "moduleName": "SAAdvertisingSDKStandard",
             "genericSig": "<τ_0_0 where τ_0_0 : SAAdvertisingSDKStandard.ProductCreativeDelegate>",
             "sugared_genericSig": "<Self where Self : SAAdvertisingSDKStandard.ProductCreativeDelegate>",
@@ -38868,7 +39030,7 @@
           {
             "kind": "Function",
             "name": "onLoadContentSuccess",
-            "printedName": "onLoadContentSuccess(creativeView:)",
+            "printedName": "onLoadContentSuccess(creativeView:ext:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -38880,13 +39042,32 @@
                 "name": "CreativeView",
                 "printedName": "SAAdvertisingSDKStandard.CreativeView",
                 "usr": "c:@M@SAAdvertisingSDKStandard@objc(cs)CreativeView"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@SAAdvertisingSDKStandard@objc(cs)FullscreenCreativeViewController(im)onLoadContentSuccessWithCreativeView:",
-            "mangledName": "$s24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC20onLoadContentSuccess08creativeE0yAA0dE0C_tF",
+            "usr": "c:@CM@SAAdvertisingSDKStandard@objc(cs)FullscreenCreativeViewController(im)onLoadContentSuccessWithCreativeView:ext:",
+            "mangledName": "$s24SAAdvertisingSDKStandard32FullscreenCreativeViewControllerC20onLoadContentSuccess08creativeE03extyAA0dE0C_SDySSypGtF",
             "moduleName": "SAAdvertisingSDKStandard",
-            "objc_name": "onLoadContentSuccessWithCreativeView:",
+            "objc_name": "onLoadContentSuccessWithCreativeView:ext:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -41535,42 +41716,42 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 2752,
+      "offset": 2772,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 3353,
+      "offset": 3373,
       "length": 46,
       "value": "\"Creative.lifecycleQueue.\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 3398,
+      "offset": 3418,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "FloatLiteral",
-      "offset": 3580,
+      "offset": 3600,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 4338,
+      "offset": 4358,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13886,
+      "offset": 13906,
       "length": 5,
       "value": "false"
     },
@@ -41661,7 +41842,7 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/data\/dto\/SSPProductCreativeBidDTO.swift",
       "kind": "StringLiteral",
-      "offset": 1543,
+      "offset": 2524,
       "length": 4,
       "value": "\"id\""
     },
@@ -41766,7 +41947,7 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/presentation\/ProductCreative.swift",
       "kind": "StringLiteral",
-      "offset": 2015,
+      "offset": 2035,
       "length": 2,
       "value": "\"\""
     },
@@ -42669,7 +42850,7 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/SSP\/data\/dto\/SSPCreativeBidDTO.swift",
       "kind": "StringLiteral",
-      "offset": 2447,
+      "offset": 2605,
       "length": 4,
       "value": "\"id\""
     },
@@ -43393,6 +43574,13 @@
       "offset": 5008,
       "length": 1,
       "value": "1"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/OpenRTB\/data\/dto\/RTBBidDTO.swift",
+      "kind": "Dictionary",
+      "offset": 11709,
+      "length": 3,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/OpenRTB\/data\/dto\/RTBBidResponse.swift",
