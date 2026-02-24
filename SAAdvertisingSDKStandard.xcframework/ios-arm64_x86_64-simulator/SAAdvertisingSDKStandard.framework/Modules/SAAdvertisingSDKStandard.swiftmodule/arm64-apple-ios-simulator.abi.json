@@ -12710,6 +12710,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SAAdvertisingSDKStandard",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "ProductCreativeEntity",
         "printedName": "ProductCreativeEntity",
@@ -28865,6 +28875,16 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SAAdvertisingSDKStandard",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "AdTrackingStatus",
         "printedName": "AdTrackingStatus",
@@ -29161,6 +29181,16 @@
             "usr": "s:SY",
             "mangledName": "$sSY"
           }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "SAAdvertisingSDKStandard",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -41737,21 +41767,21 @@
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "FloatLiteral",
-      "offset": 3600,
+      "offset": 3656,
       "length": 3,
       "value": "3.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "StringLiteral",
-      "offset": 4358,
+      "offset": 4512,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Creative\/presentation\/Creative.swift",
       "kind": "BooleanLiteral",
-      "offset": 13906,
+      "offset": 14198,
       "length": 5,
       "value": "false"
     },
@@ -41894,6 +41924,27 @@
       "offset": 1297,
       "length": 15,
       "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/backoff\/exponential\/ExponentialBackoffConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1761,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/backoff\/exponential\/ExponentialBackoffConfig.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1799,
+      "length": 3,
+      "value": "300"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/backoff\/exponential\/ExponentialBackoffConfig.swift",
+      "kind": "FloatLiteral",
+      "offset": 1830,
+      "length": 3,
+      "value": "2.0"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/OpenRTB\/data\/dto\/RTBImpDTO.swift",
@@ -43560,6 +43611,13 @@
       "offset": 1388,
       "length": 3,
       "value": "0.0"
+    },
+    {
+      "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Common\/data\/concurrency\/ScheduledTask.swift",
+      "kind": "Array",
+      "offset": 2228,
+      "length": 2,
+      "value": "[]"
     },
     {
       "filePath": "\/Users\/sergeymuravev\/workspace\/prj\/solution-architects\/ios\/mobile-sdk-ios\/SAAdvertisingSDK\/Product\/domain\/model\/ProductCreativeQuery.swift",

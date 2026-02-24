@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "SAAdvertisingSDKStandard"
-  s.version          = "1.3.0"
+  s.version          = "1.4.0"
   s.summary          = "#{s.name} (iOS) #{s.version}"
 
   s.homepage         = "https://github.com/solutionarchitectstech/mobile_sdk_release_ios"
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.vendored_frameworks  = "#{s.name}.xcframework"
 
   s.platform = :ios
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '16.0'
   s.swift_version = '5.0'
 
   s.frameworks = 'WebKit', 'AppTrackingTransparency', 'AdSupport'

@@ -87,7 +87,7 @@ struct AppSettings {
 
         case REAL(
             initConfigCore: InitConfigCoreEntity = .init(
-                bannerUrl: "https://YOUR_REAL_BANNER_ENDPOINT", // ?debug=978617222
+                bannerUrl: "https://YOUR_REAL_BANNER_ENDPOINT",
                 productUrl: "https://YOUR_REAL_PRODUCT_ENDPOINT"
             )
         )
