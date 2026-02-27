@@ -499,7 +499,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.16;
+				CURRENT_PROJECT_VERSION = 0.17;
 				DEVELOPMENT_TEAM = KHJR8N49W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
@@ -518,7 +518,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.16;
+				MARKETING_VERSION = 0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.solutionarchitects.SAAdvertisingSDKStandard.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -536,7 +536,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.16;
+				CURRENT_PROJECT_VERSION = 0.17;
 				DEVELOPMENT_TEAM = KHJR8N49W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
@@ -555,7 +555,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.16;
+				MARKETING_VERSION = 0.17;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.solutionarchitects.SAAdvertisingSDKStandard.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
