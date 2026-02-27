@@ -436,9 +436,10 @@ public struct TechAdvertisingOptions : SAAdvertisingSDKStandard.BaseSdkOptions {
   public var initConfig: SAAdvertisingSDKStandard.InitConfig?
   public var remoteConfigUrl: Swift.String?
   public var debugMode: Swift.Bool
+  public var locationEnabled: Swift.Bool
   public var httpHeaders: [Swift.String : Swift.String]
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(storeUrl: Swift.String, transactionProtocol: SAAdvertisingSDKStandard.TransactionProtocol = .CUSTOM, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
+  public init(storeUrl: Swift.String, transactionProtocol: SAAdvertisingSDKStandard.TransactionProtocol = .CUSTOM, initConfig: SAAdvertisingSDKStandard.InitConfig? = nil, remoteConfigUrl: Swift.String? = nil, debugMode: Swift.Bool = false, locationEnabled: Swift.Bool = false, httpHeaders: [Swift.String : Swift.String] = [:])
   #endif
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class TechAdvertising : SAAdvertisingSDKStandard.BaseTechAdvertising<SAAdvertisingSDKStandard.TechAdvertisingOptions> {
@@ -766,6 +767,7 @@ public protocol BaseSdkOptions {
   var remoteConfigUrl: Swift.String? { get set }
   #endif
   var debugMode: Swift.Bool { get set }
+  var locationEnabled: Swift.Bool { get set }
   var httpHeaders: [Swift.String : Swift.String] { get set }
 }
 public enum AdTrackingStatus : Swift.UInt {

@@ -121,6 +121,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             transactionProtocol: appSettings.transactionProtocol,
             initConfig: .init(core: appSettings.initConfigCore),
             debugMode: true,
+            locationEnabled: false,
             httpHeaders: [
                 "Authorization": "Bearer YOUR_TOKEN",
                 "User-Agent": "YOUR_CUSTOM_USER_AGENT"
