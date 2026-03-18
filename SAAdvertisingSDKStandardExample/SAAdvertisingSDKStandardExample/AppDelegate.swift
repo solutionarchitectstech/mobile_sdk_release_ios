@@ -82,7 +82,6 @@ struct AppSettings {
                 bannerUrl: "https://YOUR_MOCK_BANNER_ENDPOINT",
                 productUrl: "https://YOUR_MOCK_PRODUCT_ENDPOINT"
             )
-
         )
 
         case REAL(
