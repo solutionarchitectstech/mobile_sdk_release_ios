@@ -30,6 +30,8 @@
 		105B7C3E298B760E0006805F /* SingleProgrammaticallyCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C34298B760E0006805F /* SingleProgrammaticallyCreativeViewController.storyboard */; };
 		105B7C3F298B760E0006805F /* MultiCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C35298B760E0006805F /* MultiCreativeViewController.storyboard */; };
 		105B7C40298B760E0006805F /* SingleInlayoutCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C36298B760E0006805F /* SingleInlayoutCreativeViewController.swift */; };
+		1095B09C2F62FF9B009732FB /* SingleManualCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095B09B2F62FF9B009732FB /* SingleManualCreativeViewController.swift */; };
+		1095B09E2F63019B009732FB /* SingleManualCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1095B09D2F63019B009732FB /* SingleManualCreativeViewController.storyboard */; };
 		10CE5C222A35C8DA009C0C75 /* MultiProductCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CE5C212A35C8DA009C0C75 /* MultiProductCreativeViewController.swift */; };
 		10CE5C242A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CE5C232A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard */; };
 		10F6048B298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */; };
@@ -82,6 +84,8 @@
 		105B7C35298B760E0006805F /* MultiCreativeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultiCreativeViewController.storyboard; sourceTree = "<group>"; };
 		105B7C36298B760E0006805F /* SingleInlayoutCreativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleInlayoutCreativeViewController.swift; sourceTree = "<group>"; };
 		105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1095B09B2F62FF9B009732FB /* SingleManualCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleManualCreativeViewController.swift; sourceTree = "<group>"; };
+		1095B09D2F63019B009732FB /* SingleManualCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleManualCreativeViewController.storyboard; sourceTree = "<group>"; };
 		10CE5C212A35C8DA009C0C75 /* MultiProductCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiProductCreativeViewController.swift; sourceTree = "<group>"; };
 		10CE5C232A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultiProductCreativeViewController.storyboard; sourceTree = "<group>"; };
 		10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,6 +147,8 @@
 		105B7C30298B760E0006805F /* creative */ = {
 			isa = PBXGroup;
 			children = (
+				1095B09D2F63019B009732FB /* SingleManualCreativeViewController.storyboard */,
+				1095B09B2F62FF9B009732FB /* SingleManualCreativeViewController.swift */,
 				105B7C32298B760E0006805F /* SingleInlayoutCreativeViewController.storyboard */,
 				105B7C36298B760E0006805F /* SingleInlayoutCreativeViewController.swift */,
 				105B7C34298B760E0006805F /* SingleProgrammaticallyCreativeViewController.storyboard */,
@@ -274,6 +280,7 @@
 				10F60567299CC63500DCE803 /* SingleCollectionCreativeViewController.storyboard in Resources */,
 				105B10C72A7141B900F00A3C /* SingleFullscreenCreativeViewController.storyboard in Resources */,
 				105B7C22298B74BB0006805F /* LaunchScreen.storyboard in Resources */,
+				1095B09E2F63019B009732FB /* SingleManualCreativeViewController.storyboard in Resources */,
 				100009BA2C36BFE5001A8E28 /* RTBBannerCreativeViewController.storyboard in Resources */,
 				100009C22C36C156001A8E28 /* RTBCollectionCreativeViewController.storyboard in Resources */,
 				105B7C1F298B74BB0006805F /* Assets.xcassets in Resources */,
@@ -352,6 +359,7 @@
 				100009BE2C36C0BB001A8E28 /* RTBMediaCreativeViewController.swift in Sources */,
 				105B7C40298B760E0006805F /* SingleInlayoutCreativeViewController.swift in Sources */,
 				105B7C16298B74BA0006805F /* AppDelegate.swift in Sources */,
+				1095B09C2F62FF9B009732FB /* SingleManualCreativeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +507,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.17;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = KHJR8N49W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
@@ -518,7 +526,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.17;
+				MARKETING_VERSION = 0.20;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.solutionarchitects.SAAdvertisingSDKStandard.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -536,7 +544,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 0.17;
+				CURRENT_PROJECT_VERSION = 20;
 				DEVELOPMENT_TEAM = KHJR8N49W2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SAAdvertisingSDKStandardExample/Info.plist;
@@ -555,7 +563,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.17;
+				MARKETING_VERSION = 0.20;
 				PRODUCT_BUNDLE_IDENTIFIER = tech.solutionarchitects.SAAdvertisingSDKStandard.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

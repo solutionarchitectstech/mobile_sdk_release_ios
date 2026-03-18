@@ -97,6 +97,10 @@ class MainViewController: UIViewController {
 
     // MARK: - SINGLE IMPRESSION
 
+    @IBAction func onSingleManualCreativeClick(_ sender: Any) {
+        presentViewControllerBy(name: "SingleManualCreativeViewController")
+    }
+
     @IBAction func onSingleInlayoutCreativeClick(_ sender: Any) {
         presentViewControllerBy(name: "SingleInlayoutCreativeViewController")
     }
