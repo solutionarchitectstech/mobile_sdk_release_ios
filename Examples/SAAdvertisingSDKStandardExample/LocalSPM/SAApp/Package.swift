@@ -10,7 +10,7 @@ let package = Package(
     .library(name: "SAApp", targets: ["SAApp"])
   ],
   dependencies: [
-    .package(url: "https://github.com/solutionarchitectstech/mobile_sdk_release", exact: "1.6.0"),
+    .package(url: "https://github.com/solutionarchitectstech/mobile_sdk_release", exact: "1.7.0"),
     .package(url: "https://github.com/devxoul/Toaster.git", branch: "master")
   ],
   targets: [
