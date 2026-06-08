@@ -7,5 +7,4 @@ framework module SAAdvertisingSDKStandard {
 
 module SAAdvertisingSDKStandard.Swift {
   header "SAAdvertisingSDKStandard-Swift.h"
-  requires objc
 }

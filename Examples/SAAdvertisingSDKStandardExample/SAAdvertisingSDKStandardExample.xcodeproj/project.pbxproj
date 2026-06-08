@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,17 +30,16 @@
 		105B7C3E298B760E0006805F /* SingleProgrammaticallyCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C34298B760E0006805F /* SingleProgrammaticallyCreativeViewController.storyboard */; };
 		105B7C3F298B760E0006805F /* MultiCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 105B7C35298B760E0006805F /* MultiCreativeViewController.storyboard */; };
 		105B7C40298B760E0006805F /* SingleInlayoutCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105B7C36298B760E0006805F /* SingleInlayoutCreativeViewController.swift */; };
+		10843C9D2FC406400068B210 /* SAApp in Frameworks */ = {isa = PBXBuildFile; productRef = 10843C9C2FC406400068B210 /* SAApp */; };
+		10843CB22FC423140068B210 /* SAApp in Frameworks */ = {isa = PBXBuildFile; productRef = 10843CB12FC423140068B210 /* SAApp */; };
 		1095B09C2F62FF9B009732FB /* SingleManualCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1095B09B2F62FF9B009732FB /* SingleManualCreativeViewController.swift */; };
 		1095B09E2F63019B009732FB /* SingleManualCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1095B09D2F63019B009732FB /* SingleManualCreativeViewController.storyboard */; };
 		10CE5C222A35C8DA009C0C75 /* MultiProductCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10CE5C212A35C8DA009C0C75 /* MultiProductCreativeViewController.swift */; };
 		10CE5C242A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10CE5C232A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard */; };
-		10F6048B298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */; };
-		10F6048C298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		10F60567299CC63500DCE803 /* SingleCollectionCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F60566299CC63500DCE803 /* SingleCollectionCreativeViewController.storyboard */; };
 		10F60569299CC64900DCE803 /* SingleCollectionCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F60568299CC64900DCE803 /* SingleCollectionCreativeViewController.swift */; };
 		10F7581C2A0E2593004494EC /* SingleProductCreativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F7581B2A0E2593004494EC /* SingleProductCreativeViewController.swift */; };
 		10F7581E2A0E25F1004494EC /* SingleProductCreativeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10F7581D2A0E25F1004494EC /* SingleProductCreativeViewController.storyboard */; };
-		ACA2CF1B798A6B3B7C25C28C /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AF66BB9F1F21C42596DC033E /* Pods_SAAdvertisingSDKStandardExample.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -50,7 +49,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				10F6048C298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,29 +81,27 @@
 		105B7C34298B760E0006805F /* SingleProgrammaticallyCreativeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SingleProgrammaticallyCreativeViewController.storyboard; sourceTree = "<group>"; };
 		105B7C35298B760E0006805F /* MultiCreativeViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MultiCreativeViewController.storyboard; sourceTree = "<group>"; };
 		105B7C36298B760E0006805F /* SingleInlayoutCreativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleInlayoutCreativeViewController.swift; sourceTree = "<group>"; };
-		105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1095B09B2F62FF9B009732FB /* SingleManualCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleManualCreativeViewController.swift; sourceTree = "<group>"; };
 		1095B09D2F63019B009732FB /* SingleManualCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleManualCreativeViewController.storyboard; sourceTree = "<group>"; };
 		10CE5C212A35C8DA009C0C75 /* MultiProductCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiProductCreativeViewController.swift; sourceTree = "<group>"; };
 		10CE5C232A36D52D009C0C75 /* MultiProductCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MultiProductCreativeViewController.storyboard; sourceTree = "<group>"; };
-		10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SAAdvertisingSDKStandard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		10F60566299CC63500DCE803 /* SingleCollectionCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleCollectionCreativeViewController.storyboard; sourceTree = "<group>"; };
 		10F60568299CC64900DCE803 /* SingleCollectionCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleCollectionCreativeViewController.swift; sourceTree = "<group>"; };
 		10F7581B2A0E2593004494EC /* SingleProductCreativeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleProductCreativeViewController.swift; sourceTree = "<group>"; };
 		10F7581D2A0E25F1004494EC /* SingleProductCreativeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SingleProductCreativeViewController.storyboard; sourceTree = "<group>"; };
-		1345D8AA78AEDBF5E6BBB0F0 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.debug.xcconfig"; sourceTree = "<group>"; };
-		AF66BB9F1F21C42596DC033E /* Pods_SAAdvertisingSDKStandardExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SAAdvertisingSDKStandardExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DE1074C9EEF444A87117F2B1 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; path = "Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		10843C9A2FC405AD0068B210 /* LocalSPM */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = LocalSPM; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		105B7C0F298B74BA0006805F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10F6048B298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework in Frameworks */,
-				ACA2CF1B798A6B3B7C25C28C /* Pods_SAAdvertisingSDKStandardExample.framework in Frameworks */,
+				10843CB22FC423140068B210 /* SAApp in Frameworks */,
+				10843C9D2FC406400068B210 /* SAApp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,10 +111,10 @@
 		105B7C09298B74BA0006805F = {
 			isa = PBXGroup;
 			children = (
+				10843C9A2FC405AD0068B210 /* LocalSPM */,
 				105B7C14298B74BA0006805F /* SAAdvertisingSDKStandardExample */,
 				105B7C13298B74BA0006805F /* Products */,
 				105B7C41298BB7BC0006805F /* Frameworks */,
-				14810EA142B8623822C93637 /* Pods */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -174,10 +170,6 @@
 		105B7C41298BB7BC0006805F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				10F6048A298BC0A800DCE803 /* SAAdvertisingSDKStandard.framework */,
-				10F60483298BC00A00DCE803 /* SAAdvertisingSDKStandard.framework */,
-				105B7C42298BB7BC0006805F /* SAAdvertisingSDKStandard.framework */,
-				AF66BB9F1F21C42596DC033E /* Pods_SAAdvertisingSDKStandardExample.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,16 +198,6 @@
 			path = product;
 			sourceTree = "<group>";
 		};
-		14810EA142B8623822C93637 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				1345D8AA78AEDBF5E6BBB0F0 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */,
-				DE1074C9EEF444A87117F2B1 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */,
-			);
-			name = Pods;
-			path = ../Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,12 +205,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 105B7C26298B74BB0006805F /* Build configuration list for PBXNativeTarget "SAAdvertisingSDKStandardExample" */;
 			buildPhases = (
-				79560854B5C93D85ABB13953 /* [CP] Check Pods Manifest.lock */,
 				105B7C0E298B74BA0006805F /* Sources */,
 				105B7C0F298B74BA0006805F /* Frameworks */,
 				105B7C10298B74BA0006805F /* Resources */,
 				10F6048D298BC0A800DCE803 /* Embed Frameworks */,
-				DE250FFCE003D1FD10A71EC3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -263,6 +243,9 @@
 				Base,
 			);
 			mainGroup = 105B7C09298B74BA0006805F;
+			packageReferences = (
+				10843CB02FC423140068B210 /* XCLocalSwiftPackageReference "LocalSPM/SAApp" */,
+			);
 			productRefGroup = 105B7C13298B74BA0006805F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -297,48 +280,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		79560854B5C93D85ABB13953 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SAAdvertisingSDKStandardExample-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DE250FFCE003D1FD10A71EC3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SAAdvertisingSDKStandardExample/Pods-SAAdvertisingSDKStandardExample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		105B7C0E298B74BA0006805F /* Sources */ = {
@@ -501,7 +442,6 @@
 		};
 		105B7C27298B74BB0006805F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1345D8AA78AEDBF5E6BBB0F0 /* Pods-SAAdvertisingSDKStandardExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -538,7 +478,6 @@
 		};
 		105B7C28298B74BB0006805F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DE1074C9EEF444A87117F2B1 /* Pods-SAAdvertisingSDKStandardExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -595,6 +534,24 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		10843CB02FC423140068B210 /* XCLocalSwiftPackageReference "LocalSPM/SAApp" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = LocalSPM/SAApp;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		10843C9C2FC406400068B210 /* SAApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SAApp;
+		};
+		10843CB12FC423140068B210 /* SAApp */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SAApp;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 105B7C0A298B74BA0006805F /* Project object */;
 }
