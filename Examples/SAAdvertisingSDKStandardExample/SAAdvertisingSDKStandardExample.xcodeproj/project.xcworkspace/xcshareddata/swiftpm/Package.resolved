@@ -1,0 +1,15 @@
+{
+  "originHash" : "8c97d74f06e99a8dadad8f02ec92dcbf77a3ee35cc6ae733783e116780063395",
+  "pins" : [
+    {
+      "identity" : "toaster",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devxoul/Toaster.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "db7f2f5096b642c711dcdcedceb450382bbc5abe"
+      }
+    }
+  ],
+  "version" : 3
+}
